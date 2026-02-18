@@ -31,16 +31,17 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 ### Option 1: Claude Code — Terminal or IDE (recommended)
 
 1. Clone this repo.
-2. Open the directory in Claude Code (terminal or app) or Cursor.
-3. Run `/kickoff`.
+2. `cp SKILL.md CLAUDE.md`
+3. Open the directory in Claude Code (terminal or app) or Cursor.
+4. Run `/kickoff`.
 
-That's it. `CLAUDE.md` auto-loads the skill. It reads reference files on demand and writes `coaching_state.md` to maintain continuity across sessions — no manual saving required.
+`CLAUDE.md` auto-loads the skill. It reads reference files on demand and writes `coaching_state.md` to maintain continuity across sessions — no manual saving required.
 
 **Works with**: Claude Code (terminal), Claude Code (Claude App), Cursor, or any environment with file system access.
 
 ### Option 2: Paste into conversation (limited)
 
-1. Copy the contents of `CLAUDE.md` and paste at the start of a Claude conversation.
+1. Copy the contents of `SKILL.md` and paste at the start of a Claude conversation.
 2. Run `/kickoff`.
 
 Note: Without file system access, the skill cannot read reference files or write persistent state. It will still work for single-session use but with reduced depth.
@@ -206,7 +207,7 @@ Choose during `/kickoff`. You can switch later.
 
 ```text
 interview-coach-skill/
-├── CLAUDE.md                           # Core skill — auto-loaded by Claude Code
+├── SKILL.md                            # Core skill — copy to CLAUDE.md to activate
 ├── README.md                           # This file
 ├── coaching_state.md                   # Created on first /kickoff (persistent memory)
 └── references/
@@ -245,7 +246,7 @@ Yes, but it is authored for Claude skill behavior. If using another model, copy 
 The skill is intentionally high-candor and evidence-based. It still uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not.
 
 **How does it work across multiple sessions?**
-The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, and more. At the start of each session, it reads this file and picks up where you left off. No manual saving or pasting required — it's automatic in any environment with file system access (Claude Code, Cursor, etc.).
+The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, and more. At the start of each session, it reads this file and picks up where you left off. Automatic in any environment with file system access (Claude Code, Cursor, etc.).
 
 **What's different about v5?**
 v5 is a ground-up rethink. Session continuity via COACHING_STATE, adaptive triage with priority-stacked decision trees, 5-dimension scoring (with Differentiation), root cause diagnosis, worked examples as calibration anchors, answer rewrites showing concrete deltas, full mock interviews with named interviewer personas, drill progression with gating, post-offer negotiation, self-assessment calibration, outcome tracking, time-aware coaching, interview loop awareness, psychological readiness, signal-reading, gap-handling, cultural/linguistic awareness, and anti-pattern detection. The core shift: from "structured output" to "adaptive coaching that works over months."
