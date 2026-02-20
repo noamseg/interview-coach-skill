@@ -336,3 +336,104 @@ Your rejection pattern suggests a specific bottleneck — let's find it fast.
 ```
 
 **Why this example matters**: Shows trend narration as a story, not a spreadsheet. Each dimension gets a narrative arc with inflection points, causes, and next unlocks. The self-assessment calibration section reveals the most actionable insight (Credibility over-rating by 0.7 = the candidate thinks they're claiming credit but they're not). The graduation check makes readiness concrete.
+
+---
+
+## Example 9: Debrief Showing Emotional Triage and Capture
+
+**Context**: Mid-career Engineer, just finished a system design round at a growth-stage company. Came to the session 90 minutes after the interview. Previous debrief exists for Round 1 (behavioral screen, advanced).
+
+```markdown
+## Interview Debrief: TechCo — Round 2 (System Design)
+- Date: 2024-03-15
+- Interviewer(s): Senior Staff Engineer (name unknown)
+- Format: System design — verbal walkthrough, collaborative, 50 min
+- Emotional read: "Rough" — candidate described feeling lost midway through
+
+## Emotional Triage
+Your one-word was "rough" — let's capture what happened while it's fresh. We can analyze later when there's some distance. Right now, the goal is data capture, not judgment.
+
+## Questions Recalled
+1. "Design a rate-limiting system for our API."
+   - Self-assessment: Rough
+   - Story used: None (technical design, not behavioral)
+   - Notes: Jumped straight into solution without asking clarifying questions. Realized halfway through that assumptions about scale were wrong. Interviewer redirected: "What if the traffic is 100x what you assumed?"
+
+2. Follow-up: "Walk me through how you'd handle distributed rate limiting across multiple regions."
+   - Self-assessment: Okay
+   - Story used: Referenced S004 (multi-region migration) for context on distributed systems experience
+   - Notes: Felt more grounded here because it connected to real experience. Interviewer engaged — asked 2 follow-ups.
+
+3. "What are the tradeoffs between token bucket and sliding window approaches?"
+   - Self-assessment: Strong
+   - Story used: None
+   - Notes: This is an area of genuine expertise. Explained clearly, named tradeoffs unprompted.
+
+## Interviewer Signals Observed
+- Positive signals: Engaged on Q2 follow-ups, nodded during Q3 tradeoff explanation
+- Negative signals: On Q1, interviewer let candidate go for 3 minutes before redirecting — likely waiting to see if candidate would self-correct (they didn't)
+- Neutral/ambiguous: Interviewer was quiet for first 5 minutes — could be their style or a reaction to the weak opening
+
+## Surprises
+- The problem was simpler than expected — the difficulty came from the follow-ups, not the initial design
+- Interviewer cared more about the reasoning process than the architecture diagram
+- Silence after Q1 was unnerving — candidate filled it with rambling instead of pausing to regroup
+
+## Stories Used
+| Story | Question | How It Landed (candidate read) |
+|-------|----------|-------------------------------|
+| S004 (multi-region migration) | Q2 follow-up | Landed well — grounded the technical discussion in real experience |
+
+## Candidate's Own Takeaways
+- What to do differently: "I need to ask clarifying questions before diving in. I knew this and still didn't do it."
+- What worked: "When I connected the design to my actual experience (S004), it felt real and the interviewer responded to it."
+
+## Coaching Notes
+The pattern here is clear and consistent with what we saw in practice: you skip the clarification phase when you feel time pressure. In practice, your Clarification-Seeking drill scores were 2-3 — and that's exactly what showed up in the real interview. The good news: Q2 and Q3 showed that once you're grounded in real experience, your communication quality jumps. The intervention is specific: the first 3 minutes of any system design interview should be questions, not solutions.
+
+## Coaching State Updates
+- Storybank updates: S004 Last Used = 2024-03-15, performance note: "landed well in system design context — grounds technical discussion in real experience"
+- Interview Loop updates: Round 2 completed, format confirmed (verbal walkthrough, collaborative), clarification-skipping pattern confirmed in real interview
+
+## Transcript Status
+- [ ] Transcript available → run `analyze` when ready
+- [x] No transcript → directional analysis above is what we have
+
+**Next commands**: `practice technical` (Clarification-Seeking drill specifically), `hype` (if Round 3 is scheduled), `progress`
+```
+
+**Why this example matters**: Shows the emotional triage decision in action — candidate said "rough," so the coach prioritized capture over coaching. The pattern connection between practice scores (Clarification-Seeking at 2-3) and real interview behavior (skipped clarification on Q1) demonstrates why practice data matters. The coaching note is direct but constructive. Also shows how a technical interview debrief differs from a behavioral one — story usage is sparse, and the observations focus on process (clarification, reasoning narration) rather than content.
+
+---
+
+## Example 10: Analyze Excerpt Showing Signal-Reading in Transcript
+
+**Context**: Mid-career PM, behavioral screen. Showing signal-reading analysis integrated into per-answer scoring for two questions.
+
+```markdown
+### Q2: "Tell me about a time you had to influence a decision without direct authority."
+- Scores: Substance 4 / Structure 4 / Relevance 4 / Credibility 3 / Differentiation 3
+- Forward Signal: Yes
+- What worked: Strong specific example — you named the VP you influenced, the data you brought, and the meeting where the decision turned. Front-loaded the outcome ("I changed the roadmap priority for Q3") before the backstory.
+- Biggest gap: Credibility dips because you said "the team eventually came around" without explaining HOW you influenced them. The mechanism of influence is exactly what this question tests.
+- Root cause pattern: Reflexive "we" framing — "we aligned on the new direction" obscures that YOU drove the alignment.
+- Tight rewrite direction: Replace "we aligned" with the specific action: "I set up a 1:1 with the VP, walked through the customer data showing churn correlated with the feature gap, and proposed a 2-week spike. She approved it in that meeting."
+
+**Signal-reading observations for Q2:**
+- The interviewer asked two follow-ups: "How did you get the VP's time?" and "What data did you use?" — both are positive signals. When interviewers drill into the HOW of influence, they're interested, not skeptical. They want more detail because the story is landing.
+- After your answer about data, the interviewer said "That's helpful, thank you" — this is a wrap-up signal, not enthusiasm. They got what they needed and were ready to move on. You correctly didn't over-extend.
+
+### Q4: "Describe a situation where you disagreed with your manager's decision."
+- Scores: Substance 2 / Structure 3 / Relevance 2 / Credibility 2 / Differentiation 1
+- Forward Signal: No
+- What worked: You structured the answer clearly — setup, disagreement, resolution. The bones were there.
+- Biggest gap: Relevance. You described a situation where you "pushed back" but ultimately agreed your manager was right. That's a challenge story, not a disagreement story. The question specifically asks about disagreement — they want to know what happens when you think the boss is wrong AND you still think so after the conversation.
+- Root cause pattern: Conflict avoidance — you selected a "safe" disagreement where you were the one who changed their mind, which avoids showing real tension.
+- Tight rewrite direction: Use a story where the disagreement persisted. Even better: a case where you escalated, compromised, or proceeded despite disagreement with clear rationale.
+
+**Signal-reading observations for Q4:**
+- The interviewer paused for 3 seconds after your answer, then said "Okay" and moved directly to Q5. No follow-up, no "tell me more," no probing. This is a negative signal — the answer didn't generate interest. Compare this to Q2 where you got two engaged follow-ups. The contrast is itself data: Q2's specificity pulled the interviewer in; Q4's safety pushed them away.
+- The quick pivot to Q5 also suggests the interviewer may have mentally scored this answer and decided probing wouldn't yield better material. In real-time, this is your cue that the answer didn't land — if you notice it, you can volunteer: "Actually, I have a stronger example of real disagreement — would you like to hear it?" Most interviewers will say yes.
+```
+
+**Why this example matters**: Shows how signal-reading observations are woven into per-answer analysis, not bolted on as a separate section. The Q2 analysis distinguishes between positive follow-ups (interest) and wrap-up signals (they got enough). The Q4 analysis uses the contrast between the two answers to teach the candidate to read real-time signals — the silence + quick pivot = the answer didn't land. Also demonstrates the coaching move of suggesting a real-time recovery: offering a stronger example mid-interview.

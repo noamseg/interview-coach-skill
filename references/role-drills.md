@@ -583,6 +583,12 @@ Within each role drill, questions range from entry-level to advanced. Use this g
 
 **Data Scientist Methodology**: Problem Framing is the warmup. Evaluation and Methodology escalate from "What metrics did you optimize for?" (moderate) to "How did you prevent overfitting given your sample size?" (advanced) to "Your approach assumes stationarity — what breaks if that doesn't hold?" (expert).
 
+**UX Researcher Evidence and Influence**: Study Design questions are the warmup. Influence and Ethics escalate from "How did you get stakeholders to act on this?" (moderate) to "What research did NOT lead to change? Why not, and was that the right call?" (advanced) to "Your findings contradicted the VP's pet project. Walk me through exactly what happened." (expert).
+
+**Operations / Business Ops Systems Thinking**: Problem Diagnosis is the warmup. Sustainability and Measurement escalate from "How did you measure success?" (moderate) to "How did you isolate your impact from other changes happening simultaneously?" (advanced) to "The process you built works, but the person who maintained it just left. What happens now, and what should you have done differently?" (expert).
+
+**Marketing Strategy and Attribution**: Strategy questions are the warmup. Attribution and Learning escalate from "How did you measure impact?" (moderate) to "How did you separate this campaign's impact from seasonal effects, other campaigns running simultaneously, and organic growth?" (advanced) to "Your attribution model says this campaign drove $2M. Your CFO says it was $200K. Walk me through why you're both right." (expert).
+
 ---
 
 ## General Drill Guidelines

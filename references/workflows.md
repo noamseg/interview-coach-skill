@@ -499,17 +499,18 @@ If a candidate drops a transcript without having run `kickoff` first, don't refu
 
 ### Step Sequence
 
-1. Ask self-assessment questions first: "Before I dig in — which answer do you feel best about, and which one do you think was weakest? And overall, how do you think it went?" (Wait for response before proceeding.)
-2. **Set the self-assessment aside.** Do NOT let the candidate's answer influence your scoring. Analyze the transcript independently — score first, form your own conclusions, then compare to what they said.
-3. Clean transcript minimally.
-4. **Transcript quality gate**: After cleaning, assess how much is usable. If significant gaps exist (garbled sections, missing speaker labels, <60% recoverable), say so upfront: "This transcript has significant quality issues. I can score what's here, but my confidence is reduced. Here's what I can and can't assess: [specifics]." Be transparent throughout the analysis about where you're working from solid data vs. filling in gaps.
-5. Parse into Q&A pairs.
-6. Score each answer on 5 dimensions (including Differentiation).
-7. **Compare your scores to their self-assessment.** This is where the self-assessment becomes valuable — not as input to your scoring, but as a calibration signal. If you agree with their picks, explain why with evidence. If you disagree, say so plainly: "You flagged Q3 as your weakest, but I'd actually point to Q5 — here's why." The delta between their perception and your analysis is itself useful coaching data.
-8. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module below. Include observations in the per-answer analysis and in the overall debrief.
-9. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
-10. **Proactive rewrite of the weakest answer.** Don't just offer a rewrite — do one automatically for the lowest-scoring answer. Show the original excerpt and the improved version side by side with annotations. Say: "Here's what your weakest answer could look like at a 4-5. I'll show the delta so the improvement is concrete — not to give you a script, but to make it tangible." Still offer rewrites of other answers on request.
-11. **Triage — identify primary bottleneck and branch:**
+1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
+2. Ask self-assessment questions first: "Before I dig in — which answer do you feel best about, and which one do you think was weakest? And overall, how do you think it went?" (Wait for response before proceeding.) If a debrief already captured this, reference it: "You told me right after the interview that Q3 felt rough. Let's see what the transcript shows."
+3. **Set the self-assessment aside.** Do NOT let the candidate's answer influence your scoring. Analyze the transcript independently — score first, form your own conclusions, then compare to what they said.
+4. Clean transcript minimally.
+5. **Transcript quality gate**: After cleaning, assess how much is usable. If significant gaps exist (garbled sections, missing speaker labels, <60% recoverable), say so upfront: "This transcript has significant quality issues. I can score what's here, but my confidence is reduced. Here's what I can and can't assess: [specifics]." Be transparent throughout the analysis about where you're working from solid data vs. filling in gaps.
+6. Parse into Q&A pairs.
+7. Score each answer on 5 dimensions (including Differentiation).
+8. **Compare your scores to their self-assessment.** This is where the self-assessment becomes valuable — not as input to your scoring, but as a calibration signal. If you agree with their picks, explain why with evidence. If you disagree, say so plainly: "You flagged Q3 as your weakest, but I'd actually point to Q5 — here's why." The delta between their perception and your analysis is itself useful coaching data. If debrief data exists, compare all three: debrief impression → current self-assessment → coach scores. Shifts between the fresh debrief read and the later self-assessment reveal how the candidate processes interview experiences over time.
+9. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module below. Include observations in the per-answer analysis and in the overall debrief.
+10. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
+11. **Proactive rewrite of the weakest answer.** Don't just offer a rewrite — do one automatically for the lowest-scoring answer. Show the original excerpt and the improved version side by side with annotations. Say: "Here's what your weakest answer could look like at a 4-5. I'll show the delta so the improvement is concrete — not to give you a script, but to make it tangible." Still offer rewrites of other answers on request.
+12. **Triage — identify primary bottleneck and branch:**
 
 ### Post-Scoring Decision Tree
 
@@ -531,12 +532,12 @@ After scoring, identify bottleneck dimensions and branch. Most candidates have m
 
 **If scores are balanced (all 3+, with clear dimension leaders)** → Run full multi-lens analysis as designed.
 
-6. Run multi-lens analysis (scoped by triage decision):
-   - Hiring Manager
-   - Skeptical Specialist
-   - Values Alignment
-   - Calibration (skip if Substance < 3 — premature optimization)
-7. Synthesize into delta plan with triage-informed priorities.
+13. Run multi-lens analysis (scoped by triage decision):
+    - Hiring Manager
+    - Skeptical Specialist
+    - Values Alignment
+    - Calibration (skip if Substance < 3 — premature optimization)
+14. Synthesize into delta plan with triage-informed priorities.
 
 ### Per-Answer Format (for each analyzed answer)
 
@@ -715,7 +716,7 @@ Update `coaching_state.md` per the State Update Triggers in SKILL.md.
 Show menu with progression status:
 
 ```text
-Practice Menu (progression order)
+Practice Menu (stages 1-8 are gated by progression)
 1) practice ladder     — Constraint drills: tell the same story at 30s, 60s, 90s, 3min
 2) practice pushback   — Handle skepticism, interruption, "so what?" pressure
 3) practice pivot      — Redirect when a question doesn't match your prep
@@ -723,8 +724,10 @@ Practice Menu (progression order)
 5) practice role       — Role-specific specialist scrutiny
 6) practice panel      — Multiple interviewer personas simultaneously
 7) practice stress     — Role-specific high-pressure simulation
-8) practice retrieval  — Rapid-fire question-to-story matching under time pressure
-9) practice technical  — Thinking out loud, clarification-seeking, tradeoff articulation
+8) practice technical  — Thinking out loud, clarification-seeking, tradeoff articulation (optional — system design/mixed format only)
+
+Standalone (not gated by progression):
+•  practice retrieval  — Rapid-fire question-to-story matching under time pressure (requires 8+ stories)
 ```
 
 Use `references/role-drills.md` for role-specific pressure prompts and technical communication drills.
@@ -839,6 +842,18 @@ The stress drill is the final test before a real high-stakes interview. See `ref
 4. **Do NOT debrief between questions.** Maintain continuous pressure through the full sequence.
 5. **Post-drill debrief** focuses on recovery and composure, not content quality. Use the stress-specific scoring from role-drills.md.
 6. **Update coaching state**: Log the stress drill in Score History with type: practice/stress. Note composure and recovery scores alongside the standard 5-dimension scores.
+
+### `practice retrieval` — Session Protocol
+
+Retrieval is a standalone drill — not gated by the progression ladder — because it's a storybank maintenance skill, not a core interview skill. See `references/storybank-guide.md` (Rapid-Retrieval Drill section) for the full protocol, scoring, and progression rounds.
+
+**Session setup:**
+
+1. **Gate check.** Requires 8+ indexed stories in the storybank. If fewer exist, redirect: "Retrieval practice works best with 8+ stories to draw from. You have [N]. Want to add a few with `stories add` first?"
+2. **Tailor questions to target roles.** Pull from `coaching_state.md` — use the candidate's target companies, JDs, predicted questions from `prep`, and known weak competencies. Don't use generic questions if role-specific data exists.
+3. **Run the drill** per the protocol in storybank-guide.md (10 rapid-fire questions, 10 seconds each, story ID + opening line).
+4. **Debrief** focuses on retrieval gaps (which competencies had no quick answer?), hesitation patterns (which question types cause delay?), and indexing issues (did they reach for the wrong story?).
+5. **Update coaching state**: Note retrieval patterns in the Session Log. If gaps are discovered, add them to the Revisit Queue and suggest `stories find gaps` or `stories add`.
 
 ---
 
@@ -1051,6 +1066,12 @@ Flag these common mistakes:
 - [1-2 specific questions the candidate might be tempted to ask, with brief explanation of why to skip them]
 ```
 
+### Coaching State Integration
+
+After generating questions, save the top 3 to `coaching_state.md` so other commands can reference them:
+- **In Interview Loops** (if company-specific): Add `- Prepared questions: [top 3, one-line each]` under the relevant company entry.
+- **Why**: `hype` generates its own "3 Questions To Ask" section. If `questions` has already been run for this interview, `hype` should pull from those (already tailored) rather than generating fresh ones. This prevents contradictory advice between commands.
+
 ---
 
 ## `hype` - Pre-Interview Boost Workflow
@@ -1096,6 +1117,7 @@ If no prep exists, say so and suggest running `prep` first if time allows.
 3.
 
 ### 3 Questions To Ask
+[If `questions` was previously run for this company (check Interview Loops for saved prepared questions), pull from those. Don't regenerate — consistency matters.]
 1.
 2.
 3.
@@ -1213,12 +1235,13 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
 2. Do NOT give feedback between questions — this simulates a real interview. Note observations silently.
 3. Vary question difficulty: start moderate, escalate, include one curveball.
 4. Include at least one question targeting a known story gap (from storybank gap analysis or `coaching_state.md`) to test gap-handling under realistic conditions.
-5. **Adapt mid-mock like a real interviewer.** Don't just move mechanically through a question list:
+5. **Pull from saved concerns data.** If `concerns` was previously run for this company (check `coaching_state.md` Interview Loops or Active Patterns), include at least one question that targets the top-ranked concern. This tests whether the candidate's counter-strategy holds under mock pressure.
+6. **Adapt mid-mock like a real interviewer.** Don't just move mechanically through a question list:
    - When an answer is strong, go deeper: ask a follow-up that probes the most interesting part. Real interviewers pursue strong threads.
    - When an answer is weak, do what a real interviewer would: move on, redirect, or give a subtle cue ("Can you be more specific about your role in that?").
    - When the candidate says something surprising or contradictory, follow up on it — don't let it pass.
    - Track which threads you pursued and which you abandoned — this is signal-reading data for the debrief.
-6. Track: story diversity (did they use the same story twice?), energy trajectory, answer length distribution, time management.
+7. Track: story diversity (did they use the same story twice?), energy trajectory, answer length distribution, time management.
 
 ### Panel Simulation UX
 
