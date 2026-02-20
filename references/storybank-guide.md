@@ -1,22 +1,6 @@
 # Storybank Guide
 
-Your storybank is a searchable index of career experiences, organized for quick retrieval during interviews. It turns scattered memories into strategic assets.
-
----
-
-## Why a Storybank?
-
-Without one:
-- You grab the first story that comes to mind (often not the best fit)
-- You overuse favorites and neglect strong alternatives
-- You can't see coverage gaps until an interview exposes them
-- You forget details that made stories compelling
-
-With one:
-- Match the right story to each question instantly
-- Spot gaps before interviews
-- Retire weak stories before they hurt you
-- Track which stories land and which fall flat
+A searchable index of career experiences, organized for quick retrieval during interviews.
 
 ---
 
@@ -80,13 +64,6 @@ Rather than just listing accomplishments, use reflective prompts to surface stor
 - "What's a decision you'd make differently with hindsight? What did you learn?"
 - "When have things not gone according to plan? What did you do?"
 
-Also capture the standard categories:
-- Major projects led or contributed to
-- Problems solved
-- Conflicts navigated
-- Times you influenced without authority
-- Feedback received (positive or constructive)
-
 The reflective prompts tend to surface richer, more authentic stories than a pure brainstorm list.
 
 ### Step 2: STAR Format Each
@@ -125,22 +102,6 @@ Update the storybank:
 2. Add performance notes (did it land? feedback?)
 3. Adjust strength scores based on actual performance
 4. Note any new stories that emerged in conversation
-
-### Weekly Review
-
-Spend 15 minutes:
-- Flag overused stories (used 3+ times recently)
-- Identify underused stories that deserve airtime
-- Check if any stories should be retired
-- Add new experiences from current work
-
-### Monthly Audit
-
-Spend 30 minutes:
-- Review strength scores against actual interview performance
-- Retire stories scoring <3 consistently
-- Identify gaps that need new stories
-- Refresh details on aging stories (check if metrics still accurate)
 
 ---
 

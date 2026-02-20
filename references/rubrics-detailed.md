@@ -154,18 +154,6 @@ See SKILL.md for seniority band definitions (Early Career, Mid-Career, Senior/Le
 
 ---
 
-## Delivering Scores: Coaching-Informed Approach
-
-Scoring is a tool for growth, not judgment. Follow this delivery sequence:
-
-1. **Invite self-assessment first**: Before sharing scores, ask: "How do you think that answer landed? What would you rate it?" This builds calibration skills.
-
-2. **Lead with strengths**: Identify what scored well and name WHY it worked. "Your structure was a 4 here — you front-loaded the headline and every sentence advanced the story. That's exactly what makes interviewers lean in."
-
-3. **Share growth areas as observations, not verdicts**: "I noticed the credibility score is lower on this one — the impact claim doesn't have numbers behind it yet. What data could you add?"
-
-4. **Co-create the improvement**: Rather than prescribing, ask: "Of the dimensions we scored, which one feels most important for you to work on?"
-
 ## Aggregate Scoring
 
 After scoring individual answers:

@@ -6,7 +6,7 @@ This file contains all detailed workflow specifications, schemas, and output for
 
 ## `kickoff` - Setup Workflow
 
-### Step 1: Coaching Configuration (ask one question at a time)
+### Step 1: Coaching Configuration
 
 Collect:
 
@@ -105,11 +105,7 @@ Based on interview history and profile:
 ### Before first interview (or ongoing)
 4. [specific action with command]
 
-## Next Commands
-- `prep [company]` (if target company is known)
-- `stories` (if storybank needs building)
-- `practice ladder` (if fundamentals need work)
-- `help` (to see all available commands)
+**Next commands**: `prep [company]`, `stories`, `practice ladder`, `help`
 ```
 
 ---
@@ -180,10 +176,7 @@ Cross-reference what you find with the candidate's profile:
 - Key things to research further before interviewing:
 - Networking angle: [who to talk to, what to ask]
 
-## Next Commands
-- `prep [company]` (when you have an interview scheduled)
-- `research [another company]` (to compare)
-- `stories` (to check if your storybank covers this company's priorities)
+**Next commands**: `prep [company]`, `research [another company]`, `stories`
 ```
 
 ### Coaching State Integration
@@ -411,11 +404,7 @@ When the candidate provides interviewer LinkedIn URLs or profile links, analyze 
 - **The concern to be ready for**: [the #1 most likely concern + your counter in one sentence]
 - **Your question to ask**: [the single best question for this interviewer/round]
 
-## Next Commands
-- `practice`
-- `mock [format]`
-- `concerns`
-- `hype`
+**Next commands**: `practice`, `mock [format]`, `concerns`, `hype`
 ```
 
 ---
@@ -433,13 +422,7 @@ Use `references/transcript-processing.md` as execution guide.
 5. Parse into Q&A pairs.
 6. Score each answer on 5 dimensions (including Differentiation).
 7. **Compare your scores to their self-assessment.** This is where the self-assessment becomes valuable — not as input to your scoring, but as a calibration signal. If you agree with their picks, explain why with evidence. If you disagree, say so plainly: "You flagged Q3 as your weakest, but I'd actually point to Q5 — here's why." The delta between their perception and your analysis is itself useful coaching data.
-8. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns — these are some of the highest-value insights you can give:
-   - Follow-up questions after an answer → interviewer was interested, the answer was landing
-   - Quick pivot to next question with no follow-up → answer didn't generate interest
-   - Interviewer rephrasing or redirecting mid-answer → the answer wasn't addressing what they asked
-   - "Tell me more about..." → they want depth, the candidate should have expanded
-   - Interviewer cutting the answer short → answer was running long or off-track
-   Include these observations in the per-answer analysis and in the overall debrief.
+8. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module below. Include observations in the per-answer analysis and in the overall debrief.
 9. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
 10. **Proactive rewrite of the weakest answer.** Don't just offer a rewrite — do one automatically for the lowest-scoring answer. Show the original excerpt and the improved version side by side with annotations. Say: "Here's what your weakest answer could look like at a 4-5. I'll show the delta so the improvement is concrete — not to give you a script, but to make it tangible." Still offer rewrites of other answers on request.
 11. **Triage — identify primary bottleneck and branch:**
@@ -494,7 +477,6 @@ When rewriting:
 - Preserve the candidate's voice — improve the content and structure, don't replace their personality.
 - Flag where the rewrite added information the candidate would need to supply: "I added a metric here — you'll need to fill in the actual number."
 
-This is the single highest-leverage coaching tool. Describing "add quantified impact" is 10x less effective than showing what the same answer looks like with quantified impact added.
 
 ### Delta Output Schema
 
@@ -546,10 +528,7 @@ This is the single highest-leverage coaching tool. Describing "add quantified im
 - Score confidence:
 - Data quality notes:
 
-## Next Commands
-- `practice`
-- `stories`
-- `progress`
+**Next commands**: `practice`, `stories`, `progress`
 ```
 
 ---
@@ -638,20 +617,12 @@ Based on the emotional check in step 1, adapt:
 - [ ] Transcript available → run `analyze` when ready
 - [ ] No transcript → directional analysis above is what we have
 
-## Next Commands
-- `analyze` (if transcript available)
-- `thankyou` (draft follow-up while it's fresh)
-- `hype` (if another interview is coming)
-- `progress` (to see how this fits the trend)
+**Next commands**: `analyze` (if transcript available), `thankyou`, `hype`, `progress`
 ```
 
 ### Coaching State Integration
 
-After debrief, update `coaching_state.md`:
-- Add to Interview Loops: round completed, date, stories used, signals noted
-- Update storybank: Last Used dates and performance notes for stories deployed
-- Add to Outcome Log with Result: pending (update when outcome is known)
-- Add to Session Log
+Update `coaching_state.md` per the State Update Triggers in SKILL.md.
 
 ---
 
@@ -839,7 +810,7 @@ When adding or improving stories, force specificity on:
 
 ### Rapid-Retrieval Drill (`stories drill`)
 
-The storybank's value is realized under pressure, not in a filing cabinet. This drill trains instant story selection:
+This drill trains instant story selection:
 
 1. Throw 10 interview questions in rapid succession (one at a time).
 2. For each question, candidate must respond within 10 seconds with: story ID + opening line.
@@ -918,9 +889,7 @@ After generating, save the ranked concerns to `coaching_state.md` (in the Interv
 - `progress` to track whether concerns are being addressed over time
 - `mock` to include questions targeting known concerns
 
-## Next Commands
-- `practice pushback` (drill all concerns)
-- `prep [company]`
+**Next commands**: `practice pushback`, `prep [company]`
 ```
 
 ---
@@ -1035,15 +1004,10 @@ If no prep exists, say so and suggest running `prep` first if time allows.
 5. Reframe: "This is a conversation to see if there's mutual fit. I'm also interviewing them."
 
 ## If You Bomb an Answer Mid-Interview
-- Notice the spiral. Name it internally: "That one's done."
-- Script: "That answer wasn't my strongest. Let me give this next one my full attention."
-- The interviewer has already moved on. You should too.
-- Do NOT try to circle back and fix the previous answer unless asked.
+See Psychological Readiness Module — Mid-Interview Recovery.
 
 ## If You Get a Question You Have No Story For
-- Buy 5 seconds: "That's a great question — let me think about the best example."
-- Use gap-handling Pattern 1 (Adjacent Bridge): connect to the closest experience you have.
-- Honesty + bridge > fumbled fabrication.
+See Gap-Handling Framework — Pattern 1: Adjacent Bridge.
 
 ## If You Have Back-to-Back Interviews
 - Between interviews: 5-minute reset. Don't review notes — your brain needs a break, not more input.
@@ -1053,9 +1017,7 @@ If no prep exists, say so and suggest running `prep` first if time allows.
 - If you bombed the last one: "That conversation is over. This interviewer doesn't know about it and doesn't care."
 - Quick re-read: glance at the Day-Of Cheat Sheet for the next interviewer (if different from the last).
 
-## Next Commands
-- `practice ladder`
-- `questions`
+**Next commands**: `practice ladder`, `questions`
 ```
 
 ---
@@ -1200,17 +1162,14 @@ Replay 3-4 key moments from the interviewer's point of view. This teaches candid
 2.
 3.
 
-## Next Commands
-- `mock [same format]` (retry)
-- `practice [specific drill]` (target a weakness)
-- `analyze` (if they have a real transcript to compare)
+**Next commands**: `mock [same format]`, `practice [specific drill]`, `analyze`
 ```
 
 ---
 
 ## `negotiate` - Post-Offer Negotiation Coaching
 
-### Sequence (one question at a time)
+### Sequence
 
 1. **Check coaching state.** If `coaching_state.md` exists with an Interview Loops entry for this company, pull context: what round they're at, what concerns were flagged, what stories landed. This shapes the negotiation — "You advanced through 4 rounds, which means they're invested. That's leverage."
 2. Collect offer details: base, equity, bonus, title, level, location, other terms.
@@ -1308,9 +1267,7 @@ When the candidate has more than one offer:
 - When to respond:
 - How to buy time if needed: "[exact language]"
 
-## Next Commands
-- `hype` (if more interviews coming)
-- `progress` (to close out the coaching arc)
+**Next commands**: `hype`, `progress`
 ```
 
 ---
@@ -1408,7 +1365,6 @@ When 3+ real interview outcomes exist, run a direct correlation analysis:
 
 ### Graduation Criteria
 
-Most coaching never defines "done." The candidate keeps practicing forever, or stops arbitrarily. Define what ready looks like so the candidate knows what they're working toward.
 
 **Ready for Interview (minimum bar):**
 - [ ] 3+ scores of 4+ across different dimensions in recent practice
@@ -1512,18 +1468,14 @@ This is hard but important. If after sustained effort, scores remain at 2-3 acro
 - Are we focused on the right bottleneck?
 - Anything to change about our approach?
 
-## Next Commands
-- `practice`
-- `stories`
-- `prep [company]`
-- `mock [format]`
+**Next commands**: `practice`, `stories`, `prep [company]`, `mock [format]`
 ```
 
 ---
 
 ## `reflect` - Post-Search Retrospective Workflow
 
-Closes the loop on a coaching engagement. Run when the candidate has accepted an offer, decided to pause their search, or wants to take stock after a sustained effort. This is the workflow that makes coaching feel complete rather than just fading out.
+Closes the loop on a coaching engagement. Run when the candidate has accepted an offer, decided to pause their search, or wants to take stock after a sustained effort.
 
 ### When to Trigger
 

@@ -120,7 +120,7 @@ After scanning, include detected anti-patterns in the analysis output. Each dete
 
 ## Step 3: Multi-Lens Scoring
 
-Run the parsed transcript through evaluative lenses. **Important**: Which lenses you run depends on the post-scoring decision tree in `references/workflows.md` (under `analyze`). If a primary bottleneck is identified after initial scoring, scope the analysis accordingly rather than running all four lenses mechanically. Always follow the evidence sourcing standard from SKILL.md — source claims naturally in your language, and if you find yourself hedging or guessing more than 3 times in a single output, pause and request data before continuing.
+Run the parsed transcript through evaluative lenses. **Important**: Which lenses you run depends on the post-scoring decision tree in `references/workflows.md` (under `analyze`). If a primary bottleneck is identified after initial scoring, scope the analysis accordingly rather than running all four lenses mechanically. Always follow the evidence sourcing standard from SKILL.md. **For Quick Prep track**: Run only Lens 1 and skip to delta sheet.
 
 ### Lens 1: Hiring Manager Perspective
 
@@ -129,15 +129,7 @@ The person who'll champion you (or not) in the hiring committee.
 ```
 LENS 1: HIRING MANAGER PERSPECTIVE
 
-INPUTS:
-- Role: [title]
-- Company: [name]
-- Parsed Q&A from above
-- Company prep brief (values, priorities)
-- Hiring manager LinkedIn (if available)
-
-TASK:
-Act as the hiring manager for this role.
+Evaluate as the hiring manager for this role.
 
 For each answer, score 1-5 on:
 - Substance
@@ -180,12 +172,7 @@ The senior practitioner checking if you actually know what you're talking about.
 ```
 LENS 2: SKEPTICAL SPECIALIST
 
-INPUTS:
-- Candidate's role/discipline: [engineer / PM / designer / data scientist / etc.]
-- Parsed Q&A
-
-TASK:
-Role-play as a skeptical senior specialist in the candidate's field.
+Evaluate as a skeptical senior specialist in the candidate's field.
 
 For each technical or domain-specific answer, identify where they:
 - Hand-waved technical details
@@ -210,12 +197,6 @@ Checking if the candidate demonstrates the company's specific principles.
 ```
 LENS 3: VALUES ALIGNMENT
 
-INPUTS:
-- Company: [name]
-- Company values/principles: [list them]
-- Parsed Q&A
-
-TASK:
 Score each answer on alignment with company principles.
 
 FOR EACH PRINCIPLE:
@@ -241,10 +222,6 @@ Checking if answers are too long, too jargon-heavy, or meandering.
 ```
 LENS 4: CALIBRATION
 
-INPUTS:
-- Parsed Q&A
-
-TASK:
 For each answer >150 words, create:
 - 30-second version (≤80 words)
 - 90-second version (≤220 words)
@@ -366,18 +343,3 @@ What patterns are you noticing? ___
 What feels different now vs. earlier? ___
 ```
 
----
-
-## Timing Guidelines
-
-- Clean transcript: 5-10 minutes
-- Parse into Q&A: 10 minutes
-- Lens 1 (Hiring Manager): 15 minutes
-- Lens 2 (Specialist): 10 minutes
-- Lens 3 (Values): 10 minutes
-- Lens 4 (Calibration): 10 minutes
-- Synthesize delta: 10 minutes
-
-**Total: ~60-75 minutes for full analysis**
-
-For Quick Prep users: Run only Lens 1 and skip to delta sheet (~30 minutes).

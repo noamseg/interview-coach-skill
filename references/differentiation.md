@@ -1,13 +1,6 @@
-# Differentiation: Escaping the AI-Polish Middle
+# Differentiation Protocol
 
-**This is not an optional add-on.** Differentiation is the 5th scoring dimension (scored 1-5 on every answer during analyze) and the single biggest factor separating Hire from Strong Hire in competitive processes.
-
-When everyone preps with AI, everyone sounds the same: safe, polished, slightly robotic. The baseline has inflated. What used to be impressive is now table stakes.
-
-Your edge isn't "using AI." Your edge is showing things AI can't fake:
-- **Earned secrets**: Insights only you can claim because you lived them
-- **Clarity under pressure**: Real-time thinking that can't be memorized
-- **Spiky POV**: Principled stances that sound like a person, not a PDF
+Reference for earned secret extraction, spiky POV development, and clarity-under-pressure drills. Differentiation is scored as the 5th dimension (see SKILL.md rubric).
 
 ### When Differentiation Coaching Fires
 
@@ -68,20 +61,6 @@ Review the candidate's storybank and transcripts. For each major experience, ask
 > **Proof**: After introducing mandatory design docs, our PR rejection rate dropped from 30% to 8%, and time-to-merge decreased by 40%.
 >
 > **When to Deploy**: Questions about collaboration, code quality, technical leadership
-
-**Designer Example**:
-> **Earned Secret**: Users are great at expressing pain but terrible at prescribing solutions. The features they ask for often solve problems only 5% of users have.
->
-> **Proof**: Users demanded Feature X. Research showed they actually needed Feature Y. We shipped Y, got 30% adoption. Later found X would've served only 5% of users.
->
-> **When to Deploy**: Questions about user research, prioritization, stakeholder management
-
-**Data Science Example**:
-> **Earned Secret**: The model that wins in A/B test is rarely the model with the best offline metrics. Production data has noise that test sets sanitize away.
->
-> **Proof**: Our best-performing model on test data underperformed a simpler model in production by 15% because the test set didn't include seasonal patterns.
->
-> **When to Deploy**: Questions about model evaluation, experiment design, bridging research and production
 
 ---
 
@@ -175,41 +154,3 @@ Then test: "You're at the 90-second mark, and I interrupt with: 'Can you give me
 - Gets defensive: "Well, actually..."
 - Restarts from the beginning instead of adapting
 - Fills silence with filler words instead of thinking
-
----
-
-## When to Use Differentiation
-
-**Deploy earned secrets when:**
-- Question asks about your unique perspective or philosophy
-- You sense the interviewer is hearing similar answers from everyone
-- You want to be memorable in debrief discussions
-
-**Deploy spiky POV when:**
-- Question feels like a softball ("What do you think about X?")
-- You're confident the company culture aligns with your take
-- You want to test cultural fit (do they appreciate contrarian thinkers?)
-
-**Deploy clarity skills when:**
-- Interview feels scripted and you want to show range
-- Interviewer throws unexpected question
-- You want to demonstrate senior-level presence
-
-**Avoid differentiation when:**
-- Early screening rounds (just clear the bar)
-- Interviewer seems to want safe, predictable answers
-- Your spiky take would clash with company values
-
----
-
-## Integration Points
-
-Differentiation is woven into the core workflows, not bolted on:
-
-- **`analyze`**: Every answer is scored on Differentiation (1-5). Scores < 3 trigger this protocol.
-- **`stories`**: Every storybank entry requires an Earned Secret field. Stories without one are flagged as incomplete.
-- **`practice`**: Drills include differentiation coaching — "That answer was correct but generic. What's the version only you could give?"
-- **`prep`**: Prep briefs include an "Earned secret to deploy" field in positioning.
-- **`mock`**: Post-mock debrief includes a differentiation analysis across the full interview arc.
-
-The goal: make it structurally impossible to ignore differentiation. It's not something you "add later" — it's baked into every answer from the start.
