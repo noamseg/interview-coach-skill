@@ -36,7 +36,15 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 
 The simplest path. Open this repo directly from Claude Code on Desktop:
 
-1. Clone or download this repo.
+1. Clone the repo:
+
+```bash
+git clone https://github.com/noamsegal/interview-coach-skill.git
+cd interview-coach-skill
+```
+
+Or [download it as a ZIP](https://github.com/noamsegal/interview-coach-skill/archive/refs/heads/main.zip) and unzip.
+
 2. Rename the skill file so Claude Code auto-loads it:
 
 ```bash
@@ -262,7 +270,24 @@ interview-coach-skill/
 ├── README.md                           # This file
 ├── coaching_state.md                   # Created on first kickoff (persistent memory, auto-saved)
 └── references/
-    ├── workflows.md                    # All command workflows, schemas, and cross-cutting modules
+    ├── commands/                       # Per-command workflows (loaded on demand)
+    │   ├── kickoff.md
+    │   ├── research.md
+    │   ├── prep.md
+    │   ├── analyze.md
+    │   ├── debrief.md
+    │   ├── practice.md
+    │   ├── mock.md
+    │   ├── stories.md
+    │   ├── concerns.md
+    │   ├── questions.md
+    │   ├── hype.md
+    │   ├── thankyou.md
+    │   ├── progress.md
+    │   ├── negotiate.md
+    │   ├── reflect.md
+    │   └── help.md
+    ├── cross-cutting.md                # Shared modules: gap-handling, signal-reading, differentiation, cultural awareness
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
     ├── role-drills.md                  # Role-specific drills + interviewer archetypes
     ├── differentiation.md              # Earned secrets, spiky POVs, clarity under pressure

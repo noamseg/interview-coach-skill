@@ -128,11 +128,10 @@ Preparation gets 80%. The final 20% is thinking clearly when the unexpected happ
 
 Practice the same story at multiple time constraints:
 
-1. **15 seconds**: Walking to the interview room
-2. **45 seconds**: Executive attention span
+1. **30 seconds**: Walking to the interview room
+2. **60 seconds**: Executive attention span
 3. **90 seconds**: Standard interview answer
 4. **3 minutes**: "Tell me more"
-5. **5 minutes**: Handling 3 follow-ups
 
 For each level, identify:
 - What to emphasize vs. cut
