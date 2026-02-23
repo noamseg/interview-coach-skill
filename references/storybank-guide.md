@@ -22,6 +22,10 @@ Create a table with these columns:
 | **Last Used** | Date of most recent use in interview |
 | **Notes** | Performance notes, feedback received |
 
+### Full Story Text
+
+The storybank table above is a quick-reference index. The **full STAR text** of each story lives in the Story Details section of `coaching_state.md` — including Situation, Task, Action, Result, Earned Secret detail, deploy use-case, and version history. When adding or improving stories, always write the full text to Story Details, not just the index row. This ensures the coach can reference, improve, and coach on the full story in future sessions without asking the candidate to retell it from scratch.
+
 ### Skill Tags (standardized)
 
 Use consistent tags for searchability:

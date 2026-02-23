@@ -17,6 +17,7 @@ The value of `progress` scales with the data available. Before running the full 
 
 ### Sequence
 
+0. **Check Score History size.** If Score History exceeds 15 rows, run the archival protocol from SKILL.md: summarize the oldest entries into a Historical Summary narrative (preserving trend direction, inflection points, and what caused shifts per dimension), then keep only the most recent 10 rows as individual entries. Do the same for Session Log if it exceeds 15 rows. This keeps the coaching state file lean for long-running engagements.
 1. **Check data availability** (see minimum data thresholds above). Adapt the protocol to what's actually possible.
 2. Ask self-reflection first: "How do you think you're progressing? Rate yourself 1-5 on each dimension."
 3. Compare self-assessment to actual coach scores over time (this is the most valuable part).
@@ -25,7 +26,8 @@ The value of `progress` scales with the data available. Before running the full 
 6. Check graduation criteria — are they interview-ready? (see Graduation Criteria below). Skip if < 3 sessions.
 7. Identify top priorities based on triage, not just lowest scores.
 8. Recommend drills and story updates.
-9. Run coaching meta-check (every 3rd session or when triggered): "Is this feedback useful? Are we working on the right things? What's not clicking?"
+9. **Review and update Active Coaching Strategy.** Check whether the current approach is producing results. If scores are flat for 3+ sessions on the target dimension, recommend a pivot: "We've been focused on [X] for [N] sessions and it's not moving. That usually means we need a different approach." Update the strategy in `coaching_state.md` — record the old approach in Previous approaches with the reason it was abandoned, and write the new approach with rationale and pivot conditions.
+10. Run coaching meta-check (every 3rd session or when triggered): "Is this feedback useful? Are we working on the right things? What's not clicking?" Record the response in the Meta-Check Log.
 
 ### Trend Narration
 

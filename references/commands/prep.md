@@ -87,7 +87,14 @@ If they can't find out, default to a verbal walkthrough format (the most common 
 After running Format Discovery, save the format details to `coaching_state.md` so subsequent commands don't re-ask:
 
 - **In Profile** (general): Update the `Known interview formats` field with any new format types discovered.
-- **In Interview Loops** (company-specific): Under the relevant company entry, add: `- Format: [discovered format details — e.g., "System design: 50 min verbal walkthrough, collaborative, one problem, with senior engineer"]`
+- **In Interview Loops** (company-specific): Under the relevant company entry, save structured format details per round:
+  ```
+  - Round formats:
+    - Round 1: Behavioral screen, 45min, recruiter
+    - Round 2: System design, 50min verbal walkthrough, collaborative, senior engineer
+    - Round 3: Technical+behavioral mix, 60min, alternating, hiring manager
+  ```
+  Include format type, duration, format variant (if applicable), and interviewer type for each round. This level of detail allows `mock`, `practice technical`, and `hype` to tailor their output without re-running discovery.
 
 This prevents re-running discovery when the candidate later runs `mock`, `practice technical`, or `hype` for the same company.
 

@@ -124,7 +124,7 @@ The stress drill is the final test before a real high-stakes interview. See `ref
 **Session setup:**
 
 1. **Gate check.** Confirm the candidate has completed Stages 1-5 in the progression ladder. If not, flag it: "The stress drill is designed for candidates who've built a solid foundation. Your current stage is [X]. Want to work on [prerequisite drill] first, or push ahead anyway?" Respect their choice.
-2. **Pull weaknesses from coaching state.** The stress drill should target known patterns (from Active Patterns and Revisit Queue), not random pressure. Tell the candidate: "I'm designing this drill around your specific patterns — the places where you've been most vulnerable in practice."
+2. **Pull weaknesses from coaching state.** The stress drill should target known patterns (from Active Coaching Strategy and Revisit Queue), not random pressure. Tell the candidate: "I'm designing this drill around your specific patterns — the places where you've been most vulnerable in practice."
 3. **Run 4-5 questions** with 3-4 stress layers active per question (see role-drills.md for the full layer menu).
 4. **Do NOT debrief between questions.** Maintain continuous pressure through the full sequence.
 5. **Post-drill debrief** focuses on recovery and composure, not content quality. Use the stress-specific scoring from role-drills.md.

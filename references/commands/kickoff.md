@@ -47,9 +47,11 @@ Feed these findings into the Kickoff Summary output (Profile Snapshot section) a
 
 Write the initial `coaching_state.md` file (see SKILL.md Session State System for format) with:
 - Profile section populated from Steps 1-2
-- Empty storybank (or populated if initial stories were provided)
+- Resume Analysis section populated from Step 2.5 output (positioning strengths, likely concerns, career narrative gaps, story seeds). This is critical — every downstream command (`concerns`, `prep`, `stories`, `hype`) benefits from having the resume analysis persisted. Don't lose this work.
+- Empty storybank (or populated if initial stories were provided — if initial stories are provided, write full STAR text to the Story Details section)
 - Empty score history, outcome log, drill progression at Stage 1
 - Session log with kickoff entry
+- Coaching Notes with any relevant observations from the kickoff conversation (e.g., interview anxiety, communication style preferences, emotional state about the job search)
 
 ### Time-Aware Coaching
 

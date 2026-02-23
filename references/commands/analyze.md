@@ -52,6 +52,7 @@ After scoring, identify bottleneck dimensions and branch. Most candidates have m
     - Values Alignment
     - Calibration (skip if Substance < 3 — premature optimization)
 14. Synthesize into delta plan with triage-informed priorities.
+15. **Update Active Coaching Strategy in `coaching_state.md`.** Write the chosen coaching path, rationale, and pivot conditions. If an Active Coaching Strategy already exists, check whether this analysis confirms or contradicts it. If the data suggests a different bottleneck than the current strategy targets, recommend updating the strategy and explain why: "Your previous coaching focus was Structure, but this transcript shows Structure at 4 while Differentiation is at 2. I'm updating the strategy to focus on Differentiation."
 
 ### Per-Answer Format (for each analyzed answer)
 

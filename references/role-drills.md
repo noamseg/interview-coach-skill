@@ -520,7 +520,7 @@ This drill simulates the worst-case version of an interview — multiple stresso
 
 ### Setup
 
-1. **Pull the candidate's weakest patterns** from `coaching_state.md` — Active Patterns, Score History, and Revisit Queue. The stress drill should target known vulnerabilities, not random pressure.
+1. **Pull the candidate's weakest patterns** from `coaching_state.md` — Active Coaching Strategy, Score History, and Revisit Queue. The stress drill should target known vulnerabilities, not random pressure.
 2. **Select the role-specific drill** that matches their target (PM Six-Lens, Engineer Technical Depth, etc.). The stress drill layers pressure *on top of* the role-specific content.
 3. **Set the frame**: "This is the hardest drill I'll throw at you. It's designed to break your composure so we can see what happens when things go sideways. Don't try to be perfect — try to recover."
 

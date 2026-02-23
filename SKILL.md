@@ -26,7 +26,7 @@ This skill maintains continuity across sessions using a persistent `coaching_sta
 
 At the beginning of every session:
 1. Read `coaching_state.md` if it exists.
-2. **If it exists**: Greet the candidate by context: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Where do you want to pick up?" Do NOT re-run kickoff.
+2. **If it exists**: Run the Timeline Staleness Check (see below). Then greet the candidate by context: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Where do you want to pick up?" Do NOT re-run kickoff. If the Score History or Session Log has grown large (15+ rows), run the archival protocol silently before continuing.
 3. **If it doesn't exist and the user hasn't already issued a command**: Treat as a new candidate. Suggest kickoff.
 4. **If it doesn't exist but the user has already issued a command** (e.g., they opened with `kickoff`): Execute the command directly — don't suggest what they've already asked for.
 
@@ -39,6 +39,16 @@ At the end of every session (or when the user says they're done, or after any ma
 ### Mid-Session Save Protocol
 
 Don't wait until the end to save. Write to `coaching_state.md` after any major workflow completes (analyze, mock debrief, practice rounds, storybank changes) — not just at session close. If a long session is interrupted, the candidate shouldn't lose everything. When saving mid-session, don't announce it — just write the file silently and continue. Only confirm saves at session end.
+
+After any session where the candidate reveals preferences, emotional patterns, or personal context relevant to coaching, capture 1-3 bullet points in the Coaching Notes section. These are things a great coach would remember: "candidate mentioned they freeze in panel formats," "prefers concrete examples over abstract frameworks," "interviews better in the morning." Don't over-capture — just things that would change how you coach.
+
+### Score History Archival
+
+When Score History exceeds 15 rows, summarize the oldest entries into a Historical Summary narrative and keep only the most recent 10 rows as individual entries. The summary should preserve: trend direction per dimension, inflection points (what caused jumps or drops), and what coaching changes triggered shifts. Run this check during `progress` or at session start when the file is large. Apply the same archival pattern to Session Log when it exceeds 15 rows — compress old sessions into a brief narrative, keep recent ones detailed. The goal is to keep the file readable and within reasonable context limits for months-long coaching engagements.
+
+### Timeline Staleness Check
+
+At session start, after reading `coaching_state.md`, check if the Profile's Interview timeline contains a specific date that has passed. If so, proactively ask: "Your interview timeline was set to [date], which has passed. Has anything changed? This affects whether we're in triage, focused, or full coaching mode." Update the Profile and adjust the time-aware coaching mode accordingly.
 
 ### COACHING_STATE Format
 
@@ -55,15 +65,37 @@ Last updated: [date]
 - Biggest concern:
 - Known interview formats: [e.g., "behavioral screen, system design (verbal walkthrough)" — updated by Format Discovery Protocol during prep/mock]
 
+## Resume Analysis
+- Positioning strengths: [the 2-3 signals a hiring manager sees in 30 seconds]
+- Likely interviewer concerns: [flagged from resume — gaps, short tenures, domain switches, seniority mismatches]
+- Career narrative gaps: [transitions that need a story ready]
+- Story seeds: [resume bullets with likely rich stories behind them]
+
 ## Storybank
 | ID | Title | Primary Skill | Earned Secret | Strength | Last Used |
 |----|-------|---------------|---------------|----------|-----------|
 [rows]
 
+### Story Details
+#### S001 — [Title]
+- Situation:
+- Task:
+- Action:
+- Result:
+- Earned Secret:
+- Deploy for: [one-line use case — e.g., "leadership under ambiguity questions"]
+- Version history: [date — what changed]
+
+[repeat for each story]
+
 ## Score History
+### Historical Summary (when table exceeds 15 rows, summarize older entries here)
+[Narrated trend summary of older sessions — direction per dimension, inflection points, what caused shifts]
+
+### Recent Scores
 | Date | Type | Context | Sub | Str | Rel | Cred | Diff | Signal | Self-Δ |
 |------|------|---------|-----|-----|-----|------|------|--------|--------|
-[rows — Type: interview/practice/mock, Self-Δ: over/under/accurate]
+[rows — Type: interview/practice/mock, Self-Δ: over/under/accurate. Keep most recent 10-15 rows.]
 
 ## Outcome Log
 | Date | Company | Role | Round | Result | Notes |
@@ -78,35 +110,58 @@ Last updated: [date]
 ## Interview Loops (active)
 ### [Company Name]
 - Rounds completed: [list with dates]
+- Round formats:
+  - Round 1: [format, duration, interviewer type — e.g., "Behavioral screen, 45min, recruiter"]
+  - Round 2: [format, duration, interviewer type]
 - Stories used: [S### per round]
 - Concerns surfaced: [from analyze or rejection feedback]
 - Interviewer intel: [LinkedIn URLs + key insights, linked to rounds]
+- Prepared questions: [top 3 from `questions` if run]
 - Next round: [date, format if known]
 
-## Active Patterns
-- Root causes detected: [list]
+## Active Coaching Strategy
 - Primary bottleneck: [dimension]
+- Current approach: [what we're working on and how]
+- Rationale: [why this approach — links to decision tree / data]
+- Pivot if: [conditions that would trigger a strategy change]
+- Root causes detected: [list]
 - Self-assessment tendency: [over-rater / under-rater / well-calibrated]
+- Previous approaches: [list of abandoned strategies with brief reason — e.g., "Structure drills — ceiling at 3.5, diminishing returns"]
+
+## Meta-Check Log
+| Session | Candidate Feedback | Adjustment Made |
+|---------|-------------------|-----------------|
+[rows — record every meta-check response and any coaching adjustment]
 
 ## Session Log
+### Historical Summary (when log exceeds 15 rows, summarize older entries here)
+[Brief narrative of earlier sessions]
+
+### Recent Sessions
 | Date | Commands Run | Key Outcomes |
 |------|-------------|--------------|
 [rows — brief, 1-line per session]
+
+## Coaching Notes
+[Freeform observations that don't fit structured fields — things the coach should remember between sessions]
+- [date]: [observation — e.g., "candidate freezes in panel formats," "gets defensive about short tenure at X," "prefers morning interviews," "mentioned they interview better after coffee"]
 ```
 
 ### State Update Triggers
 
 Write to `coaching_state.md` whenever:
-- kickoff creates a new profile
+- kickoff creates a new profile and populates Resume Analysis from resume analysis
 - research adds a new company entry (lightweight, in Interview Loops with status: Researched)
-- stories adds, improves, or retires stories
-- analyze, practice, or mock produces scores (add to Score History)
+- stories adds, improves, or retires stories (write full STAR text to Story Details, not just index row)
+- analyze, practice, or mock produces scores (add to Score History) — analyze also updates Active Coaching Strategy after triage decision
 - debrief captures post-interview data (add to Interview Loops, update storybank Last Used dates, add to Outcome Log as pending)
-- progress reviews trends (update Active Patterns)
+- progress reviews trends (update Active Coaching Strategy, check Score History archival)
 - User reports a real interview outcome (add to Outcome Log)
-- prep starts a new company loop or updates interviewer intel (add to Interview Loops)
+- prep starts a new company loop or updates interviewer intel and round formats (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)
 - reflect archives the coaching state (add Status: Archived header)
+- Meta-check conversations (record candidate's response and any coaching adjustment to Meta-Check Log)
+- Any session where the candidate reveals coaching-relevant personal context — preferences, emotional patterns, interview anxieties, scheduling preferences, etc. (add to Coaching Notes)
 
 ---
 
@@ -120,7 +175,7 @@ Write to `coaching_state.md` whenever:
 6. **Deterministic outputs** using the schemas in each command's reference file (`references/commands/[command].md`).
 7. **End every workflow with next command suggestions**.
 8. **Triage, don't just report**. After scoring, branch coaching based on what the data reveals. Follow the decision trees defined in each workflow — every candidate gets a different path based on their actual patterns.
-9. **Coaching meta-checks**. Every 3rd session (or when the candidate seems disengaged, defensive, or stuck), run a meta-check: "Is this feedback landing? Are we working on the right things? What's not clicking?" Build this into progress automatically, and trigger it ad-hoc when patterns suggest the coaching relationship needs recalibration. **To count sessions**: check the Session Log rows in `coaching_state.md` at session start. If the row count is a multiple of 3, include a meta-check in that session regardless of which command is run.
+9. **Coaching meta-checks**. Every 3rd session (or when the candidate seems disengaged, defensive, or stuck), run a meta-check: "Is this feedback landing? Are we working on the right things? What's not clicking?" Build this into progress automatically, and trigger it ad-hoc when patterns suggest the coaching relationship needs recalibration. **To count sessions**: check the Session Log rows in `coaching_state.md` at session start. If the row count is a multiple of 3, include a meta-check in that session regardless of which command is run. **After every meta-check**, record the candidate's response and any coaching adjustment to the Meta-Check Log in `coaching_state.md`. Before running a meta-check, read the Meta-Check Log to reference previous feedback — build on past conversations rather than asking the same questions from scratch.
 10. **Surface the help command at key moments**. Users won't remember every command. Proactively remind them that `help` exists at these moments:
     - After kickoff completes: "By the way — type `help` anytime to see the full list of commands available to you."
     - After the first `analyze` or `practice` session: include a brief reminder in the Next Commands section.

@@ -26,6 +26,8 @@ When the candidate selects "Add," don't jump straight to STAR format. Most peopl
 
 Don't skip the reflective prompts and go straight to "tell me a story about leadership." That produces rehearsed, thin stories. The prompts produce real ones.
 
+**Important**: When adding a story, write the full STAR text to the Story Details section in `coaching_state.md` — not just the index row in the Storybank table. The table is a quick-reference index. The Story Details section is where the actual story lives, including Situation, Task, Action, Result, Earned Secret, deploy use-case, and version history. Without the full text, the coach can't help improve the story in a future session without asking the candidate to retell it from scratch.
+
 ### Improving Stories — Structured Upgrade Protocol
 
 When the candidate selects "Improve," don't just say "add more specifics." Walk through a diagnostic sequence:
@@ -51,8 +53,9 @@ When the candidate has 8+ stories, periodically run a portfolio-level audit (sug
 
 ### Story Versioning
 
-When improving a story, preserve the previous version:
-- In the storybank notes field, add: "Previous version: [date] — [brief description of what changed]"
+When improving a story, preserve the previous version in the Story Details section:
+- In the Version history field, add: "[date] — [brief description of what changed]"
+- Update the STAR text in Story Details with the improved version
 - This serves two purposes: (1) the candidate can see their progress over time, and (2) if the "improved" version stops landing in interviews, the coach can reference what changed and potentially revert.
 
 ### Story Records

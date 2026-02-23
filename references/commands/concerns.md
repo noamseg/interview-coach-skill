@@ -60,7 +60,7 @@ Score each round and record to coaching state.
 
 ## Concern Tracking
 
-After generating, save the ranked concerns to `coaching_state.md` (in the Interview Loops section for the relevant company, or in Active Patterns if general). This allows:
+After generating, save the ranked concerns to `coaching_state.md` (in the Interview Loops section for the relevant company, or in Active Coaching Strategy if general). This allows:
 - `prep` to pull from previously generated concerns instead of re-deriving them
 - `hype` to reference the top concern + counter in the 3x3
 - `progress` to track whether concerns are being addressed over time
