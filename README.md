@@ -309,9 +309,6 @@ Generic LLM interview help gives you the same advice regardless of your patterns
 **Does this only work for tech roles?**
 No. Core workflows are role-agnostic; role drills include PM, Engineering, Design, Data Science, Research, Operations, and Marketing.
 
-**Can I use this outside Claude?**
-Yes, but it is authored for Claude skill behavior. If using another model, copy `SKILL.md` and adapt as needed.
-
 **Why is the feedback direct?**
 The skill is intentionally high-candor and evidence-based. It uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not. You can set your feedback directness level (1-5) during kickoff.
 
