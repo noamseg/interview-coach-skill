@@ -16,7 +16,7 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 **Storybank with portfolio optimization** — Structured story management with full STAR text, earned secrets, strength ratings, and rapid-retrieval drills. Story-to-question mapping uses a 4-level fit scoring system (Strong Fit, Workable, Stretch, Gap) with portfolio optimization that resolves conflicts when multiple questions compete for the same story, tracks freshness and overuse, and prioritizes stories with strong earned secrets. Narrative identity extraction finds the 2-3 core themes across your stories so every answer reinforces a coherent thesis about who you are.
 
-**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats. Every round includes the interviewer's perspective — what they were actually thinking when you spoke. Role-drill scores map to core dimensions so specialized practice feeds into overall trend analysis.
+**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats. Every round includes the interviewer's perspective — what they were actually thinking when you spoke. Role-drill scores map to core dimensions so specialized practice feeds into overall trend analysis. At Directness Level 5: expanded interviewer inner monologue, challenge notes on rounds 3+, and optional warmup skip.
 
 **Outcome calibration** — The system tracks whether its practice scores actually predict real interview outcomes. After 3+ real interviews, it runs scoring drift detection, identifies when external feedback contradicts coach scoring, and recalibrates. Cross-dimension root causes (like "conflict avoidance" affecting both Substance and Differentiation) get unified treatment instead of separate drills. The system also learns from successes — tracking which stories, dimensions, and patterns correlate with advancement.
 
@@ -29,6 +29,10 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 **Interview intelligence** — The system learns from your real interview experiences. Every transcript, debrief, and recruiter feedback adds to a personalized knowledge base: question patterns across companies, what works and what doesn't for you specifically, and feedback-outcome correlations. Intelligence data has temporal decay — stale data is flagged, not silently relied on.
 
 **Session continuity** — A persistent `coaching_state.md` file tracks your storybank, scores, patterns, drill progression, interview loops, interview intelligence, and calibration state across sessions. Pick up where you left off, weeks later. Saves are automatic.
+
+**Challenge protocol (Directness Level 5)** — At the highest directness setting, the coach actively challenges you through five lenses: Assumption Audit, Blind Spot Scan, Pre-Mortem, Devil's Advocate, and Strengthening Path. Stories get red-teamed after you add or improve them. Transcripts get challenged. Practice rounds 3+ include a rotating challenge note. Progress reports include a Hard Truth section. Hype includes a pre-mortem before interviews. Rejections get mined for leverage. The system also detects avoidance patterns — if you keep steering away from a weakness, it names it directly. Every challenge ends with a concrete fix. Levels 1-4 are completely unaffected.
+
+**Guided flow** — The coach recommends a specific next step after every command based on your coaching state — not a generic menu. When you say something like "prepare me for my interview at Google," it detects the multi-step intent and walks you through the full sequence (research, prep, concerns, hype) with natural transitions. Session start greetings include a prescriptive recommendation for the highest-leverage move right now.
 
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
@@ -72,18 +76,18 @@ The coach will ask for your resume, target role, and timeline — then build you
 | `kickoff` | Setup profile, track, and preferences | Kickoff summary + time-aware action plan |
 | `research [company]` | Company research + structured fit assessment (3 depth levels) | Company snapshot, culture signals, fit assessment, claim-verified findings |
 | `prep [company]` | Build role-specific prep brief (format-aware, culture-aware, role-fit assessment) | Format guidance, culture read, role-fit assessment, interviewer intelligence, competencies, predicted Qs, story mapping |
-| `analyze` | Analyze transcript with format-aware parsing and triage-based coaching | Auto-detected format, per-unit scoring (Q&A/phases/exchanges), format-specific dimensions, decision tree + interview delta |
+| `analyze` | Analyze transcript with format-aware parsing, triage-based coaching, and interviewer's inner monologue. At Level 5: includes structured challenge | Auto-detected format, per-unit scoring (Q&A/phases/exchanges), format-specific dimensions, decision tree + interview delta |
 | `debrief` | Post-interview rapid capture (same day) | Questions recalled, interviewer signals, stories used, coaching state updates |
-| `practice` | Run drill rounds (with progression gating) | Round debrief + self-assessment delta + targeted adjustment |
+| `practice` | Run drill rounds (with progression gating). At Level 5: challenge notes, expanded interviewer read, optional warmup skip | Round debrief + self-assessment delta + targeted adjustment |
 | `mock [format]` | Full simulated interview (4-6 Qs) — behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix | Holistic arc feedback, signal-reading notes, energy trajectory |
-| `stories` | Build/manage storybank + rapid-retrieval drill | Story table + earned secrets + gap analysis + retrieval drill |
+| `stories` | Build/manage storybank + rapid-retrieval drill. At Level 5: stories get red-teamed with 5 challenge lenses | Story table + earned secrets + gap analysis + retrieval drill |
 | `concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
 | `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
-| `hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
+| `hype` | Pre-interview confidence + psychological warmup. At Level 5: includes a pre-mortem with failure prevention | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
 | `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
-| `progress` | Trends, self-calibration, outcome tracking, scoring calibration | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
+| `progress` | Trends, self-calibration, outcome tracking, scoring calibration. At Level 5: includes a Hard Truth section | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
 | `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
-| `feedback` | Capture recruiter feedback, outcomes, corrections, context | State updates + next step suggestion |
+| `feedback` | Capture recruiter feedback, outcomes, corrections, context, or coaching meta-feedback. At Level 5: rejections include structured leverage extraction | State updates + next step suggestion |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
 | `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
 
@@ -302,6 +306,7 @@ interview-coach-skill/
     ├── storybank-guide.md              # Story management + rapid-retrieval drill
     ├── story-mapping-engine.md         # Portfolio-optimized story mapping with fit scoring
     ├── calibration-engine.md           # Scoring drift detection, root cause tracking, success patterns
+    ├── challenge-protocol.md           # Five-lens challenge framework (Level 5 only): assumption audit, blind spot scan, pre-mortem, devil's advocate, strengthening path
     └── examples.md                     # Worked examples: scored answers, triage, rewrites, system design analysis
 ```
 
@@ -330,7 +335,7 @@ Generic LLM interview help gives you the same advice regardless of your patterns
 No. Core workflows are role-agnostic; role drills include PM, Engineering, Design, Data Science, Research, Operations, and Marketing.
 
 **Why is the feedback direct?**
-The skill is intentionally high-candor and evidence-based. It uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not. You can set your feedback directness level (1-5) during kickoff.
+The skill is intentionally high-candor and evidence-based. It uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not. You can set your feedback directness level (1-5) during kickoff. At Level 5, the Challenge Protocol activates: stories get red-teamed, progress includes a Hard Truth, rejections get mined for leverage, and avoidance patterns are named directly. Levels 1-4 are gentler — same rigor, softer delivery.
 
 **How does it work across multiple sessions?**
 The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, interview loops, and more. At the start of each session, it reads this file and picks up where you left off. Saves happen automatically after every major workflow — not just at session end.
