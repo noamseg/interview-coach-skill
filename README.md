@@ -12,15 +12,23 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 **Adaptive coaching** — After scoring, a decision tree triages your bottleneck and branches to the right drill. If Relevance is your gap, you get question-decoding practice. If Substance, you build raw material. The system doesn't cycle through the same sequence for every candidate.
 
-**Storybank** — Structured story management with full STAR text, earned secrets, strength ratings, and rapid-retrieval drills so you can access the right story under time pressure. Narrative identity extraction finds the 2-3 core themes across your stories so every answer reinforces a coherent thesis about who you are.
+**Multi-format transcript analysis** — Paste raw transcripts from Otter, Zoom, Grain, Google Meet, Teams, Tactiq, Granola, or any other tool. The system auto-detects the format and normalizes it. Analysis adapts to interview type: behavioral interviews get Q&A parsing, system design gets phase-based analysis (scoping, approach, deep-dive, tradeoff, adaptation), panel interviews track cross-interviewer dynamics, and mixed formats handle mode-switching between technical and behavioral segments. Each format gets its own anti-pattern detection and additional scoring dimensions.
 
-**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats. Every round includes the interviewer's perspective — what they were actually thinking when you spoke.
+**Storybank with portfolio optimization** — Structured story management with full STAR text, earned secrets, strength ratings, and rapid-retrieval drills. Story-to-question mapping uses a 4-level fit scoring system (Strong Fit, Workable, Stretch, Gap) with portfolio optimization that resolves conflicts when multiple questions compete for the same story, tracks freshness and overuse, and prioritizes stories with strong earned secrets. Narrative identity extraction finds the 2-3 core themes across your stories so every answer reinforces a coherent thesis about who you are.
+
+**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats. Every round includes the interviewer's perspective — what they were actually thinking when you spoke. Role-drill scores map to core dimensions so specialized practice feeds into overall trend analysis.
+
+**Outcome calibration** — The system tracks whether its practice scores actually predict real interview outcomes. After 3+ real interviews, it runs scoring drift detection, identifies when external feedback contradicts coach scoring, and recalibrates. Cross-dimension root causes (like "conflict avoidance" affecting both Substance and Differentiation) get unified treatment instead of separate drills. The system also learns from successes — tracking which stories, dimensions, and patterns correlate with advancement.
+
+**Role-fit assessment** — Structured evaluation of candidate-role fit across five dimensions (requirement coverage, seniority alignment, domain relevance, competency overlap, trajectory coherence). Distinguishes strong fits from investable stretches and long shots, so candidates focus their energy on roles where they're competitive. Over time, rejection patterns reveal targeting insights that no amount of practice can fix.
+
+**Enhanced company intelligence** — Three research depth levels (Quick Scan, Standard, Deep Dive) with a structured search protocol and claim verification. Every company-specific claim maps to a source tier (verified, general knowledge, or unknown). Prep briefs include targeted web research before applying company knowledge, with source attribution for every finding.
 
 **Interview lifecycle** — Company research, role-specific prep briefs with interviewer intelligence, same-day post-interview debrief, outcome tracking that correlates practice scores with real results, and post-offer negotiation coaching with exact scripts.
 
-**Interview intelligence** — The system learns from your real interview experiences. Every transcript, debrief, and recruiter feedback adds to a personalized knowledge base: question patterns across companies, what works and what doesn't for you specifically, and feedback-outcome correlations. Over time, prep briefs are weighted by real questions you've seen, and progress reviews surface patterns only visible across multiple interviews.
+**Interview intelligence** — The system learns from your real interview experiences. Every transcript, debrief, and recruiter feedback adds to a personalized knowledge base: question patterns across companies, what works and what doesn't for you specifically, and feedback-outcome correlations. Intelligence data has temporal decay — stale data is flagged, not silently relied on.
 
-**Session continuity** — A persistent `coaching_state.md` file tracks your storybank, scores, patterns, drill progression, interview loops, and interview intelligence across sessions. Pick up where you left off, weeks later. Saves are automatic.
+**Session continuity** — A persistent `coaching_state.md` file tracks your storybank, scores, patterns, drill progression, interview loops, interview intelligence, and calibration state across sessions. Pick up where you left off, weeks later. Saves are automatic.
 
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
@@ -62,9 +70,9 @@ The coach will ask for your resume, target role, and timeline — then build you
 | Command | Purpose | Typical Output |
 |---|---|---|
 | `kickoff` | Setup profile, track, and preferences | Kickoff summary + time-aware action plan |
-| `research [company]` | Lightweight company research + fit assessment | Company snapshot, culture signals, fit assessment |
-| `prep [company]` | Build role-specific prep brief (format-aware, culture-aware) | Format guidance, culture read, interviewer intelligence, competencies, predicted Qs, story mapping |
-| `analyze` | Analyze transcript with triage-based coaching | Per-answer 5-dimension scoring + decision tree + interview delta |
+| `research [company]` | Company research + structured fit assessment (3 depth levels) | Company snapshot, culture signals, fit assessment, claim-verified findings |
+| `prep [company]` | Build role-specific prep brief (format-aware, culture-aware, role-fit assessment) | Format guidance, culture read, role-fit assessment, interviewer intelligence, competencies, predicted Qs, story mapping |
+| `analyze` | Analyze transcript with format-aware parsing and triage-based coaching | Auto-detected format, per-unit scoring (Q&A/phases/exchanges), format-specific dimensions, decision tree + interview delta |
 | `debrief` | Post-interview rapid capture (same day) | Questions recalled, interviewer signals, stories used, coaching state updates |
 | `practice` | Run drill rounds (with progression gating) | Round debrief + self-assessment delta + targeted adjustment |
 | `mock [format]` | Full simulated interview (4-6 Qs) — behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix | Holistic arc feedback, signal-reading notes, energy trajectory |
@@ -73,7 +81,7 @@ The coach will ask for your resume, target role, and timeline — then build you
 | `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
 | `hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
 | `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
-| `progress` | Trends, self-calibration, outcome tracking | Self-assessment delta + outcome correlation + coaching meta-check |
+| `progress` | Trends, self-calibration, outcome tracking, scoring calibration | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
 | `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
 | `feedback` | Capture recruiter feedback, outcomes, corrections, context | State updates + next step suggestion |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
@@ -104,9 +112,11 @@ research Notion
 
 Expected output:
 
-- Company snapshot (stage, size, culture signals)
+- Company snapshot (stage, size, culture signals — claim-verified with source tiers)
 - Fit assessment against your profile
 - "If you decide to apply" next steps
+
+For high-priority targets, mention you want a deep dive: "Do a deep dive on Notion" — gets you employee posts, product reviews, competitor analysis, and leadership profiles on top of the standard research.
 
 ### 3) Before an interview
 
@@ -152,11 +162,12 @@ Rapid capture while details are fresh — works with or without a transcript. Ge
 analyze
 ```
 
-Then paste transcript text.
+Then paste raw transcript text from any tool (Otter, Zoom, Grain, Teams, etc.). The system auto-detects the format and normalizes it.
 
 Expected output:
 
-- Per-answer score blocks
+- Format detection and normalization
+- Per-unit score blocks (Q# for behavioral, P# for system design phases, E# for panel exchanges)
 - `Scorecard`
 - `Triage Decision` (data-driven coaching path based on your patterns)
 - `What Is Working`
@@ -238,15 +249,15 @@ Best when interview timeline is short.
 
 Best when running a multi-week search.
 
-- Storybank management with rapid-retrieval drills
-- Multi-lens transcript analysis with decision tree triage
+- Storybank management with rapid-retrieval drills and portfolio-optimized story mapping
+- Multi-format transcript analysis (behavioral, system design, panel, mixed) with decision tree triage
 - Pattern and trend tracking with self-assessment calibration
 - Differentiation coaching integrated into all workflows
 - Full mock interview simulations (behavioral, system design, case study, panel, technical+behavioral mix)
 - Drill progression with gating thresholds (8 stages + standalone retrieval)
 - Post-interview debrief and rapid capture
-- Outcome tracking (correlate practice with real results)
-- Interview intelligence — learns question patterns, what works/doesn't, and company-specific insights from your real interviews
+- Outcome tracking (correlate practice with real results) with scoring calibration (drift detection, recalibration)
+- Interview intelligence — learns question patterns, what works/doesn't, and company-specific insights from your real interviews, with temporal decay on stale data
 - Interview loop awareness across company rounds
 - Post-offer negotiation coaching
 - Post-search retrospective and archiving
@@ -286,9 +297,12 @@ interview-coach-skill/
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
     ├── role-drills.md                  # Role-specific drills + interviewer archetypes
     ├── differentiation.md              # Earned secrets, spiky POVs, clarity under pressure
-    ├── transcript-processing.md        # Step-by-step transcript analysis guide
+    ├── transcript-processing.md        # Step-by-step transcript analysis guide (format-aware parsing)
+    ├── transcript-formats.md           # Format detection + per-format normalization (Otter, Zoom, Grain, etc.)
     ├── storybank-guide.md              # Story management + rapid-retrieval drill
-    └── examples.md                     # Worked examples: scored answers, triage, rewrites
+    ├── story-mapping-engine.md         # Portfolio-optimized story mapping with fit scoring
+    ├── calibration-engine.md           # Scoring drift detection, root cause tracking, success patterns
+    └── examples.md                     # Worked examples: scored answers, triage, rewrites, system design analysis
 ```
 
 ---

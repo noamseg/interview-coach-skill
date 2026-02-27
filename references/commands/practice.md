@@ -66,6 +66,7 @@ The first round of every practice session is explicitly **unscored**. Its purpos
 4. Ask self-reflection (with specific score self-estimate).
 5. Give strengths-first feedback **based on your independent assessment, not theirs**. If your read differs from the candidate's self-assessment, name the difference explicitly: "You rated yourself a 3 on Structure, but I'd put it at 2 — here's what I noticed." Never quietly adjust your scores to match theirs.
 6. Score using 5-dimension rubric.
+6a. **Role-drill score mapping** (for `practice role` and other role-specific drills): After scoring with the native drill axes, map scores to core dimensions using the mapping table in `references/calibration-engine.md` Section 5. Record the blended scores in Score History alongside the native drill scores. This ensures role-drill performance feeds into trend analysis, calibration checks, and graduation criteria.
 7. Record self-assessment vs. coach-assessment delta.
 8. **Cross-reference peak moments.** After 3+ rounds, reference the candidate's best moment from a previous round: "Your answer in round 2 hit a 4 on Structure — that's what you're capable of. The goal is making that your floor, not your ceiling." This builds confidence and gives a concrete target.
 9. Set one specific change for next round.

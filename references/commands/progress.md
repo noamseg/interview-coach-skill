@@ -23,6 +23,10 @@ The value of `progress` scales with the data available. Before running the full 
 3. Compare self-assessment to actual coach scores over time (this is the most valuable part).
 4. Narrate the trend trajectory (see Trend Narration below — don't just show numbers). Skip if < 3 sessions.
 5. Check for outcome data and correlate with practice scores (see outcome tracking below). Skip if < 3 real interviews.
+5a. **Scoring Drift Detection** (requires 3+ outcomes). Run the Scoring Drift Detection Protocol from `references/calibration-engine.md`: build the outcome-score matrix, check for systematic drift per dimension, check for feedback contradictions, generate drift report, present adjustments to candidate. Update `coaching_state.md` → Calibration State. Skip if < 3 outcomes.
+5b. **Cross-Dimension Root Cause Review**. Check Calibration State → Cross-Dimension Root Causes (active). For each active root cause: assess treatment effectiveness (are affected dimensions improving in tandem?), check if resolution criteria are met (1+ point improvement sustained over 3+ sessions), update status. If a root cause isn't responding to treatment, recommend a pivot: "We've been treating [root cause] with [treatment] for [N] sessions. Affected dimensions aren't improving together. Let's try a different approach."
+5c. **Success Pattern Analysis** (requires 1+ advancement or offer). Run the Learning from Successes protocol from `references/calibration-engine.md`: validate fit assessments, track positive dimension-outcome correlation, update storybank with success annotations, extract success patterns from 3+ successes. This ensures the system learns from what it got right, not just what it got wrong.
+5.5. **Outcome-Based Targeting Insights** — When 3+ real interview outcomes exist, analyze rejection patterns for targeting signals. See Step 5.5 below. Also validate fit assessment accuracy: if fit assessments were recorded, check whether they predicted outcomes — learn from correct verdicts as well as incorrect ones. Skip if < 3 outcomes.
 6. Check graduation criteria — are they interview-ready? (see Graduation Criteria below). Skip if < 3 sessions.
 7. Identify top priorities based on triage, not just lowest scores.
 8. Recommend drills and story updates.
@@ -104,6 +108,26 @@ Map recruiter/interviewer feedback to outcomes. Look for patterns: "Both rejecti
 **Accumulated Patterns** (requires 3+ data points per pattern):
 Surface Effective and Ineffective Patterns that have enough evidence to be reliable. Present as actionable guidance: "Pattern confirmed across 4 interviews: when you lead with the counterintuitive choice, your Differentiation scores jump. Keep doing this."
 
+### Step 5.5: Outcome-Based Targeting Insights
+
+When 3+ real interview outcomes exist, analyze rejection patterns for targeting signals. Skip if < 3 outcomes.
+
+**Rejection clustering**: Are rejections concentrated at specific company types, seniority levels, or domains? If 3 of 4 rejections are at enterprise companies but the candidate advances at startups, that's a targeting signal, not a skill gap.
+
+**Stage analysis**: Where in the funnel do rejections cluster?
+- Not hearing back → resume/positioning problem, or targeting roles where the candidate doesn't meet basic requirements
+- First-round rejections → possible fit mismatch (wrong level, wrong domain) or fundamental skill gaps
+- Final-round rejections → closer to fit, but differentiation or specific competency gaps
+
+**Feedback mining**: Cross-reference Recruiter/Interviewer Feedback from Interview Intelligence with rejection patterns. If multiple rejections mention "not enough experience at scale," that's a targeting signal.
+
+**Fit assessment accuracy**: If fit assessments were recorded in Interview Loops, check whether they predicted outcomes. If "Strong Fit" verdicts still resulted in rejections, investigate — the assessment framework may need recalibration, or the issue is performance rather than fit.
+
+**Present as a narrative:**
+> "You've applied to 6 roles. You advanced at the 3 mid-stage startups and were rejected by all 3 enterprise companies. The enterprise rejections all mentioned 'experience at scale.' This isn't a practice problem — it's a targeting pattern. Your skills are landing where they fit. Consider focusing your pipeline on growth-stage companies while building the enterprise narrative for later."
+
+**When the pattern suggests retargeting**, don't prescribe — inform and offer: "The data suggests a pattern. Want to discuss whether adjusting your target companies would help, or do you want to keep pushing on the current targets?"
+
 ### Graduation Criteria
 
 
@@ -132,6 +156,8 @@ If after 5+ sessions, scores are flat on any dimension:
 - Consider: Is the candidate practicing between sessions? Is the drill targeting the right sub-skill? Is there an emotional blocker (see Psychological Readiness)?
 
 **When to say "this might not be the right target":**
+**Data-driven trigger**: If Outcome-Based Targeting Insights (Step 5.5) reveals a clear pattern — rejections clustered by company type, seniority level, or domain — reference it here instead of waiting for scores to plateau. Targeting issues often masquerade as skill gaps.
+
 This is hard but important. If after sustained effort, scores remain at 2-3 across multiple dimensions for a target role that requires 4+, have the honest conversation: "Your growth on [dimension] has been steady but the bar for [specific company/role] is very high. You have two options: invest more time to close the gap, or target roles where your current strengths are a better fit. Both are valid — which feels right to you?"
 
 ### Output Schema
@@ -169,6 +195,13 @@ This is hard but important. If after sustained effort, scores remain at 2-3 acro
 - Feedback-to-dimension mapping:
 - Unmeasured factors to investigate:
 
+## Targeting Insights (if 3+ outcomes exist)
+- Rejection pattern: [clustered by company type / seniority / domain / stage — or no pattern]
+- Stage analysis: [where in the funnel rejections cluster]
+- Feedback signals: [recurring themes from recruiter/interviewer feedback]
+- Fit assessment accuracy: [did fit verdicts predict outcomes?]
+- Recommendation: [continue current targeting / consider adjusting — with specifics]
+
 ## Graduation Check
 - Interview-ready criteria: __ of 6 met
   - [ ] 3+ scores of 4+ across dimensions
@@ -186,9 +219,27 @@ This is hard but important. If after sustained effort, scores remain at 2-3 acro
 - Weakest competency areas: [competency — avg score — count]
 - Targeting recommendation: [specific competency to drill, if gap is actionable]
 
+## Calibration Check (if 3+ outcomes exist)
+- Calibration status: [uncalibrated / calibrating / calibrated / miscalibrated]
+- Drift detected: [per dimension — direction and magnitude, or "no drift detected"]
+- Adjustments made this review: [any scoring recalibrations, or "none needed"]
+- Candidate framing: [how drift was presented — improved predictive accuracy, not goalpost-moving]
+
+## Active Root Causes
+| Root Cause | Affected Dimensions | Status | Treatment | Progress |
+|---|---|---|---|---|
+[from Calibration State — only active root causes, with treatment effectiveness assessment]
+
+## Intelligence Freshness
+- Question Bank entries flagged as historical (3-6 months): [count]
+- Question Bank entries archived (>6 months): [count]
+- Company Patterns flagged as stale (>6 months): [list companies]
+- Patterns needing re-test (>3 months old): [list]
+
 ## Accumulated Patterns (if 3+ data points per pattern)
 - Confirmed effective patterns: [from Interview Intelligence]
 - Confirmed ineffective patterns: [from Interview Intelligence]
+- Confirmed success patterns: [from calibration — what correlates with advancement]
 - Feedback-outcome correlation: [if sufficient data]
 
 ## Pattern Signals

@@ -435,3 +435,100 @@ The pattern here is clear and consistent with what we saw in practice: you skip 
 ```
 
 **Why this example matters**: Shows how signal-reading observations are woven into per-answer analysis, not bolted on as a separate section. The Q2 analysis distinguishes between positive follow-ups (interest) and wrap-up signals (they got enough). The Q4 analysis uses the contrast between the two answers to teach the candidate to read real-time signals — the silence + quick pivot = the answer didn't land. Also demonstrates the coaching move of suggesting a real-time recovery: offering a stronger example mid-interview.
+
+---
+
+## Example 11: System Design Transcript Analysis (Phase-Based Parsing)
+
+**Context**: Senior Engineer, system design round at a growth-stage company. 50-minute collaborative verbal walkthrough. Transcript from Zoom VTT format (auto-detected, normalized to internal representation).
+
+```markdown
+## Interview Delta
+
+## Interview Format
+- Detected format: System design / case study
+- Format source: Coaching state (Round 2 format saved during prep)
+- Scoring weight adjustments: Structure + Substance weighted highest
+- Format-specific dimensions scored: Process Visibility, Scoping Quality, Tradeoff Articulation, Adaptability
+- Coaching scope: I'm coaching how you communicate your thinking — how you scope, narrate decisions, and articulate tradeoffs. I'm not evaluating whether your architecture is technically correct.
+
+## Phase Analysis
+
+### P1: Scoping (4 minutes — 8% of session)
+- Scores: Substance 3 / Structure 4 / Relevance 4 / Credibility 3 / Differentiation 2
+- Format-specific: Process Visibility 4 / Scoping Quality 2
+- What worked: You immediately started asking clarifying questions — "How many concurrent users?" "What's the latency requirement?" Good instinct.
+- Biggest gap: You asked 3 clarifying questions but didn't ask about the most important constraint: data consistency requirements. The interviewer had to introduce this later, which forced a mid-design pivot.
+- Root cause: Scoping checklist is incomplete — you have a mental model for scale questions but not for consistency/reliability questions.
+- Evidence: "Let me start by understanding the scale..." — good opening, but the 3 questions were all scale-related.
+
+### P2: Approach (8 minutes — 16%)
+- Scores: Substance 4 / Structure 4 / Relevance 4 / Credibility 4 / Differentiation 3
+- Format-specific: Process Visibility 5 / Tradeoff Articulation 3
+- What worked: Excellent thinking-out-loud quality. "I'm considering two approaches here — a centralized queue versus a distributed pub/sub model. Let me walk through the tradeoffs..." This is exactly what interviewers want to hear.
+- Biggest gap: You named two approaches but only explored one in detail. The interviewer had to ask "Why not the pub/sub approach?" — you should have addressed it proactively.
+- Root cause: Tradeoff articulation is one-sided — you explain why your preferred approach works, but don't preemptively address why the alternative doesn't.
+
+### P3: Deep-dive (20 minutes — 40%)
+- Scores: Substance 4 / Structure 3 / Relevance 3 / Credibility 4 / Differentiation 3
+- Format-specific: Process Visibility 3 / Adaptability 3
+- What worked: Strong technical depth. When you described the caching layer, the interviewer said "That's a good insight" — clear positive signal.
+- Biggest gap: You spent 20 of 50 minutes here, which squeezed the later phases. Structure dropped because you went deep on the caching layer but then had to rush through the database design. The interviewer's "Let's move on to..." was a time management signal you should have caught earlier.
+- Root cause: Deep-dive rabbit hole — genuine expertise in one area pulls you in, and you lose track of the broader design.
+
+### P4: Adaptation (10 minutes — 20%)
+- Scores: Substance 3 / Structure 3 / Relevance 4 / Credibility 3 / Differentiation 2
+- Format-specific: Process Visibility 3 / Adaptability 4
+- What worked: When the interviewer introduced the data consistency constraint you'd missed in scoping, you pivoted well: "That changes things. I'd need to add a coordination layer..." Good recovery.
+- Biggest gap: The pivot was reactive, not proactive. If you'd asked about consistency in P1, this phase would have been about optimization, not recovery. Also, your narration dropped during the pivot — you went quiet for about 20 seconds while rethinking.
+- Root cause: Silent thinking under pressure. When the design changes, you retreat into your head instead of narrating the rethink.
+
+### P5: Summary (8 minutes — 16%)
+- Scores: Substance 3 / Structure 4 / Relevance 4 / Credibility 3 / Differentiation 3
+- Format-specific: Process Visibility 4 / Tradeoff Articulation 4
+- What worked: Strong summary structure — you walked back through the full design top-to-bottom and named tradeoffs at each layer. "If I had more time, I'd explore..." showed maturity.
+- Biggest gap: Didn't connect the design back to the original requirements. The interviewer asked "Does this meet the latency requirement?" — you should have proactively mapped design decisions to constraints.
+
+## Scorecard
+- Substance: 3.4
+- Structure: 3.6
+- Relevance: 3.8
+- Credibility: 3.4
+- Differentiation: 2.6
+- Process Visibility: 3.8
+- Scoping Quality: 2
+- Tradeoff Articulation: 3.4
+- Adaptability: 3.5
+- Calibration band used: Senior/Lead
+- Hire Signal: Mixed
+
+## Triage Decision
+- Primary bottleneck: Scoping Quality (2) — this is a system design interview, and incomplete scoping cascaded into problems across every subsequent phase.
+- Secondary: Differentiation (2.6) — your design was competent but didn't show a distinctive engineering perspective. Where's your earned secret about system design?
+- Format-aware triage: Process Visibility < 3 would override standard triage, but yours is 3.8 — good. Scoping Quality at 2 is the format-specific priority.
+- Coaching path: Focus on scoping protocol first (systematic checklist for constraints), then tradeoff articulation (preemptively address alternatives).
+
+## Top 3 Gaps To Close
+1. Gap: Incomplete scoping — missed data consistency requirements
+   Why it matters: In system design, scoping errors cascade. Everything after P1 was slightly off because of the missed constraint.
+   Root cause: Scoping mental model covers scale but not consistency/reliability/durability
+   Drill: Build a scoping checklist: scale, consistency, availability, latency, durability, cost. Practice opening 5 different design problems using the full checklist.
+
+2. Gap: One-sided tradeoff articulation
+   Why it matters: Naming two approaches but only exploring one makes it look like you've already decided and the "alternative" was performative.
+   Root cause: Genuine preference for your approach leads you to short-change the comparison
+   Drill: "Steel man the alternative" — for every design decision, spend 30 seconds making the strongest case for the approach you didn't choose before explaining why you prefer yours.
+
+3. Gap: Silent thinking during pivots
+   Why it matters: 20 seconds of silence in a collaborative design interview reads as "stuck." The interviewer can't help you if they don't know what you're thinking.
+   Root cause: Thinking-out-loud habit breaks under pressure when the design needs significant revision
+   Drill: Practice narrating uncertainty: "The consistency requirement changes my approach. Let me think through what needs to change... The caching layer needs a write-through policy instead of write-behind, and I'll need to add a coordination service..."
+
+## Carry Forward
+- Your thinking-out-loud quality in P2 was excellent — "I'm considering two approaches..." is exactly the right way to open a design phase. Make this your default mode, especially during pivots.
+
+## Coaching Scope Note
+I scored the communication quality of your design process — how you scoped, narrated, and articulated tradeoffs. I did not evaluate whether your architecture was technically sound. For technical validation, practice with a senior engineer peer.
+```
+
+**Why this example matters**: Demonstrates phase-based parsing (P1-P5 instead of Q1-Q5), format-specific scoring dimensions alongside the core 5, format-aware triage (Scoping Quality at 2 overrides standard dimension priorities), time allocation analysis (8% in scoping vs. 40% in deep-dive), and the coaching scope boundary note at the end. Shows how system design analysis focuses on the communication process, not the technical solution. Also demonstrates how a missed scoping question cascades through the entire design — making it concrete why scoping is the highest-priority intervention.

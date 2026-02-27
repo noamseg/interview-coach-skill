@@ -82,9 +82,9 @@ Last updated: [date]
 - Story seeds: [resume bullets with likely rich stories behind them]
 
 ## Storybank
-| ID | Title | Primary Skill | Earned Secret | Strength | Last Used |
-|----|-------|---------------|---------------|----------|-----------|
-[rows — compact index. Full column spec in references/storybank-guide.md — the guide adds Secondary Skill, Impact, Domain, Risk/Stakes, and Notes. Add extra columns as stories are enriched.]
+| ID | Title | Primary Skill | Secondary Skill | Earned Secret | Strength | Use Count | Last Used |
+|----|-------|---------------|-----------------|---------------|----------|-----------|-----------|
+[rows — compact index. Use Count tracks total times used in real interviews (incremented via debrief). Full column spec in references/storybank-guide.md — the guide adds Impact, Domain, Risk/Stakes, and Notes. Add extra columns as stories are enriched.]
 
 ### Story Details
 #### S001 — [Title]
@@ -157,8 +157,10 @@ Last updated: [date]
 - Interviewer intel: [LinkedIn URLs + key insights, linked to rounds]
 - Prepared questions: [top 3 from `questions` if run]
 - Next round: [date, format if known]
-- Fit assessment: [from `research` if run — strong / moderate / weak]
-- Key signals: [from `research` — 1-2 lines]
+- Fit verdict: [from research or prep — Strong / Investable Stretch / Long-Shot Stretch / Weak]
+- Fit confidence: [Limited — no JD / Medium — JD + resume / High — JD + resume + storybank]
+- Fit signals: [1-2 lines on what drove the verdict]
+- Structural gaps: [gaps that can't be bridged with narrative, if any]
 - Date researched: [date, if `research` was run]
 
 ## Active Coaching Strategy
@@ -169,6 +171,25 @@ Last updated: [date]
 - Root causes detected: [list]
 - Self-assessment tendency: [over-rater / under-rater / well-calibrated]
 - Previous approaches: [list of abandoned strategies with brief reason — e.g., "Structure drills — ceiling at 3.5, diminishing returns"]
+
+## Calibration State
+
+### Calibration Status
+- Current calibration: [uncalibrated / calibrating / calibrated / miscalibrated]
+- Last calibration check: [date]
+- Data points available: [N] real interviews with outcomes
+
+### Scoring Drift Log
+| Date | Dimension | Direction | Evidence | Adjustment |
+
+### Calibration Adjustments
+| Date | Trigger | What Changed | Rationale |
+
+### Cross-Dimension Root Causes (active)
+| Root Cause | Affected Dimensions | First Detected | Status | Treatment |
+
+### Unmeasured Factor Investigations
+| Date | Trigger | Hypothesis | Investigation | Finding | Action |
 
 ## Meta-Check Log
 | Session | Candidate Feedback | Adjustment Made |
@@ -193,16 +214,16 @@ Last updated: [date]
 
 Write to `coaching_state.md` whenever:
 - kickoff creates a new profile and populates Resume Analysis from resume analysis. Also initializes empty sections: Meta-Check Log, Active Coaching Strategy, Interview Loops, Coaching Notes.
-- research adds a new company entry (lightweight, in Interview Loops with Status: Researched, plus fit assessment, key signals, and date)
+- research adds a new company entry (lightweight, in Interview Loops with Status: Researched, plus fit verdict, fit confidence, fit signals, structural gaps, and date)
 - stories adds, improves, or retires stories (write full STAR text to Story Details, not just index row)
-- analyze, practice, or mock produces scores (add to Score History — practice sub-commands that use the 5-dimension rubric add to Score History; retrieval drills log to Session Log only) — analyze also updates Active Coaching Strategy after triage decision. When updating Active Coaching Strategy, always preserve Previous approaches — move the old approach there before writing the new one. Analyze also extracts questions and scores to Interview Intelligence Question Bank, updates Effective/Ineffective Patterns if 3+ data points reveal a pattern, and updates Company Patterns.
+- analyze, practice, or mock produces scores (add to Score History — practice sub-commands that use the 5-dimension rubric add to Score History; retrieval drills log to Session Log only) — analyze also updates Active Coaching Strategy after triage decision. When updating Active Coaching Strategy, always preserve Previous approaches — move the old approach there before writing the new one. Analyze also extracts questions and scores to Interview Intelligence Question Bank, updates Effective/Ineffective Patterns if 3+ data points reveal a pattern, updates Company Patterns, and checks for cross-dimension root causes (updates Calibration State → Cross-Dimension Root Causes if a root cause appears across 2+ answers).
 - concerns generates ranked concerns (save to Interview Loops under the relevant company's Concerns surfaced, or to Active Coaching Strategy if general)
 - questions generates tailored questions (save top 3 to Interview Loops under Prepared questions for the relevant company)
-- debrief captures post-interview data (add to Interview Loops, update storybank Last Used dates, add to Outcome Log as pending). Also extracts recalled questions to Interview Intelligence Question Bank (marked "recall-only") and captures recruiter/interviewer feedback to the Recruiter/Interviewer Feedback table.
-- feedback captures ad-hoc input: recruiter feedback (add to Recruiter/Interviewer Feedback), outcomes (update Outcome Log + Question Bank Outcome column), corrections (evaluate and adjust if warranted — may update Score History or Storybank ratings, record in Coaching Notes), post-session memories (route to Question Bank, Storybank, Interview Loops, or Company Patterns as appropriate), and meta-feedback (record in Meta-Check Log)
-- progress reviews trends (update Active Coaching Strategy, check Score History archival, check Interview Intelligence archival thresholds)
+- debrief captures post-interview data (add to Interview Loops, update storybank Last Used dates and increment Use Count for each story used, add to Outcome Log as pending). Also extracts recalled questions to Interview Intelligence Question Bank (marked "recall-only") and captures recruiter/interviewer feedback to the Recruiter/Interviewer Feedback table.
+- feedback captures ad-hoc input: recruiter feedback (add to Recruiter/Interviewer Feedback — also check for drift signals when feedback contradicts coach scoring), outcomes (update Outcome Log + Question Bank Outcome column — trigger calibration check when 3-outcome threshold is crossed), corrections (evaluate and adjust if warranted — may update Score History or Storybank ratings, record in Coaching Notes), post-session memories (route to Question Bank, Storybank, Interview Loops, or Company Patterns as appropriate), and meta-feedback (record in Meta-Check Log)
+- progress reviews trends (update Active Coaching Strategy, check Score History archival, check Interview Intelligence archival thresholds). Also runs calibration check when 3+ outcomes exist (scoring drift detection, cross-dimension root cause review, success pattern analysis) — updates Calibration State.
 - User reports a real interview outcome (add to Outcome Log)
-- prep starts a new company loop or updates interviewer intel and round formats (add to Interview Loops)
+- prep starts a new company loop or updates interviewer intel, round formats, fit verdict, fit confidence, and structural gaps (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)
 - reflect archives the coaching state (add Status: Archived header)
 - Meta-check conversations (record candidate's response and any coaching adjustment to Meta-Check Log)
@@ -259,9 +280,11 @@ Execute commands immediately when detected. Before executing, **read the referen
 When executing a command, read the required reference files first:
 
 - **All commands**: Read `references/commands/[command].md` for that command's workflow, and `references/cross-cutting.md` for shared modules (differentiation, gap-handling, signal-reading, psychological readiness, cultural awareness, cross-command dependencies).
-- **`analyze`**: Also read `references/transcript-processing.md`, `references/rubrics-detailed.md`, `references/examples.md`, and `references/differentiation.md` (when Differentiation is the bottleneck).
+- **`analyze`**: Also read `references/transcript-processing.md`, `references/transcript-formats.md`, `references/rubrics-detailed.md`, `references/examples.md`, `references/calibration-engine.md`, and `references/differentiation.md` (when Differentiation is the bottleneck).
 - **`practice`**, **`mock`**: Also read `references/role-drills.md`.
+- **`prep`**: Also read `references/story-mapping-engine.md` when storybank exists.
 - **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
+- **`progress`**: Also read `references/calibration-engine.md`.
 - **`feedback`**: Read `references/commands/feedback.md`.
 
 ## Evidence Sourcing Standard

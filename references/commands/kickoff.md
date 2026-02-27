@@ -43,6 +43,23 @@ Don't just file the resume — analyze it for coaching-relevant signals:
 
 Feed these findings into the Kickoff Summary output (Profile Snapshot section) and into the initial coaching plan.
 
+### Step 2.6: Target Reality Check
+
+After resume analysis, cross-reference the candidate's profile against their stated target role(s). This is NOT a full fit assessment — it's a quick sanity check that fires only when clear mismatches are visible from the resume alone.
+
+**Fire the check if any of these are true:**
+- Seniority gap of 2+ levels (e.g., IC targeting VP, or junior targeting Staff)
+- Zero domain experience for a domain-specific role (e.g., no healthcare experience targeting a healthcare PM role at a regulated company)
+- Function switch without an obvious bridge (e.g., marketing → engineering, with nothing on the resume connecting the two)
+- Target role requires hard skills the candidate demonstrably doesn't have (e.g., "5+ years of ML experience required" with no ML on resume)
+
+**When triggered**, surface it directly but without gatekeeping:
+"Looking at your resume against your target of [role], I want to flag something: [specific gap]. This doesn't mean you shouldn't go for it — but it means we should build a deliberate strategy for addressing this gap. Want to talk through your thinking on this target, or should we proceed and build the strongest case possible?"
+
+**When NOT triggered**, say nothing. Don't manufacture concerns. Most candidates have realistic targets.
+
+**If the candidate has multiple targets**, check each one. It's common for one target to be a strong fit and another to be a stretch — name this: "Your [Role A] target looks like a natural fit. Your [Role B] target is more of a stretch because [reason]. Both are worth pursuing, but they need different prep strategies."
+
 ### Step 3: Initialize Coaching State
 
 Write the initial `coaching_state.md` file (see SKILL.md Session State System for format) with:
@@ -76,6 +93,7 @@ Return exactly:
 - Seniority band:
 - Timeline:
 - Interview history: [first-time / active but not advancing / experienced but rusty]
+- Target fit assessment: [realistic / stretch — details below / flagged concerns — see below]
 - Feedback Directness:
 - Time-aware coaching mode: [triage / focused / full]
 
@@ -90,6 +108,12 @@ Based on interview history and profile:
 - Current readiness: [not started / has foundation but gaps / strong base needs polish]
 - Biggest risk going in: [the single most important thing to address]
 - Biggest asset going in: [the single strongest thing to build on]
+
+## Target Reality Check (only if concerns flagged)
+- Target: [role]
+- Gap identified: [specific gap]
+- Gap type: [seniority / domain / function switch / hard skill]
+- Recommendation: [proceed with gap-bridging strategy / consider alternative targets / discuss]
 
 ## First Plan
 [Adjusted to timeline and interview history — a first-timer gets a different plan than someone actively interviewing]
