@@ -32,8 +32,8 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Interview Prep
 | Command | What It Does |
 |---|---|
-| `research [company]` | Lightweight company research + fit assessment before committing to full prep |
-| `prep [company]` | Full prep brief — format guidance, culture read, interviewer intelligence (from LinkedIn URLs), predicted questions (weighted by real questions from past interviews when available), story mapping, and a day-of cheat sheet |
+| `research [company]` | Company research + structured fit assessment (seniority, domain, trajectory) before committing to full prep. Three depth levels: Quick Scan (target list building), Standard (default), Deep Dive (high-priority targets). Includes structured search protocol and claim verification. |
+| `prep [company]` | Full prep brief — role-fit assessment (5 dimensions — identifies frameable vs. structural gaps), format guidance, culture read, interviewer intelligence (from LinkedIn URLs), predicted questions (weighted by real questions from past interviews when available), story mapping, and a day-of cheat sheet |
 | `concerns` | Anticipate likely interviewer concerns about your profile + counter-evidence strategies |
 | `questions` | Generate 5 tailored, non-generic questions to ask your interviewer |
 | `hype` | Pre-interview boost — 60-second hype reel, 3x3 sheet (concerns + counters + questions), warmup routine, and mid-interview recovery playbook |
@@ -58,7 +58,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Progress and Tracking
 | Command | What It Does |
 |---|---|
-| `progress` | Score trends, self-assessment calibration (are you an over-rater or under-rater?), storybank health, outcome tracking (correlates practice scores with real interview results), question-type performance analysis, accumulated patterns from real interviews, and coaching meta-check |
+| `progress` | Score trends, self-assessment calibration (are you an over-rater or under-rater?), storybank health, outcome tracking (correlates practice scores with real interview results), targeting insights (correlates rejection patterns with company type and fit assessments), question-type performance analysis, accumulated patterns from real interviews, and coaching meta-check |
 
 ### Post-Interview
 | Command | What It Does |
@@ -92,6 +92,9 @@ Based on where you are:
 - Run `progress` weekly — it tracks your self-assessment accuracy, not just scores
 - After real interviews, log outcomes — the system correlates practice scores with real results
 - Set your feedback directness level (1-5) during `kickoff` — the diagnosis stays the same, only the delivery changes
+- Run `research` before applying — the fit assessment helps you focus on roles where you're competitive, and flags stretch targets that need extra prep
+- For high-priority targets, ask for a deep dive research — `research [company]` and mention you want comprehensive intelligence
+- Paste raw transcripts from any tool (Otter, Zoom, Grain, etc.) — the system auto-detects the format and cleans it up
 - Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later
 
 What would you like to work on?

@@ -16,10 +16,11 @@ If a candidate drops a transcript without having run `kickoff` first, don't refu
 1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
 2. Ask self-assessment questions first: "Before I dig in — which answer do you feel best about, and which one do you think was weakest? And overall, how do you think it went?" (Wait for response before proceeding.) If a debrief already captured this, reference it: "You told me right after the interview that Q3 felt rough. Let's see what the transcript shows."
 3. **Set the self-assessment aside.** Do NOT let the candidate's answer influence your scoring. Analyze the transcript independently — score first, form your own conclusions, then compare to what they said.
-4. Clean transcript minimally.
-5. **Transcript quality gate**: After cleaning, assess how much is usable. If significant gaps exist (garbled sections, missing speaker labels, <60% recoverable), say so upfront: "This transcript has significant quality issues. I can score what's here, but my confidence is reduced. Here's what I can and can't assess: [specifics]." Be transparent throughout the analysis about where you're working from solid data vs. filling in gaps.
-6. Parse into Q&A pairs.
-7. Score each answer on 5 dimensions (including Differentiation).
+3.5. **Format detection and normalization.** Before cleaning, run the format detection protocol from `references/transcript-formats.md`. Identify the transcript source tool (Otter, Grain, Zoom VTT, etc.) and normalize to the standard internal representation. If Interview Loops has round format info for this company, use it to confirm or override the transcript format detection.
+4. Clean the normalized transcript (content-level cleaning — timestamps should already be stripped by normalization).
+5. **Transcript quality gate**: After cleaning, assess how much is usable. Incorporate format-derived quality signals (speaker label coverage, normalization confidence, multi-speaker detection). If significant gaps exist (garbled sections, missing speaker labels, <60% recoverable), say so upfront: "This transcript has significant quality issues. I can score what's here, but my confidence is reduced. Here's what I can and can't assess: [specifics]." Be transparent throughout the analysis about where you're working from solid data vs. filling in gaps.
+6. **Format-aware parsing.** Dispatch to the appropriate parsing path from `references/transcript-processing.md` Step 2 based on the detected interview format: Path A (Behavioral — default), Path B (Panel), Path C (System Design/Case Study), Path D (Technical+Behavioral Mix), or Path E (Case Study, candidate-driven).
+7. Score each unit on 5 core dimensions (including Differentiation). For non-behavioral formats, also score the format-specific additional dimensions (see Step 3 scoring extensions in `references/transcript-processing.md`).
 8. **Compare your scores to their self-assessment.** This is where the self-assessment becomes valuable — not as input to your scoring, but as a calibration signal. If you agree with their picks, explain why with evidence. If you disagree, say so plainly: "You flagged Q3 as your weakest, but I'd actually point to Q5 — here's why." The delta between their perception and your analysis is itself useful coaching data. If debrief data exists, compare all three: debrief impression → current self-assessment → coach scores. Shifts between the fresh debrief read and the later self-assessment reveal how the candidate processes interview experiences over time.
 9. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module in `references/cross-cutting.md`. Include observations in the per-answer analysis and in the overall debrief.
 10. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
@@ -46,6 +47,13 @@ After scoring, identify bottleneck dimensions and branch. Most candidates have m
 
 **If scores are balanced (all 3+, with clear dimension leaders)** → Run full multi-lens analysis as designed.
 
+**Format-aware triage rules** (apply on top of the standard priority stack):
+- System design/case study: If Process Visibility < 3, prioritize it over standard dimensions — the candidate's thinking process isn't visible, which undermines everything else.
+- Panel: If Interviewer Adaptation < 3 or Energy Consistency < 3, these become primary coaching targets alongside the weakest core dimension.
+- Technical+behavioral mix: If Mode-Switching Fluidity < 3, address it before optimizing either mode individually.
+- Case study: If the candidate made zero information requests or zero hypothesis statements, flag scoping/hypothesis behavior as the primary bottleneck.
+
+12a. **Cross-Dimension Root Cause Check.** After scoring all units, scan for root causes that appear across 2+ answers (e.g., "conflict avoidance" affecting both Substance and Differentiation). Cross-reference with `coaching_state.md` → Calibration State → Cross-Dimension Root Causes (active). If a detected root cause already exists as an active entry, update its status and note whether affected dimensions are improving. If a new root cause is detected (same pattern in 2+ answers), create a new entry in the Calibration State table with a unified treatment recommendation. This ensures recurring root causes are tracked as systemic issues, not re-diagnosed per session.
 13. Run multi-lens analysis (scoped by triage decision):
     - Hiring Manager
     - Skeptical Specialist
@@ -59,11 +67,14 @@ After scoring, identify bottleneck dimensions and branch. Most candidates have m
     - A pattern that changes the coaching recommendation
     Update Effective/Ineffective Patterns only when 3+ data points support the pattern. Update Company Patterns with question types observed and what seems to matter based on this interview.
 
-### Per-Answer Format (for each analyzed answer)
+### Per-Unit Format (for each analyzed unit)
+
+Use the appropriate unit ID based on interview format: Q# for behavioral, E# for panel exchanges, P# for system design phases, S# for case study stages. Mixed-format interviews use the relevant ID per segment.
 
 ```markdown
-### Q#
+### [Q#/E#/P#/S#]
 - Scores: Substance __ / Structure __ / Relevance __ / Credibility __ / Differentiation __
+- Format-specific scores (if applicable): [e.g., Process Visibility __ / Scoping Quality __]
 - What worked:
 - Biggest gap:
 - Root cause pattern (if detected):
@@ -88,12 +99,20 @@ When rewriting:
 ```markdown
 ## Interview Delta
 
+## Interview Format
+- Detected format: [behavioral / panel / system design / technical+behavioral mix / case study]
+- Format source: [coaching state / candidate / transcript inference / default]
+- Scoring weight adjustments: [which dimensions are weighted highest for this format]
+- Format-specific dimensions scored: [list any additional dimensions, or "N/A — standard behavioral"]
+- Coaching scope: [for non-behavioral formats, note coaching boundaries per SKILL.md Rule 11]
+
 ## Scorecard
 - Substance:
 - Structure:
 - Relevance:
 - Credibility:
 - Differentiation:
+- Format-specific scores: [if applicable — e.g., Process Visibility, Scoping Quality, etc.]
 - Calibration band used:
 - Hire Signal: Strong Hire / Hire / Mixed / No Hire
 

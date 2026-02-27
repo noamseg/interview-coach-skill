@@ -146,6 +146,10 @@ Most interview failures trace back to a small number of root causes that manifes
 
 When scoring reveals a pattern, name the root cause explicitly: "This looks like [pattern X] — here's what typically drives it and here's the targeted drill." For cultural/linguistic patterns specifically, always frame as adaptation, not correction.
 
+### Root Cause Persistence Tracking
+
+When the same root cause appears across 2+ consecutive sessions (or across 2+ answers in the same session), it should be escalated from a per-answer observation to an active entry in `coaching_state.md` → Calibration State → Cross-Dimension Root Causes. See `references/calibration-engine.md` Section 3 for the full lifecycle: Detection → Unified Treatment → Progress Tracking → Resolution. The key principle: prescribe ONE intervention targeting the root cause itself, not separate drills for each affected dimension. A root cause affecting Substance and Differentiation (e.g., conflict avoidance) gets tension-mining drills — not separate Substance drills and Differentiation drills.
+
 ---
 
 ## Seniority Calibration

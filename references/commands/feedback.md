@@ -24,12 +24,13 @@ Classify the candidate's input into one of five types. If ambiguous, ask: "Is th
 1. Record the feedback as close to verbatim as possible. Ask: "Can you share exactly what they said? Even rough wording helps — paraphrasing loses signal."
 2. Identify the source: recruiter, interviewer, or hiring manager.
 3. Map the feedback to the most relevant scoring dimension(s) — but hold this lightly. Some feedback maps cleanly ("your answers were hard to follow" → Structure), some doesn't ("we went with a candidate with more domain experience" → external factor, not a coaching gap).
-4. If the feedback contradicts the coach's assessment, note the discrepancy — don't dismiss it. External feedback is higher-signal than internal scoring.
+4. If the feedback contradicts the coach's assessment, note the discrepancy — don't dismiss it. External feedback is higher-signal than internal scoring. **This is a drift signal** — check whether the contradiction is isolated or part of a pattern. If 2+ pieces of external feedback contradict coach scoring on the same dimension, log it in `coaching_state.md` → Calibration State → Scoring Drift Log and flag for the next `progress` calibration check.
 
 **State updates**:
 - Add to Interview Intelligence → Recruiter/Interviewer Feedback table (Date, Company, Source, Feedback, Linked Dimension)
 - Update Company Patterns if this reveals something about what the company values
 - If feedback references a specific round, cross-reference with Question Bank entries for that round
+- If feedback contradicts coach scoring, log the discrepancy in Calibration State → Scoring Drift Log
 
 **Output**: Brief confirmation of what was captured, the dimension mapping, and any discrepancy with previous coaching assessment. If the feedback suggests a coaching pivot, say so: "This feedback suggests [X] matters more than we've been prioritizing. Worth revisiting in your next `progress` review."
 
@@ -52,6 +53,8 @@ Classify the candidate's input into one of five types. If ambiguous, ask: "Is th
 - If advanced with next-round details, update Interview Loops → Next round
 
 **Output**: Brief confirmation of the update. If outcome data now meets the threshold for outcome-score correlation (3+ real interviews), mention it: "You now have enough real interview data for `progress` to show outcome patterns. Worth running when you're ready."
+
+**Calibration trigger**: When the 3-outcome threshold is crossed, note that calibration is now possible: "With 3+ real interview outcomes, the system can now check whether practice scores are predicting real results. Run `progress` to see the calibration analysis." Update Calibration State → Calibration Status to "calibrating" if it was "uncalibrated."
 
 ---
 

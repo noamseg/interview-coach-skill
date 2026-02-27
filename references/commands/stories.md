@@ -67,10 +67,11 @@ See `references/storybank-guide.md` for the full storybank format, column defini
 
 When the candidate selects "Find gaps," don't just list missing competencies — rank them by how much they matter for this candidate's target roles:
 
-1. Cross-reference the candidate's target roles/companies (from `coaching_state.md`) with the storybank's skill coverage.
-2. For each gap, assess: **Critical** (this competency will definitely be tested and no story exists), **Important** (likely to come up, only weak stories available), **Nice-to-have** (might come up, but won't make or break the interview).
-3. For critical gaps, check: can an existing story be reframed to cover this competency, or does the candidate need to surface a new experience entirely?
+1. Cross-reference the candidate's target roles/companies (from `coaching_state.md`) with the storybank's skill coverage. **Check both Primary and Secondary Skills** — a competency may be covered as a secondary skill in an existing story, which changes the gap from "no story" to "Workable coverage" (see `references/story-mapping-engine.md` for fit scoring).
+2. For each gap, assess: **Critical** (this competency will definitely be tested and no story exists, even as a secondary skill), **Important** (likely to come up, only weak stories or secondary-skill-only coverage available), **Nice-to-have** (might come up, but won't make or break the interview).
+3. For critical gaps, check: can an existing story be reframed to cover this competency (using its secondary skill or an adjacent experience), or does the candidate need to surface a new experience entirely?
 4. Prescribe gap-handling patterns (from the Gap-Handling Module) for any competencies where no real story exists.
+5. **Cross-reference with active prep briefs**: If the candidate has active prep briefs (from `prep`), check predicted questions against gaps. A gap that maps to a predicted question at a current target company is elevated to Critical regardless of general frequency.
 
 A PM interviewing at Stripe with no "influence without authority" story has a critical gap. The same candidate missing a "technical depth" story has a nice-to-have gap. Rank accordingly.
 
