@@ -58,5 +58,5 @@ If the candidate met multiple interviewers in the same round, generate **separat
 2.
 3.
 
-**Next commands**: `debrief` (if not already done), `analyze` (if transcript available), `prep [company]` (for next round), `progress`
+**Recommended next**: `debrief` — capture interview impressions while they're fresh (if not already done). **Alternatives**: `analyze` (if transcript available), `prep [company]` (for next round), `progress`
 ```

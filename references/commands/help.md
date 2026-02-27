@@ -41,7 +41,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Practice and Simulation
 | Command | What It Does |
 |---|---|
-| `practice` | Drill menu with 8 gated stages + standalone retrieval. Sub-commands: `ladder` (constraint drills), `pushback` (handle skepticism), `pivot` (redirect), `gap` (no-example moments), `role` (specialist scrutiny), `panel` (multiple personas), `stress` (high-pressure), `technical` (system design communication). Standalone: `retrieval` (rapid-fire story matching). Includes interviewer's perspective on every round. |
+| `practice` | Drill menu with 8 gated stages + standalone retrieval. Sub-commands: `ladder` (constraint drills), `pushback` (handle skepticism), `pivot` (redirect), `gap` (no-example moments), `role` (specialist scrutiny), `panel` (multiple personas), `stress` (high-pressure), `technical` (system design communication). Standalone: `retrieval` (rapid-fire story matching). Includes interviewer's perspective on every round. At Level 5: expanded inner monologue from the interviewer's perspective, challenge notes on rounds 3+, and optional warmup skip. |
 | `mock [format]` | Full 4-6 question simulated interview with holistic arc feedback and interviewer's inner monologue. Formats: `behavioral screen`, `deep behavioral`, `panel`, `bar raiser`, `system design/case study`, `technical+behavioral mix` |
 
 ### Analysis and Scoring
@@ -53,7 +53,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Storybank
 | Command | What It Does |
 |---|---|
-| `stories` | Full storybank management. Options: `view`, `add` (guided discovery, not just "tell me a story"), `improve` (structured upgrade with before/after), `find gaps` (prioritized by target roles), `retire`, `drill` (rapid-fire retrieval practice), `narrative identity` (extract your 2-3 core career themes and see how every story connects) |
+| `stories` | Full storybank management. Options: `view`, `add` (guided discovery, not just "tell me a story"), `improve` (structured upgrade with before/after), `find gaps` (prioritized by target roles), `retire`, `drill` (rapid-fire retrieval practice), `narrative identity` (extract your 2-3 core career themes and see how every story connects). At Level 5: stories get red-teamed with 5 challenge lenses after add/improve. |
 
 ### Progress and Tracking
 | Command | What It Does |
@@ -63,7 +63,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Post-Interview
 | Command | What It Does |
 |---|---|
-| `feedback` | Capture recruiter feedback, report outcomes (advanced/rejected/offer), correct assessments, or add context the system should remember. The system learns from your real interview experiences over time. |
+| `feedback` | Capture recruiter feedback, report outcomes (advanced/rejected/offer), correct assessments, add context the system should remember, or give meta-feedback on the coaching itself. The system learns from your real interview experiences over time. |
 | `thankyou` | Thank-you note and follow-up drafts tailored to the interview |
 | `negotiate` | Post-offer negotiation coaching — market analysis, strategy, exact scripts, and fallback language |
 | `reflect` | Post-search retrospective — journey arc, breakthroughs, transferable skills, archived coaching state |
@@ -79,9 +79,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 [Brief coaching state summary — track, seniority, drill stage, story count, active company loops — or "No coaching state found. Run `kickoff` to get started."]
 
 ## Recommended Next
-Based on where you are:
-1. **[command]** — [why this is the highest-leverage move right now]
-2. **[command]** — [secondary recommendation]
+**Recommended next**: `[command]` — [why this is the highest-leverage move right now]. **Alternatives**: `[command]`, `[command]`, `[command]`
 
 ---
 
@@ -95,6 +93,7 @@ Based on where you are:
 - Run `research` before applying — the fit assessment helps you focus on roles where you're competitive, and flags stretch targets that need extra prep
 - For high-priority targets, ask for a deep dive research — `research [company]` and mention you want comprehensive intelligence
 - Paste raw transcripts from any tool (Otter, Zoom, Grain, etc.) — the system auto-detects the format and cleans it up
+- The coach will recommend a specific next step after every command — just follow the flow if you're not sure what to do next
 - Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later
 
 What would you like to work on?

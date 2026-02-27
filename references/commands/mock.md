@@ -168,7 +168,7 @@ Use the appropriate unit ID based on mock format: Q# for behavioral, E# for pane
 2.
 3.
 
-**Next commands**: `mock [same format]`, `practice [specific drill]`, `practice technical`, `analyze`
+**Recommended next**: `[command]` — [reason based on the debrief findings, e.g., weakest dimension drill or story improvement]. **Alternatives**: `mock [same format]`, `practice [specific drill]`, `practice technical`, `analyze`
 ```
 
 ### Coaching State Integration

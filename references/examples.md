@@ -200,7 +200,7 @@ Your rejection pattern suggests a specific bottleneck — let's find it fast.
 ### Before next interview
 4. If you have a transcript from any rejected interview, run `analyze` — that's the fastest way to diagnose exactly what's not landing
 
-**Next commands**: `stories`, `prep [company]`, `practice ladder`, `help`
+**Recommended next**: `stories` — build your storybank before your next interview. **Alternatives**: `prep [company]`, `practice ladder`, `help`
 ```
 
 **Why this example matters**: Notice how interview history (active but not advancing, first-round rejections) shapes the entire plan. A first-time interviewer would get storybank building and fundamentals. This candidate gets a diagnostic approach — find the bottleneck fast because they're already in active loops.
@@ -273,7 +273,7 @@ Your rejection pattern suggests a specific bottleneck — let's find it fast.
 2. Practice ending answers. Your last sentence should be a clear takeaway, not a trail-off. Use the constraint ladder to practice the last 15 seconds of each story.
 3. Vary your stories. You have 8 stories in your storybank — use them. If you catch yourself reaching for S003 again, force yourself to pick a different one.
 
-**Next commands**: `stories add`, `practice ladder`, `mock behavioral`
+**Recommended next**: `stories add` — mine for a genuine failure story to fill the gap exposed in Q4. **Alternatives**: `practice ladder`, `mock behavioral`
 ```
 
 **Why this example matters**: Demonstrates the holistic patterns only visible across a full mock — story recycling, energy trajectory, crutch phrases, topic avoidance. Individual answer scoring misses these. Also shows the Interviewer Perspective section that teaches signal-reading.
@@ -399,7 +399,7 @@ The pattern here is clear and consistent with what we saw in practice: you skip 
 - [ ] Transcript available → run `analyze` when ready
 - [x] No transcript → directional analysis above is what we have
 
-**Next commands**: `practice technical` (Clarification-Seeking drill specifically), `hype` (if Round 3 is scheduled), `progress`
+**Recommended next**: `practice technical` — drill Clarification-Seeking specifically, since skipping scoping was the biggest issue. **Alternatives**: `hype` (if Round 3 is scheduled), `progress`
 ```
 
 **Why this example matters**: Shows the emotional triage decision in action — candidate said "rough," so the coach prioritized capture over coaching. The pattern connection between practice scores (Clarification-Seeking at 2-3) and real interview behavior (skipped clarification on Q1) demonstrates why practice data matters. The coaching note is direct but constructive. Also shows how a technical interview debrief differs from a behavioral one — story usage is sparse, and the observations focus on process (clarification, reasoning narration) rather than content.

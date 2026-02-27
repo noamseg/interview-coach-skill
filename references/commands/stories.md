@@ -59,6 +59,18 @@ When improving a story, preserve the previous version in the Story Details secti
 - Update the STAR text in Story Details with the improved version
 - This serves two purposes: (1) the candidate can see their progress over time, and (2) if the "improved" version stops landing in interviews, the coach can reference what changed and potentially revert.
 
+### Story Red Team (Directness Level 5)
+
+After `stories add` or `stories improve`, run all 5 Challenge Protocol lenses against the story:
+
+1. **Assumption Audit**: What must be true for this story to land? What interviewer framework is it assuming?
+2. **Blind Spot Scan**: What's invisible to the candidate about their own story? What context do they take for granted?
+3. **Pre-Mortem**: How does this story fail in a real interview? Where does it lose attention or raise doubt?
+4. **Devil's Advocate**: Where does a skeptical interviewer attack? What follow-up questions expose weaknesses?
+5. **Strengthening Path**: One specific change that makes it airtight.
+
+At Levels 1-4: Skip. The standard improve diagnostic is sufficient.
+
 ### Story Records
 
 See `references/storybank-guide.md` for the full storybank format, column definitions, and skill tags. Every story record must include an Earned Secret field — see `references/differentiation.md` for the extraction protocol.
@@ -124,7 +136,7 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 - **In questions you ask**: [How to ask questions that reinforce your themes]
 - **In positioning**: [How themes inform your "why this role / why this company" narrative]
 
-**Next commands**: `stories improve S###`, `stories add`, `practice`, `prep [company]`
+**Recommended next**: `stories improve S###` — strengthen your sharpest-edge stories. **Alternatives**: `stories add`, `practice`, `prep [company]`
 ```
 
 ### Output Schema (per action)
@@ -138,7 +150,14 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 - Strength: [1-5]
 - Deploy for: [one-line use case]
 
-**Next commands**: `stories improve S###`, `stories find gaps`, `practice retrieval`, `concerns`
+## Story Red Team (Level 5 only)
+- Assumption: [what must be true for this to land]
+- Blind spot: [what you can't see about your own story]
+- Failure mode: [how this fails in a real interview]
+- Attack surface: [where a skeptic probes]
+- Fix: [one change that makes it airtight]
+
+**Recommended next**: `stories improve S###` — strengthen the story based on the red team findings. **Alternatives**: `stories find gaps`, `practice retrieval`, `concerns`
 ```
 
 **After `stories improve`:**
@@ -148,7 +167,14 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 - What changed: [brief description]
 - Version history updated
 
-**Next commands**: `stories view`, `practice`, `analyze`
+## Story Red Team (Level 5 only)
+- Assumption: [what must be true for this to land]
+- Blind spot: [what you can't see about your own story]
+- Failure mode: [how this fails in a real interview]
+- Attack surface: [where a skeptic probes]
+- Fix: [one change that makes it airtight]
+
+**Recommended next**: `practice` — test the improved story under pressure. **Alternatives**: `stories view`, `stories improve S###`, `analyze`
 ```
 
 **After `stories find gaps`:**
@@ -164,5 +190,5 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 ### Nice-to-Have (might come up)
 1. [competency]
 
-**Next commands**: `stories add`, `practice gap`, `prep [company]`
+**Recommended next**: `stories add` — fill the highest-priority gap. **Alternatives**: `practice gap`, `prep [company]`
 ```

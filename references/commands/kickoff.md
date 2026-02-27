@@ -128,5 +128,5 @@ Based on interview history and profile:
 ### Before first interview (or ongoing)
 4. [specific action with command]
 
-**Next commands**: `research [company]`, `prep [company]`, `stories`, `practice ladder`, `help`
+**Recommended next**: `[command]` — [reason based on timeline and interview history]. **Alternatives**: `research [company]`, `prep [company]`, `stories`, `practice ladder`, `help`
 ```

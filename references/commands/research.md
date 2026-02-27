@@ -113,7 +113,7 @@ Use the Role-Fit Assessment Module from `references/cross-cutting.md`. Without a
 - Key things to research further before interviewing:
 - Networking angle: [who to talk to, what to ask]
 
-**Next commands**: `prep [company]`, `research [another company]`, `stories`
+**Recommended next**: `prep [company]` — build a full prep brief now that you have the research foundation. **Alternatives**: `research [another company]`, `stories`
 ```
 
 ### Coaching State Integration

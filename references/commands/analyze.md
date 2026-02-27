@@ -25,6 +25,10 @@ If a candidate drops a transcript without having run `kickoff` first, don't refu
 9. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module in `references/cross-cutting.md`. Include observations in the per-answer analysis and in the overall debrief.
 10. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
 11. **Proactive rewrite of the weakest answer.** Don't just offer a rewrite — do one automatically for the lowest-scoring answer. Show the original excerpt and the improved version side by side with annotations. Say: "Here's what your weakest answer could look like at a 4-5. I'll show the delta so the improvement is concrete — not to give you a script, but to make it tangible." Still offer rewrites of other answers on request.
+11.5. **Interviewer's Inner Monologue.** Replay the interview from the interviewer's real-time perspective. Same principles as mock's Inner Monologue (`mock.md` lines 181-196): ground in actual transcript quotes, show pivot points where the interviewer's impression shifted, include both positive and negative reactions. This is especially powerful for real transcripts — it shows the candidate what actually happened on the other side of the table. Include at all directness levels.
+
+11.6. **Transcript Challenge (Level 5 only).** Run Challenge Protocol Lenses 1-4 against the overall interview performance. Lens 5 (Strengthening Path) feeds into Priority Move. See `references/challenge-protocol.md` for lens details. At Levels 1-4: skip.
+
 12. **Triage — identify primary bottleneck and branch** using the Post-Scoring Decision Tree below.
 
 #### Post-Scoring Decision Tree (Step 12 detail)
@@ -154,6 +158,15 @@ When rewriting:
 - How does this feedback compare to your gut feeling about the interview?
 - Of the growth areas above, which feels most within your control?
 
+## Interviewer's Inner Monologue
+[Replay key moments from the interviewer's perspective — what they were thinking as the candidate spoke. Quote the transcript. Show where the impression shifted. Include both positive and negative reactions.]
+
+## Challenge (Level 5 only)
+- Assumptions this interview rested on: [2-3 hidden assumptions]
+- Blind spots: [what the candidate can't see about their own performance]
+- Pre-mortem: [if this doesn't result in advancement, why?]
+- Devil's advocate: [strongest case for passing on this candidate]
+
 ## Intelligence Updates
 - Questions added to Question Bank: [count]
 - Patterns observed: [new effective/ineffective patterns, or "not enough data yet"]
@@ -164,9 +177,7 @@ When rewriting:
 - Data quality notes:
 
 ## Recommended Next Step
-[One specific command recommendation based on the triage decision above]
-
-**Other commands**: `practice`, `stories`, `progress`, `concerns`
+**Recommended next**: `[command]` — [one-line reason based on the triage decision above]. **Alternatives**: `practice`, `stories`, `progress`, `concerns`
 ```
 
 #### Recommended Next Step Logic

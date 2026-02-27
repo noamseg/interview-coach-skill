@@ -56,6 +56,22 @@ Classify the candidate's input into one of five types. If ambiguous, ask: "Is th
 
 **Calibration trigger**: When the 3-outcome threshold is crossed, note that calibration is now possible: "With 3+ real interview outcomes, the system can now check whether practice scores are predicting real results. Run `progress` to see the calibration analysis." Update Calibration State → Calibration Status to "calibrating" if it was "uncalibrated."
 
+#### Rejection Leverage (Level 5 only)
+
+When the outcome is a rejection at Level 5, don't lead with comfort. Lead with extraction: "What can we extract from this?"
+
+Run Challenge Protocol Lenses 1-3 retrospectively:
+1. **Assumptions**: What assumptions were wrong about this company/role/interview? What did you believe going in that turned out not to be true?
+2. **Blind Spots**: What does this rejection reveal that you couldn't see before? What pattern is now visible?
+3. **Pre-Mortem (retrospective)**: With hindsight, what was the pre-mortem you should have done? What failure modes were predictable?
+
+Then:
+- **Concrete adjustments** for the next similar interview
+- **Pattern detection**: Does this match other rejections in the Outcome Log? If so, name the pattern.
+- **Close**: "Rejection is data. This data says [specific insight]. Here's what we do with it."
+
+At Levels 1-4: Standard emotional triage from the Psychological Readiness Module in `references/cross-cutting.md`. Learning extraction follows empathy, not leads.
+
 ---
 
 ### Type C: Coaching Correction

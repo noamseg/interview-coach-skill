@@ -49,7 +49,7 @@
    Source:
    Counter (one-liner):
 
-**Next commands**: `practice`, `prep [company]`, `mock [format]`
+**Recommended next**: `practice pushback` — drill your top concern under pressure. **Alternatives**: `prep [company]`, `mock [format]`
 ```
 
 ### Immediate Practice Option

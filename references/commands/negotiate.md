@@ -98,5 +98,5 @@ When the candidate has more than one offer:
 - When to respond:
 - How to buy time if needed: "[exact language]"
 
-**Next commands**: `reflect`, `thankyou`, `progress`
+**Recommended next**: `reflect` — archive your coaching journey and extract transferable skills. **Alternatives**: `thankyou`, `progress`
 ```

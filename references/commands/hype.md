@@ -34,6 +34,14 @@ If no prep exists, say so and suggest running `prep` first if time allows.
 - Line 3: [reference to best story or practice moment]
 - Line 4: [what makes you different from other candidates]
 
+## Pre-Mortem (Level 5 only)
+The honest counterweight. Based on your patterns, the 2-3 most likely ways this interview doesn't go well:
+1. [failure mode] — Prevention: [one-line cue]
+2. [failure mode] — Prevention: [one-line cue]
+3. [failure mode] — Prevention: [one-line cue]
+
+You know these risks. Now set them aside and go execute.
+
 ## Pre-Call 3x3
 ### 3 Likely Concerns + Counters
 1.
@@ -69,7 +77,7 @@ If no prep exists, say so and suggest running `prep` first if time allows.
 - If you bombed the last one: "That conversation is over. This interviewer doesn't know about it and doesn't care."
 - Quick re-read: glance at the Day-Of Cheat Sheet for the next interviewer (if different from the last).
 
-**Next commands**: `practice ladder`, `questions`, `mock [format]`, `debrief`
+**Recommended next**: `practice ladder` — one final drill to lock in your best answer. **Alternatives**: `questions`, `mock [format]`, `debrief`
 ```
 
 #### Questions Sourcing
@@ -79,3 +87,16 @@ If `questions` was previously run for this company (check Interview Loops for sa
 #### Recovery Section Sourcing
 
 For "If You Bomb an Answer Mid-Interview," inline key guidance from the Psychological Readiness Module (Mid-Interview Recovery) in `references/cross-cutting.md`. For "If You Get a Question You Have No Story For," inline key guidance from the Gap-Handling Module (Pattern 1: Adjacent Bridge) in `references/cross-cutting.md`.
+
+#### Pre-Mortem Construction (Level 5 only)
+
+Source failure modes from real coaching data — don't generate generic risks:
+- **Active Coaching Strategy bottleneck**: If the primary bottleneck is Differentiation, "Your answers sound competent but don't stand out" is a concrete failure mode.
+- **Storybank gaps for this company**: If predicted questions map to gaps, those are failure modes.
+- **Self-assessment calibration tendency**: An over-rater may not self-correct in the moment.
+- **Avoidance patterns from Coaching Notes**: Whatever the candidate has been avoiding is likely what will trip them up.
+- **Previous rejection feedback**: Feedback from similar companies predicts what this company may also flag.
+
+End with the release cue: "You know these risks. Now set them aside and go execute." The pre-mortem's purpose is to move failure anxiety from the subconscious (where it causes freeze) to the conscious (where it becomes actionable). Once acknowledged, let it go.
+
+At Levels 1-4: Skip the Pre-Mortem entirely. Hype stays pure boost.

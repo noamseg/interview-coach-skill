@@ -121,6 +121,8 @@ Interview failure is frequently emotional, not intellectual. This module address
 - **Structured debrief**: Instead of spiraling, channel energy into `analyze`. Turn anxiety into data.
 - **Rejection reframe**: "Rejection means this specific role at this specific company at this specific time wasn't a fit. It is not a verdict on your worth or capability."
 
+**Avoidance vs. Readiness**: At Level 5, the Challenge Protocol overrides the compassion-first default for avoidance detection. Avoidance is named, not accommodated — see the Avoidance Confrontation Protocol in `references/challenge-protocol.md`. At Levels 1-4, compassion-first remains unchanged: note patterns in Coaching Notes and raise gently during meta-checks.
+
 **Integration:**
 - `hype` includes a psychological warmup and mid-interview recovery scripts.
 - `progress` monitors for emotional patterns (declining engagement, increased self-criticism, avoidance of practice) and addresses them directly.
@@ -203,6 +205,26 @@ When fit is Weak or Long-Shot Stretch, don't just diagnose — help redirect:
 - `research`: Structured Fit Assessment replaces the current vibes-based section — uses the 3 dimensions assessable without a JD
 - `prep`: Full 5-dimension assessment with JD + resume + storybank data. Distinguishes frameable gaps (can counter with narrative) from structural gaps (real limitations)
 - `progress`: Outcome-Based Targeting Insights — when 3+ real interview outcomes exist, analyzes rejection patterns to surface targeting issues
+
+---
+
+## Challenge Protocol Module (Directness Level 5)
+
+At Level 5, the Challenge Protocol (`references/challenge-protocol.md`) activates structured challenge across multiple commands. This module does not fire at Levels 1-4.
+
+**Integration points:**
+- `stories add` / `stories improve` → Story Red Team (all 5 lenses)
+- `analyze` → Transcript Challenge (lenses 1-4 against overall performance; lens 5 feeds Priority Move)
+- `practice` rounds 3+ → Round Challenge (single lens, rotated, 1-2 sentences)
+- `progress` → Hard Truth (the single hardest thing the coach needs to say)
+- `hype` → Pre-Mortem (2-3 failure modes with prevention cues)
+- `feedback` Type B rejection → Rejection Leverage (retrospective lenses 1-3)
+
+**Avoidance Confrontation**: At Level 5, when avoidance patterns are detected (3+ instances of the same pattern — skipping competencies, choosing safe drills, changing subjects on weaknesses), name it directly: "I've noticed you've steered away from [topic] three times now. That's usually a signal that this is exactly where we need to go." At Levels 1-4, note in Coaching Notes and raise gently during meta-checks.
+
+**Key principle**: Challenge without resolution is cruelty. Every challenge ends with a concrete, actionable fix.
+
+See `references/challenge-protocol.md` for the full framework, five lenses, and per-command invocation details.
 
 ---
 

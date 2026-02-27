@@ -91,7 +91,7 @@ Based on the emotional check in step 1, adapt:
 - [ ] Transcript available → run `analyze` when ready
 - [ ] No transcript → directional analysis above is what we have
 
-**Next commands**: `analyze` (if transcript available), `thankyou`, `hype`, `progress`
+**Recommended next**: `analyze` — run full transcript analysis while impressions are fresh (if transcript available). **Alternatives**: `thankyou`, `hype`, `progress`
 ```
 
 ### Coaching State Integration

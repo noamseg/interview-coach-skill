@@ -22,6 +22,7 @@ The value of `progress` scales with the data available. Before running the full 
 2. Ask self-reflection first: "How do you think you're progressing? Rate yourself 1-5 on each dimension."
 3. Compare self-assessment to actual coach scores over time (this is the most valuable part).
 4. Narrate the trend trajectory (see Trend Narration below — don't just show numbers). Skip if < 3 sessions.
+4a. **Hard Truth (Level 5 only).** Based on all accumulated data (Score History trends, storybank gaps, avoidance patterns from Coaching Notes, self-assessment deltas, outcome patterns), identify the single most important uncomfortable truth. One paragraph. No softening. No "but here's the good news." Just the truth the candidate needs to hear. See `references/challenge-protocol.md` for the Hard Truth lens. At Levels 1-4: omit entirely.
 5. Check for outcome data and correlate with practice scores (see outcome tracking below). Skip if < 3 real interviews.
 5a. **Scoring Drift Detection** (requires 3+ outcomes). Run the Scoring Drift Detection Protocol from `references/calibration-engine.md`: build the outcome-score matrix, check for systematic drift per dimension, check for feedback contradictions, generate drift report, present adjustments to candidate. Update `coaching_state.md` → Calibration State. Skip if < 3 outcomes.
 5b. **Cross-Dimension Root Cause Review**. Check Calibration State → Cross-Dimension Root Causes (active). For each active root cause: assess treatment effectiveness (are affected dimensions improving in tandem?), check if resolution criteria are met (1+ point improvement sustained over 3+ sessions), update status. If a root cause isn't responding to treatment, recommend a pivot: "We've been treating [root cause] with [treatment] for [N] sessions. Affected dimensions aren't improving together. Let's try a different approach."
@@ -178,6 +179,11 @@ This is hard but important. If after sustained effort, scores remain at 2-3 acro
 - Credibility: [score history] — [narration]
 - Differentiation: [score history] — [narration]
 
+## Hard Truth (Level 5 only)
+[One paragraph. No softening. No "but here's the good news." Just the truth the candidate needs to hear.
+
+Draws from: Score History trends, storybank gaps, avoidance patterns (from Coaching Notes), self-assessment deltas, outcome patterns.]
+
 ## Self-Assessment Calibration
 - Your average self-ratings vs. my scores:
   - Substance: You __ / Me __
@@ -272,5 +278,5 @@ This is hard but important. If after sustained effort, scores remain at 2-3 acro
 - Are we focused on the right bottleneck?
 - Anything to change about our approach?
 
-**Next commands**: `practice`, `stories`, `prep [company]`, `mock [format]`
+**Recommended next**: `[command]` — [reason based on top priority and current bottleneck]. **Alternatives**: `practice`, `stories`, `prep [company]`, `mock [format]`
 ```
