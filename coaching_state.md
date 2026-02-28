@@ -89,7 +89,7 @@ Last updated: 2026-02-27
 - Date prepped: 2026-02-26
 
 ### Sun Life Financial
-- Status: Applied (Role 1) + Planning to apply (Role 2) — see roles below
+- Status: Applied (Role 1) + Planning to apply (Role 2, decoded, apply ASAP — closes Mar 8) — see roles below
 - Round formats (general — unconfirmed beyond Stage 1):
   - Stage 1: Recruiter/HR screen — behavioral + background, ~30-45min
   - Stage 2: Hiring Manager interview — behavioral + situational PO scenarios, ~60min
@@ -114,15 +114,18 @@ Last updated: 2026-02-27
 - Next round: TBD — awaiting response
 - Key signals: Digital PO (execution-heavy, not strategic PM). Domain: investment services / advisor + client platform. Agile delivery execution + investment services knowledge are top 2 filters. CSPO + PSPO I = direct nice-to-have match. Salary $90-140K base.
 
-#### Role 2: Product Owner, GRS Member Journey — (planning to apply 2026-02-28)
-- Status: Planning to apply
-- Fit assessment: TBD — JD not yet decoded
-- Domain: Group Retirement Services (GRS) — employer-sponsored retirement plans, plan member journey (B2B2C)
-- Concerns surfaced: [TBD after JD decode]
-- Prepared questions: [TBD]
+#### Role 2: Product Owner, GRS Member Journey — $95,500-$133,700 base (decoded 2026-02-28)
+- Status: Planning to apply — apply now (posting closes March 8)
+- Fit assessment: Strong — stronger fit than Role 1. More strategic scope, mobile consumer app is core channel (iTRADE = direct proof point), direct plan member UX (less advisor-intermediated than Role 1). Salary range similar.
+- Concerns surfaced:
+  1. GRS/retirement domain — Severity: Low-Medium (bridge: iTRADE = investment execution for same demographic; Scotiabank loan = consumer financial journey redesign; domain is learnable, mobile execution is not)
+  2. Change management formal background absent — Severity: Medium (counter: CIBC onboarding = organizational transformation at scale — frame as change management, not just feature delivery)
+  3. OKR language — Severity: Low (outcomes are present throughout resume; needs reframing in OKR terminology)
+  4. Employment gap Oct 2025–Feb 2026 — Severity: Medium (standard answer)
+- Prepared questions: [TBD — run prep after applying]
 - Next round: N/A — not yet applied
-- Key signals: GRS = group benefits/retirement (different product line from SLFISI). Plan member journey = onboarding + engagement for employer-plan members. B2B2C dynamic distinct from Role 1.
-- Note: Paste JD to run `decode` before applying
+- Key signals: Mobile-first consumer PO (retirement plan member journey). "Building future of self-serve retirement services" = likely meaningful platform transformation. Change management as explicit responsibility = active initiative. Agile certifications (CSPO + PSPO I) = direct match. Posting closes March 8 — apply ASAP.
+- Top predicted questions: "Mobile product owned end-to-end?", "Drove organizational change as PM?", "How would you approach learning group retirement domain?"
 
 ### Relay Financial
 - Status: Applied
@@ -333,6 +336,15 @@ Last updated: 2026-02-27
 - Follow-up status:
 - LinkedIn profile flagged:
 - Key hooks identified:
+
+## JD Analysis: Sun Life Financial — Product Owner, GRS Member Journey
+- Date: 2026-02-28
+- Depth: Standard
+- Fit verdict: Strong Fit
+- Top competencies: (1) Mobile product development & delivery, (2) Agile delivery & backlog ownership, (3) Stakeholder communication & influence
+- Frameable gaps: GRS/retirement domain (bridge: iTRADE + Scotiabank), OKR language (outcomes present, reframe needed), change management label (CIBC onboarding is functionally identical)
+- Structural gaps: None material
+- Unverified assumptions: 4 (change management scope, mobile app maturity, team location, domain expectation)
 
 ## Comp Strategy
 - Date: [not yet run]
