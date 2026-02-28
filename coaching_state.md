@@ -89,29 +89,40 @@ Last updated: 2026-02-27
 - Date prepped: 2026-02-26
 
 ### Sun Life Financial
-- Status: Applied
-- Fit assessment: Moderate
-- Round formats:
-  - Stage 1: Recruiter/HR screen — behavioral + background, ~30-45min (unconfirmed)
-  - Stage 2: Hiring Manager interview — behavioral + situational PO scenarios, ~60min (unconfirmed)
-  - Stage 3: Cross-functional panel — possibly including tech lead or business stakeholder (unconfirmed)
-  - Note: No take-home case study documented for this team — ask recruiter in Stage 1
+- Status: Applied (Role 1) + Planning to apply (Role 2) — see roles below
+- Round formats (general — unconfirmed beyond Stage 1):
+  - Stage 1: Recruiter/HR screen — behavioral + background, ~30-45min
+  - Stage 2: Hiring Manager interview — behavioral + situational PO scenarios, ~60min
+  - Stage 3: Cross-functional panel — possibly including tech lead or business stakeholder
+  - Note: No take-home case study documented — ask recruiter in Stage 1
 - Stories used: [none yet]
+- Date researched: 2026-02-26
+
+#### Role 1: Digital Product Owner, Retail Wealth Platform (SLFISI) — $90K-$140K base (prepped 2026-02-26)
+- Status: Applied — awaiting response
+- Fit assessment: Moderate
 - Concerns surfaced:
-  1. B2B2C (advisor-facing) vs. pure B2C — role serves advisors AND clients; Joss's work is primarily direct-to-consumer — Severity: Medium (counter: iTRADE served traders + advisor-directed workflows; dual-audience dynamic isn't unfamiliar)
-  2. Investment funds domain vs. banking/lending/payments — iTRADE is the bridge (trading platform = investment execution) — Severity: Medium (JD says "or ability to learn" — bridge is credible)
-  3. Employment gap Oct 2025–Feb 2026 — Severity: Medium (same clean 2-sentence answer)
-  4. Strategic PM potentially over-qualified for execution PO role — Severity: Low-Medium (counter: strategic context makes better sprint decisions — reframe as feature not bug)
-  5. Salary expectation vs. posted range $90-140K base — Severity: Low (top of band + bonus reaches $154-161K; anchor at $135-140K base)
+  1. B2B2C (advisor-facing) vs. pure B2C — Severity: Medium (counter: iTRADE served traders + advisor-directed workflows)
+  2. Investment funds domain vs. banking/lending/payments — Severity: Medium (iTRADE is the bridge; JD says "or ability to learn")
+  3. Employment gap Oct 2025–Feb 2026 — Severity: Medium (standard answer)
+  4. Strategic PM potentially over-qualified for execution PO role — Severity: Low-Medium (counter: strategic context makes better sprint decisions)
+  5. Salary expectation vs. posted range $90-140K — Severity: Low (top of band + bonus reaches $154-161K; anchor at $135-140K)
 - Prepared questions:
   1. "What does the current state of the Retail Wealth Platform look like in terms of maturity — are we building new features on a stable foundation, or is there significant modernization work happening in parallel?"
   2. "You mentioned syncing with other Product Owners — how many POs are on the wealth platform, and how is the roadmap coordinated across the team?"
   3. "How does the team measure success for this platform — outcome metrics, or primarily delivery milestones?"
 - Next round: TBD — awaiting response
-- Fit assessment: Moderate — SLFISI Retail Wealth Platform is newer/more ambiguous than typical Sun Life incumbent role (upside). But sits third in priority behind Relay (better comp, startup pace, exact domain) and Plusgrade (better comp, platform ownership). Pursue in parallel — don't deprioritize, but don't over-invest at expense of Relay.
-- Key signals: Digital Product Owner (execution-heavy PO role, not strategic PM). Domain: investment services / advisor + client platform. Agile delivery execution + investment services knowledge are top 2 filters. CSPO + PSPO I directly map to "Certified Product Owner" nice-to-have. Salary $90-140K base — negotiation toward top end required.
-- Date researched: 2026-02-26
-- Date prepped: 2026-02-26
+- Key signals: Digital PO (execution-heavy, not strategic PM). Domain: investment services / advisor + client platform. Agile delivery execution + investment services knowledge are top 2 filters. CSPO + PSPO I = direct nice-to-have match. Salary $90-140K base.
+
+#### Role 2: Product Owner, GRS Member Journey — (planning to apply 2026-02-28)
+- Status: Planning to apply
+- Fit assessment: TBD — JD not yet decoded
+- Domain: Group Retirement Services (GRS) — employer-sponsored retirement plans, plan member journey (B2B2C)
+- Concerns surfaced: [TBD after JD decode]
+- Prepared questions: [TBD]
+- Next round: N/A — not yet applied
+- Key signals: GRS = group benefits/retirement (different product line from SLFISI). Plan member journey = onboarding + engagement for employer-plan members. B2B2C dynamic distinct from Role 1.
+- Note: Paste JD to run `decode` before applying
 
 ### Relay Financial
 - Status: Applied
