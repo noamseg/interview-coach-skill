@@ -56,9 +56,7 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 ## Quick Start
 
-### Option 1: Open in Claude Code on Desktop (recommended)
-
-The simplest path. Open this repo directly from Claude Code on Desktop:
+### Option 1: Claude Code (recommended)
 
 1. Clone the repo:
 
@@ -75,11 +73,34 @@ Or [download it as a ZIP](https://github.com/noamseg/interview-coach-skill/archi
 mv SKILL.md CLAUDE.md
 ```
 
-3. Open the folder in Claude Code on Desktop and say `kickoff`.
+3. Open the folder in Claude Code and say `kickoff`.
 
-The coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state.md` so you pick up where you left off next session.
+Requires any paid Claude plan. Also works with Claude Code (terminal), Cursor, or any environment with file system access.
 
-**Also works with**: Claude Code (terminal), Cursor, or any environment with file system access.
+### Option 2: OpenAI Codex
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/noamseg/interview-coach-skill.git
+cd interview-coach-skill
+```
+
+Or [download it as a ZIP](https://github.com/noamseg/interview-coach-skill/archive/refs/heads/main.zip) and unzip.
+
+2. Activate the coach by renaming the skill file:
+
+```bash
+mv SKILL.md AGENTS.md
+```
+
+3. Open the folder in Codex and say `kickoff`.
+
+Requires any paid ChatGPT plan.
+
+---
+
+For both options, the coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state.md` so you pick up where you left off next session.
 
 ---
 
