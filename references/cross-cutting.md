@@ -220,6 +220,7 @@ At Level 5, the Challenge Protocol (`references/challenge-protocol.md`) activate
 - `hype` → Pre-Mortem (2-3 failure modes with prevention cues)
 - `feedback` Type B rejection → Rejection Leverage (retrospective lenses 1-3)
 - `linkedin` Deep Optimization → Profile Challenge (lenses 1, 2, 4, 5: Assumption Audit, Blind Spot Scan, Devil's Advocate, Strengthening Path — Pre-Mortem omitted as it doesn't apply to a static profile)
+- `resume` Deep Optimization → Resume Challenge (lenses 1, 2, 4, 5: Assumption Audit, Blind Spot Scan, Devil's Advocate, Strengthening Path — Pre-Mortem omitted as it doesn't apply to a static document)
 
 **Avoidance Confrontation**: At Level 5, when avoidance patterns are detected (3+ instances of the same pattern — skipping competencies, choosing safe drills, changing subjects on weaknesses), name it directly: "I've noticed you've steered away from [topic] three times now. That's usually a signal that this is exactly where we need to go." At Levels 1-4, note in Coaching Notes and raise gently during meta-checks.
 
@@ -251,6 +252,7 @@ Commands produce better output when they have data from other commands. This tab
 | `progress` | 3+ scored sessions, outcome data, Interview Intelligence (Question Bank, Feedback, Patterns) | Works with 1-2 sessions (reduced — see minimum data thresholds), Interview Intelligence (loses question-type performance and accumulated pattern analysis) | At least 1 scored session |
 | `negotiate` | Interview Loops, outcome log | Both (collects offer details fresh) | Offer details |
 | `linkedin` | Profile from `kickoff`, storybank, Resume Analysis, Active Coaching Strategy | Profile (gives generic audit without target role context), storybank (can't surface earned secrets, flags the gap) | LinkedIn profile text (pasted or described) |
+| `resume` | Profile from `kickoff`, Resume Analysis, storybank, LinkedIn Analysis, Interview Loops (for JDs) | Profile (gives generic audit without seniority calibration), storybank (can't run storybank-to-bullet pipeline, flags the gap), LinkedIn Analysis (can't check cross-surface consistency), Interview Loops/JD (can't do targeted optimization, flags the gap) | Resume text (pasted or from kickoff) |
 | `reflect` | Full coaching state with score history and outcomes | Score history (narrates from limited data) | — |
 
 **How to use this**: When running a command that would benefit from missing data, mention the gap briefly and offer to fill it — don't refuse to run. Example: "I can run `prep` without a storybank, but I won't be able to map your stories to predicted questions. Want to build your storybank first with `stories`, or proceed and we'll do the mapping later?"

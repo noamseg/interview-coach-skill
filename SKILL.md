@@ -62,6 +62,7 @@ After reading `coaching_state.md`, check whether it contains all sections and co
 - **Missing `Use Count` column in Storybank**: Add the column to the table header. Initialize all existing rows to 0. The count will begin tracking from this point forward.
 - **Missing `Calibration State` section**: Add the full section using the schema defined below (after Active Coaching Strategy). Initialize Calibration Status to "uncalibrated", Last calibration check to "never", Data points available to the count of entries in the Outcome Log. All tables start empty.
 - **Missing `LinkedIn Analysis` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: LinkedIn Analysis section added. Run `linkedin` to populate."
+- **Missing `Resume Optimization` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Resume Optimization section added. Run `resume` to populate."
 
 Run this migration silently — do not announce schema changes to the candidate unless they affect immediate coaching recommendations. After migration, the coaching state is fully compatible with the current skill version.
 
@@ -212,6 +213,19 @@ Last updated: [date]
 - Top fixes pending: [1-3 line items]
 - Positioning gaps: [resume ↔ LinkedIn inconsistencies, if assessed]
 
+## Resume Optimization
+- Date: [date]
+- Depth: [Quick Audit / Standard / Deep Optimization]
+- Overall: [Strong / Needs Work / Weak]
+- ATS compatibility: [ATS-Ready / ATS-Risky / ATS-Broken]
+- Recruiter scan: [Strong / Moderate / Weak]
+- Bullet quality: [Strong / Moderate / Weak]
+- Seniority calibration: [Aligned / Mismatched]
+- Keyword coverage: [Strong / Moderate / Weak]
+- Top fixes pending: [1-3 line items]
+- JD-targeted: [yes — which JD / no]
+- Cross-surface gaps: [resume ↔ LinkedIn inconsistencies, if assessed]
+
 ## Meta-Check Log
 | Session | Candidate Feedback | Adjustment Made |
 |---------|-------------------|-----------------|
@@ -245,6 +259,7 @@ Write to `coaching_state.md` whenever:
 - progress reviews trends (update Active Coaching Strategy, check Score History archival, check Interview Intelligence archival thresholds). Also runs calibration check when 3+ outcomes exist (scoring drift detection, cross-dimension root cause review, success pattern analysis) — updates Calibration State.
 - User reports a real interview outcome (add to Outcome Log)
 - linkedin produces profile audit (save LinkedIn Analysis section to coaching_state.md — date, depth, overall score, dimension scores, top fixes pending, positioning gaps)
+- resume produces resume audit (save Resume Optimization section to coaching_state.md — date, depth, overall score, dimension scores, top fixes pending, JD-targeted status, cross-surface gaps)
 - prep starts a new company loop or updates interviewer intel, round formats, fit verdict, fit confidence, and structural gaps (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)
 - reflect archives the coaching state (add Status: Archived header)
@@ -290,6 +305,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `concerns` | Generate likely concerns + counters |
 | `questions` | Generate tailored interviewer questions |
 | `linkedin` | LinkedIn profile optimization |
+| `resume` | Resume optimization |
 | `hype` | Pre-interview confidence and 3x3 plan |
 | `thankyou` | Thank-you note / follow-up drafts |
 | `progress` | Trend review, self-calibration, outcomes |
@@ -307,6 +323,7 @@ When executing a command, read the required reference files first:
 - **`practice`**, **`mock`**: Also read `references/role-drills.md`. For `practice role` and other role-specific drills, also read `references/calibration-engine.md` Section 5 (role-drill score mapping). For `mock`, also read `references/calibration-engine.md` (mock produces scores and benefits from calibration guidance).
 - **`prep`**: Also read `references/story-mapping-engine.md` when storybank exists.
 - **`linkedin`**: Also read `references/differentiation.md` (for earned secret integration into profile), `references/storybank-guide.md` (for storybank data to feed into About/Experience rewrites).
+- **`resume`**: Also read `references/differentiation.md` (for earned secret integration into summary and bullets), `references/storybank-guide.md` (for storybank data to feed into bullet rewrites and quantification).
 - **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
 - **`progress`**: Also read `references/calibration-engine.md`.
 - **All commands at Directness Level 5**: Also read `references/challenge-protocol.md`.
@@ -391,13 +408,14 @@ Use first match:
 5. Company + JD context -> `prep`
 6. Company name only (no JD, no interview scheduled) -> `research`
 7. LinkedIn profile/optimization intent -> `linkedin`
-8. Story-building / storybank intent -> `stories`
-9. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
-10. Practice intent -> `practice`
-11. Progress/pattern intent -> `progress`
-12. "I got an offer" / offer details present -> `negotiate`
-13. "I'm done" / "accepted" / "wrapping up" -> `reflect`
-14. Otherwise -> ask whether to run `kickoff` or `help`
+8. Resume optimization intent -> `resume`
+9. Story-building / storybank intent -> `stories`
+10. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
+11. Practice intent -> `practice`
+12. Progress/pattern intent -> `progress`
+13. "I got an offer" / offer details present -> `negotiate`
+14. "I'm done" / "accepted" / "wrapping up" -> `reflect`
+15. Otherwise -> ask whether to run `kickoff` or `help`
 
 ### Multi-Step Intent Detection
 
@@ -409,7 +427,8 @@ When a candidate's request implies a sequence of commands, state the plan and ex
 | "I just finished my interview at [company]" | `debrief` → (later) `analyze` if transcript available |
 | "Help me get ready for tomorrow" | `hype` (+ `prep` if none exists for the company) |
 | "I want to work on my stories" | `stories add`/`improve` cycle |
-| "I'm starting my job search" | `kickoff` → `stories` → `linkedin` (Quick Audit) |
+| "I'm starting my job search" | `kickoff` → `stories` → `resume` (Quick Audit) → `linkedin` (Quick Audit) |
+| "I want to optimize my application materials" | `resume` → `linkedin` (if not already done) |
 | "I got rejected from [company]" | `feedback` Type B → `progress` targeting insights (if 3+ outcomes) |
 
 **Behavior**: When you detect a multi-step intent, briefly state the plan ("I'll walk you through research, then prep, then concerns for [company]"), execute the first step, and at each transition point offer the next step naturally: "That covers the research. Ready to move into full prep?" If the candidate wants to skip or redirect, respect that. When a multi-step sequence is active and Rule 7's state-aware recommendation for the current command diverges from the planned next step, follow the multi-step plan but note the state-aware alternative: "Next in our sequence is `prep`. (Side note: your storybank is empty — we should address that after we finish this prep cycle.)"

@@ -36,6 +36,8 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 **LinkedIn profile optimization** — Section-by-section audit of your LinkedIn profile against how the platform actually works: recruiter boolean search mechanics, algorithm distribution, and section-specific impact. Three depth levels from quick audit to deep optimization with content strategy. Not a resume-to-LinkedIn copy — a platform-native optimization that treats LinkedIn as its own game.
 
+**Resume optimization** — Holistic resume audit across every dimension that actually affects outcomes: ATS parsing and ranking, recruiter scan behavior, bullet quality, seniority calibration, keyword coverage, structure, concern management, and cross-surface consistency. Three depth levels from quick audit to deep optimization with full bullet rewrite pipelines. When a storybank exists, the system mines it for quantified outcomes and earned secrets that should appear in resume bullets. When a JD is available, it produces a targeted version optimized for that specific application. Not a grammar check — a strategic overhaul of the resume as a job-search artifact.
+
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
 **Self-awareness** — Tracks the gap between your self-assessment and actual coach scores. Knows if you're an over-rater or under-rater, and adjusts coaching accordingly.
@@ -86,6 +88,7 @@ The coach will ask for your resume, target role, and timeline — then build you
 | `concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
 | `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
 | `linkedin` | LinkedIn profile optimization (3 depth levels) | Section-by-section audit, rewritten sections, content strategy |
+| `resume` | Resume optimization (3 depth levels, JD-targeted when available) | ATS audit, section-by-section assessment, bullet rewrites, seniority calibration, keyword analysis, storybank-to-bullet pipeline |
 | `hype` | Pre-interview confidence + psychological warmup. At Level 5: includes a pre-mortem with failure prevention | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
 | `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
 | `progress` | Trends, self-calibration, outcome tracking, scoring calibration. At Level 5: includes a Hard Truth section | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
@@ -294,6 +297,7 @@ interview-coach-skill/
     │   ├── concerns.md
     │   ├── questions.md
     │   ├── linkedin.md
+    │   ├── resume.md
     │   ├── hype.md
     │   ├── thankyou.md
     │   ├── progress.md
