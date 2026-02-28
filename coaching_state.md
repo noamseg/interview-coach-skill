@@ -137,7 +137,7 @@ Last updated: 2026-02-27
 - Date prepped: 2026-02-25
 
 ### Plusgrade
-- Status: Partially applied — see roles below
+- Status: Applied — both active roles submitted (see below)
 - Round formats (confirmed from JD):
   - Round 1: Recruiter Phone Interview — behavioral screen, ~30min
   - Round 2: Hiring Manager Interview — deep behavioral + PM judgment, ~45-60min
@@ -160,7 +160,7 @@ Last updated: 2026-02-27
 - Date prepped: 2026-02-25
 
 #### Role B: Product Manager, Payments — $100K-$118K base (prepped 2026-02-27)
-- Status: Not yet applied — applying soon
+- Status: Applied — 2026-02-28
 - Fit assessment: Moderate-Strong — stronger domain fit than Role A. Payments IS Joss's domain. Gap: no direct PSP vendor management or multi-PSP orchestration ownership. Comp is lowest in pipeline ($100-118K vs. $120K+ target).
 - Concerns surfaced:
   1. PSP-specific experience (direct PSP vendor management, orchestration layer) — Severity: Medium-High. Counter: owned product layer above PSPs — payment initiation, error handling, retry logic, conversion. Scotiabank funding friction + CIBC Interac are the proof points.
