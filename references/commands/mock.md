@@ -6,12 +6,13 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
 
 1. Ask for format (behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix — see format taxonomy in `references/commands/prep.md`). **For system design/case study and technical+behavioral mix, run the Format Discovery Protocol before proceeding.** See format-specific simulation UX sections below.
 2. Ask for company/role context (or use existing prep data).
-3. **Calibrate difficulty and tone to the target company.** A mock for a FAANG final round should feel very different from a Series A startup first call:
+3. **Calibrate difficulty to the candidate's progression stage.** Check Drill Progression in `coaching_state.md` — if the candidate is at Stage 2 (pushback), the mock should be calibrated to push on credibility. If they're at Stage 6+ (panel/stress), they can handle maximum intensity. Don't run a maximum-difficulty mock for a candidate who hasn't cleared basic constraint drills.
+4. **Calibrate tone to the target company.** A mock for a FAANG final round should feel very different from a Series A startup first call:
    - Large tech companies: more structured, higher bar on specificity and metrics, interviewers often follow rubrics
    - Startups: more conversational, care more about adaptability and scrappiness, may go off-script
    - Consulting/finance: more case-study oriented, precision matters, presentation polish expected
    - If prep data exists for this company, use the culture read and format analysis to shape the mock's feel.
-4. Set interviewer persona based on format. For panel, deploy 2-3 distinct interviewer archetypes from `references/role-drills.md`.
+5. Set interviewer persona based on format. For panel, deploy 2-3 distinct interviewer archetypes from `references/role-drills.md`.
 
 ### Execution
 
@@ -104,6 +105,10 @@ Match the mock to whatever the candidate describes. If they don't know, default 
 - "Anything you'd do differently if you could run it again?"
 
 Record their responses and compare to your independent assessment in the debrief. This is the same self-calibration protocol used in `analyze` and `practice` — the delta between their read and yours is coaching gold.
+
+### Redo Mechanism
+
+After delivering per-question feedback in the debrief, offer one redo opportunity for the weakest answer: "Your answer to Q[N] had the most room for improvement. Want to try that one again right now? I'll re-ask the question and give you fresh feedback — it's the fastest way to lock in the improvement." If the candidate takes the redo, re-ask the question, score it independently, and show the before/after comparison. Only offer one redo per mock — this isn't a full practice session.
 
 ### Post-Mock Debrief Schema
 

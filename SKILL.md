@@ -72,6 +72,9 @@ After reading `coaching_state.md`, check whether it contains all sections and co
 - **Missing `JD Analysis` section(s)**: No migration needed — JD Analysis sections are created per-JD when `decode` is run. Absence is normal.
 - **Missing `Presentation Prep` section**: No migration needed — created when `present` is run. Absence is normal.
 - **Missing `Comp Strategy` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Comp Strategy section added. Run `salary` to populate."
+- **Missing `Anxiety profile` in Profile**: Add the field with value "unknown". It will be set during the next `hype` session.
+- **Missing `Career transition` in Profile**: Add the field with value "none". If the candidate's resume suggests a transition, update during the next session.
+- **Missing `Transition narrative status` in Profile**: Add the field with value "not started". Only relevant when Career transition is not "none".
 
 Run this migration silently — do not announce schema changes to the candidate unless they affect immediate coaching recommendations. After migration, the coaching state is fully compatible with the current skill version.
 
@@ -95,6 +98,9 @@ Last updated: [date]
 - Interview history: [first-time / active but not advancing / experienced but rusty]
 - Biggest concern:
 - Known interview formats: [e.g., "behavioral screen, system design (verbal walkthrough)" — updated by Format Discovery Protocol during prep/mock]
+- Anxiety profile: [confident-underprepared / anxious-specific / generalized / post-rejection / impostor — set by hype, reused in subsequent sessions]
+- Career transition: [none / function change / domain shift / IC↔management / industry pivot / career restart — set by kickoff]
+- Transition narrative status: [not started / in progress / solid — set by kickoff, updated by pitch/stories]
 
 ## Resume Analysis
 - Positioning strengths: [the 2-3 signals a hiring manager sees in 30 seconds]
@@ -330,7 +336,7 @@ Write to `coaching_state.md` whenever:
 - pitch produces a positioning statement (save Positioning Statement section to coaching_state.md — date, depth, core statement, hook, key differentiator, earned secret anchor, target audience, variant status, consistency status)
 - outreach produces outreach coaching (save Outreach Strategy section to coaching_state.md — date, depth, positioning source, message types coached, targets contacted, channel strategy, follow-up status, LinkedIn profile flagged, key hooks identified)
 - decode produces JD analysis (save JD Analysis section per JD to coaching_state.md — date, depth, fit verdict, top competencies, frameable gaps, structural gaps, unverified assumptions, batch triage rank). Multiple JD Analysis sections can exist. Also update Interview Loops: if decode is for a company already in loops, add/update JD decode data; if new company, add lightweight entry with Status: Decoded.
-- present produces presentation prep (save Presentation Prep section to coaching_state.md within relevant Interview Loop, or as standalone section — date, depth, framework, time target, content status, top predicted questions, key adjustment)
+- present produces presentation prep (save Presentation Prep section as top-level section in coaching_state.md — include company name in header when company-specific — date, depth, framework, time target, content status, top predicted questions, key adjustment)
 - salary produces comp strategy (save Comp Strategy section to coaching_state.md — date, depth, target range, range basis, research completeness, stage coached, jurisdiction notes, scripts provided, key principle)
 - prep starts a new company loop or updates interviewer intel, round formats, fit verdict, fit confidence, and structural gaps (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)

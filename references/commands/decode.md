@@ -139,7 +139,7 @@ Then produce comparative analysis:
 
 ### Teaching Layer
 
-This is what differentiates decode from prep's JD parsing. After every Standard or Deep decode, include a "Learn to Read This Yourself" section:
+This is what differentiates decode from prep's JD parsing. Quick Scan includes a lighter version (a single "Decode Tip" — one teaching insight per scan, rotating through the 6 lenses). Standard and Deep include the full "Learn to Read This Yourself" section:
 - **Pattern spotted**: A specific decoding insight from THIS JD that the candidate can apply to future JDs (e.g., "Notice how 'drive strategy' appeared in responsibilities but 'execute campaigns' appeared in requirements — the responsibilities describe the aspirational version of the role, the requirements describe the actual bar")
 - **Trap to watch for**: A common misread THIS JD exemplifies (e.g., "This JD lists 12 'required' qualifications. No candidate has all 12. In practice, 6-8 match is strong. Don't self-screen out based on a wish list.")
 - **Self-decode prompt**: A question the candidate should ask themselves when reading the NEXT JD (rotate through a set: "What verb does the first responsibility use?", "Count how many times 'collaboration' or 'cross-functional' appears", "What's conspicuously absent?")
@@ -168,6 +168,9 @@ This is what differentiates decode from prep's JD parsing. After every Standard 
 ## Verify With Recruiter
 1. [Question — for the highest-impact LOW/UNKNOWN item]
 2. [Question — second priority]
+
+## Decode Tip
+[One teaching insight from this JD — e.g., "This JD lists 14 'requirements' — that's a wish list, not a checklist. 8-10 matches is strong." Rotate through the 6 lenses across scans so the candidate builds decoding intuition over time.]
 
 **Recommended next**: `decode` (Standard) for full analysis. **Alternatives**: `prep [company]`, `research [company]`
 ```

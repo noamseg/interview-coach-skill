@@ -43,6 +43,32 @@ Don't just file the resume — analyze it for coaching-relevant signals:
 
 Feed these findings into the Kickoff Summary output (Profile Snapshot section) and into the initial coaching plan.
 
+### Step 2.55: Career Transition Detection
+
+After resume analysis, check whether the candidate's target role represents a career transition — a meaningful change in function, domain, seniority direction, or role type from their recent trajectory.
+
+**Detection triggers** (any of these):
+- Function change: engineering → product, sales → customer success, marketing → data science
+- Domain shift: B2C → B2B, startup → enterprise, tech → non-tech (or vice versa)
+- IC ↔ management switch: moving from hands-on IC to managing, or stepping back from management to IC
+- Industry pivot: finance → healthcare, media → edtech, consulting → in-house
+- Career restart: returning after a gap (parenting, health, sabbatical, career break)
+
+**When detected**, this changes downstream coaching significantly:
+- **Stories**: The candidate needs "bridge stories" — experiences that connect the old context to the new target. Flag this for `stories`: "You're making a [type] transition. We need to build 2-3 bridge stories that show how your [old context] experience translates to [new target]. This is the most important storybank work for your search."
+- **Concerns**: The transition IS the primary concern. `concerns` should prioritize it.
+- **Positioning**: `pitch` needs to frame the transition as intentional and strategic, not reactive. "I moved from X to Y because..." needs to be compelling.
+- **Prep**: `prep` should expect interviewers to probe the transition — it will dominate at least one question.
+- **Comp**: `salary` should flag that transitions often involve comp recalibration — the candidate's current comp may not be a useful anchor for the new role.
+
+Save to coaching_state.md Profile:
+```
+- Career transition: [type — function change / domain shift / IC↔management / industry pivot / career restart]
+- Transition narrative status: [not yet developed / in progress / strong]
+```
+
+If no transition is detected, don't mention it — most candidates have realistic, linear targets.
+
 ### Step 2.6: Target Reality Check
 
 After resume analysis, cross-reference the candidate's profile against their stated target role(s). This is NOT a full fit assessment — it's a quick sanity check that fires only when clear mismatches are visible from the resume alone.
@@ -72,6 +98,21 @@ Write the initial `coaching_state.md` file (see SKILL.md Session State System fo
 - Empty Interview Loops section (will be populated by `research` or `prep`)
 - Session log with kickoff entry
 - Coaching Notes with any relevant observations from the kickoff conversation (e.g., interview anxiety, communication style preferences, emotional state about the job search)
+
+### Mid-Search Profile Update
+
+Candidates' targets often evolve mid-search — they discover they prefer a different role type, shift seniority targets based on market feedback, or pivot domains after informational interviews. When a candidate returns to `kickoff` or indicates their target has changed:
+
+1. **Don't restart from scratch.** Ask: "What's changed? Is it the target role, the seniority level, the industry, or something else?"
+2. **Show what carries over**: "Your storybank, practice scores, and coaching patterns all still apply. Here's what changes with your new target:"
+3. **Update Profile in coaching_state.md**: Target role, seniority band, career transition status (if newly triggered).
+4. **Flag downstream impacts**:
+   - If target role changed: `concerns` needs re-running (different role = different concerns). `pitch` positioning statement needs updating. `resume` may need re-targeting.
+   - If seniority changed: `prep` scoring weights shift. Practice drill calibration may need adjustment.
+   - If domain changed: New domain gap becomes a primary concern. Bridge stories needed.
+5. **Preserve history**: Don't delete old target data — move it to a "Previous targets" section. Score history, practice data, and storybank remain valid.
+
+Output a brief "Profile Update Summary" showing what changed, what carries over, and the 2-3 highest-priority actions for the new target.
 
 ### Time-Aware Coaching
 

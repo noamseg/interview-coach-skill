@@ -10,6 +10,7 @@
    - Previous analyze results (patterns and weak dimensions)
    - The specific role/company (does the JD require something the candidate lacks?)
    - Career narrative gaps (transitions that need explaining)
+   - **Outcome Log** (if real interview outcomes exist): Use past rejections as counter-evidence for current concerns. If the candidate was previously rejected for "not enough leadership experience" but has since advanced at two other companies on leadership questions, that outcome data weakens this concern. Conversely, if the same concern has driven 2+ rejections, it's confirmed — escalate its severity.
 4. Add any concerns the candidate missed.
 5. **Rank by severity**: Not all concerns are equal. Assign each one:
    - **Dealbreaker**: This could single-handedly end the candidacy if not addressed well (e.g., missing a core required skill, a very short recent tenure that looks like termination)

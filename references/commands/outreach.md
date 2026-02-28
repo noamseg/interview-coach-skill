@@ -207,6 +207,12 @@ Two parts — the message to your connector, and the forwardable blurb:
 
 **Key principles**: Double opt-in — ask the connector first, never go around them. Write the forwardable blurb yourself — reduce the connector's effort to zero. Acknowledge that the connector is spending social capital.
 
+**Warm Intro Timing Guidance**: When to ask matters as much as how to ask:
+- **Best timing**: After you've established or refreshed the relationship (a recent conversation, a value exchange, or existing rapport). Don't ask for an intro in your first message after years of silence — reconnect first.
+- **Relationship investment rule**: The strength of the ask should be proportional to the depth of the relationship. A close former colleague can be asked directly. A loose connection needs a smaller ask first (coffee, advice) before an intro request.
+- **Sequencing**: When targeting a company, check if you have a warm path before going cold. Warm intros convert 3-5x higher — it's worth spending 2-3 days warming up a connection before defaulting to cold outreach.
+- **When NOT to ask**: If the connector has a complicated relationship with the target (left on bad terms, is competing for the same role), if you've already burned social capital with this connector, or if the ask is too big for the relationship depth.
+
 ### 5. Informational Interview Ask
 
 ```

@@ -84,6 +84,7 @@ When the candidate selects "Find gaps," don't just list missing competencies —
 3. For critical gaps, check: can an existing story be reframed to cover this competency (using its secondary skill or an adjacent experience), or does the candidate need to surface a new experience entirely?
 4. Prescribe gap-handling patterns (from the Gap-Handling Module) for any competencies where no real story exists.
 5. **Cross-reference with active prep briefs**: If the candidate has active prep briefs (from `prep`), check predicted questions against gaps. A gap that maps to a predicted question at a current target company is elevated to Critical regardless of general frequency.
+6. **Consume narrative identity output** (if `stories narrative identity` has been run): Use the candidate's core themes and sharpest edge to inform gap prioritization. Gaps in the candidate's dominant themes are more damaging than gaps in peripheral areas — a candidate whose theme is "building systems from scratch" must have a gap-free story set for process-building and ambiguity questions. Also check for orphan stories that could be reframed to fill a gap through their theme connection.
 
 A PM interviewing at Stripe with no "influence without authority" story has a critical gap. The same candidate missing a "technical depth" story has a nice-to-have gap. Rank accordingly.
 

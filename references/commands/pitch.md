@@ -73,6 +73,7 @@ Pull from coaching_state.md:
 - Active Coaching Strategy (if Differentiation is the gap, pitch addresses it directly)
 - LinkedIn Analysis (current headline/about — for consistency check)
 - Resume Optimization (current summary — for consistency check)
+- **Positioning performance data** (if `debrief` or `analyze` have notes on how the positioning landed in real interviews): Check Interview Intelligence → Effective/Ineffective Patterns for signals about how the candidate's self-introduction landed. If TMAY or positioning-related feedback exists (e.g., "interviewer seemed engaged during intro" or "recruiter said your pitch was too vague"), use it to refine the positioning. This creates a feedback loop: pitch → interview → debrief → pitch iteration.
 
 ### Step 2: Raw Material Extraction
 

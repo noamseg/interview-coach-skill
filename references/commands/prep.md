@@ -203,6 +203,7 @@ If `coaching_state.md` shows previous rounds at the same company, this is a cont
 - Check which stories were used in previous rounds — avoid repeating them unless the candidate is asked to go deeper.
 - Review what concerns likely surfaced from previous round analysis.
 - Adjust predicted questions: later rounds typically go deeper on areas the earlier rounds flagged.
+- **Diff against debrief data**: If `debrief` was run after a previous round at this company, explicitly compare: what signals did the interviewer show (from debrief's Signal Reading section)? What concerns likely surfaced based on those signals? Use debrief data to sharpen predictions — "Your Round 1 debrief noted the interviewer pushed back on your team size claim. Expect Round 2 to probe Credibility harder on scope and impact."
 - Note: "You used S003 and S007 in Round 1. For Round 2, prioritize S### and S### to show range. Based on your Round 1 analysis, they'll likely probe deeper on [area]."
 - **Interview Intelligence cross-referencing** (light-touch rule: only surface when it changes the prep brief):
   - Check Interview Intelligence → Company Patterns for this company: real questions from past rounds, what worked/didn't, stories that landed
@@ -212,11 +213,11 @@ If `coaching_state.md` shows previous rounds at the same company, this is a cont
 
 ### Interviewer Intelligence
 
-When the candidate provides interviewer LinkedIn URLs or profile links, analyze each interviewer to produce tailored prep. This is one of the highest-leverage prep activities — knowing who's across the table changes story selection, framing, and signal-reading.
+When the candidate provides interviewer LinkedIn URLs or profile links, guide them on what to look for and help them interpret what they find. The coach cannot browse LinkedIn profiles directly — the candidate needs to share the information. This is still one of the highest-leverage prep activities — knowing who's across the table changes story selection, framing, and signal-reading.
 
-**Input requirement**: LinkedIn URLs or profile links required — not bare names. If the candidate provides only a name, respond: "A name alone isn't reliable enough for interviewer research — too many false matches. Can you share their LinkedIn URL? Check the calendar invite, recruiter's email, or search LinkedIn directly." If they can't find a URL, skip interviewer intel for that person and note the gap.
+**Input requirement**: LinkedIn URLs or profile links required — not bare names. If the candidate provides only a name, respond: "A name alone isn't reliable enough for interviewer research — too many false matches. Can you share their LinkedIn URL? Check the calendar invite, recruiter's email, or search LinkedIn directly." If the candidate shares a URL but not the profile content, ask them to share key details: "I can't browse LinkedIn directly. Can you tell me their current title, how long they've been at the company, their career path (previous roles), and any recent posts or articles? I'll use that to shape your prep."
 
-**What to analyze** (from LinkedIn profiles, public posts, talks, articles):
+**What to look for** (guide the candidate to extract from LinkedIn profiles, public posts, talks, articles):
 
 1. **Role/title and tenure** — What's their functional lens? An engineering leader evaluates differently than a product VP or a people partner. How long they've been at this company vs. previous roles shapes their perspective.
 2. **Career path** — Did they come up through IC or management? Startup or big co? Technical or business-side? This shapes what they value in candidates. Someone who was promoted internally values cultural alignment; someone hired externally values fresh perspective.

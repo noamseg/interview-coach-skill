@@ -139,8 +139,14 @@ Cross-reference LinkedIn profile against:
 
 ### Step 5: Content Strategy Overview (Standard + Deep)
 
-Not just the profile — how to use LinkedIn as a platform:
-- **Posting cadence**: 2-3 posts/week during active search. Consistency > volume.
+Not just the profile — how to use LinkedIn as a platform.
+
+**Timeline-aware content strategy**: If Profile has an interview timeline, calibrate the content recommendation:
+- **≤2 weeks to interviews**: Skip content strategy entirely. Focus on profile optimization only. The candidate doesn't have time to build a content presence.
+- **2-6 weeks**: Light content — 1 post/week max, focused on credibility-building (sharing an insight from their domain). Don't invest heavily in content creation during active interviewing.
+- **6+ weeks or early-stage search**: Full content strategy below. This is where building visibility compounds.
+
+- **Posting cadence**: 2-3 posts/week during active search (if timeline allows). Consistency > volume.
 - **Content types that work**: Industry takes with personal angle, "here's what I learned" posts from real experience, PDF carousels with frameworks, commentary on industry news.
 - **Content types that don't work**: "Excited to announce" posts (low engagement), reposting without commentary, posting external links (kills reach).
 - **Engagement strategy**: Comment thoughtfully on posts by people at target companies and in target roles. This is higher-leverage than posting for getting noticed.

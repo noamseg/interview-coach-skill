@@ -47,6 +47,7 @@ Don't throw generic drill questions. Before each practice session, pull from:
 - Known weak spots from previous analyses or practice rounds
 - Storybank gaps where no strong story exists
 - The specific competencies the candidate's target JDs emphasize
+- **Round format from Interview Loops**: If the candidate has a known interview format for an upcoming round (from `prep` Format Discovery or Interview Loops), select drill types that match. A presentation round → prioritize structure and timing drills. A panel interview → prioritize panel drill. A system design round → prioritize `practice technical`. The drill should simulate the conditions they'll actually face.
 
 If this data isn't available yet, use role-appropriate questions from `references/role-drills.md`, but note: "These are general practice questions. Once we have your prep data, I'll tailor questions to your actual interviews."
 

@@ -116,6 +116,15 @@ Use the Role-Fit Assessment Module from `references/cross-cutting.md`. Without a
 **Recommended next**: `prep [company]` — build a full prep brief now that you have the research foundation. **Alternatives**: `research [another company]`, `stories`
 ```
 
+### Staleness Detection
+
+When `research` is run for a company that already has a research entry in coaching_state.md, check the date:
+- **< 2 weeks old**: "I researched [Company] on [date]. Want me to refresh, or is that still current?"
+- **2-8 weeks old**: "My research on [Company] is [N] weeks old. Companies change — want a refresh? I'll focus on what's new since [date]."
+- **> 8 weeks old**: Auto-refresh. "My research on [Company] is [N] weeks old — that's stale. Let me update it." Run the full research protocol again, noting what changed vs. the previous entry.
+
+When refreshing, preserve the previous fit verdict and explicitly compare: "Last time I assessed this as an Investable Stretch. Based on [new information], that's now [verdict] because [reason]."
+
 ### Coaching State Integration
 
 After research, save a lightweight entry to `coaching_state.md` Interview Loops:

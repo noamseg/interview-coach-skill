@@ -263,6 +263,12 @@ Draws from: Score History trends, storybank gaps, avoidance patterns (from Coach
    Drill:
    Success metric:
 
+## JD Pattern Analysis (if 3+ JD Analyses exist)
+- Recurring competencies across decoded JDs: [competencies that appear in 3+ JDs — this is the candidate's market-validated sweet spot]
+- Emerging requirements: [competencies appearing in recent JDs that weren't in earlier ones — market is shifting]
+- Competency coverage: [which recurring competencies have strong storybank coverage vs. gaps]
+- Targeting signal: [what the JD patterns reveal about the candidate's actual market position]
+
 ## Storybank Health
 - Total stories: __ (target: 8-12)
 - Strong stories (4-5): __ (target: at least 60% of storybank)

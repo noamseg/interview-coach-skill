@@ -28,6 +28,8 @@
 
 **Time Estimation**: ~130-150 words per minute for a well-paced spoken presentation. A 15-minute presentation = ~2000-2250 words of talk track. A 10-minute presentation = ~1300-1500 words. Most candidates over-prepare content and under-prepare delivery. The #1 timing failure is spending too long on context/setup and rushing through insights/results.
 
+**Slide-Count Heuristic**: Plan ~1-2 minutes per content slide (excluding title, divider, and closing slides). A 15-minute presentation = 8-12 content slides. A 10-minute presentation = 5-8 content slides. Slides with dense data or complex diagrams take longer — budget 2-3 minutes for those. If the candidate's slide count significantly exceeds this heuristic, they're either going to rush or run over time. Flag it early.
+
 **Q&A Dynamics**:
 - Q&A is often weighted MORE heavily than the presentation itself — it tests real understanding vs. rehearsed content.
 - Common Q&A patterns: "Tell me more about X" (positive — genuine interest), "What about Y?" (they think you missed something important), "How did you decide Z?" (testing your process, not your conclusion), "What would you do differently?" (testing self-awareness and growth mindset), "What if [constraint changed]?" (testing adaptability of thinking).
@@ -109,6 +111,20 @@ Gather from candidate (one question at a time):
 3. Time limit? (total time including Q&A — if company specified a split, capture that)
 4. What have you prepared so far? (nothing / rough ideas / outline / full slides / talk track)
 5. Any specific guidance from the company about format or expectations?
+
+**Presentation-Type Content Patterns**: Different presentation types have distinct content expectations. Use the presentation type identified in Step 1 to provide type-specific structural guidance:
+
+| Presentation Type | Core Content Expectation | Common Trap | Key Differentiator |
+|---|---|---|---|
+| **System Design / Architecture Review** | Problem → constraints → approach → tradeoffs → results | Jumping to the solution without establishing constraints | Showing tradeoff reasoning, not just the final design |
+| **Business Case / Strategy** | Market context → problem framing → options considered → recommendation → expected impact | Presenting only the chosen path without showing alternatives considered | Decision-making process visibility |
+| **Portfolio Review (Design)** | Project context → design challenge → process → iteration → outcome + learnings | Showing only final designs without the messy middle | The iteration story — what changed and why |
+| **Data / Analysis Presentation** | Question → methodology → findings → "so what" → recommendations | Over-explaining methodology at the expense of insights | The "so what" — not just what you found, but what it means |
+| **90-Day / Strategic Vision** | Current state assessment → vision → priorities → how you'd sequence → how you'd measure | Being too abstract or too granular — missing the strategic sweet spot | Showing you understand the org's current reality, not just your ideal plan |
+| **Technical Deep Dive** | Problem → approach → implementation details → results → what you'd do differently | Going so deep that the audience loses the thread | Calibrating depth to audience — executives get the summary, engineers get the details |
+| **Case Presentation (Consulting)** | Situation → framework → analysis → recommendation → risks + mitigations | Framework overload — applying a model without showing judgment | Synthesizing to a recommendation, not just analyzing |
+
+Apply the relevant type pattern when structuring content in Step 3. If the presentation type doesn't match any of these cleanly, use the closest match and adapt.
 
 **Step 2: Framework Selection**
 Based on presentation type + audience, recommend one of the 4 narrative arc frameworks:
@@ -318,7 +334,7 @@ Lenses 1, 2, 4, 5 (Pre-Mortem omitted — replaced with devil's advocate Q&A whi
 
 ### Coaching State Integration
 
-Save to coaching_state.md (within the relevant Interview Loop if company-specific, or to a general section if no company context):
+Save to coaching_state.md as a top-level section (matching the schema in SKILL.md). Include the company name in the section header when company-specific:
 
 ```markdown
 ## Presentation Prep: [Topic / Company]

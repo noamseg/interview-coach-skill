@@ -8,6 +8,20 @@ The hype reel should be built from real coaching data, not generic encouragement
 - **Use real score trajectory**: If scores have been improving, name it — "Your Structure scores went from 2s to consistent 4s over the last three sessions. That's not luck."
 - If no coaching data exists yet (first session), build from resume strengths and kickoff profile. Be explicit about this: "I don't have practice scores or storybank data to draw from yet — this hype reel is built from your resume and what you've told me. It'll be more powerful once we've done some practice rounds together."
 
+### Anxiety-Profile Personalization
+
+Candidates experience pre-interview anxiety differently. During `kickoff` (or the first time `hype` is run), identify the candidate's anxiety profile from their stated concern and interview history:
+
+| Profile | Signals | Hype Adjustment |
+|---|---|---|
+| **Confident but underprepared** | "I'm fine with interviews, just haven't prepped" | Skip emotional boost — focus on tactical 3x3 and cheat sheet. Be direct about gaps. |
+| **Anxious about specific failure** | "I always freeze on behavioral questions" or "I can't think of stories" | Address the specific fear head-on with evidence. "You have 8 stories in your storybank, 5 rated 4+. You've practiced retrieving them under pressure. You're not going to freeze." |
+| **Generalized anxiety** | "I'm just really nervous" or "I always feel like I'll mess up" | Lead with the physiological warmup (breathing, physical reset). Provide the reframe early: "This is a conversation, not a test." Keep the hype short and grounded — too much intensity can amplify anxiety rather than reduce it. |
+| **Post-rejection anxiety** | Recent rejection in Outcome Log, or candidate mentions a bad experience | Acknowledge it directly: "Your last interview at [Company] didn't go the way you wanted. That's done. This is a different company, different interviewers, fresh start." Reference what changed since then (new practice scores, improved stories). |
+| **Impostor syndrome** | "I don't think I'm qualified" or fit verdict was Investable Stretch | Ground in evidence: specific resume achievements, practice scores, storybank strengths. "The data says you belong in this interview. Let's look at why you were invited." |
+
+Save the identified profile to coaching_state.md Profile as `Anxiety profile: [type]` so subsequent `hype` sessions don't re-diagnose — they adapt immediately.
+
 ### No-Data Fallback
 
 When `coaching_state.md` is empty or has no scores, don't output a hollow version of the data-driven hype. Instead, shift to a different mode:
@@ -57,8 +71,9 @@ You know these risks. Now set them aside and go execute.
 - One thing to remember in the room:
 
 ## 10-Minute Warmup Routine
+[If Interview Loops has a known format for this round (from prep or Format Discovery), tailor the warmup to that format. A presentation round warmup focuses on opening delivery. A system design warmup focuses on scoping out loud. A behavioral screen warmup focuses on story retrieval speed.]
 1. Read this hype reel out loud once.
-2. Pick your weakest story and deliver the 60-second version out loud (constraint ladder).
+2. [Format-specific drill]: Behavioral → pick your weakest story and deliver the 60-second version out loud. Presentation → deliver your opening 30 seconds out loud. System design → practice scoping a simple problem out loud for 60 seconds. Panel → mentally rehearse switching between interviewer styles.
 3. Review the 3x3 above — don't memorize, just refresh.
 4. Physical reset: [walk, stretch, breathe — whatever routine works for you].
 5. Reframe: "This is a conversation to see if there's mutual fit. I'm also interviewing them."
