@@ -42,6 +42,12 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 **Networking outreach coaching** — Coaches the full outreach lifecycle: cold LinkedIn messages, warm introduction requests, informational interview asks, recruiter replies, follow-up sequences, and referral requests. Three depth levels from quick templates to full networking campaigns with multi-channel strategy. Messages are built on the candidate's Positioning Statement so every outreach is differentiated, not generic. The system knows platform mechanics (LinkedIn's 300-char connection request limit, optimal cold email length of 75-125 words, InMail response rates) and coaches accordingly. Includes a message quality rubric, follow-up cadence guidance, and the research showing that referrals account for 30-50% of hires from only 7% of applicants.
 
+**JD decoding and batch triage** — Analyzes job descriptions using six decoding lenses (repetition frequency, order and emphasis, required vs. nice-to-have, verb choices, between-the-lines signals, and what's missing) with confidence labels on every interpretation. Maps extracted competencies against the candidate's profile for a fit verdict. Generates specific questions to ask the recruiter for every uncertain interpretation. Batch triage mode compares 2-5 JDs to find the candidate's market-validated sweet spot and recommend where to invest application effort. Includes a teaching layer so candidates learn to decode JDs themselves over time.
+
+**Presentation round coaching** — Fills the prep gap for presentation-format interviews (system design presentations, business cases, portfolio reviews, strategy presentations, technical deep dives). Coaches narrative structure using four arc frameworks, optimizes openings and closings, calibrates content density against time limits (at ~130-150 words per minute), and prepares for Q&A with predicted questions and answer strategies. Three depth levels from quick structural framework to deep preparation with talk track review and constraint versions.
+
+**Early-process comp coaching** — Coaches the highest-leverage compensation moments: the recruiter screen "what are your salary expectations?" question, salary history handling, and application form strategy. Guides candidates through comp research (without fabricating data), helps construct a defensible range, and provides stage-specific scripts with backups for pushback. Covers the full pre-offer comp timeline and hands off to the negotiate command when a formal offer arrives. Three depth levels from a quick 30-second script to full career-transition comp positioning.
+
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
 **Self-awareness** — Tracks the gap between your self-assessment and actual coach scores. Knows if you're an over-rater or under-rater, and adjusts coaching accordingly.
@@ -79,27 +85,57 @@ The coach will ask for your resume, target role, and timeline — then build you
 
 ## Commands
 
+### Getting Started
+
 | Command | Purpose | Typical Output |
 |---|---|---|
 | `kickoff` | Setup profile, track, and preferences | Kickoff summary + time-aware action plan |
+
+### Interview Round Prep
+
+| Command | Purpose | Typical Output |
+|---|---|---|
 | `research [company]` | Company research + structured fit assessment (3 depth levels) | Company snapshot, culture signals, fit assessment, claim-verified findings |
+| `decode` | JD analysis + batch triage (3 depth levels, 6 lenses) | Confidence-labeled decoding, competency extraction, fit assessment, recruiter verification questions, batch comparison, teaching layer |
 | `prep [company]` | Build role-specific prep brief (format-aware, culture-aware, role-fit assessment) | Format guidance, culture read, role-fit assessment, interviewer intelligence, competencies, predicted Qs, story mapping |
-| `analyze` | Analyze transcript with format-aware parsing, triage-based coaching, and interviewer's inner monologue. At Level 5: includes structured challenge | Auto-detected format, per-unit scoring (Q&A/phases/exchanges), format-specific dimensions, decision tree + interview delta |
-| `debrief` | Post-interview rapid capture (same day) | Questions recalled, interviewer signals, stories used, coaching state updates |
-| `practice` | Run drill rounds (with progression gating). At Level 5: challenge notes, expanded interviewer read, optional warmup skip | Round debrief + self-assessment delta + targeted adjustment |
-| `mock [format]` | Full simulated interview (4-6 Qs) — behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix | Holistic arc feedback, signal-reading notes, energy trajectory |
-| `stories` | Build/manage storybank + rapid-retrieval drill. At Level 5: stories get red-teamed with 5 challenge lenses | Story table + earned secrets + gap analysis + retrieval drill |
 | `concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
 | `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
+| `present` | Presentation round coaching (3 depth levels) | Narrative arc selection, content structuring, timing calibration, opening/closing optimization, Q&A preparation, constraint versions |
+
+### Application Materials
+
+| Command | Purpose | Typical Output |
+|---|---|---|
 | `linkedin` | LinkedIn profile optimization (3 depth levels) | Section-by-section audit, rewritten sections, content strategy |
 | `resume` | Resume optimization (3 depth levels, JD-targeted when available) | ATS audit, section-by-section assessment, bullet rewrites, seniority calibration, keyword analysis, storybank-to-bullet pipeline |
 | `pitch` | Core positioning statement + context variants | Core statement, constraint ladder, context-specific pitches, positioning consistency check |
 | `outreach` | Networking outreach coaching (3 depth levels, 9 message types) | Message frameworks, draft critique + rewrite, follow-up sequences, multi-channel campaign strategy |
+
+### Pre-Conversation
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `salary` | Early/mid-process comp coaching (3 depth levels) | Comp research guidance, range construction, stage-specific scripts, total comp education, salary history handling |
 | `hype` | Pre-interview confidence + psychological warmup. At Level 5: includes a pre-mortem with failure prevention | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
-| `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
+
+### Practice and Simulation
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `practice` | Run drill rounds (with progression gating). At Level 5: challenge notes, expanded interviewer read, optional warmup skip | Round debrief + self-assessment delta + targeted adjustment |
+| `mock [format]` | Full simulated interview (4-6 Qs) — behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix | Holistic arc feedback, signal-reading notes, energy trajectory |
+| `stories` | Build/manage storybank + rapid-retrieval drill. At Level 5: stories get red-teamed with 5 challenge lenses | Story table + earned secrets + gap analysis + retrieval drill |
+
+### Analysis, Tracking, and Post-Interview
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `analyze` | Analyze transcript with format-aware parsing, triage-based coaching, and interviewer's inner monologue. At Level 5: includes structured challenge | Auto-detected format, per-unit scoring (Q&A/phases/exchanges), format-specific dimensions, decision tree + interview delta |
+| `debrief` | Post-interview rapid capture (same day) | Questions recalled, interviewer signals, stories used, coaching state updates |
 | `progress` | Trends, self-calibration, outcome tracking, scoring calibration. At Level 5: includes a Hard Truth section | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
-| `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
 | `feedback` | Capture recruiter feedback, outcomes, corrections, context, or coaching meta-feedback. At Level 5: rejections include structured leverage extraction | State updates + next step suggestion |
+| `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
+| `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
 | `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
 
@@ -306,6 +342,9 @@ interview-coach-skill/
     │   ├── resume.md
     │   ├── pitch.md
     │   ├── outreach.md
+    │   ├── decode.md
+    │   ├── present.md
+    │   ├── salary.md
     │   ├── hype.md
     │   ├── thankyou.md
     │   ├── progress.md
@@ -339,6 +378,9 @@ interview-coach-skill/
 7. When you hear back from a recruiter — good or bad — run `feedback` to capture it. The system learns from your real experiences over time.
 8. Run `mock` before important interviews. Individual drills build skills; mocks test the full arc.
 9. Use `debrief` the same day as a real interview — capture signals while they're fresh.
+10. Run `decode` before applying — analyze the JD's language, assess your fit, and decide if the role is worth your time. Use batch triage to compare multiple JDs at once.
+11. Run `salary` before your first recruiter call — the recruiter screen is the highest-leverage comp moment, not the offer negotiation.
+12. Run `present` before a presentation round — structure your content and prepare for Q&A before you ever open PowerPoint.
 
 ---
 
