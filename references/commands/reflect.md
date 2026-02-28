@@ -19,6 +19,7 @@ Suggest `reflect` when:
    - What were the biggest breakthroughs? (inflection points from score history)
    - What was hardest to improve? (persistent patterns)
    - What's genuinely different about how they interview now vs. when they started?
+   - **Initial vs. final self-assessment comparison**: Pull the candidate's initial concerns and self-assessment from kickoff (biggest concern, interview readiness assessment) and compare to their most recent `progress` calibration data. Show the delta: "You started thinking your biggest weakness was [X]. Turns out it was [Y]. Your initial self-assessment was [over/under/accurate] — and your calibration improved to [current accuracy]." This bookend comparison makes growth tangible.
 4. **Extract transferable lessons.** What did they learn that applies beyond this job search?
    - Communication skills that transfer to the job itself
    - Self-awareness insights (self-assessment calibration patterns)

@@ -40,6 +40,12 @@
 - **Benefits** — Health, 401k match, PTO, parental leave. Real value but less negotiable.
 - **Non-monetary** — Remote/hybrid, title, team/manager, growth path, work-life balance. Harder to quantify but often the actual differentiator.
 
+**Remote/Location Comp Adjustment**: Location significantly affects comp ranges. When helping construct a range:
+- **Remote roles at HQ-based companies**: Many companies pay based on the candidate's location (cost-of-living adjustment), not HQ. Ask: "Is this role remote? If so, does the company adjust comp by location?" If yes, the range needs geographic calibration — a SF-based range doesn't apply to a candidate in Austin.
+- **Relocation**: If the candidate is relocating, research the target location's market rate, not their current one. Moving from a low-cost area to SF should anchor to SF rates. Moving from SF to a low-cost area may face downward pressure — prepare for that conversation.
+- **Hybrid vs. fully remote**: Some companies offer different comp bands for hybrid (commuting distance) vs. fully remote. Ask the recruiter if the comp band differs by work arrangement.
+- **Cost-of-living resources**: Point candidates to geographic salary comparison tools alongside Levels.fyi/Glassdoor. Many data sources show location-adjusted ranges.
+
 **Common Comp Mistakes** (early/mid-process):
 1. Giving a specific number instead of a range (anchors too precisely)
 2. Anchoring too low because of current salary (especially in transitions/promotions)
@@ -49,6 +55,7 @@
 6. Not asking for the company's range first
 7. Getting flustered and saying "whatever's fair" or "I'm flexible" (signals low confidence)
 8. Revealing competing offers too early (before leverage is built)
+9. Using a range based on their current location when the role is in a different market
 
 ### Comp Research Guidance Principles
 
@@ -144,6 +151,19 @@ Quick primer tailored to the candidate's situation:
 - How to evaluate startup equity (5 critical questions: current valuation, dilution risk, vesting schedule + cliff, liquidity timeline, strike price for options)
 - How to compare offers with different structures (total comp normalization, risk-adjusted comparison)
 - Common traps: comparing base-to-base instead of total-to-total, overvaluing illiquid equity, ignoring vesting cliffs, undervaluing benefits
+
+**Startup Equity Decision Framework** (for offers that include meaningful equity):
+When the candidate is evaluating a startup offer with equity, walk them through this framework instead of just listing the 5 questions:
+
+1. **What stage is the company?** Pre-seed/seed (highest risk, highest potential upside, hardest to value), Series A-B (validated product, still significant risk, more data to evaluate), Series C+ (lower risk, lower upside multiplier, approaching public market valuation), Pre-IPO (most predictable, but check lockup periods and secondary market access).
+
+2. **The "expected value" reality check**: Ask the candidate to estimate, honestly, the probability they believe this company will have a liquidity event in the next 5-7 years. Most startups fail — the base rate for venture-backed startups reaching IPO or meaningful acquisition is ~10-20%. Multiply the equity grant's paper value by that probability. If the expected value is less than the cash comp difference vs. a public company offer, the equity is not compensating for the risk — it's a bet they're making because they believe in the company.
+
+3. **The cash-floor test**: "Can you live on the base salary alone, as if the equity is worth $0? If not, you're depending on the equity for financial stability — that's a high-risk position." The base should cover the candidate's needs. Equity is upside, not income.
+
+4. **Dilution modeling**: Each funding round dilutes existing shareholders. Ask: "If the company raises 2 more rounds before an event, your shares could be diluted by 30-50%. Does the potential growth outweigh the dilution?" Don't calculate specific numbers — guide the candidate to ask the company about expected dilution.
+
+5. **The comparison anchor**: "Compare the total package as if the equity is worth $0 (worst case) and as if it hits the target valuation (best case). Where does each scenario land vs. your other options? Both scenarios should be acceptable for this to be a good decision."
 
 **Step 6: Challenge Protocol (Deep Strategy, Level 5 only)**
 Lenses 1, 2, 4, 5 (Pre-Mortem omitted):

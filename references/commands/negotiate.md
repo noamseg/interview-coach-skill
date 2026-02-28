@@ -51,10 +51,29 @@ Most candidates can't evaluate equity offers. Don't just list "Equity: [amount]"
 - **Tax implications**: ISOs vs. NSOs have very different tax treatment. AMT risk for ISOs exercised early.
 - If this gets complex, flag: "Equity evaluation can get technical. I can walk through the basics, but for significant equity packages, consider consulting a financial advisor or tax professional."
 
+### Offer Comparison Normalization
+
+When comparing offers — whether a single offer against market data or multiple competing offers — normalize to make comparison meaningful. Don't just list numbers side by side; translate different package structures into comparable terms.
+
+**Qualitative normalization framework**:
+| Component | How to Compare | What to Watch For |
+|---|---|---|
+| **Base salary** | Direct comparison, adjusted for location if different markets | Similar base = similar baseline. >15% base gap = meaningful lifestyle difference. |
+| **Equity (public)** | Annual vesting value at current stock price. Note: stock can go down. | Compare annual vesting, not total grant. Factor in refresh grants (some companies grant annually, some don't). |
+| **Equity (startup)** | Cannot compare directly to public company equity. Use the cash-floor test from `salary`. | Compare as "upside potential" vs. "guaranteed comp." A $200K startup package with $50K in speculative equity is NOT comparable to a $200K public company package with $50K in liquid RSUs. |
+| **Signing bonus** | Amortize over expected tenure (usually 2-3 years). A $30K signing bonus = ~$10-15K/year additional comp if you stay 2-3 years. | One-time — don't let it distort the ongoing comp comparison. |
+| **Annual bonus** | Compare target bonus × expected attainment. Ask: "What does attainment typically look like?" A 20% target with 80% average attainment ≠ 20% bonus. | Some companies say 15% target but routinely pay 100%+. Others say 20% but rarely exceed 80%. Ask. |
+| **Benefits** | Focus on material differences only: healthcare cost delta, 401k match, PTO policy, parental leave. | Don't nitpick small differences. Only flag when there's a meaningful gap (e.g., one company has no 401k match). |
+| **Non-monetary** | Can't normalize — but can weight. Remote flexibility, team quality, manager, growth path, company trajectory. | These often matter more than a 10% comp difference. Ask the candidate to rank their priorities. |
+
+**Present comparisons as ranges, not precise numbers**: "Offer A is roughly $X-Y total comp in year 1, and Offer B is $X-Y. The gap is about [%], and here's what accounts for it..."
+
+**The decision isn't just math**: After normalizing, ask: "Which of these offers gets you most excited to start on Monday morning? That's worth weight too."
+
 ### Multiple Concurrent Offers
 
 When the candidate has more than one offer:
-- **Map the full picture**: Create a side-by-side comparison of all offers on: base, equity, bonus, title/level, remote policy, growth potential, team/manager quality, company trajectory.
+- **Map the full picture**: Use the normalization framework above to create a comparable side-by-side of all offers.
 - **Identify leverage points**: Which offer strengthens your position on the other? "Having a competing offer from [Company B] gives you concrete leverage with [Company A] — here's how to use it."
 - **Timeline management**: If offers have different deadlines, coach on buying time: "Can you ask [Company A] to extend their deadline? Here's the script: 'I'm very excited about this offer. I'm in final stages with one other company and want to make a fully informed decision. Could I have until [date]?'"
 - **Don't play offers against each other crudely**: "Telling Company A that Company B offered more is fine. Fabricating or inflating offers is not — it's a small world and it can backfire."

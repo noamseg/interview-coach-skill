@@ -30,8 +30,19 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If the candidate mentions a presentation, portfolio review, or case presentation: highlight `present`
    - If Comp Strategy doesn't exist and the candidate mentions a recruiter screen or salary question: highlight `salary`
    - If the candidate mentions salary expectations, compensation questions, or "what should I say about pay": highlight `salary`
-4. **Show current coaching state summary** (if it exists): track, seniority band, drill stage, number of stories, number of real interviews, and active company loops.
-5. **End with a prompt**: "What would you like to work on?"
+4. **Diagnostic Router** — If the candidate describes a problem instead of asking for a command, route them to the right place:
+   - "I'm not getting callbacks" → `resume` (ATS issues) or `decode` (targeting wrong roles)
+   - "I keep failing first rounds" → `analyze` (if transcripts exist) or `practice ladder` (if no data)
+   - "I freeze in interviews" → `practice ladder` (build reps) + `hype` (pre-interview boost)
+   - "I don't know what to say about salary" → `salary`
+   - "I have an offer but it feels low" → `negotiate`
+   - "I don't know where to start" → `kickoff`
+   - "I'm not hearing back from networking" → `outreach` + `linkedin` (profile quality gate)
+   - "I keep getting to final rounds but not getting offers" → `progress` (pattern analysis) + `concerns` (what's tripping you up)
+   - "I have a presentation round" → `present`
+   Don't just list the command — explain WHY that command addresses their specific problem.
+5. **Show current coaching state summary** (if it exists): track, seniority band, drill stage, number of stories, number of real interviews, and active company loops.
+6. **End with a prompt**: "What would you like to work on?"
 
 ### Output Schema
 
