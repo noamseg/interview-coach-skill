@@ -14,9 +14,9 @@
 
 ### Logic
 
-1. Identify interview format (see format taxonomy below).
+1. Identify interview format (see format taxonomy below). If the identified format is a presentation round, note: `present` provides dedicated content preparation coaching for presentation rounds. After this prep brief, recommend `present` for content structuring if the candidate hasn't already run it.
 2. If interviewer profile links provided, research interviewer profiles and extract intelligence (see Interviewer Intelligence section below). If only names provided, ask for LinkedIn URLs.
-3. **Parse the JD for competencies** (see JD Parsing Guide below).
+3. **Parse the JD for competencies** (see JD Parsing Guide below). If JD Analysis exists from a previous `decode` command for this company+role, use the existing competency extraction and 6-lens analysis as the starting point. Verify it's still current (JD unchanged), then skip to Step 4. If the JD has changed since decode, re-parse and note changes.
 4. Identify company interviewing culture (see company archetype intelligence below).
 5. Infer top evaluation criteria (adjusted for format + culture).
 6. Map candidate strengths and risks — incorporate interviewer-specific adjustments if intel available.

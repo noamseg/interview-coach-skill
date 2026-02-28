@@ -54,6 +54,10 @@ When Score History exceeds 15 rows, summarize the oldest entries into a Historic
 - Recruiter/Interviewer Feedback: 15 rows → summarize older feedback into Company Patterns, keep 10 recent
 - Company Patterns for closed loops (Status: Archived or Closed) → compress to 2-3 lines
 
+**JD Analysis archival thresholds** (check during `progress` or session start):
+- When JD Analysis sections exceed 10 entries, archive analyses for roles the candidate chose not to pursue (no corresponding Interview Loop entry, or Loop status is Closed/Archived). Compress archived analyses into a `Past JD Analyses` summary section preserving only: company, role, fit verdict, date. Keep full analyses only for active/recent decodes.
+- Presentation Prep sections for completed interview rounds (corresponding Interview Loop round is past) can be compressed to 1-2 lines preserving: topic, framework used, key adjustment. Full sections only needed for upcoming or active presentations.
+
 ### Schema Migration Check
 
 After reading `coaching_state.md`, check whether it contains all sections and columns defined in the current schema. Coaching state files created with earlier versions of the skill may be missing newer fields. If any are missing, migrate silently:
@@ -65,6 +69,9 @@ After reading `coaching_state.md`, check whether it contains all sections and co
 - **Missing `Resume Optimization` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Resume Optimization section added. Run `resume` to populate."
 - **Missing `Positioning Statement` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Positioning Statement section added. Run `pitch` to populate."
 - **Missing `Outreach Strategy` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Outreach Strategy section added. Run `outreach` to populate."
+- **Missing `JD Analysis` section(s)**: No migration needed — JD Analysis sections are created per-JD when `decode` is run. Absence is normal.
+- **Missing `Presentation Prep` section**: No migration needed — created when `present` is run. Absence is normal.
+- **Missing `Comp Strategy` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Comp Strategy section added. Run `salary` to populate."
 
 Run this migration silently — do not announce schema changes to the candidate unless they affect immediate coaching recommendations. After migration, the coaching state is fully compatible with the current skill version.
 
@@ -161,7 +168,7 @@ Last updated: [date]
 
 ## Interview Loops (active)
 ### [Company Name]
-- Status: [Researched / Applied / Interviewing / Offer / Closed]
+- Status: [Decoded / Researched / Applied / Interviewing / Offer / Closed]
 - Rounds completed: [list with dates]
 - Round formats:
   - Round 1: [format, duration, interviewer type — e.g., "Behavioral screen, 45min, recruiter"]
@@ -250,6 +257,42 @@ Last updated: [date]
 - LinkedIn profile flagged: [yes/no]
 - Key hooks identified: [1-2 reusable positioning hooks]
 
+## JD Analysis: [Company] — [Role]
+- Date: [date]
+- Depth: [Quick Scan / Standard / Deep Decode]
+- Fit verdict: [Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit]
+- Top competencies: [top 3 in priority order]
+- Frameable gaps: [list]
+- Structural gaps: [list]
+- Unverified assumptions: [count of LOW/UNKNOWN items]
+- Batch triage rank: [rank/total, if applicable]
+
+[Multiple JD Analysis sections can exist — one per company+role]
+
+### Past JD Analyses (archived — when 10+ analyses exist, non-active decodes compress here)
+| Date | Company | Role | Fit Verdict |
+[rows — brief archive of decoded JDs the candidate didn't pursue]
+
+## Presentation Prep: [Topic / Company]
+- Date: [date]
+- Depth: [Quick Structure / Standard / Deep Prep]
+- Framework: [selected narrative arc]
+- Time target: [X min presentation + Y min Q&A]
+- Content status: [outline only / full content / talk track reviewed]
+- Top predicted questions: [top 3]
+- Key adjustment: [single biggest change recommended]
+
+## Comp Strategy
+- Date: [date]
+- Depth: [Quick Script / Standard / Deep Strategy]
+- Target range: [bottom / target / stretch — or "not yet researched"]
+- Range basis: [sources used]
+- Research completeness: [none / partial / thorough]
+- Stage coached: [application / recruiter screen / mid-process / general]
+- Jurisdiction notes: [relevant info, if applicable]
+- Scripts provided: [which stages covered]
+- Key principle: [the most important takeaway]
+
 ## Meta-Check Log
 | Session | Candidate Feedback | Adjustment Made |
 |---------|-------------------|-----------------|
@@ -286,6 +329,9 @@ Write to `coaching_state.md` whenever:
 - resume produces resume audit (save Resume Optimization section to coaching_state.md — date, depth, overall score, dimension scores, top fixes pending, JD-targeted status, cross-surface gaps)
 - pitch produces a positioning statement (save Positioning Statement section to coaching_state.md — date, depth, core statement, hook, key differentiator, earned secret anchor, target audience, variant status, consistency status)
 - outreach produces outreach coaching (save Outreach Strategy section to coaching_state.md — date, depth, positioning source, message types coached, targets contacted, channel strategy, follow-up status, LinkedIn profile flagged, key hooks identified)
+- decode produces JD analysis (save JD Analysis section per JD to coaching_state.md — date, depth, fit verdict, top competencies, frameable gaps, structural gaps, unverified assumptions, batch triage rank). Multiple JD Analysis sections can exist. Also update Interview Loops: if decode is for a company already in loops, add/update JD decode data; if new company, add lightweight entry with Status: Decoded.
+- present produces presentation prep (save Presentation Prep section to coaching_state.md within relevant Interview Loop, or as standalone section — date, depth, framework, time target, content status, top predicted questions, key adjustment)
+- salary produces comp strategy (save Comp Strategy section to coaching_state.md — date, depth, target range, range basis, research completeness, stage coached, jurisdiction notes, scripts provided, key principle)
 - prep starts a new company loop or updates interviewer intel, round formats, fit verdict, fit confidence, and structural gaps (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)
 - reflect archives the coaching state (add Status: Archived header)
@@ -334,6 +380,9 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `resume` | Resume optimization |
 | `pitch` | Core positioning statement + context variants |
 | `outreach` | Networking outreach coaching |
+| `decode` | JD analysis + batch triage |
+| `present` | Presentation round coaching |
+| `salary` | Early/mid-process comp coaching |
 | `hype` | Pre-interview confidence and 3x3 plan |
 | `thankyou` | Thank-you note / follow-up drafts |
 | `progress` | Trend review, self-calibration, outcomes |
@@ -354,6 +403,9 @@ When executing a command, read the required reference files first:
 - **`resume`**: Also read `references/differentiation.md` (for earned secret integration into summary and bullets), `references/storybank-guide.md` (for storybank data to feed into bullet rewrites and quantification).
 - **`pitch`**: Also read `references/differentiation.md` (for earned secret integration into positioning), `references/storybank-guide.md` (for narrative identity themes and story data to anchor the statement).
 - **`outreach`**: Also read `references/differentiation.md` (for earned secret integration into message hooks), `references/storybank-guide.md` (for story selection to build credibility in messages).
+- **`decode`**: Also read `references/cross-cutting.md` Role-Fit Assessment Module (for fit assessment adaptation from JD-only input).
+- **`present`**: Also read `references/storybank-guide.md` (for supporting stories to incorporate into presentations), `references/commands/prep.md` Section "Interview Format Taxonomy" (for format context when presentation is a known interview round format).
+- **`salary`**: Also read `references/commands/negotiate.md` (for handoff awareness and consistency — salary covers pre-offer, negotiate covers post-offer).
 - **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
 - **`progress`**: Also read `references/calibration-engine.md`.
 - **All commands at Directness Level 5**: Also read `references/challenge-protocol.md`.
@@ -441,25 +493,32 @@ Use first match:
 8. Resume optimization intent -> `resume`
 9. Pitch / positioning / "tell me about yourself" prep / "how do I introduce myself" intent -> `pitch`
 10. Networking outreach / cold email / "how do I reach out" / recruiter reply intent -> `outreach`
-11. Story-building / storybank intent -> `stories`
-12. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
-13. Practice intent -> `practice`
-14. Progress/pattern intent -> `progress`
-15. "I got an offer" / offer details present -> `negotiate`
-16. "I'm done" / "accepted" / "wrapping up" -> `reflect`
-17. Otherwise -> ask whether to run `kickoff` or `help`
+11. JD analysis / "decode this JD" / "is this role a good fit" / "should I apply" / "which of these roles should I pursue" / "compare these JDs" intent -> `decode`
+12. Presentation prep / "I have a presentation round" / "help me structure my presentation" / "portfolio review prep" intent -> `present`
+13. Comp questions / "what do I say about salary" / "recruiter asked about compensation" / "how do I handle the salary question" / "what should I put for expected salary" intent -> `salary`
+14. Story-building / storybank intent -> `stories`
+15. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
+16. Practice intent -> `practice`
+17. Progress/pattern intent -> `progress`
+18. "I got an offer" / offer details present -> `negotiate`
+19. "I'm done" / "accepted" / "wrapping up" -> `reflect`
+20. Otherwise -> ask whether to run `kickoff` or `help`
 
 ### Multi-Step Intent Detection
 
-When a candidate's request implies a sequence of commands, state the plan and execute sequentially, transitioning naturally between steps. Don't force — offer the next step, don't mandate it. **Precedence**: Multi-step intent patterns take priority over Mode Detection items 3-15. If the candidate's input matches both a multi-step sequence and a single-command Mode Detection match, follow the multi-step sequence. Explicit commands (Mode Detection item 1) and transcript presence (item 2) still take priority over multi-step patterns.
+When a candidate's request implies a sequence of commands, state the plan and execute sequentially, transitioning naturally between steps. Don't force — offer the next step, don't mandate it. **Precedence**: Multi-step intent patterns take priority over Mode Detection items 3-18. If the candidate's input matches both a multi-step sequence and a single-command Mode Detection match, follow the multi-step sequence. Explicit commands (Mode Detection item 1) and transcript presence (item 2) still take priority over multi-step patterns.
 
 | Intent | Sequence |
 |--------|----------|
-| "Prepare me for my interview at [company]" | `research` (if no loop exists) → `prep` → `concerns` → `hype` (if ≤48h) |
+| "Prepare me for my interview at [company]" | `research` (if no loop exists) → `prep` → `present` (if presentation round identified) → `concerns` → `hype` (if ≤48h) |
 | "I just finished my interview at [company]" | `debrief` → (later) `analyze` if transcript available |
 | "Help me get ready for tomorrow" | `hype` (+ `prep` if none exists for the company) |
 | "I want to work on my stories" | `stories add`/`improve` cycle |
 | "I'm starting my job search" | `kickoff` → `stories` → `pitch` → `resume` (Quick Audit) → `linkedin` (Quick Audit) |
+| "I found a job posting" / "Is this role right for me?" / "Should I apply to this?" | `decode` → (if Strong Fit/Investable Stretch) `prep [company]` → `resume` (JD-targeted if not already done) |
+| "I have a presentation round" / "I need to prepare a presentation" | `present` → `hype` (if ≤48h) |
+| "Recruiter asked about salary" / "What do I say about compensation?" | `salary` → (if offer arrives later) `negotiate` |
+| "Compare these job postings" / "Which of these should I apply to?" | `decode` (batch triage) |
 | "I want to optimize my application materials" | `pitch` (if no Positioning Statement) → `resume` → `linkedin` (if not already done) |
 | "I want to start networking" / "How do I reach out to people?" | `pitch` (if no Positioning Statement) → `linkedin` (Quick Audit, if not already done) → `outreach` |
 | "I got rejected from [company]" | `feedback` Type B → `progress` targeting insights (if 3+ outcomes) |

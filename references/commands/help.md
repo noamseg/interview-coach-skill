@@ -24,6 +24,12 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If Outreach Strategy doesn't exist and kickoff has been run and LinkedIn Analysis is not "Weak": highlight `outreach`
    - If candidate mentions recruiter message, cold outreach, networking, or informational interview: highlight `outreach`
    - If the candidate mentions recruiter feedback or an outcome in conversation but hasn't used `feedback`: highlight `feedback`
+   - If a JD was mentioned or pasted but no JD Analysis exists and prep hasn't been run: highlight `decode`
+   - If the candidate mentions comparing job postings or deciding which roles to apply to: highlight `decode` (batch triage)
+   - If Interview Loops show a presentation round format (from prep or Format Discovery): highlight `present`
+   - If the candidate mentions a presentation, portfolio review, or case presentation: highlight `present`
+   - If Comp Strategy doesn't exist and the candidate mentions a recruiter screen or salary question: highlight `salary`
+   - If the candidate mentions salary expectations, compensation questions, or "what should I say about pay": highlight `salary`
 4. **Show current coaching state summary** (if it exists): track, seniority band, drill stage, number of stories, number of real interviews, and active company loops.
 5. **End with a prompt**: "What would you like to work on?"
 
@@ -37,17 +43,28 @@ When the user types `help`, generate a context-aware command guide — not just 
 |---|---|
 | `kickoff` | Set up your profile, choose a track (Quick Prep or Full System), and get a prioritized action plan based on your timeline |
 
-### Interview Prep
+### Interview Round Prep
 | Command | What It Does |
 |---|---|
 | `research [company]` | Company research + structured fit assessment (seniority, domain, trajectory) before committing to full prep. Three depth levels: Quick Scan (target list building), Standard (default), Deep Dive (high-priority targets). Includes structured search protocol and claim verification. |
+| `decode` | JD decoder + batch triage — analyze job descriptions with confidence-labeled interpretations, 6 decoding lenses, fit assessment, and recruiter verification questions. Compare 2-5 JDs to find your sweet spot and prioritize applications. Three depth levels: Quick Scan, Standard, Deep Decode. Includes a teaching layer so you learn to read JDs yourself. At Level 5 Deep: Challenge Protocol. |
 | `prep [company]` | Full prep brief — role-fit assessment (5 dimensions — identifies frameable vs. structural gaps), format guidance, culture read, interviewer intelligence (from LinkedIn URLs), predicted questions (weighted by real questions from past interviews when available), story mapping, and a day-of cheat sheet |
 | `concerns` | Anticipate likely interviewer concerns about your profile + counter-evidence strategies |
 | `questions` | Generate 5 tailored, non-generic questions to ask your interviewer |
+| `present` | Presentation round coaching — narrative structure, timing calibration, opening/closing optimization, Q&A preparation (10 predicted questions with answer strategies). Works for system design presentations, business cases, portfolio reviews, strategy presentations, and technical deep dives. Three depth levels: Quick Structure, Standard, Deep Prep. At Level 5 Deep: Challenge Protocol. |
+
+### Application Materials
+| Command | What It Does |
+|---|---|
 | `linkedin` | LinkedIn profile optimization — section-by-section audit, recruiter search optimization, content strategy. Three depth levels: Quick Audit, Standard, Deep Optimization. At Level 5 Deep: Challenge Protocol applied to your profile. |
 | `resume` | Resume optimization — ATS compatibility, recruiter scan, bullet quality, seniority calibration, keyword coverage, structure, concern management, consistency. Three depth levels: Quick Audit, Standard, Deep Optimization. Storybank-to-bullet pipeline when storybank exists. JD-targeted optimization when JD available. At Level 5 Deep: Challenge Protocol applied to your resume. |
 | `pitch` | Core positioning statement — your "who I am" in 10-90 seconds. Foundational artifact with context variants (interview TMAY, networking, recruiter call, career fair, LinkedIn hook). Three depth levels: Quick Draft, Standard, Deep Positioning. Saved to coaching state and referenced by resume, linkedin, and outreach for consistency. At Level 5 Deep: Challenge Protocol. |
 | `outreach` | Networking outreach coaching — cold LinkedIn, warm intros, informational interview asks, recruiter replies, follow-ups, referral requests. Three depth levels: Quick (templates), Standard (critique + rewrite), Deep (full campaign strategy). Consumes Positioning Statement from `pitch`. At Level 5 Deep: Challenge Protocol. |
+
+### Pre-Conversation
+| Command | What It Does |
+|---|---|
+| `salary` | Early/mid-process comp coaching — scripts for "what are your salary expectations?", salary history deflection, range construction from research, total comp education. Covers application forms through pre-offer discussions. Hands off to `negotiate` when a formal offer arrives. Three depth levels: Quick Script, Standard, Deep Strategy. At Level 5 Deep: Challenge Protocol. |
 | `hype` | Pre-interview boost — 60-second hype reel, 3x3 sheet (concerns + counters + questions), warmup routine, and mid-interview recovery playbook |
 
 ### Practice and Simulation
@@ -110,6 +127,9 @@ When the user types `help`, generate a context-aware command guide — not just 
 - Your resume is ranked by ATS before a human ever sees it. Run `resume` to optimize for both machines and the 7-second recruiter scan.
 - Your pitch is the consistency anchor for everything else. Run `pitch` before `resume` or `linkedin` — it gives both commands a positioning reference to align to.
 - Referrals account for 30-50% of hires. Run `outreach` to craft messages that actually get responses — not generic templates.
+- Don't apply to every JD that looks interesting. Run `decode` to analyze the language, assess fit, and decide where your time is best spent — or compare multiple JDs with batch triage.
+- Presentation rounds are won in the preparation, not the delivery. Run `present` to structure your content, calibrate timing, and prepare for Q&A before you ever open PowerPoint.
+- The highest-leverage salary moment is the recruiter screen, not the offer negotiation. Run `salary` before that first call so you don't anchor yourself low.
 - Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later
 
 What would you like to work on?

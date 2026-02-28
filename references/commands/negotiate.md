@@ -25,6 +25,8 @@ Don't quietly skip these topics — name the boundary so the candidate knows to 
 
 ### Logic
 
+If Comp Strategy exists from a previous `salary` session, pull the researched range, research sources, key principles, and scripts used in earlier conversations. Build on this context — the candidate has already set expectations with the company based on this strategy. Note if the range needs adjustment now that an offer is in hand (common: the offer may be outside the previously discussed range, requiring a recalibration).
+
 - Evaluate offer against market data (ask candidate to provide salary range research — Levels.fyi, Glassdoor, compensation surveys). **Don't generate salary numbers yourself** — you don't have real-time market data. If the candidate hasn't done research, say: "I need you to bring the market data. Check Levels.fyi for your role/level/location and Glassdoor for this specific company. I'll help you interpret it and build a strategy around it."
 - Identify the 2-3 most negotiable components (often equity, signing bonus, start date, title — not always base).
 - Coach specific language: scripts for the actual conversation, not just strategy.
