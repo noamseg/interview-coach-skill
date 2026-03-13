@@ -26,7 +26,7 @@ This skill maintains continuity across sessions using a persistent `coaching_sta
 
 At the beginning of every session:
 1. Read `coaching_state.md` if it exists.
-2. **If it exists**: Run the Schema Migration Check (see below), then the Timeline Staleness Check (see below). Then greet the candidate with a prescriptive recommendation: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Based on where you are, the highest-leverage move right now is **[specific command + reason]**. Want to start there, or tell me what you'd rather work on." Recommendation logic (check in this order): pending outcomes in Outcome Log → ask for updates before recommending ("Any news from [companies]?"); interview within 48h → `hype` (+ note any storybank gaps to address post-interview); storybank empty → `stories`; debrief captured but no corresponding Score History entry for that round → `analyze` (paste the transcript); research done for a company but prep not yet run → `prep [company]`; 3+ sessions and no recent progress review → `progress`; active prep but no practice → `practice`; otherwise → the most relevant command based on Active Coaching Strategy. Do NOT re-run kickoff. If the Score History or Session Log has grown large (15+ rows), run the Score History Archival check silently before continuing. Also check Interview Intelligence archival thresholds if the section exists.
+2. **If it exists**: Run the Schema Migration Check (see below), then the Timeline Staleness Check (see below). Then greet the candidate with a prescriptive recommendation: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Based on where you are, the highest-leverage move right now is **[specific command + reason]**. Want to start there, or tell me what you'd rather work on." Recommendation logic (check in this order): pending outcomes in Outcome Log → ask for updates before recommending ("Any news from [companies]?"); interview within 48h → `hype` (+ note any storybank gaps to address post-interview); storybank empty → `stories`; debrief captured but no corresponding Score History entry for that round → `analyze` (paste the transcript); research done for a company but prep not yet run → `prep [company]`; 3+ sessions and no recent progress review → `progress`; active prep but no practice → `practice`; Scout Config exists and last scan > 3 days ago → `scout` (check for new opportunities); otherwise → the most relevant command based on Active Coaching Strategy. Do NOT re-run kickoff. If the Score History or Session Log has grown large (15+ rows), run the Score History Archival check silently before continuing. Also check Interview Intelligence archival thresholds if the section exists.
 3. **If it doesn't exist and the user hasn't already issued a command**: Treat as a new candidate. Suggest kickoff.
 4. **If it doesn't exist but the user has already issued a command** (e.g., they opened with `kickoff`): Execute the command directly — don't suggest what they've already asked for.
 
@@ -72,6 +72,7 @@ After reading `coaching_state.md`, check whether it contains all sections and co
 - **Missing `JD Analysis` section(s)**: No migration needed — JD Analysis sections are created per-JD when `decode` is run. Absence is normal.
 - **Missing `Presentation Prep` section**: No migration needed — created when `present` is run. Absence is normal.
 - **Missing `Comp Strategy` section**: Add the section header with empty fields. Note in Coaching Notes: "[date]: Comp Strategy section added. Run `salary` to populate."
+- **Missing `Scout Config` or `Scout Opportunities` section(s)**: No migration needed — created on first `scout` run via the URL Configuration Flow. Absence is normal until scout is first used.
 - **Missing `Anxiety profile` in Profile**: Add the field with value "unknown". It will be set during the next `hype` session.
 - **Missing `Career transition` in Profile**: Add the field with value "none". If the candidate's resume suggests a transition, update during the next session.
 - **Missing `Transition narrative status` in Profile**: Add the field with value "not started". Only relevant when Career transition is not "none".
@@ -292,6 +293,18 @@ Last updated: [date]
 - Top predicted questions: [top 3]
 - Key adjustment: [single biggest change recommended]
 
+## Scout Config
+- Search URLs:
+  1. [URL — label, e.g., "LinkedIn — CTO roles"]
+  2. [URL — label]
+- Fit threshold: [1-5, default 3]
+- Last scan: [date]
+
+## Scout Opportunities
+| Date | Company | Title | Score | Rationale | URL | Status |
+|------|---------|-------|-------|-----------|-----|--------|
+[rows — Status: New / Reviewed / Pursuing / Passed / Archived. Only above-threshold opportunities stored here. Below-threshold stored in opportunities_bad_fit.md for dedup.]
+
 ## Comp Strategy
 - Date: [date]
 - Depth: [Quick Script / Standard / Deep Strategy]
@@ -342,6 +355,7 @@ Write to `coaching_state.md` whenever:
 - decode produces JD analysis (save JD Analysis section per JD to coaching_state.md — date, depth, fit verdict, top competencies, frameable gaps, structural gaps, unverified assumptions, batch triage rank). Multiple JD Analysis sections can exist. Also update Interview Loops: if decode is for a company already in loops, add/update JD decode data; if new company, add lightweight entry with Status: Decoded.
 - present produces presentation prep (save Presentation Prep section as top-level section in coaching_state.md — include company name in header when company-specific — date, depth, framework, time target, content status, top predicted questions, key adjustment)
 - salary produces comp strategy (save Comp Strategy section to coaching_state.md — date, depth, target range, range basis, research completeness, stage coached, jurisdiction notes, scripts provided, key principle)
+- scout scans job search URLs and scores new listings (save Scout Config on first run, add above-threshold listings to Scout Opportunities table in coaching_state.md, add below-threshold listings to opportunities_bad_fit.md, update Last scan date). When other commands create Interview Loop entries for a company+role that exists in Scout Opportunities, update the Scout Opportunities Status to "Pursuing" automatically.
 - prep starts a new company loop or updates interviewer intel, round formats, fit verdict, fit confidence, and structural gaps (add to Interview Loops)
 - negotiate receives an offer (add to Outcome Log with Result: offer)
 - reflect archives the coaching state (add Status: Archived header)
@@ -399,6 +413,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `negotiate` | Post-offer negotiation coaching |
 | `reflect` | Post-search retrospective + archive |
 | `feedback` | Capture recruiter feedback, report outcomes, correct assessments, add context |
+| `scout` | Scan job search URLs for new opportunities + fit scoring |
 | `help` | Show this command list |
 
 ### File Routing
@@ -418,6 +433,7 @@ When executing a command, read the required reference files first:
 - **`salary`**: Also read `references/commands/negotiate.md` (for handoff awareness and consistency — salary covers pre-offer, negotiate covers post-offer).
 - **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
 - **`progress`**: Also read `references/calibration-engine.md`.
+- **`scout`**: No additional reference files — reads only `references/commands/scout.md`. Uses Chrome browser tools to read job search pages.
 - **All commands at Directness Level 5**: Also read `references/challenge-protocol.md`.
 
 ## Evidence Sourcing Standard
@@ -506,13 +522,14 @@ Use first match:
 11. JD analysis / "decode this JD" / "is this role a good fit" / "should I apply" / "which of these roles should I pursue" / "compare these JDs" intent -> `decode`
 12. Presentation prep / "I have a presentation round" / "help me structure my presentation" / "portfolio review prep" intent -> `present`
 13. Comp questions / "what do I say about salary" / "recruiter asked about compensation" / "how do I handle the salary question" / "what should I put for expected salary" intent -> `salary`
-14. Story-building / storybank intent -> `stories`
-15. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
-16. Practice intent -> `practice`
-17. Progress/pattern intent -> `progress`
-18. "I got an offer" / offer details present -> `negotiate`
-19. "I'm done" / "accepted" / "wrapping up" -> `reflect`
-20. Otherwise -> ask whether to run `kickoff` or `help`
+14. Job scanning / "scan for jobs" / "check for new listings" / "any new opportunities" intent -> `scout`
+15. Story-building / storybank intent -> `stories`
+16. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)
+17. Practice intent -> `practice`
+18. Progress/pattern intent -> `progress`
+19. "I got an offer" / offer details present -> `negotiate`
+20. "I'm done" / "accepted" / "wrapping up" -> `reflect`
+21. Otherwise -> ask whether to run `kickoff` or `help`
 
 ### Multi-Step Intent Detection
 
@@ -532,6 +549,7 @@ When a candidate's request implies a sequence of commands, state the plan and ex
 | "I want to optimize my application materials" | `pitch` (if no Positioning Statement) → `resume` → `linkedin` (if not already done) |
 | "I want to start networking" / "How do I reach out to people?" | `pitch` (if no Positioning Statement) → `linkedin` (Quick Audit, if not already done) → `outreach` |
 | "I got rejected from [company]" | `feedback` Type B → `progress` targeting insights (if 3+ outcomes) |
+| "Scan for new jobs" / "Check my job searches" / "Any new opportunities?" | `scout` → (if high-scoring results) suggest `decode` or `research` for top matches |
 
 **Behavior**: When you detect a multi-step intent, briefly state the plan ("I'll walk you through research, then prep, then concerns for [company]"), execute the first step, and at each transition point offer the next step naturally: "That covers the research. Ready to move into full prep?" If the candidate wants to skip or redirect, respect that. When a multi-step sequence is active and Rule 7's state-aware recommendation for the current command diverges from the planned next step, follow the multi-step plan but note the state-aware alternative: "Next in our sequence is `prep`. (Side note: your storybank is empty — we should address that after we finish this prep cycle.)"
 

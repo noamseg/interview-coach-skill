@@ -30,6 +30,8 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If the candidate mentions a presentation, portfolio review, or case presentation: highlight `present`
    - If Comp Strategy doesn't exist and the candidate mentions a recruiter screen or salary question: highlight `salary`
    - If the candidate mentions salary expectations, compensation questions, or "what should I say about pay": highlight `salary`
+   - If Scout Config exists with URLs configured and last scan is older than a few days: highlight `scout` ("You haven't scanned for new jobs recently")
+   - If the candidate mentions checking for new jobs, scanning listings, or monitoring opportunities: highlight `scout`
 4. **Diagnostic Router** — If the candidate describes a problem instead of asking for a command, route them to the right place:
    - "I'm not getting callbacks" → `resume` (ATS issues) or `decode` (targeting wrong roles)
    - "I keep failing first rounds" → `analyze` (if transcripts exist) or `practice ladder` (if no data)
@@ -40,6 +42,7 @@ When the user types `help`, generate a context-aware command guide — not just 
    - "I'm not hearing back from networking" → `outreach` + `linkedin` (profile quality gate)
    - "I keep getting to final rounds but not getting offers" → `progress` (pattern analysis) + `concerns` (what's tripping you up)
    - "I have a presentation round" → `present`
+   - "I'm spending too much time checking job boards" → `scout` (automate the scanning)
    Don't just list the command — explain WHY that command addresses their specific problem.
 5. **Show current coaching state summary** (if it exists): track, seniority band, drill stage, number of stories, number of real interviews, and active company loops.
 6. **End with a prompt**: "What would you like to work on?"
@@ -95,6 +98,11 @@ When the user types `help`, generate a context-aware command guide — not just 
 |---|---|
 | `stories` | Full storybank management. Options: `view`, `add` (guided discovery, not just "tell me a story"), `improve` (structured upgrade with before/after), `find gaps` (prioritized by target roles), `retire`, `drill` (rapid-fire retrieval practice), `narrative identity` (extract your 2-3 core career themes and see how every story connects). At Level 5: stories get red-teamed with 5 challenge lenses after add/improve. |
 
+### Job Discovery
+| Command | What It Does |
+|---|---|
+| `scout` | Automated job search scanner — reads your preconfigured job search URLs (LinkedIn, Indeed, etc.) via Chrome, identifies new listings, scores fit against your profile on a 1-5 scale, and stores results. Surfaces only opportunities above your configured threshold. Requires Chrome extension environment (Cowork). |
+
 ### Progress and Tracking
 | Command | What It Does |
 |---|---|
@@ -141,6 +149,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 - Don't apply to every JD that looks interesting. Run `decode` to analyze the language, assess fit, and decide where your time is best spent — or compare multiple JDs with batch triage.
 - Presentation rounds are won in the preparation, not the delivery. Run `present` to structure your content, calibrate timing, and prepare for Q&A before you ever open PowerPoint.
 - The highest-leverage salary moment is the recruiter screen, not the offer negotiation. Run `salary` before that first call so you don't anchor yourself low.
+- Set up `scout` with your job search URLs and run it periodically to catch new listings without manually checking every site. It remembers what it's already seen.
 - Everything saves automatically to `coaching_state.md` — pick up where you left off, even weeks later
 
 What would you like to work on?
