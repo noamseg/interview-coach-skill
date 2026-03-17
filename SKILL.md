@@ -118,16 +118,21 @@ Last updated: [date]
 [rows — compact index. Use Count tracks total times used in real interviews (incremented via debrief). Full column spec in references/storybank-guide.md — the guide adds Impact, Domain, Risk/Stakes, and Notes. Add extra columns as stories are enriched.]
 
 ### Story Details
-#### S001 — [Title]
-- Situation:
-- Task:
-- Action:
-- Result:
-- Earned Secret:
-- Deploy for: [one-line use case — e.g., "leadership under ambiguity questions"]
-- Version history: [date — what changed]
 
-[repeat for each story]
+<details>
+<summary><strong>S001 — [Title]</strong></summary>
+
+- **Situation:**
+- **Task:**
+- **Action:**
+- **Result:**
+- **Earned Secret:**
+- **Deploy for:** [one-line use case — e.g., "leadership under ambiguity questions"]
+- **Version history:** [date — what changed]
+
+</details>
+
+[repeat for each story — each wrapped in its own `<details>` toggle]
 
 ## Score History
 ### Historical Summary (when table exceeds 15 rows, summarize older entries here)
@@ -162,11 +167,16 @@ Last updated: [date]
 [Source: recruiter/interviewer/hiring-manager. Keep verbatim when possible.]
 
 ### Company Patterns (learned from real experience)
-#### [Company Name]
+
+<details>
+<summary><strong>[Company Name]</strong></summary>
+
 - Questions observed: [types and frequency]
 - What seems to matter: [observations from real data]
 - Stories that landed / didn't: [S### IDs]
 - Last updated: [date]
+
+</details>
 
 ### Historical Intelligence Summary
 [Narrated summary when subsections exceed archival thresholds]
@@ -177,7 +187,10 @@ Last updated: [date]
 - Revisit queue: [weaknesses to resurface]
 
 ## Interview Loops (active)
-### [Company Name]
+
+<details>
+<summary><strong>[Company Name]</strong></summary>
+
 - Status: [Decoded / Researched / Applied / Interviewing / Offer / Closed]
 - Rounds completed: [list with dates]
 - Round formats:
@@ -193,6 +206,8 @@ Last updated: [date]
 - Fit signals: [1-2 lines on what drove the verdict]
 - Structural gaps: [gaps that can't be bridged with narrative, if any]
 - Date researched: [date, if `research` was run]
+
+</details>
 
 ## Active Coaching Strategy
 - Primary bottleneck: [dimension]
@@ -319,7 +334,16 @@ Last updated: [date]
 
 ## Coaching Notes
 [Freeform observations that don't fit structured fields — things the coach should remember between sessions]
-- [date]: [observation — e.g., "candidate freezes in panel formats," "gets defensive about short tenure at X," "prefers morning interviews," "mentioned they interview better after coffee"]
+
+<details>
+<summary><strong>[date]</strong> — [short summary of first note]</summary>
+
+- [observation 1]
+- [observation 2]
+
+</details>
+
+[repeat for each date — group same-date notes within a single toggle]
 ```
 
 ### State Update Triggers
@@ -347,6 +371,8 @@ Write to `coaching_state.md` whenever:
 - reflect archives the coaching state (add Status: Archived header)
 - Meta-check conversations (record candidate's response and any coaching adjustment to Meta-Check Log)
 - Any session where the candidate reveals coaching-relevant personal context — preferences, emotional patterns, interview anxieties, scheduling preferences, etc. (add to Coaching Notes)
+
+**Formatting rule for collapsible sections:** When adding new entries to Story Details, Company Patterns, Interview Loops, or Coaching Notes, always wrap each new entry in `<details><summary>...</summary>...</details>`. Bold STAR labels in Story Details (**Situation:**, **Task:**, **Action:**, **Result:**) and key metadata labels (**Earned Secret:**, **Deploy for:**, **Version history:**). For Coaching Notes, group same-date entries within a single toggle; if adding to an existing date's toggle, append inside it.
 
 ---
 
