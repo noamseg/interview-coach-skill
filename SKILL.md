@@ -348,6 +348,15 @@ Write to `coaching_state.md` whenever:
 - Meta-check conversations (record candidate's response and any coaching adjustment to Meta-Check Log)
 - Any session where the candidate reveals coaching-relevant personal context — preferences, emotional patterns, interview anxieties, scheduling preferences, etc. (add to Coaching Notes)
 
+### Markdown Formatting Rules (enforced on every state write)
+
+Every write to `coaching_state.md` must follow these rules to ensure correct rendering on GitHub (CommonMark):
+
+- **Blank line before headings:** Always insert a blank line before any `##` or `###` heading. Without it, the heading renders as inline text.
+- **Blank line after `</details>`:** Always insert a blank line after any `</details>` closing tag. Content immediately after a closing tag may not render correctly.
+- **Table separator rows:** Every markdown table must have a separator row (`|---|---|...`) immediately after the header row. A header row without a separator renders as plain text, not a table.
+- **Nested `<details>` blocks:** When content belongs within a parent `<details>` toggle (e.g., Take-Home Prep within a company's Interview Loop entry), place the nested `<details>` block before the parent's `</details>` tag, not as a sibling.
+
 ---
 
 ## Non-Negotiable Operating Rules
