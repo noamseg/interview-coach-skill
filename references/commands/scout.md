@@ -57,6 +57,22 @@ For each URL in the Scout Config:
    - **How to decide**: After reading the search page, check whether you have at least a job title, company, AND either a description snippet or a requirements list. If yes → Tier 1. If you only have title + company with no detail → Tier 2.
    - **Tier 2 optimization**: When clicking through, extract only what's needed for scoring (title, company, seniority, requirements, comp if shown). Don't read the entire page in depth — get the facts and move on.
 
+### Token Efficiency Protocol
+
+These rules minimize token usage across scout runs. Follow them on every scan.
+
+**Rule 1: Always use text extraction, not screenshots.**
+Use `get_page_text` or `read_page` as the standard extraction method for all job board pages. Job boards render content as HTML text — screenshots are never needed. A single text call replaces 4-6 screenshot + scroll cycles per URL. Fall back to screenshots only if text extraction returns empty or garbled content (rare for any major job board).
+
+**Rule 2: Quick-pass dedup before deep reading.**
+On each search page, do a fast title + company scan first. Cross-reference against `opportunities_bad_fit.md` and the Scout Opportunities table in `coaching_state.md` before clicking into or evaluating any listing. Only deep-read (click through, extract full details, evaluate fit) listings that aren't already tracked. Report skip count in the Scan Summary.
+
+**Rule 3: Early termination when no new listings found.**
+If the first 10-15 listings on a search page are all already tracked (present in bad_fit or Scout Opportunities), stop scrolling that URL. Job boards sort by recency — if the top results are all known, deeper results will be too. Exception: if the search URL uses a non-date sort order (e.g., relevance), scroll fully.
+
+**Rule 4: Batch assessment.**
+Collect all new (unseen) listings across all URLs first, then do one consolidated scoring pass against the candidate's profile. Profile context is loaded once in Step 1 — don't re-read `coaching_state.md` per listing.
+
 **Step 3: Deduplication**
 For each extracted listing, check whether `title + company` (case-insensitive) already exists in:
 - `coaching_state.md` Scout Opportunities table (above-threshold)
