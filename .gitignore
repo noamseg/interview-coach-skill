@@ -3,6 +3,8 @@
 
 # Personal coaching data — contains stories, scores, interview targets, and concerns
 coaching_state.md
+# Bad fit opportunities - may get large for active searches, hence it is a separate file
+opportunities_bad_fit.md
 
 # Active skill file (created by copying SKILL.md during setup)
 CLAUDE.md
