@@ -215,6 +215,8 @@ Last updated: 2026-03-23
 - Interviewer intel: Lachlan (CEO/founder — primary). Andrea (CTO — needs PM to engage technically). Elliott (co-founder — cares about product comms and trade-off transparency).
 - Prepared questions for R2: (1) "The funnel is impressively clean through setup. What does CS do that makes that work, and is any of it productisable?"; (2) "Content is product at Wellio. How does the content team monitor lesson performance once live?"; (3) "Data and insights infrastructure — is there a data team, or is that a capability gap?"; (4) "6 months from now, best hire — what would they have shipped?"
 - Transcripts: Intro at ~/job-hunting/opportunities/wellio/transcripts/2026-02-19-lachlan-r1.md (analyzed 2026-03-07), R1 at ~/job-hunting/opportunities/wellio/transcripts/2026-02-26-lachlan-r2-deep-dive.md (analyzed 2026-03-07), R2 at ~/job-hunting/opportunities/wellio/transcripts/2026-03-23-R2-ProductSense-Wellio-Transcript.md (analyzed 2026-03-23)
+- Champion network (2026-03-25): Francois Bondiguel (Head of Marketing, ex-Canva contact). Scheduling call done 2026-03-25, 30min call booked for 2026-03-26 after 10am. Key prior intel from Francois: $5M ARR 2025 targeting $10M 2026; "not as sales-driven"; "engineers super senior"; happy with work-life balance. Pre-mop-up strategy: get growth attribution, product-marketing collaboration intel, Andrea/Elliott prep, indirect comp intel.
+- Comp strategy (Warwick-informed): BetterFleet precedent $300K base + 0.5% equity (promised, not delivered). Wellio band $170-270K advertised. Creative options: (1) 4-day week, 5th day for AI tooling that benefits Wellio, (2) extra vacation for France family visits. Value-creation anchor: $5M to $10M growth, even 10% product contribution = $1M value. Real scarcity: Euc process active in parallel.
 - Next round: R3 — mop-up interview with Elliott and Andrea (TBD). Format: gap-filling on hiring scorecard. Then R4: in-person meeting.
 - Fit verdict: Investable Stretch
 - Fit confidence: High — JD + resume + storybank + intro + R1
@@ -231,9 +233,10 @@ Last updated: 2026-03-23
 - Concerns surfaced: None raised — Sophia was enthusiastic about fit
 - Interviewer intel: Sophia (recruiter). Quarterzip founders are ex-PMs (product-led focus). Melbourne-based, 10-person team.
 - Prepared questions: —
-- Next steps: Sophia sharing Christophe's profile with Quarterzip. Resume sent to Sophia on 2026-02-26 (growth metrics / commercial outcomes highlighted). Sophia exploring other PLG opportunities in parallel.
+- Next steps: Sophia sharing Christophe's profile with Quarterzip. Resume sent to Sophia on 2026-02-26 (growth metrics / commercial outcomes highlighted). Sophia exploring other PLG opportunities in parallel. Sophia calling again this week (2026-03-25+).
+- Fractional pivot strategy (2026-03-25, Warwick-informed): Sophia asked "permanent or fractional?" in R1; Christophe said "primarily permanent, fractional is attractive but gives me pause." Strategy for next call: reframe. Open with process update (two active late-stage), pivot to "something has shifted" (deep on AI/vibe-coding), reposition fractional as force multiplier not downgrade. Key ask: "What made you ask about fractional? Do you have founders looking for that profile?" Sophia called Christophe a "unicorn combination" (PLG + PMM + product). Align incentives: fractional placements = recurring fees for Sophia vs one-and-done permanent. Real scarcity: two active processes = leverage. Do NOT disparage permanent roles; they're leverage, not fallbacks.
 - Transcript: ~/job-hunting/opportunities/quarterzip/transcripts/2026-02-26-sophia-recruiter-call.md — analyzed 2026-03-07
-- Next round: TBD — pending Sophia's intro to Quarterzip
+- Next round: TBD — pending Sophia's intro to Quarterzip + fractional exploration
 - Fit verdict: Investable Stretch
 - Fit confidence: Low — recruiter summary only, no JD reviewed
 - Fit signals: PLG-native founders + AI product focus + 10-person stage = strong structural match for candidate's stated sweet spot. CPO-level role may be scope stretch. Ex-PM founders likely to value product craft.
