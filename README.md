@@ -98,6 +98,47 @@ mv SKILL.md AGENTS.md
 
 Requires any paid ChatGPT plan.
 
+### Option 3: Gemini CLI
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/noamseg/interview-coach-skill.git
+cd interview-coach-skill
+```
+
+Or [download it as a ZIP](https://github.com/noamseg/interview-coach-skill/archive/refs/heads/main.zip) and unzip.
+
+2. Activate the coach by renaming the skill file:
+
+```bash
+mv SKILL.md GEMINI.md
+```
+
+3. Rename the settings folder to match Gemini CLI:
+```bash
+mv .claude .gemini
+```
+
+4. In `settings.json`, update the permission keys to match Gemini CLI:
+```json
+{
+  "permissions": {
+    "allow": [
+      "read_file",
+      "list_directory",
+      "write_file",
+      "web_fetch",
+      "web_search"
+    ]
+  }
+}
+```
+
+5. Open the folder in Gemini CLI and say `kickoff`.
+
+Free plan is available with limitations, see the [Gemini CLI website](https://geminicli.com/plans/) for details.
+
 ---
 
 For both options, the coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state.md` so you pick up where you left off next session.
