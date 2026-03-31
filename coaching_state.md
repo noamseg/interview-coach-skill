@@ -1,5 +1,5 @@
 # Coaching State — Christophe Capel
-Last updated: 2026-03-23
+Last updated: 2026-03-31
 
 ## Profile
 - Target role(s): Principal PM / Senior PM — Platform, Growth, AI in healthcare or adjacent
@@ -99,6 +99,8 @@ Last updated: 2026-03-23
 | 2026-02-19 | Wellio | — | Intro | advanced | Lachlan — founder coffee chat, not a formal round. Transcript at ~/job-hunting/opportunities/wellio/transcripts/2026-02-19-lachlan-r1.md |
 | 2026-02-26 | Wellio | — | R1 | advanced | Lachlan deep-dive — transcript at ~/job-hunting/opportunities/wellio/transcripts/2026-02-26-lachlan-r2-deep-dive.md |
 | 2026-03-23 | Wellio | — | R2 | advanced | Product sense case study. Ran ~90min (scheduled 60). Lachlan engaged throughout. "I'd implement two through four tomorrow." One improvement note: leading indicators per bet. Next: mop-up interview with Elliott + Andrea. ~4 candidates remaining. |
+| 2026-03-30 | Wellio | HoP | R3a (Lachlan lunch) | advanced | Informal lunch at Munchtown. Down to 2 final candidates (was ~4). Role confirmed as HoP. Lachlan manages design/content reports for first 6-9 months. Probed short tenures (Heidi answer too long). Great chemistry on content/SEO/pods. References requested. Offer planned this week. |
+| 2026-03-30 | Wellio | HoP | R3b (Elliott mop-up) | pending | 1hr video call. Elliott liked case study, said no concerns about fit. CS-Product collaboration depth was main topic (3 follow-up Qs). Granola failed — only Christophe's side captured. Christophe self-rates not his best (tired, late call, ADHD). Elliott debriefs with Lachlan Mar 31. |
 | 2026-02-26 | Quarterzip | — | R1 | pending | Sophia recruiter call — transcript at ~/job-hunting/opportunities/quarterzip/transcripts/2026-02-26-sophia-recruiter-call.md |
 
 ## Interview Intelligence
@@ -127,6 +129,12 @@ Last updated: 2026-03-23
 | 2026-03-23 | Wellio | PM | case-study | Funnel drop-off analysis and product bets (full case study presentation) | Product sense / analytical depth / creative problem-solving | 4.0 | pending |
 | 2026-03-23 | Wellio | PM | closing | Salary expectations | Negotiation / comp awareness | 4.0 | pending |
 | 2026-03-23 | Wellio | PM | closing | Are you deep with anyone else / timelines | Process management / urgency creation | 3.0 | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | Why Australia / background | Personal narrative / culture fit | recall-only | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | Why Wellio / why this role? | Mission fit / motivation | recall-only | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | Day-to-day + biggest impact in 6-12 months (two-part) | Strategic thinking / ramp plan | recall-only | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | How should CS and Product work together? | Cross-functional collaboration | recall-only | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | How do you get signal through noise from CS? | Triaging / stakeholder education | recall-only | pending |
+| 2026-03-30 | Wellio | HoP | behavioral | How do CS/sales and Product sing in harmony? | Commercial alignment / product ops | recall-only | pending |
 
 ### Effective Patterns (what works for this candidate)
 - Platform + scale narrative (JSD→Canva→Heidi arc) consistently signals seniority
@@ -135,12 +143,15 @@ Last updated: 2026-03-23
 - Asking "is there anything that gives you pause?" directly at end of screen — confident signal, landed well
 - 2026-03-23: Case study/presentation format significantly outperforms behavioral for this candidate (Sub +0.5, Diff +0.7 vs R1). Format plays to analytical depth and creative thinking. Personal story opening + direct address to async audience (Andrea/Elliott) is a strong differentiator.
 - 2026-03-23: Asking for feedback instead of generic questions at end of interview — pattern confirmed across R1 and R2. Shows confidence and coachability.
+- 2026-03-30: CS-Product collaboration depth is a genuine strength — Elliott asked 3 follow-up questions on this topic. Concrete examples (embedded dashboards, Now/Next/Later, Claude transcript tool, sprint integration) signal real operational experience. This is a differentiator for Wellio specifically.
+- 2026-03-30: Network density in AU tech ecosystem (Atlassian connections, Vow/Dovetail/Year13 founders) signals naturally in informal settings. At Lachlan lunch, bumping into Scott Harwood + Nick Menere and introducing them to Lachlan was an effortless credibility boost.
 
 ### Ineffective Patterns (what keeps not working)
 - "We" instead of "I" — flagged explicitly in Eucalyptus 2024 rejection. Reappeared in Eucalyptus R1 Q3 under pressure (investigation phase of JSD story). Non-negotiable fix.
 - Two-story sprawl under complex questions — Q3 Eucalyptus R1: tried to tell Canva SEO platform + JSD BHAG simultaneously; both incomplete, both dropped "I" (score: 2.8). One story, fully delivered, is always better.
 - Framework-without-story on stakeholder/influence questions — Q6 Eucalyptus R1 scored 2.5 despite candidate rating it best answer. The mug analogy got rapport but no evidence. Always deploy S08 or S07 for these questions.
 - 2026-03-23: Defensive response to constructive feedback (leading indicators note) — "I have that in the doc" instead of validating and committing to action. Pattern to monitor: when given feedback, validate first, ask "tell me more", then respond.
+- 2026-03-30: Short tenure answers still too long when probed in informal settings. Lachlan lunch: Heidi explanation went through 8+ sub-topics (VP role, misconfig, sales, first-time PMs, scope, org design, hiring, fit, Tom, Nell). "Mutual" departure framing not direct or confident. 30-second versions drafted but not yet battle-tested.
 
 ### Recruiter/Interviewer Feedback
 | Date | Company | Source | Feedback | Linked Dimension |
@@ -159,7 +170,14 @@ Last updated: 2026-03-23
 - Stories that missed: Low points answer (geographic / co-founder misalignment — structural challenge, not personal failure. Felt safe. Scored lowest per user self-assessment.) Success Framework framing — proposed without mapping existing capabilities. 'Code component' answer wandered before landing on Heidi example.
 - Post-R2 follow-up: V2 deck sent with updated Bet 1 slide (two pillars: one proven methodology locally adapted + fast feedback loops; softer tone on assumptions about current ops; streamlined "why foundational" section). Drop-Off 3 rewritten to remove misleading survivorship bias framing. Bet numbering vs sequencing mismatch addressed with subtitle. Title changed for Andrea/Elliott readability. UMUX-Lite hyperlinked. Email sent 2026-03-23.
 - Critical gap: Q4 (blank slate discovery) scored 3.0. The Canva SEO acquisition platform — the strongest product-led discovery story in the storybank — was not deployed when Lachlan invited exactly that question. Follow-up email drafted to address directly.
-- Last updated: 2026-03-23
+- R3a Lachlan lunch (2026-03-30): Informal lunch at Munchtown. Key new intel: down to 2 final candidates. Role confirmed HoP (Lachlan's recommendation). Design + content report into HoP, but Lachlan manages those reports for first 6-9 months. Probed short tenures — Christophe over-explained Heidi (VP role, misconfig, sales, PMs, scope, org design, Tom, Nell — too many sub-topics). BetterFleet framing worked ("shit situation" — Lachlan's words). Good chemistry on content/SEO/platform acquisition play and dedicated pods vs feature checklist. Lachlan shared full founder origin story ("building a house to live in vs to sell"). References requested (from Heidi + BetterFleet: someone reported to, eng peer, direct report). Offer planned this week. Andrea intro email sent.
+- R3b Elliott mop-up (2026-03-30): 1hr video call. Warm opening (France connection, Elliott loves Lyon/Burgundy). Elliott liked case study and appreciated being addressed in it. 3 questions on CS-Product collaboration (main evaluation area for Elliott). Elliott's "what would make hire fail" = communication clarity across departments as they scale. Said no concerns about Christophe's fit. Will debrief with Lachlan Mar 31. Granola captured only Christophe's side. Self-assessment: answers not crisp (tired, late call, ADHD). No short tenure question from Elliott.
+- Elliott's evaluation priorities (confirmed): communication clarity, CS-Product harmony, commercial empathy. Cares less about product craft (that's Lachlan's domain) and more about how product integrates with commercial teams.
+- Decision structure: Lachlan and Elliott each own their area. Big decisions together. Elliott attends product betting table. Example: Elliott pushed for UK survey capability after running discovery with 12-15 people.
+- UK = ~30% of revenue and growing. Needs investment. Elliott is UK champion.
+- Timezone: AU-UK-TH spread. 1-2 sync days/week. Annual in-person visits each way + 2 additional syncs/year.
+- References selected: Tom (Heidi CEO, reported to), Karthick (BetterFleet PM, direct report), Anthony (BetterFleet Principal PM, eng peer). Testimonials PDF to attach.
+- Last updated: 2026-03-31
 
 #### Eucalyptus
 - Questions observed: behavioral screen — career walk-through, why leaving current role, most complex problem / turnaround, small vs large environments, stakeholder influence, people management preference
@@ -202,13 +220,15 @@ Last updated: 2026-03-23
 
 ### Wellio
 - Status: Interviewing
-- Rounds completed: Intro (2026-02-19, Lachlan — founder coffee chat / mutual exploration, not a formal round), R1 (2026-02-26, Lachlan BetterFleet deep-dive, ~75 min), R2 (2026-03-23, Lachlan — Product Sense case study presentation, ~90 min)
+- Rounds completed: Intro (2026-02-19, Lachlan — founder coffee chat / mutual exploration, not a formal round), R1 (2026-02-26, Lachlan BetterFleet deep-dive, ~75 min), R2 (2026-03-23, Lachlan — Product Sense case study presentation, ~90 min), R3a (2026-03-30, Lachlan — informal lunch at Munchtown, ~2.5hrs), R3b (2026-03-30, Elliott — mop-up video call, ~1hr)
 - Round formats:
   - Intro: Informal coffee chat, Lachlan (founder/CEO) — mutual exploration, conversational. Not a scored round.
   - Round 1: Structured role deep-dive, Lachlan — one role focus (BetterFleet), formal Q&A from candidate included. COMPLETE, advanced. Scored: Sub 3.4 / Str 3.2 / Rel 3.7 / Cred 3.4 / Diff 3.3. Hire Signal: Hire.
   - Round 2: Product Sense Case Study, Lachlan, ~90min (scheduled 60). COMPLETE, advanced. Scored: Sub 4.0 / Str 3.6 / Rel 4.4 / Cred 3.8 / Diff 4.0. Hire Signal: Hire (Strong Lean).
-  - Round 3: Mop-up interview, Elliott + Andrea — filling gaps on hiring scorecard. TBD.
-  - Round 4: In-person meeting (Sydney or Melbourne) — culture fit. TBD.
+  - Round 3a: Informal lunch, Lachlan, ~2.5hrs. COMPLETE, advanced. Short tenures probed, role/title discussion, content/SEO brainstorm, founder story shared. Not scored (informal). Down to 2 candidates. References requested. Offer this week.
+  - Round 3b: Mop-up video call, Elliott, ~1hr. COMPLETE, pending Elliott-Lachlan debrief Mar 31. CS-Product collaboration was main topic. No concerns stated. Granola partial capture only.
+  - Round 4: Andrea catch-up — intro email sent Mar 30. TBD.
+  - Round 5: References — Tom (Heidi CEO), Karthick (BetterFleet PM), Anthony (BetterFleet Principal PM). Not yet contacted.
 - Stories used: Career narrative arc (R1), BetterFleet transformation story (R1), Incident management origin (R1), Transdev site visit (R1). Use Count not incremented until outcome known. R2: Heidi Insights dashboard (Success Framework discussion), BetterFleet references (transformation context), Atlassian/Canva dogfooding analogies, Dale's Cone of Learning, Survivorship bias, Personal story (son's school wellbeing). No storybank entries formally deployed — case study format used evidence/analogies rather than STAR stories.
 - Stories prepared for R2: S03 (Canva SEO — blank-slate discovery, 60-sec version ready), S14/S16 (BetterFleet — already landed in R1, keep tight), S18 (PA Touch — funnel creds + continuous discovery system). All three added as toggles in final-delivery.md Section C.
 - Concerns surfaced: Discovery capability in non-RFP context — Lachlan named this directly: "BetterFleet was tricky — discover what needs to be built in a context that is not so sales-led." (severity: high — maps directly to Wellio's primary product challenge). Counter: S03 Canva SEO acquisition platform is the right story (product-led discovery, no RFP, blank-slate). 60-second version now drafted and ready. Implementation specificity — Lachlan named explicitly: 'more leading indicators per bet.' (severity: medium — addressable via follow-up email with updated slides). Discovery before prescription — Success Framework proposed without mapping existing capabilities; Lachlan: 'we have more of that.' (severity: medium — reframed in follow-up, will be default mode in mop-up).
@@ -217,7 +237,7 @@ Last updated: 2026-03-23
 - Transcripts: Intro at ~/job-hunting/opportunities/wellio/transcripts/2026-02-19-lachlan-r1.md (analyzed 2026-03-07), R1 at ~/job-hunting/opportunities/wellio/transcripts/2026-02-26-lachlan-r2-deep-dive.md (analyzed 2026-03-07), R2 at ~/job-hunting/opportunities/wellio/transcripts/2026-03-23-R2-ProductSense-Wellio-Transcript.md (analyzed 2026-03-23)
 - Champion network (2026-03-25): Francois Bondiguel (Head of Marketing, ex-Canva contact). Scheduling call done 2026-03-25, 30min call booked for 2026-03-26 after 10am. Key prior intel from Francois: $5M ARR 2025 targeting $10M 2026; "not as sales-driven"; "engineers super senior"; happy with work-life balance. Pre-mop-up strategy: get growth attribution, product-marketing collaboration intel, Andrea/Elliott prep, indirect comp intel.
 - Comp strategy (Warwick-informed): BetterFleet precedent $300K base + 0.5% equity (promised, not delivered). Wellio band $170-270K advertised. Creative options: (1) 4-day week at $270K = $337.5K FTE-equivalent (above BetterFleet precedent); 5th day for AI tooling benefiting Wellio + fractional pipeline + LinkedIn positioning. CRITICAL: employment contract must explicitly allow outside work on non-Wellio day and clarify IP ownership for independent projects. Raise during offer stage, not after signing. (2) Extra vacation for France family visits (fallback). Value-creation anchor: $5M to $10M growth, even 10% product contribution = $1M value. Real scarcity: Euc process active in parallel.
-- Next round: R3 — mop-up interview with Elliott and Andrea (TBD). Format: gap-filling on hiring scorecard. Then R4: in-person meeting.
+- Next round: Andrea catch-up (TBD this week). Then references. Then offer decision (Lachlan: "hoping to make an offer to the successful candidate this week").
 - Fit verdict: Investable Stretch
 - Fit confidence: High — JD + resume + storybank + intro + R1
 - Fit signals: Shape Up match, mission alignment strong (personal connection), BetterFleet context is highly analogous to Wellio's challenges. Discovery capability is the swing factor — S03 Canva SEO story now prepared to address directly.
@@ -289,6 +309,7 @@ Last updated: 2026-03-23
 | 2026-03-22 | Wellio R2 prep (via Claude Code) | Round numbering corrected: coffee chat = Intro (not R1), deep-dive = R1 (not R2), tomorrow = R2. Delivery doc finalised with 4 updates: existing schools framing, Bet 4 change management, sequencing tension note, consolidated one-pager cheat sheet. Three STAR stories (S03 Canva SEO, S14/S16 BetterFleet, S18 PA Touch) drafted as 60-sec toggles in delivery doc Section C. coaching_state.md updated. |
 | 2026-03-23 | debrief, analyze | R2 Wellio Product Sense case study debrief + full analysis. Scores: Sub 4.0 / Str 3.6 / Rel 4.4 / Cred 3.8 / Diff 4.0. Hire (Strong Lean). Strongest performance in history. Self-assessment: accurate. Three gaps: structural compression, discovery before prescription, implementation specificity. Follow-up email + updated slides drafted. |
 | 2026-03-23 | post-R2 follow-up (via Claude Code) | V2 deck reviewed against debrief feedback. Key updates made: (1) Slide 1 title changed from "Product Sense" to "Building the Wellbeing Management System Foundations" (removed interview round name for Andrea/Elliott). (2) Drop-Off 3 rewritten -- removed misleading "survivorship bias" framing, replaced with "Make every L1 great so engagement follows by design." (3) Slide 6 subtitle added: "Numbered by theme here and shipped by risk in Sequencing Logic." (4) Bet 1 slide completely reworked -- added two pillars (one proven methodology locally adapted + fast feedback loops), softened "Without this" column (removed judgmental assumptions about current ops), rewrote "Why this is foundational" section (empowering CS at scale, not implying they lack a strategy). (5) UMUX-Lite hyperlinked to measuringu.com. (6) Typo fixed ("countreis"). Follow-up email sent to Lachlan with updated deck attached, cc Andrea and Elliott. |
+| 2026-03-30 | debrief (Lachlan lunch + Elliott mop-up), hype (Elliott prep) | Lachlan lunch debrief: down to 2 candidates, role = HoP, references requested, offer this week. Elliott prep: 30-sec tenure answers drafted, 3x3 cheat sheet, focus cues. Elliott debrief: CS-Product collaboration main topic, no concerns stated, Granola partial capture. Coaching state updated with all new intel. |
 
 ## Coaching Notes
 - 2026-03-06: "We" vs "I" was the explicit rejection reason in 2024. Non-negotiable — must say "I" in every story. Coach should flag any "we" slippage immediately.
@@ -313,3 +334,8 @@ Last updated: 2026-03-23
 - 2026-03-23: Case study format is this candidate's strongest performance context. The analytical depth + creative thinking + personal passion combination produces Differentiation scores (4.0) that behavioral format hasn't reached. Future company targeting should factor this in — roles with case study rounds will produce stronger signals.
 - 2026-03-23: Candidate self-identified defensive response pattern to feedback (validates before asking/exploring). Working on this personally. Coach should reinforce: validate first, ask "tell me more about what you were after", then respond. This applies to mop-up with Andrea/Elliott.
 - 2026-03-23: Success Framework bet was deeper than it landed. Candidate's vision: scalable data infra from day one of every implementation, content-as-product-team with CI/CD QA, cross-school insights at scale. Lachlan heard "consultation playbook." Communication gap, not substance gap. Updated slides address this for Andrea/Elliott.
+- 2026-03-30: Christophe performs worse in late-evening calls when tired. ADHD amplifies verbosity and reduces ability to self-edit in real-time. Elliott call was after a long day (Lachlan lunch + prep + cold shower). Self-awareness is good but the pattern needs a mechanism: for future evening interviews, shorter prep + energy management.
+- 2026-03-30: Lachlan shared full Wellio origin story — this is insider-level trust. Key details: family of shopkeepers (founder mindset), started at Elevate, 120 HoW/principal discovery, wellbeing as personal legacy, Lachlan learned to code, met Andrea at coding bootcamp, sold 80K in Q3/Q4, Elliott quit Elevate to join. "Building a house to live in vs to sell." Most hires are Elevate alumni or people they want to work with.
+- 2026-03-30: Elliott confirmed: communication clarity is his #1 value. "As they hire more people, it's critical everyone stays on the same page." This is the lens through which he evaluates candidates. Product at Wellio needs to be the connective tissue between departments.
+- 2026-03-30: Role confirmed HoP by Lachlan. Design + content report in. Lachlan manages those reports for 6-9 months while Christophe ramps as IC first. Eng manager analogy (learn codebase before managing people) resonated with Lachlan. Christophe correctly caveated: need Lachlan to signal to design/content that this is temporary so they cooperate.
+- 2026-03-30: Tom (Heidi CEO) and Dan (BetterFleet CEO) are the two references Christophe is genuinely worried about. Can brief them with 30-second tenure versions but can't control how the actual call goes. Decision: Tom in, Dan out for now. Selected trio: Tom (reported to), Karthick (direct report), Anthony (eng peer).
