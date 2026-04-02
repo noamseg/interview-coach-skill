@@ -4,7 +4,7 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
 
 ### Setup
 
-1. Ask for format (behavioral screen, deep behavioral, panel, bar raiser, system design/case study, technical+behavioral mix — see format taxonomy in `references/commands/prep.md`). **For system design/case study and technical+behavioral mix**: Check Interview Loops for saved format data from `prep`. If format data exists for this company+round, use it. If no format data exists, run the Format Discovery Protocol (see `references/commands/prep.md`) and save the result to Interview Loops. See format-specific simulation UX sections below.
+1. Ask for format (behavioral screen, deep behavioral, panel, bar raiser, bar raiser — cv spine, system design/case study, technical+behavioral mix — see format taxonomy in `references/commands/prep.md`). **If format is "bar raiser — cv spine": skip standard question-by-question execution and use Bar Raiser CV-Spine Simulation UX below.** **For system design/case study and technical+behavioral mix**: Check Interview Loops for saved format data from `prep`. If format data exists for this company+round, use it. If no format data exists, run the Format Discovery Protocol (see `references/commands/prep.md`) and save the result to Interview Loops. See format-specific simulation UX sections below.
 2. Ask for company/role context (or use existing prep data).
 3. **Calibrate difficulty to the candidate's progression stage.** Check Drill Progression in `coaching_state.md` — if the candidate is at Stage 2 (pushback), the mock should be calibrated to push on credibility. If they're at Stage 6+ (panel/stress), they can handle maximum intensity. Don't run a maximum-difficulty mock for a candidate who hasn't cleared basic constraint drills.
 4. **Calibrate tone to the target company.** A mock for a FAANG final round should feel very different from a Series A startup first call:
@@ -28,6 +28,68 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
    - When the candidate says something surprising or contradictory, follow up on it — don't let it pass.
    - Track which threads you pursued and which you abandoned — this is signal-reading data for the debrief.
 7. Track: story diversity (did they use the same story twice?), energy trajectory, answer length distribution, time management.
+
+### Bar Raiser — CV Spine Simulation UX
+
+**When to use**: When the identified format is "bar raiser — cv spine" (see format taxonomy in `prep.md`). Confirmed for Revolut Bar Raiser. Do NOT use the standard behavioral mock UX for this format — the execution is structurally different.
+
+**Core difference from standard behavioral mock**: The CV is the spine. The interviewer works chronologically through the candidate's career history. Questions are not pre-written standalone prompts — they emerge organically from what the candidate says about each role. The candidate cannot choose which story to deploy; they must defend whatever is in front of them for each period.
+
+**Setup**:
+1. Read the candidate's CV or career summary from `coaching_state.md` before starting. Map the periods you will cover: [Role 1] → [Role 2] → [Role 3] → [Founder/transition period if applicable] → [Why here/future].
+2. Load the confirmed question bank from Interview Loops (if saved from `prep`). These questions map to specific periods — they are not asked as standalone prompts. See mapping below.
+3. Set the interviewer persona from the interviewer intel in `coaching_state.md`. Their background determines which periods they will probe deepest.
+
+**Question bank → period mapping** (for Revolut Bar Raiser specifically):
+- "Biggest achievement in a specific role?" → asked within the candidate's strongest role period
+- "Time you proved passionate + exceeded KPIs?" → asked within the role where the most initiative-driven story lives
+- "How did your manager rate you?" → asked at the END of each role period, just before transition
+- "How was performance managed in your last company?" → asked within the most recent role period
+- "Did you receive promotions? Why?" → asked during whichever role period had a promotion
+- "Struggled to achieve KPIs?" → asked within the role where the challenge story lives
+- "Mistake or something that didn't go well?" → asked within the role where the failure story lives
+- "Step out of comfort zone?" → often asked at a transition point (e.g., founder period)
+- "Difficult problem you needed to solve?" → asked within the period with the most complex case
+- "How do you prioritise your workload?" → asked within the busiest/most demanding role period
+- "Why did you leave X and join Y?" → asked at every role transition
+- "Short stints on CV" → flagged at the point where a short tenure appears on the CV
+- "Why Revolut?" → asked at the end, after full career walkthrough
+- "Where do you see yourself in 3-5 years?" → asked at the end, as a close
+
+**Execution**:
+1. Open with: *"Walk me through your background — start from [earliest relevant role] and bring me to today."* Let the candidate give their overview, then begin probing period by period.
+2. **Stay in a period until it's exhausted.** A real Bar Raiser may spend 15-20 minutes on a single role. Don't move to the next period until you've probed: what they worked on, a specific achievement, how they were rated/performing, and why they left. If the candidate gives thin answers, probe again — don't rescue them by moving on early.
+3. **Let the follow-up emerge from what the candidate says.** If they mention a case, probe it: "Tell me more about that one." If they mention a challenge, probe it: "What made that hard specifically?" Do not introduce new topics mid-period — work with what the candidate surfaces.
+4. **Use transition moments deliberately.** When moving from one role to the next, ask the transition question naturally: "You were there for [X] — why did you make the move?" This is where short stint questions and leaving reasons emerge.
+5. **Reserve the future-facing questions for the close.** Why Revolut and 3-5 year plan come after the full walkthrough, not mid-interview.
+6. **Calibrate probing depth to the interviewer persona.** An operational leader (e.g., Woody Malouf) will probe the founder/transition period and team-building instinct. An advisory/risk professional (e.g., Stelios Tachtatzis) will probe judgment decisions within cases.
+7. Track silently: story consistency across periods (does the candidate say the same thing in two different ways?), figure consistency (are cited numbers stable?), depth under sustained probing (does quality hold after the 2nd or 3rd follow-up on the same topic?), "we" vs "I" framing as a running pattern.
+
+**What NOT to do**:
+- Do not ask "Tell me about a time you..." — this is a standalone behavioral prompt, not CV-spine format
+- Do not move to the next period just because the candidate seems uncomfortable — sustained probing within a period is the point
+- Do not give the candidate a topic to talk about — ask about the role, let them surface the stories
+
+**What to track** (different from standard behavioral mock):
+- **Period Depth**: When you probed 2-3 times within a single period, did quality hold or thin out? This is the primary signal the CV-spine format generates that standalone behavioral mocks miss.
+- **Story consistency**: Are figures, timelines, and outcomes consistent across the full walkthrough? Inconsistencies across periods signal rehearsed-but-not-owned stories.
+- **Transition logic**: Are the reasons for each move coherent and consistent? Do they form a through-line, or do they sound retrofitted?
+- **Candidate control**: Does the candidate try to steer the interviewer toward their best stories? (Positive signal — shows self-awareness.) Do they panic when probed on a weaker period? (Coaching target.)
+- **Figure stability**: Note any figures cited (monetary amounts, time saved, team size, percentages). If the same story appears under different questions, do the numbers match?
+
+**Debrief schema adjustment**:
+Use period-based unit IDs instead of Q#:
+- **P1** = [First role period, e.g., Grant Thornton]
+- **P2** = [Second role period, e.g., HKA]
+- **P3** = [Transition/founder period if applicable]
+- **P4** = [Future/why here close]
+
+Add **Period Depth** as a sub-dimension in each period scorecard:
+- Period Depth 1: First answer in this period — quality level
+- Period Depth 2: After first follow-up — did quality hold?
+- Period Depth 3: After second follow-up — did quality hold, thin, or improve?
+
+Score Period Depth 1-5: 5 = quality improved under probing; 3 = held steady; 1 = thinned out after first follow-up.
 
 ### Panel Simulation UX
 
