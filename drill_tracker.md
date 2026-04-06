@@ -39,13 +39,13 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Q08 | How did your manager rate you out of 10 and why? | Anam (confirmed) | ✅ Drilled |
 | Q09 | How was performance managed in your last company? | Anam (confirmed) | ✅ Drilled |
 | Q10 | Did you receive promotions? Why? | Anam (confirmed) | ✅ Drilled |
-| Q11 | What were your key achievements and low points? | Article (Sep 2025) | ⚠️ Partial (achievements yes, low points light) |
+| Q11 | What were your key achievements and low points? | Article (Sep 2025) | ⚠️ Partial (achievements yes, low points light — S008 covers low points) |
 | **Challenges / Failure** | | | |
 | Q12 | Struggled to achieve KPIs — what did you do? | Anam (confirmed) | ✅ Drilled (PlanLens / S006) |
 | Q13 | Mistake or something that didn't go well? | Anam (confirmed) | ✅ Drilled (S008) |
 | Q14 | Learnings from that mistake? | Anam (confirmed) | ✅ Drilled (S008 follow-through) |
 | Q15 | Step out of comfort zone? | Anam (confirmed) | ✅ Drilled (founder period) |
-| Q16 | Hardest feedback you've received? | Article (Sep 2025) | ❌ Never drilled |
+| Q16 | Hardest feedback you've received? | Article (Sep 2025) | ✅ Drilled (S008 — HKA QC failure) |
 | **Problem Solving / Complexity** | | | |
 | Q17 | Difficult problem you needed to solve? | Anam (confirmed) | ✅ Drilled (S001 / S003) |
 | Q18 | How do you prioritise your workload? | Anam (confirmed) | ✅ Drilled |
@@ -55,22 +55,22 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Q21 | Have you experienced a difficult team situation? / Conflict with a colleague? | QuantumLight + article | ✅ Drilled (S010) |
 | Q22 | Describe going beyond your responsibilities to achieve a goal | QuantumLight playbook | ✅ Drilled (S007 / S004) |
 | Q23 | How would you manage underperformers while retaining top performers? | QuantumLight (management roles) | ✅ Drilled |
-| Q24 | Built or strengthened a team? | Article (Sep 2025) | ❌ Never drilled |
-| Q25 | Influenced without authority? | Article (Sep 2025) | ❌ Never drilled |
+| Q24 | Built or strengthened a team? | Article (Sep 2025) | ⚠️ Skipped — S008 is the answer, frame explicitly |
+| Q25 | Influenced without authority? | Article (Sep 2025) | ⚠️ Skipped — S010 (Clare) is the answer, frame as influence not conflict |
 | **Leadership / Talent (management roles)** | | | |
-| Q32 | How do you assess talent? What do you look for when hiring an investigator? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
-| Q33 | How do you attract talent to your team / to Revolut? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
-| Q34 | How do you retain top performers? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
-| Q35 | Talent case study — live scenario (e.g. "Build your first 3 hires in Dubai CIU" or "Inherit a mixed-performance team — what's your plan?") | Article (Sep 2025 — operations manager received this) | ❌ Never drilled |
+| Q32 | How do you assess talent? What do you look for when hiring an investigator? | Article (Sep 2025 — leadership addendum) | ✅ Drilled — UAE typology as pass-fail gate, case walkthrough methodology, AI comfort as forward-looking filter |
+| Q33 | How do you attract talent to your team / to Revolut? | Article (Sep 2025 — leadership addendum) | ⚠️ Partial — push factors (consulting comfort) strong; pull factors (Revolut specifics) underdeveloped |
+| Q34 | How do you retain top performers? | Article (Sep 2025 — leadership addendum) | ✅ Drilled — daily engagement philosophy, career trajectory conversations, graceful exits |
+| Q35 | Talent case study — live scenario (e.g. "Build your first 3 hires in Dubai CIU" or "Inherit a mixed-performance team — what's your plan?") | Article (Sep 2025 — operations manager received this) | ✅ Drilled — assessment framework delivered (Q32 covers this) |
 | **Role Vision / 90-day + Future Plan** | | | |
-| Q36 | What's your plan for the first 6 months in this role? | Inferred from role seniority + Woody's operational builder profile | ❌ Never drilled |
+| Q36 | What's your plan for the first 6 months in this role? | Inferred from role seniority + Woody's operational builder profile | ✅ Drilled — 3 phases: listen/diagnose, quick wins, build; case management framework + AI workflows as deliverables |
 | Q37 | Where do you see yourself in 3-5 years at Revolut? | Anam (confirmed) | ✅ Drilled |
-| Q38 | Where do you see this role going beyond 3-5 years? Long-term ambition? | Inferred from Bar Raiser ambition probing | ❌ Never drilled |
+| Q38 | Where do you see this role going beyond 3-5 years? Long-term ambition? | Inferred from Bar Raiser ambition probing | ✅ Drilled — Revolut next decade framing, UAE strategic bet, builder identity |
 | **Retention Signal** | | | |
-| Q26 | Did your former company try to keep you? (GT→HKA, HKA→Startups) | QuantumLight playbook | ⚠️ Partial — Clare "disappointed" but no concrete counter-offer line locked |
+| Q26 | Did your former company try to keep you? (GT→HKA, HKA→Startups) | QuantumLight playbook | ✅ Drilled — GT: resignation initially rejected, manager track on table; HKA: Clare offered better package |
 | **Values** | | | |
-| Q27 | Never Settle — example? | Revolut values framework | ❌ Never drilled standalone |
-| Q28 | Deliver Wow — example? | Revolut values framework | ❌ Never drilled standalone |
+| Q27 | Never Settle — example? | Revolut values framework | ⚠️ Skipped — HKA proposal story flagged; needs one clean delivery |
+| Q28 | Deliver Wow — example? | Revolut values framework | ✅ Locked — S009 (Australian COVID breach, CEO TV interview, forced settlement) |
 | Q29 | Dream Team — example? | Revolut values framework | ✅ Covered in mocks (S008 / S010) |
 | Q30 | Think Deeper — example? | Revolut values framework | ✅ Covered in mocks (S001 / S003 / S007) |
 | Q31 | Get It Done — example? | Revolut values framework | ✅ Covered in mocks |
@@ -82,14 +82,9 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Priority | Item | Fix |
 |----------|------|-----|
 | 🔴 HIGH | Q26 — Retention signal | Lock one line per transition: *"Clare told me she'd been planning to put me on a management track."* |
-| 🔴 HIGH | Q35 — Talent case study (live scenario) | Prep two scenario frameworks: (1) build from scratch — profile, sourcing, signal questions; (2) inherit a team — diagnose, stabilise, elevate |
-| 🔴 HIGH | Q36 — First 6 months plan | Structure: listen + audit (weeks 1-4), identify gaps + quick wins (weeks 5-12), build foundations (months 4-6) |
-| 🟡 MED | Q26 — Retention signal | Lock one line per transition: *"Clare told me she'd been planning to put me on a management track."* |
-| 🟡 MED | Q32/Q33/Q34 — Assess, attract, retain talent | Behavioural answers needed; partially covered by S008 but not framed as hiring/retention |
-| 🟡 MED | Q38 — Long-term ambition beyond 3-5 years | Link to Revolut's UAE growth arc; avoid vague "keep growing" |
-| 🟡 MED | Q24 — Built/strengthened a team | Use S008 framed explicitly around team-building |
-| 🟡 MED | Q25 — Influenced without authority | Use S002 (advised SWF to use ownership lever) or S007 (EU backchannel) |
-| 🟡 MED | Q27/Q28 — Never Settle / Deliver Wow | Stories exist — just name the value explicitly |
+| 🟡 MED | Q33 — Attract talent | Add 3 concrete Revolut pull factors: function ownership, proximity to product, progression tied to impact not tenure |
+| 🟡 MED | Q24/Q25 — Built a team / Influenced without authority | Skipped — S008 and S010 are the answers; know the reframe before walking in |
+| 🟡 MED | Q27 — Never Settle | HKA proposal story flagged but never delivered cleanly — risk if it comes up |
 | 🟢 LOW | S005, S006 — never drilled standalone | Low risk; both covered implicitly in mocks |
 
 ---
