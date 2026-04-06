@@ -1,5 +1,5 @@
 # Drill Tracker — Saif Sohail × Revolut Bar Raiser
-Last updated: 2026-04-06
+Last updated: 2026-04-07
 
 Target role: Complex Investigations Unit Manager, Revolut Dubai
 Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
@@ -57,6 +57,15 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Q23 | How would you manage underperformers while retaining top performers? | QuantumLight (management roles) | ✅ Drilled |
 | Q24 | Built or strengthened a team? | Article (Sep 2025) | ❌ Never drilled |
 | Q25 | Influenced without authority? | Article (Sep 2025) | ❌ Never drilled |
+| **Leadership / Talent (management roles)** | | | |
+| Q32 | How do you assess talent? What do you look for when hiring an investigator? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
+| Q33 | How do you attract talent to your team / to Revolut? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
+| Q34 | How do you retain top performers? | Article (Sep 2025 — leadership addendum) | ❌ Never drilled |
+| Q35 | Talent case study — live scenario (e.g. "Build your first 3 hires in Dubai CIU" or "Inherit a mixed-performance team — what's your plan?") | Article (Sep 2025 — operations manager received this) | ❌ Never drilled |
+| **Role Vision / 90-day + Future Plan** | | | |
+| Q36 | What's your plan for the first 6 months in this role? | Inferred from role seniority + Woody's operational builder profile | ❌ Never drilled |
+| Q37 | Where do you see yourself in 3-5 years at Revolut? | Anam (confirmed) | ✅ Drilled |
+| Q38 | Where do you see this role going beyond 3-5 years? Long-term ambition? | Inferred from Bar Raiser ambition probing | ❌ Never drilled |
 | **Retention Signal** | | | |
 | Q26 | Did your former company try to keep you? (GT→HKA, HKA→Startups) | QuantumLight playbook | ⚠️ Partial — Clare "disappointed" but no concrete counter-offer line locked |
 | **Values** | | | |
@@ -73,6 +82,11 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Priority | Item | Fix |
 |----------|------|-----|
 | 🔴 HIGH | Q26 — Retention signal | Lock one line per transition: *"Clare told me she'd been planning to put me on a management track."* |
+| 🔴 HIGH | Q35 — Talent case study (live scenario) | Prep two scenario frameworks: (1) build from scratch — profile, sourcing, signal questions; (2) inherit a team — diagnose, stabilise, elevate |
+| 🔴 HIGH | Q36 — First 6 months plan | Structure: listen + audit (weeks 1-4), identify gaps + quick wins (weeks 5-12), build foundations (months 4-6) |
+| 🟡 MED | Q26 — Retention signal | Lock one line per transition: *"Clare told me she'd been planning to put me on a management track."* |
+| 🟡 MED | Q32/Q33/Q34 — Assess, attract, retain talent | Behavioural answers needed; partially covered by S008 but not framed as hiring/retention |
+| 🟡 MED | Q38 — Long-term ambition beyond 3-5 years | Link to Revolut's UAE growth arc; avoid vague "keep growing" |
 | 🟡 MED | Q24 — Built/strengthened a team | Use S008 framed explicitly around team-building |
 | 🟡 MED | Q25 — Influenced without authority | Use S002 (advised SWF to use ownership lever) or S007 (EU backchannel) |
 | 🟡 MED | Q27/Q28 — Never Settle / Deliver Wow | Stories exist — just name the value explicitly |
