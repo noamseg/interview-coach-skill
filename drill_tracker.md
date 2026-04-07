@@ -81,8 +81,9 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 
 | Priority | Item | Fix |
 |----------|------|-----|
-| 🔴 HIGH | Q26 — Retention signal | Lock one line per transition: *"Clare told me she'd been planning to put me on a management track."* |
-| 🟡 MED | Q33 — Attract talent | Add 3 concrete Revolut pull factors: function ownership, proximity to product, progression tied to impact not tenure |
+| 🔴 HIGH | Q26 — Retention signal (HKA) | Regressed in final mock — dropped the package offer under direct probe. Lock: *"She pushed back and asked if I'd accept a better package."* Do not drop this under pressure. |
+| 🔴 HIGH | Q03 — Why Revolut / FinCrime intelligence | Opened with "my understanding is not as strong" in final mock. Lock 4 facts: Lithuania fine €3.5M (AML deficiencies), CBUAE provisional licence, UK full banking licence March 2026, CIU role is strategic not headcount. NOTE: Storonsky did NOT relocate to Dubai — drop that line entirely. |
+| 🟡 MED | Q33 — Attract talent | Pull factors underdeveloped — function ownership, progression tied to impact not tenure, building inside a company being written in real time |
 | 🟡 MED | Q24/Q25 — Built a team / Influenced without authority | Skipped — S008 and S010 are the answers; know the reframe before walking in |
 | 🟡 MED | Q27 — Never Settle | HKA proposal story flagged but never delivered cleanly — risk if it comes up |
 | 🟢 LOW | S005, S006 — never drilled standalone | Low risk; both covered implicitly in mocks |
@@ -94,3 +95,6 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 - **"52 hours a year"** — not "52 hours a week" (2 proposals × 30 min × 52 weeks)
 - **"Luckily"** → *"The other side happened to request an extension — I used every hour of it."*
 - **"We" → "I"** — lead every action statement with personal ownership
+- **"Really, really, really"** — cut to zero. One strong word or none.
+- **"I mean" / "I think" / "sort of"** — persistent fillers, cut all three
+- **Storonsky relocated to UK, not Dubai** — drop this fact entirely
