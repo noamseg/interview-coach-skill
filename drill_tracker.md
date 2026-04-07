@@ -1,8 +1,9 @@
 # Drill Tracker — Saif Sohail × Revolut Bar Raiser
-Last updated: 2026-04-07
+Last updated: 2026-04-07 (post-interview)
 
 Target role: Complex Investigations Unit Manager, Revolut Dubai
-Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
+Interview date: 2026-04-07 (Bar Raiser with Woody Malouf) — **COMPLETED**
+Outcome read: Lean Hire (Gemini transcript analysis) / 50-55% leaning passable (coach read). Awaiting formal decision.
 
 ---
 
@@ -119,3 +120,43 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 - **"Really, really, really"** — cut to zero. One strong word or none.
 - **"I mean" / "I think" / "sort of"** — persistent fillers, cut all three
 - **Storonsky relocated to UK, not Dubai** — drop this fact entirely
+
+---
+
+## Post-Interview Debrief (2026-04-07)
+
+### What landed
+- **S004 Merlin pilot** — Woody commented "very clear"
+- **S011 HKA proposal database** — Woody commented "very clear"
+- **Career walkthrough / CV-spine** — delivered without fumble
+- **Why Revolut** — landed cleanly, no toxic negative framing
+- **Weakness answer** (perfection / losing the north star) — genuine, tied to founder lesson
+- **Q&A close** — asking Woody about his non-traditional path into FinCrime was a warm human moment
+- **Retention signal GT→HKA** — partial credit (resignation initially rejected)
+- **Self-driven skill acquisition** (coding post-ChatGPT → Scarlet/PlanLens) — hit Woody's "builder" thesis directly
+
+### What didn't land
+- **"We vs I" collapse on S002** — Woody had to probe THREE times "what did YOU specifically do". Led with environmental context (obfuscating staff, demanding client) instead of personal actions (imaging devices, organising workstreams). This is the core yellow flag on Ownership.
+- **Business impact / KPI question at GT** — answered with personal promotions and self-rating (8/10) when Woody was asking for macro-business metrics (revenue, retention, win rates, margin). Missed the frame entirely.
+- **PlanLens validation probe** — "how did you know it was good?" — failed. Couldn't recall the user interview insights (Scarlet: 10-min onboarding from lawyer feedback; PlanLens: cartel-like incumbent relationships).
+- **Retention signal HKA → REGRESSED AGAIN** — dropped the package offer. Second failure under lower pressure than the mock. Persistent pattern.
+- **Manager rating** — said 8 when drilled answer was 9 (with perfectionism caveat).
+- **Called Woody "Rudy"** at the end.
+- **Weak Q&A opener** — asked an L&D question instead of the killer questions prepped.
+- **Forgotten Scarlet roadmap details** — couldn't list the specific onboarding steps when probed.
+
+### The pattern (persistent across mocks and real interview)
+**Specificity collapses under direct probing.** Default is to describe context/environment rather than personal action. Drilled answers exist; delivery defaults to narrative mode under time pressure. This is a delivery/muscle gap, not a substance gap.
+
+### Gemini's independent read (transcript analysis)
+- Verdict: **Lean Hire leaning Hire** — pass to next round
+- Strengths: tech-forward investigative mindset, tolerance for ambiguity, ownership/initiative (S011)
+- Reservation: Communication conciseness — "substance was gold, packaging occasionally scattered"
+- Confirms the core pattern: Woody pushed multiple times to get to the BLUF
+
+### Lessons to carry forward (any future Bar Raiser)
+1. **"What did YOU do" is the only question that matters** — lead every action statement with "I", ban context-setting as the opening sentence
+2. **Business impact ≠ personal performance** — separate the two dimensions before answering any "impact" question
+3. **Retention signal is load-bearing** — the HKA package offer must be muscle memory, not recall
+4. **Validation evidence must be pre-loaded** — "how did you know it worked?" needs a cached answer per project, not real-time recall
+5. **Manager rating 9, not 8** — discipline to deliver the drilled number
