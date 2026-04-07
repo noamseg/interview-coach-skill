@@ -20,6 +20,7 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | S008 | HKA QC Failure + junior mentoring — nearly fired, 5 siloed resources, won every claim | ✅ Extensively drilled (multiple mocks + targeted) |
 | S009 | Australian COVID breach — CEO pay quadrupled, TV "storm in a teacup" interview, $10M settlement | ✅ Drilled (ladder + pushback) |
 | S010 | GT Logistics — held line on inconclusive findings vs Clare's commercial pressure | ✅ Drilled (ladder + pushback) |
+| S011 | HKA Proposal Database — 50 hours/year saved, queryable case study DB, adopted by whole team | ✅ Drilled (2026-04-07) |
 
 ---
 
@@ -34,14 +35,14 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | Q04 | Where do you see yourself in 3-5 years? | Anam (confirmed) | ✅ Drilled |
 | Q05 | Short stints / gaps on CV | Anam (confirmed) | ✅ Drilled (founder period) |
 | **Performance** | | | |
-| Q06 | Biggest achievement in a specific role? | Anam (confirmed) | ✅ Drilled |
-| Q07 | Time you proved passionate and exceeded KPIs? | Anam (confirmed) | ✅ Drilled |
+| Q06 | Biggest achievement in a specific role? | Anam (confirmed) | ✅ Drilled (S004 — Merlin 683 funds, 5 months → 2 months) |
+| Q07 | Time you proved passionate and exceeded KPIs? | Anam (confirmed) | ✅ Drilled (S011 — HKA proposal database, 50hrs/year saved, unsolicited) |
 | Q08 | How did your manager rate you out of 10 and why? | Anam (confirmed) | ✅ Drilled |
 | Q09 | How was performance managed in your last company? | Anam (confirmed) | ✅ Drilled |
 | Q10 | Did you receive promotions? Why? | Anam (confirmed) | ✅ Drilled |
 | Q11 | What were your key achievements and low points? | Article (Sep 2025) | ⚠️ Partial (achievements yes, low points light — S008 covers low points) |
 | **Challenges / Failure** | | | |
-| Q12 | Struggled to achieve KPIs — what did you do? | Anam (confirmed) | ✅ Drilled (PlanLens / S006) |
+| Q12 | Struggled to achieve KPIs — what did you do? | Anam (confirmed) | ✅ Drilled (founder period — first paying customer KPI, technical validation succeeded, distribution failed, rational exit) |
 | Q13 | Mistake or something that didn't go well? | Anam (confirmed) | ✅ Drilled (S008) |
 | Q14 | Learnings from that mistake? | Anam (confirmed) | ✅ Drilled (S008 follow-through) |
 | Q15 | Step out of comfort zone? | Anam (confirmed) | ✅ Drilled (founder period) |
@@ -87,6 +88,26 @@ Interview date: 2026-04-07 (Bar Raiser with Woody Malouf)
 | 🟡 MED | Q24/Q25 — Built a team / Influenced without authority | Skipped — S008 and S010 are the answers; know the reframe before walking in |
 | 🟡 MED | Q27 — Never Settle | HKA proposal story flagged but never delivered cleanly — risk if it comes up |
 | 🟢 LOW | S005, S006 — never drilled standalone | Low risk; both covered implicitly in mocks |
+
+---
+
+## Story → Question Mapping
+
+| Question | Story |
+|----------|-------|
+| Q06 Biggest achievement | S004 — Merlin 683 funds, 5 months → 2 months |
+| Q07 Passionate / exceeded KPIs | S011 — HKA proposal database, 50hrs saved |
+| Q12 Struggled to achieve KPIs | Founder period — paying customer KPI, rational exit |
+| Q13 Mistake | S008 — HKA QC failure |
+| Q15 Step out of comfort zone | Founder period — TAR story |
+| Q16 Hardest feedback | S008 — HKA QC failure |
+| Q17 Difficult problem | S001 or S003 |
+| Q19 Innovative solution | S004 (Merlin) or S003 (OCR engine) |
+| Q21 Conflict / difficult team situation | S010 — GT Logistics, Clare |
+| Q22 Beyond responsibilities | S007 (NGO backchannel) or S004 (Merlin) |
+| Q28 Deliver Wow | S009 — Australian COVID, CEO TV interview |
+| Q29 Dream Team | S008 or S010 |
+| Q30 Think Deeper | S001 or S003 or S007 |
 
 ---
 
