@@ -1,307 +1,168 @@
-# pitch — Core Positioning Statement
+# positioning — Research Narrative & Academic Identity Statement
 
-Build the candidate's atomic unit of self-presentation: a positioning statement that distills who they are into a compelling, memorable core. The positioning statement is saved to coaching state and consumed by resume, linkedin, and outreach for cross-surface consistency.
+**Purpose**: Build the applicant's core research positioning — a clear articulation of who they are as a researcher, what they work on, and what makes their angle distinctive. This becomes the spine of every application document and every professional interaction.
 
-Also read `references/differentiation.md` (for earned secret integration into positioning) and `references/storybank-guide.md` (for narrative identity themes and story data to anchor the statement).
-
----
-
-## How Pitches Actually Work
-
-**The 10-20-30 Rule**: 10 seconds to earn 20 more. 30 seconds earns the conversation. Most candidates start with credentials — but credentials don't create curiosity.
-
-**The anxiety barrier is bigger than the content barrier**: Stanford communication expert Matt Abrahams (via Lenny's Podcast) emphasizes that most candidates over-prepare content and under-prepare their state. The pitch should feel like a conversation opener, not a performance. His principle: "Strive for connection over perfection." When candidates stop trying to be impressive and focus on genuine engagement, the pitch lands better. See `hype.md` for Abrahams' specific anxiety management techniques.
-
-**The Curiosity Gap (Loewenstein)**: People pay attention when a gap opens between what they know and what they want to know. "I help growth-stage companies stop losing their best engineers" creates a gap. "I'm a VP of Engineering with 15 years of experience" closes it.
-
-**Neural Coupling**: Stories synchronize brains. 63% remember stories; 5% remember statistics (Chip Heath). A pitch with a micro-story activates narrative processing. A pitch listing capabilities activates passive processing.
-
-**Primacy Effect**: First sentence becomes the lens. 100ms to form a judgment. 33% of hiring managers decide within 90 seconds. The opening line is the pitch.
-
-**Present-Past-Future Formula**: For "tell me about yourself" — present (what you do now), past (relevant experience), future (why this role). Not a chronological resume walkthrough.
-
-**Hook-Context-Ask**: For networking — hook that creates curiosity, context that establishes credibility, ask that gives the listener a way to help.
-
-**Context-Specific Durations**: Elevator 15-30s, networking 30-45s, career fair 30-60s, interview TMAY 60-90s, LinkedIn above-fold ~300 chars.
-
-**Consistency Multiplier**: Consistent messaging across platforms = 33% more reliable to recruiters, 45% higher response rates. The positioning statement is the consistency anchor.
-
-**What Interviewers Listen For in TMAY**: Communication clarity, narrative coherence, role relevance, self-awareness, energy. NOT a chronological resume walkthrough.
-
-**Common Mistakes**: Too vague, too long, no differentiator, no CTA/hook, sounds rehearsed, me-centered, jargon-heavy, chronological trap.
-
-**The "Arrogant Doctor" Anti-Pattern** (Andy Raskin, strategic narrative consultant, via Lenny's Podcast): The default self-pitch structure most candidates use — "I have X years of experience, here's my skill set, here's why I'm better than other candidates" — is what Raskin calls the "arrogant doctor" (problem → my solution → why mine is better). It sets candidates up for bragging and feature-comparison against other candidates. The alternative: lead with the shift in your field. "The old game was [X], the new game is [Y], and my career has been about [Y]." This positions the candidate as part of a movement, not as a product on a shelf. As Raskin puts it: "This structure is about defining a movement, and that's very different from 'Hey, I'm going to solve your problem.'"
-
-**The Insight-Led Pitch** (April Dunford, author of *Obviously Awesome*, via Lenny's Newsletter): Don't start with credentials (that's a "feature walkthrough"). Start with your unique insight about the role, industry, or function — "From working with [type of company], I've learned that [unique insight about what drives success in this space]." Then map the alternative approaches and their tradeoffs to demonstrate strategic thinking. Then define what a "perfect world" looks like — and show how your background delivers it. Dunford's key reframe: "The candidate's real competition is not other candidates — it's 'no decision.' Hiring managers are scared of making a bad hire. Your job is not to prove you're the best; it's to help them confidently decide you're the right choice."
-
-**Superpower Identification** (Donna Lichaw, executive coach, author of *The Leader's Journey*, via Lenny's Podcast): For candidates who struggle to articulate what makes them different, use Lichaw's superpower exercise: (1) Recall a peak experience from childhood that totally lit you up, (2) Recall a peak experience from the last ~10 years of work, (3) Map your meandering path into your current role, (4) Lay these three stories on top of one another — your superpowers appear at the intersections. Don't accept generic labels like "I'm a strategist" — dig into the specific superpower ("she was great at connecting things together — themes, trends, people to ideas"). As Lichaw notes: "Pull your superpowers out of your stories from your past, your present, and then figure out how to transpose them to your future."
+Also read `references/differentiation.md` (for intellectual insight integration) and `references/narrative-bank-guide.md` (for narrative identity themes to anchor the statement).
 
 ---
 
-## Priority Check
+## Why This Matters
 
-Before running the full positioning exercise, check coaching state:
-- If no `kickoff` has been run: Soft gate — "I can build your positioning statement, but without your target role context I'll be working from conversation alone instead of your full profile. Want to run `kickoff` first, or proceed and we'll work with what we have?"
-- If the candidate has an interview within 48 hours: Redirect — "You have an interview in [X] hours. Let's focus on `hype` / `prep` first. Come back to `pitch` after — it's a foundational exercise, not an emergency one."
-- If storybank is empty but kickoff exists: Proceed with resume analysis data, note the limitation — "Your storybank is empty, so I can't anchor the positioning to earned secrets from your stories. I'll work from your resume analysis data. After this, consider running `stories` — earned secrets make the positioning much stronger."
+Most applicants write their SoP as a list of what they've done. The strongest SoPs are written from a clear intellectual identity: this is who I am as a researcher, this is the question I'm pursuing, this is why I'm the person to pursue it. The positioning statement is that identity, distilled into 2-3 sentences, and then expanded into context-specific variants.
 
 ---
 
-## Required Inputs
+## Step 1: Gather Raw Material
 
-- Target role context (from coaching_state.md Profile, or ask)
-- Candidate background (from Resume Analysis + Storybank, or ask)
+Pull from `application_state.md`:
+- Academic Profile → Positioning strengths
+- Narrative Bank → narrative identity themes (run `narratives identity` first if not already done)
+- Active Application Loops → target programs and professors
 
-## Optional Inputs
+Ask (if narrative identity hasn't been extracted):
+> "Before we build your positioning statement, tell me: what's the research question or intellectual problem you keep coming back to? Not what you've worked on — the question underneath the work."
 
-- Depth level: Quick Draft / Standard / Deep Positioning (default: Standard)
-- Specific context to optimize for (e.g., "networking event Thursday")
-- Existing pitch attempt (for critique + rewrite)
-
----
-
-## Depth Levels
-
-| Level | When to Use | What It Covers |
-|---|---|---|
-| **Quick Draft** | Needs something fast, event coming up | Core statement + 2 context variants (TMAY + one requested) |
-| **Standard** | Default. Full positioning exercise. | Core statement + all 5 context variants + positioning consistency check |
-| **Deep Positioning** | Career transition, major repositioning, full brand foundation | All of Standard + differentiation audit + constraint ladder + Challenge Protocol (Level 5) |
+Probe: "What would you say if someone asked 'what's your research about?' at a dinner party — in one sentence, to someone smart but not in your field?"
 
 ---
 
-## Logic / Sequence
+## Step 2: Core Narrative Development
 
-### Step 1: Context Assembly
+Build the positioning statement in layers:
 
-Pull from coaching_state.md:
-- Profile (target role, seniority band)
-- Resume Analysis (positioning strengths, career narrative gaps)
-- Storybank (earned secrets from stories rated 3+, narrative identity themes)
-- Active Coaching Strategy (if Differentiation is the gap, pitch addresses it directly)
-- LinkedIn Analysis (current headline/about — for consistency check)
-- Resume Optimization (current summary — for consistency check)
-- **Positioning performance data** (if `debrief` or `analyze` have notes on how the positioning landed in real interviews): Check Interview Intelligence → Effective/Ineffective Patterns for signals about how the candidate's self-introduction landed. If TMAY or positioning-related feedback exists (e.g., "interviewer seemed engaged during intro" or "recruiter said your pitch was too vague"), use it to refine the positioning. This creates a feedback loop: pitch → interview → debrief → pitch iteration.
+### Layer 1: Research Identity (the core)
 
-### Step 2: Raw Material Extraction
+> "In 1-2 sentences, finish this: 'I study _____ because _____.' The 'because' should be a non-obvious answer."
 
-Guided conversation, one question at a time:
-1. The differentiator question: "What do you do that other [target role] candidates at your level don't?" If storybank earned secrets exist, offer as starting points.
-2. The audience question: "Who needs to hear this pitch, and what do they care about?"
-3. The 'so what' question: "If someone heard your pitch and thought 'so what?' — what would make them change their mind?"
+Generic version: "I study machine learning because it's transforming healthcare."
+Distinctive version: "I study how machine learning models fail on out-of-distribution medical data, because the current fixation on benchmark accuracy is masking a deployment problem that will affect millions of patients."
 
-If existing pitch provided, skip to Step 3.
+The distinctive version:
+- Names a specific problem (model failure on OOD data)
+- Names a specific domain (medical data)
+- Makes a claim (benchmark accuracy fixation is a problem)
+- Points to stakes (millions of patients)
+- Implies a research agenda (fixing this)
 
-### Step 3: Existing Pitch Diagnostic (if existing pitch provided)
+Work with the applicant until their 1-2 sentences pass the **Distinctiveness Test**: could any other applicant in their field have said this? If yes, it's not distinctive enough.
 
-Score on 5 dimensions (1-5):
-- **Hook strength**: Does the opening create curiosity?
-- **Differentiation**: Could another candidate say this?
-- **Specificity**: Concrete details or vague claims?
-- **Audience fit**: Optimized for the intended listener?
-- **Memorability**: Would they remember this an hour later?
+### Layer 2: Intellectual Insight Anchor
 
-Diagnose primary weakness, feed into rewrite.
+Pull the strongest Intellectual Insight from the Narrative Bank. This is the non-obvious thing the applicant knows from their experience that gives their research identity credibility.
 
-### Step 4: Core Positioning Statement Construction
+> "What's the one thing you know from your research experience that would surprise most people in your field? The thing you had to earn — that you couldn't have just read in a paper?"
 
-Three layers:
-- **Layer 1 — The Hook** (10s): One sentence, curiosity gap. Test: would they want to hear more?
-- **Layer 2 — The Context** (adds 10-20s): Evidence the hook is real. Micro-story, metric, or earned secret.
-- **Layer 3 — The Bridge** (adds 10-20s): Connects to specific context (role, company, opportunity).
+Frame the positioning statement to include this insight explicitly. Not as a boast — as evidence of a way of thinking.
 
-Present to candidate. Ask: "Does this sound like you?" Iterate. Must sound like the candidate, not the coach. Executive presence coach Tristan de Montebello (Ultraspeaking, via Lenny's Podcast) emphasizes: the candidate must inhabit the positioning, not recite it. If the statement sounds "said from memory," it fails. Test: can the candidate deliver the hook while maintaining eye contact and adjusting pace to the listener's reactions? The shift is from rehearsal to ownership.
+### Layer 3: Context Variants
 
-### Step 5: Context Variants (5 variants)
+The core positioning must translate into different contexts. Build 5 variants:
 
-1. **Interview TMAY** (60-90s): Present-Past-Future. Must survive TMAY evaluation criteria: communication clarity, narrative coherence, role relevance, self-awareness, energy.
-2. **Networking Event** (30-45s): Hook-Context-Ask. Ends with question, not monologue.
-3. **Recruiter Call** (30-60s): Keyword-aware, signals seniority, clear "what I'm looking for."
-4. **Career Fair** (30-60s): High-energy, leads with strongest credential, memorable phrase.
-5. **LinkedIn Summary Hook** (~300 chars): Above-fold, keywords + curiosity gap. Written for reading, not speaking.
+**1. SoP Opening (2-3 sentences)**:
+The first paragraph of the Statement of Purpose. Signals research domain + angle + why this applicant. More formal register. Must make a committee member want to read P2.
 
-### Step 6: Positioning Consistency Check (Standard + Deep)
+*Test*: "If this were the only paragraph a committee member read, would they know: (a) what field you're in, (b) what specific question you're pursuing, (c) what makes your angle interesting?"
 
-Cross-reference against:
-- Resume summary (if Resume Optimization exists)
-- LinkedIn headline/about (if LinkedIn Analysis exists)
-- Interview narrative (if narrative identity exists)
+**2. Motivation Letter Hook (1-2 sentences)**:
+Opening for a fellowship personal statement or motivation letter. More personal register than the SoP. Can open with a specific moment rather than an abstract framing.
 
-Don't just flag gaps — provide the specific language change for each surface. Example: "Your resume summary leads with 'experienced product manager.' Your positioning hook is 'I help growth-stage teams ship 3x faster by killing the right features.' The resume summary should echo the positioning — here's a rewrite: [specific rewrite]."
+*Test*: "Does this feel like a real person talking about something they genuinely care about?"
 
-### Step 7: Differentiation Audit (Deep only)
+**3. Professor Cold-Email Intro (1-2 sentences)**:
+The opening of an outreach email to a potential advisor. Should immediately establish why the applicant is reaching out to this specific professor and what they've worked on that's relevant. Ultra-brief — the professor should be able to read it in 5 seconds and know why this person is emailing.
 
-- **Is the differentiator defensible?** Evidence from storybank/resume — not just a claim.
-- **Spiky enough?** Apply Spiky POV test from differentiation.md — does it make some people disagree?
-- **Earned vs. borrowed?** Based on direct experience, or something learned from a podcast/book?
-- **Substitution test**: Replace the candidate's name with another candidate at their level. Does the positioning still work? If yes, it's not differentiated enough.
-- **Constraint ladder**: Same positioning at 15s, 30s, 60s, 90s. What stays at every level = the irreducible core.
+*Test*: "Could a professor skim this in 5 seconds and understand why this specific student is contacting their specific lab?"
 
-### Step 8: Challenge Protocol (Deep, Level 5 only)
+**4. Fellowship Pitch (1-2 sentences)**:
+For programs like NSF GRFP or Fulbright where there's a specific reviewable mission. The pitch should connect the applicant's research identity to the fellowship's goals (broader impact for NSF; cultural exchange for Fulbright).
 
-Lenses 1, 2, 4, 5 (Pre-Mortem omitted — doesn't apply to a positioning artifact):
-- **Assumption Audit**: What must be true for this positioning to land? (e.g., "Assumes hiring managers in your target space care about shipping speed more than process maturity.")
-- **Blind Spot Scan**: What can't the candidate see about how they present? (e.g., "You think you come across as strategic. From the outside, your pitch sounds tactical — it's about what you do, not why it matters.")
-- **Devil's Advocate**: If a hiring manager heard this and was looking for reasons to pass... (e.g., "Sounds like a builder, not a leader. Where's the people dimension?")
-- **Strengthening Path**: Single highest-leverage change.
+**5. "Tell me about your research" Response (30 seconds)**:
+Verbal version for informal faculty meetings, interview stages, or networking. Conversational tone. Should end with something that invites a follow-up question.
+
+*Test*: "Would a faculty member want to ask a follow-up question after hearing this? Or would they nod politely and move on?"
 
 ---
 
-## Output Schema — Quick Draft
+## Step 3: Curiosity Gap Test
 
-```markdown
-## Positioning Statement — Quick Draft
+Strong research positioning creates a curiosity gap — it raises a question in the reader's mind that the rest of the document answers.
 
-## Core Statement (30-45s)
-[The full hook + context + bridge]
+> "Your SoP opening should make a committee member think: 'I want to know more about this.' Let's test it. After reading your opening, what question would a committee member have? Is that the question your P2-3 answers?"
 
-## Hook (10s)
-[The curiosity-gap opener alone]
+If the opening raises the wrong question or no question: rewrite it until it raises the question that P2 is designed to answer.
 
-## Key Differentiator
-[One sentence]
+---
 
-## Context Variants
+## Step 4: Spiky POV Test (Level 5)
 
-### Interview TMAY (60-90s)
-[Present-Past-Future format]
+For Level 5 applicants: apply the Spiky POV test from `references/differentiation.md`.
 
-### [Requested Context] ([duration])
-[Variant optimized for the specific context the candidate asked about]
+> "The strongest positioning statements take a stance — not just 'I study X' but 'I study X and here's the non-obvious thing about X that most people miss.' What's your take? What do you believe about your research area that your peers might not agree with?"
 
-## Next Step
-**Recommended next**: `pitch` (Standard) — get all 5 context variants and a positioning consistency check. **Alternatives**: `stories`, `prep [company]`
+A Spiky POV isn't contrarian for its own sake. It's an intellectually honest position that the applicant can defend because they've worked on it. Examples:
+- "Most [field] researchers approach this as an optimization problem. I think it's actually a representation problem."
+- "The standard framework assumes [X]. My work suggests that assumption breaks down when [Y] — and Y is much more common than people think."
+- "The real bottleneck isn't [what everyone is working on]. It's [overlooked problem]. That's where I want to focus."
+
+---
+
+## Step 5: Consistency Check
+
+If the applicant has drafts of any documents already in the applications folder, check consistency:
+- Does the SoP opening match the core narrative?
+- Does the MotLetter hook use a different angle on the same identity?
+- Does the professor cold-email intro establish the same research identity?
+
+Inconsistency across documents is common and signals that the positioning hasn't been worked out. Name it: "Your SoP says you study [X] but your MotLetter opening says you study [Y]. These should tell the same story from different angles, not different stories."
+
+---
+
+## Output
+
 ```
+## Research Positioning — [Name]
 
-## Output Schema — Standard
+**Core narrative**:
+[2-3 sentences — the research identity]
 
-```markdown
-## Positioning Statement: [Name]
+**Hook**:
+[the opening line — what makes this applicant's angle distinctive]
 
-## Core Statement (30-45s)
-[The full hook + context + bridge]
+**Intellectual Insight Anchor**:
+[the non-obvious thing this applicant brings — from Narrative Bank]
 
-## Hook (10s)
-[The curiosity-gap opener alone]
+**Context Variants**:
 
-## Key Differentiator
-[One sentence]
+SoP Opening (2-3 sentences):
+[text]
 
-## Earned Secret Anchor
-[The earned secret or spiky POV powering the positioning — from storybank if available]
+Motivation Letter Hook (1-2 sentences):
+[text]
 
-## Pitch Diagnostic (if existing pitch was provided)
-| Dimension | Score (1-5) | Notes |
-|---|---|---|
-| Hook strength | | |
-| Differentiation | | |
-| Specificity | | |
-| Audience fit | | |
-| Memorability | | |
-- Primary weakness: [diagnosis]
+Professor Cold-Email Intro (1-2 sentences):
+[text]
 
-## Context Variants
+Fellowship Pitch (1-2 sentences):
+[text]
 
-### 1. Interview TMAY (60-90s)
-[Present-Past-Future format. Designed to survive TMAY evaluation criteria.]
+"Tell me about your research" (30 seconds):
+[text]
 
-### 2. Networking Event (30-45s)
-[Hook-Context-Ask. Ends with a question.]
+**Consistency Status**: [consistent across documents / inconsistent — specify what needs alignment]
 
-### 3. Recruiter Call (30-60s)
-[Keyword-aware, seniority-signaling, clear "what I'm looking for."]
-
-### 4. Career Fair (30-60s)
-[High-energy, leads with strongest credential, memorable phrase.]
-
-### 5. LinkedIn Summary Hook (~300 chars)
-[Above-fold, keywords + curiosity gap. Written for reading.]
-
-## Positioning Consistency Check
-- Resume summary: [aligned / misaligned — specific fix if needed]
-- LinkedIn headline/about: [aligned / misaligned — specific fix if needed]
-- Interview narrative: [aligned / misaligned — specific fix if needed]
-
-## Next Step
-**Recommended next**: `[command]` — [reason]. **Alternatives**: `[command]`, `[command]`
-```
-
-## Output Schema — Deep Positioning
-
-```markdown
-## Positioning Statement — Deep Positioning: [Name]
-
-## Core Statement (30-45s)
-[The full hook + context + bridge]
-
-## Hook (10s)
-[The curiosity-gap opener alone]
-
-## Key Differentiator
-[One sentence]
-
-## Earned Secret Anchor
-[The earned secret or spiky POV powering the positioning]
-
-## Pitch Diagnostic (if existing pitch was provided)
-[same as Standard]
-
-## Context Variants
-[all 5 variants — same as Standard]
-
-## Constraint Ladder
-| Duration | Version | What Stays |
-|---|---|---|
-| 15s | [compressed to one sentence] | |
-| 30s | [hook + context] | |
-| 60s | [hook + context + bridge] | |
-| 90s | [full TMAY version] | |
-- **Irreducible core**: [the element that stays at every duration — this is the positioning's essence]
-
-## Differentiation Audit
-- Defensible? [yes/no — evidence]
-- Spiky enough? [Spiky POV test result]
-- Earned vs. borrowed? [assessment]
-- Substitution test: [pass/fail — explanation]
-
-## Positioning Consistency Check
-- Resume summary: [aligned / misaligned — specific fix]
-- LinkedIn headline/about: [aligned / misaligned — specific fix]
-- Interview narrative: [aligned / misaligned — specific fix]
-
-## Cross-Surface Coherence
-[Assessment of how all candidate surfaces work together — do they tell one story or three?]
-
-## Challenge (Level 5 only)
-- Assumptions this positioning rests on: [2-3]
-- Blind spots: [what you can't see about how you present]
-- Devil's advocate: [strongest case for a hiring manager to tune out]
-- Highest-leverage fix: [the one thing that changes the positioning's impact]
-
-## Priority Moves (ordered)
-1. [highest-impact change]
-2. [second]
-3. [third]
-
-## Next Step
-**Recommended next**: `[command]` — [reason]. **Alternatives**: `[command]`, `[command]`
+---
+**Recommended next**: `draft-sop [program]` to build the first application document using this positioning. **Alternatives**: `professor-contact` to draft outreach emails using the cold-email variant.
 ```
 
 ---
 
-## Coaching State Integration
+## State Updates
 
-After running `pitch`, save to coaching_state.md:
+Save to `application_state.md` → Research Positioning:
+- Core narrative
+- Hook
+- Intellectual Insight Anchor
+- All 5 context variants
+- Consistency status
 
-```markdown
-## Positioning Statement
-- Date: [date]
-- Depth: [Quick Draft / Standard / Deep Positioning]
-- Core statement: [the full hook + context + bridge — 30-45 second version]
-- Hook (10s): [the curiosity-gap opener alone]
-- Key differentiator: [one sentence]
-- Earned secret anchor: [the earned secret or spiky POV powering the positioning]
-- Target audience: [primary audience this was optimized for]
-- Variant status: [which variants were produced]
-- Consistency status: [aligned / gaps identified — brief summary]
-```
+Flag in Active Coaching Strategy if positioning is not yet solid when the applicant begins drafting documents.

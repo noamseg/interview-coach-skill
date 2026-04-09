@@ -1,191 +1,126 @@
 # Differentiation Protocol
 
-Reference for earned secret extraction, spiky POV development, and clarity-under-pressure drills. Differentiation is scored as the 5th dimension (see SKILL.md rubric).
+Reference for Intellectual Insight extraction, Spiky POV development, and distinctiveness-under-constraint drills. Distinctiveness is scored as the 5th dimension in all document reviews.
+
+---
 
 ## When Differentiation Coaching Fires
 
-This protocol activates automatically when:
-- Differentiation score < 3 on any answer during analyze
-- Candidate's answers could be swapped with another qualified candidate's
-- Answer relies on frameworks, buzzwords, or textbook structures without personal insight
-- Story lacks an earned secret
-- During stories: every story should have an earned secret extracted before it's considered "complete"
+- Always: Distinctiveness is scored in every `review` session
+- Proactively: When Distinctiveness ≤ 2 in any scored document
+- During `narratives add/improve`: Intellectual Insight extraction is required for every narrative
+- During `positioning`: Spiky POV development creates the applicant's core distinctive angle
+- During `draft [sharpen]`: Dedicated revision drill targeting generic claims
+- Level 5: Apply the full challenge framework to every document before submission
 
 ---
 
-## Earned Secrets
+## The Intellectual Insight (Scholarship Application's "Earned Secret")
 
-An earned secret is:
-- An insight learned from direct experience that isn't obvious
-- Something most people in the field get wrong or don't notice
-- Backed by a specific story, metric, or pattern observed
-- Defensible if challenged
+**Definition**: The non-obvious thing the applicant learned from a specific experience that shapes how they now think about their research field. It's the insight you can only have if you've done the work — not something you could read in an introduction-to-the-field textbook.
 
-### NOT Earned Secrets
-- Generic advice: "Communication is important"
-- Book wisdom: "Psychological safety matters"
-- Obvious observations: "Users want fast products"
-- Predictions about the future without evidence
-- Borrowed insights from podcasts or articles
+**Test**: "Would someone who read the same papers and took the same courses have this insight? Or does it require having lived through this specific experience?"
 
-### How to Extract Earned Secrets
+### Intellectual Insight Extraction Protocol
 
-Review the candidate's storybank and transcripts. For each major experience, ask:
+Run this as a conversation, not a form. Ask one question at a time.
 
-1. "What did you believe before that turned out to be wrong?"
-2. "What would surprise people who haven't done this?"
-3. "What do most people in your field get wrong about this?"
-4. "What counterintuitive lesson did you learn?"
-5. "What would you tell your past self?"
+**Step 1**: Ask the applicant to describe the experience (research project, failure, mentorship, turning point).
 
-### Format for Earned Secrets
+**Step 2**: Ask the insight question:
+> "What do you know now — from going through that experience — that you didn't know before? What would you tell someone just starting that project that would surprise them?"
 
-**Earned Secret**: [2-sentence point of view]
+Listen for what's non-obvious. A good Intellectual Insight:
+- Names something specific about the field, not just about the experience ("I learned that X assumption breaks down when Y is true" > "I learned that research is hard")
+- Is defensible — the applicant can explain *why* this is true based on their evidence
+- Is specific enough to be unmistakable — it couldn't have come from a different project
 
-**Proof**: [Metric, artifact, or counterexample from experience]
+**Common extraction fails** (push further):
+- "I learned that you need patience in research" → universal, not an insight
+- "I learned that collaboration is important" → generic
+- "I learned that my field is more complex than I thought" → vague; push for *what specific complexity*
 
-**When to Deploy**: [Which interview questions this addresses]
+**Extraction probe for stuck applicants**:
+> "Pretend you're giving advice to someone about to start that exact project. What's the one thing you'd tell them that they absolutely wouldn't know to expect — that isn't on any syllabus or in any paper about the topic?"
 
-### Example Earned Secrets
+**Step 3**: Test the insight for distinctiveness:
+> "Could another person who worked on a similar project in a similar field have said this? Or does it specifically require your experience?"
 
-**PM Example**:
-> **Earned Secret**: Most teams over-index on building features and under-invest in instrumentation, which makes every subsequent decision slower and less confident.
->
-> **Proof**: At [Company], we spent 2 sprints building analytics before new features. Every PM resisted. Six months later, our ship velocity was 40% faster than peer teams because we weren't debating with opinions—we had data.
->
-> **When to Deploy**: Questions about prioritization, technical debt, team velocity, data-driven decisions
-
-**Engineer Example**:
-> **Earned Secret**: The best code reviews happen before any code is written. Design docs with clear alternatives prevent 80% of the "let's rewrite this" conversations.
->
-> **Proof**: After introducing mandatory design docs, our PR rejection rate dropped from 30% to 8%, and time-to-merge decreased by 40%.
->
-> **When to Deploy**: Questions about collaboration, code quality, technical leadership
+If yes (generic): push for a more specific version of the insight.
+If no (specific): this is the Intellectual Insight. Record it.
 
 ---
 
-## Spiky POV Polish
+## Spiky POV Development
 
-Safe answers are forgettable. Spiky answers make interviewers lean in.
+A Spiky POV is the applicant's non-obvious, defensible intellectual stance on their research area. It's what makes a research positioning statement memorable rather than safe.
 
-### Anatomy of a Spiky Answer
-1. **Spiky take**: A principled stance some would disagree with
-2. **Surprising lesson**: Not the obvious takeaway
-3. **Quantified impact**: With range or caveat if needed
+**Not contrarianism**: A Spiky POV isn't "everyone in my field is wrong." It's "the standard framing of this problem misses something important, and here's what I think matters more."
 
-### Transformation Process
+**Signs of a Spiky POV**:
+- "Most researchers treat [X] as a constraint. I think it's actually where the interesting question lives."
+- "The field has focused on [Y] for 20 years. I think [Z] is the bottleneck that nobody's working on."
+- "The debate in [field] is between [A] and [B]. My work suggests both sides are making the same underlying assumption, which I think is wrong."
 
-Take a safe answer and rewrite with all three elements.
+### Spiky POV Extraction
 
-**Safe**: "I believe in user research and gathering feedback before building."
+Ask:
+> "What do you believe about your research area that your peers or professors might push back on? What's your honest take on where the field is missing something?"
 
-**Spiky**: "Most teams do user research too late—after they've committed to a direction. We ran concept testing before writing any code, which felt inefficient to engineering but saved us from building the wrong thing. The surprising part? Our best insights came from users who said they wanted Feature X but actually needed Feature Y. We shipped Y, got 30% adoption in two months, and later found out Feature X would've solved a problem only 5% of users had. The lesson: Users are great at expressing pain but terrible at prescribing solutions."
+If they hedge or deflect: "It's okay to have an opinion. The strongest SoPs take a stance. What would you argue for if you had to defend a controversial position in your field?"
 
-### What Makes a Take "Spiky"
-
-Not spiky (universal agreement):
-- "Collaboration is important"
-- "We should ship fast"
-- "Data should inform decisions"
-
-Spiky (reasonable people disagree):
-- "Most collaboration slows teams down—async-first is better"
-- "Shipping fast is overrated; shipping right matters more"
-- "Too much data creates analysis paralysis; start with intuition"
-
-### Guardrails
-
-- The spiky take must be defensible with evidence
-- Don't manufacture controversy—find genuine beliefs
-- Stay authentic; don't adopt a take you can't back up
-- Know when to deploy: spiky answers are memorable but risky if they clash with company culture
+If they don't have one yet: that's a signal that the `positioning` work is incomplete. A Spiky POV develops from deep experience — it can't be manufactured. Run `narratives identity` to find the through-line first.
 
 ---
 
-## Clarity Under Pressure
+## The Substitution Test
 
-Preparation gets 80%. The final 20% is thinking clearly when the unexpected happens.
+**Definition**: Replace the applicant's name with any other qualified applicant in the same field. Would the document still work?
 
-### Interruption Handling Drill
+If yes → Distinctiveness is low. The document could have been written by anyone.
+If no → Distinctiveness is high. The document only works because of this specific person.
 
-**Setup**: Candidate starts answering a question. Halfway through, interrupt with:
+Apply the Substitution Test:
+- In `review`: To the full document after scoring
+- In `draft [sharpen]`: To the specific claim being sharpened
+- In `positioning`: To the core narrative and each context variant
+- Level 5 only: As a challenge after every major draft
 
-**Skeptical challenge**: "But I'm not convinced by that approach because [reason]"
-- Tests: Can they engage with criticism without getting defensive?
+**What passes the Substitution Test**:
+- A specific research finding named ("the preprocessing pipeline that reduced artifact contamination by 40%")
+- A specific Intellectual Insight that required this experience to develop
+- A specific research question that flows from this applicant's unique combination of background and experience
+- A specific professor connection that makes sense only given this applicant's prior work
 
-**Clarifying question**: "Wait, can you define what you mean by [term they used]?"
-- Tests: Do they actually understand their own jargon?
-
-**Pivot**: "Actually, let me stop you. I want to know about [different angle]"
-- Tests: Can they switch gears without losing composure?
-
-**Scoring**:
-- Recovery grace (defensive vs. curious): 1-5
-- Adaptation (addressed the point vs. deflected): 1-5
-- Coherence (maintained thread vs. lost it): 1-5
-
-### Constraint Ladder Drill
-
-Practice the same story at multiple time constraints:
-
-1. **30 seconds**: Walking to the interview room
-2. **60 seconds**: Executive attention span
-3. **90 seconds**: Standard interview answer
-4. **3 minutes**: "Tell me more"
-
-For each level, identify:
-- What to emphasize vs. cut
-- Where to plant hooks for follow-ups
-- How to end cleanly if interrupted
-
-Then test: "You're at the 90-second mark, and I interrupt with: 'Can you give me specific numbers on impact?' How do you adapt?"
-
-### Real-Time Thinking Indicators
-
-**Strong signals**:
-- Acknowledges the challenge: "That's a fair pushback..."
-- Thinks out loud: "Let me think about that for a second..."
-- Asks clarifying question: "When you say X, do you mean...?"
-- Admits uncertainty: "I'm not 100% sure, but my hypothesis is..."
-
-**Weak signals**:
-- Ignores the challenge and continues planned answer
-- Gets defensive: "Well, actually..."
-- Restarts from the beginning instead of adapting
-- Fills silence with filler words instead of thinking
+**What fails the Substitution Test**:
+- "I am passionate about [field]" (any applicant can say this)
+- "I want to make a positive impact through research" (any applicant can say this)
+- "Your program's reputation and resources are a perfect fit for my goals" (any applicant can say this)
+- "My experience in [role] prepared me for PhD study" (any applicant in any role can say this)
 
 ---
 
-## Differentiation in Non-Interview Contexts
+## Clarity-Under-Constraint Drills
 
-Earned secrets and spiky POVs aren't just for interview answers — they power every candidate-facing surface. The same differentiation protocol applies: extract the insight only this candidate has, and deploy it where it creates the most impact.
+The trim drill is the primary constraint drill for scholarship documents. Constraints force prioritization — which claims are so important they survive compression?
 
-### Resume Bullets
+### Trim Protocol (for a section that's over length or bloated)
 
-The difference between a generic bullet and a differentiated one is the earned secret embedded in the claim:
+Set the constraint: "Cut this section from [X] words to [Y] words while preserving all important content."
 
-- **Generic**: "Reduced churn by 18%"
-- **Differentiated**: "Built a churn prediction model after discovering that usage-based signals outperform survey data for predicting renewal — reduced churn by 18% in one quarter"
+First pass: applicant cuts themselves.
 
-When `resume` runs the storybank-to-bullet pipeline, it mines each story's earned secret for the bullet's differentiating clause. The earned secret turns a metric into a narrative about judgment.
+Coach evaluates: applicants often cut the specific details (the parts that distinguish them) and keep the vague framing (the parts that could apply to anyone). **Reverse this**.
 
-### LinkedIn Profile
+Annotate what was cut wrongly:
+- "You cut the specific method name. That's the differentiator — put it back."
+- "You kept 'I am passionate about this research area.' Cut this — it adds no information."
+- "The specific number (40% improvement) was cut. That's your most credible data point — restore it."
 
-The About section should lead with an earned secret, not a title. "Senior PM with 8 years of experience" is invisible in recruiter search results — every PM has that. "I've learned that the best product decisions come from killing features, not building them" stops the scroll.
+Second pass: coach demonstrates what should be cut:
+- Filler transitions ("Furthermore," "Additionally," "In conclusion")
+- Claims already implied by evidence ("This shows I can conduct research" — if you described the research, this is redundant)
+- Repeated ideas in different words
+- Defensive hedges ("While I may not have all the experience required...")
 
-When `linkedin` audits the profile, it checks whether earned secrets from the storybank appear in high-impact sections (headline, About, Experience). A profile with zero earned secrets reads as competent but forgettable — the same assessment that produces a "Hire" but never a "Strong Hire."
-
-### Positioning Statement
-
-The `pitch` command builds the core statement around earned secrets — the curiosity-gap hook IS the earned secret, compressed to one sentence. A pitch without an earned secret is a job title with extra words: "I'm a PM who builds data-driven products" (anyone could say this) vs. "I'm a PM who learned that killing features is harder and more valuable than building them" (only this person would say this).
-
-The positioning statement serves as the consistency anchor for `resume`, `linkedin`, and `outreach` — ensuring the same earned secret threads through every surface.
-
-### Outreach Messages
-
-Cold messages that open with an earned secret get responses. Generic intros don't:
-
-- **Generic**: "Hi, I'm interested in the Senior PM role at your company. I have 8 years of experience in B2B SaaS."
-- **Differentiated**: "I noticed your team ships weekly — I learned the hard way that shipping cadence matters less than feedback loop speed. Would love to hear how you think about that."
-
-When `outreach` builds messages, it pulls hooks from the candidate's earned secrets. The earned secret creates a curiosity gap — the recipient wants to know the story behind the claim, which is exactly the conversation the candidate wants to have.
+After trimming: run the Substitution Test on the compressed version. Well-trimmed sections usually score *higher* on Distinctiveness because the specific details survive while the padding is removed.

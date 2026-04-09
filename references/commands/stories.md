@@ -1,214 +1,222 @@
-# stories — Storybank Workflow
+# narratives — Narrative Bank Workflow
 
-Use `references/storybank-guide.md`.
+Use `references/narrative-bank-guide.md` for the full narrative format, arc template, and health check protocol.
 
-Menu:
+---
+
+## Menu
 
 ```text
-Storybank Menu
-1) View
-2) Add
-3) Improve
-4) Find gaps
-5) Retire/archive
-6) Drill — rapid-fire retrieval practice
-7) Narrative identity — extract your career themes and see how stories connect
+Narrative Bank
+1) view          — Display the full narrative bank with health check
+2) add           — Add a new narrative (guided development)
+3) improve       — Diagnose and upgrade an existing narrative
+4) find gaps     — Identify what document sections lack strong narrative coverage
+5) retire        — Archive a weak or overused narrative
+6) drill         — Rapid-retrieval drill (find the right narrative in 10 seconds)
+7) identity      — Narrative identity extraction (the through-line across all narratives)
+
+What do you want to work on?
 ```
 
-### Adding Stories — Guided Discovery
+---
 
-When the candidate selects "Add," don't jump straight to STAR format. Most people can't produce stories on command. Use the guided exploration prompts from `references/storybank-guide.md` (peak experiences, challenge/growth, impact/influence, failure/learning) to surface stories first, *then* structure them:
+## 1) view — Display Narrative Bank
 
-1. Ask one reflective prompt at a time. Wait for the response.
-2. Listen for the story embedded in their answer — they may not realize they're telling one.
-3. When you hear a promising story, say: "That's a strong story. Let's capture it." Then walk through STAR.
-4. After STAR, extract the earned secret (see `references/differentiation.md`).
-5. Index it in the storybank table.
+Show the full table from `application_state.md` → Narrative Bank, then run the health check:
 
-Don't skip the reflective prompts and go straight to "tell me a story about leadership." That produces rehearsed, thin stories. The prompts produce real ones.
-
-#### Story Construction Principles
-
-Story coach Matthew Dicks (author of *Storyworthy*, via Lenny's Podcast) identifies what makes stories memorable and compelling — principles the coach should apply when helping candidates shape raw material into interview stories:
-
-- **Every story is about a moment of transformation**: "I used to think X, then Y happened, and now I know Z." The most memorable interview stories follow this pattern — they show the gap between who the candidate was before and after the experience. When extracting stories, look for the transformation: what changed in the candidate's understanding?
-- **Stories need stakes**: What was at risk? Stories without stakes are anecdotes. As Dicks puts it: "Everyone loves the word storytelling in business... but to be a storyteller means you have to separate yourself from the herd, and in their mind, that risks them getting picked off. But the alternative is you're in the herd, which means you're forgettable."
-- **Start as close to the end as possible**: The #1 revision Dicks gives is "you've started your story in the wrong place." For interview stories, this means: don't set the scene for 90 seconds before getting to the action.
-- **The "But & Therefore" test**: Replace "and then" connectors with "but" and "therefore" to create cause-and-effect chains. If you can't, the story lacks narrative tension.
-
-**Important**: When adding a story, write the full STAR text to the Story Details section in `coaching_state.md` — not just the index row in the Storybank table. The table is a quick-reference index. The Story Details section is where the actual story lives, including Situation, Task, Action, Result, Earned Secret, deploy use-case, and version history. Without the full text, the coach can't help improve the story in a future session without asking the candidate to retell it from scratch.
-
-### Improving Stories — Structured Upgrade Protocol
-
-When the candidate selects "Improve," don't just say "add more specifics." Walk through a diagnostic sequence:
-
-1. **Read the current story aloud** (or have the candidate deliver it). Score it on 5 dimensions. Identify which dimensions are dragging it down.
-2. **Diagnose the gap type:**
-   - **Score 1-2 → Missing raw material.** The story doesn't have enough to work with. Ask: "What's missing from this story that you remember but haven't included?" and "What was actually hard about this situation?" Often the candidate stripped the tension out.
-   - **Score 3 → Good bones, missing proof.** The story is specific but not compelling. Target: quantified impact, alternatives considered, or earned secret. Ask: "What numbers could you attach to this? Even rough ones." and "What other approaches did you consider before this one?"
-   - **Score 4 → Strong, missing differentiation.** The story is credible and well-structured but sounds like anyone could tell it. Target: earned secret and spiky POV. Ask: "What do you know from this experience that most people in your role wouldn't know?" and "What would surprise someone who wasn't there?" Apply Matthew Dicks' memorability test (via Lenny's Podcast): does the story have a clear moment of change? Can you identify the exact point where the candidate's understanding shifted? If the story describes a situation and an outcome but no transformation, it will score well on Structure but poorly on Differentiation.
-3. **Apply the specific fix.** Don't do a full rewrite — make the minimum change that moves the score up. Show the before/after for the specific section that changed.
-4. **Re-score after the improvement.** Show the candidate what moved and why.
-5. **Update the storybank record** with new strength score and version note.
-
-### Story Strength Audit
-
-When the candidate has 8+ stories, periodically run a portfolio-level audit (suggest this in `progress` when storybank health shows issues):
-
-- **Distribution check**: Are all stories from the same job? Same domain? Same skill? Flag clustering. For portfolio-level gaps, `progress` tracks storybank health trends across sessions.
-- **Strength curve**: How many at 4+? How many below 3? A healthy storybank has at least 60% at 4+.
-- **Earned secret coverage**: How many stories have a real earned secret vs. a placeholder? Stories without earned secrets are incomplete.
-- **Deployment readiness**: For each target company/role, can the candidate cover the top 5 predicted questions with 4+ stories? If not, which gaps need new stories vs. improved existing ones?
-- **Retirement candidates**: Any story below 3 for more than 2 improvement attempts? Suggest retiring and replacing.
-
-### Story Versioning
-
-When improving a story, preserve the previous version in the Story Details section:
-- In the Version history field, add: "[date] — [brief description of what changed]"
-- Update the STAR text in Story Details with the improved version
-- This serves two purposes: (1) the candidate can see their progress over time, and (2) if the "improved" version stops landing in interviews, the coach can reference what changed and potentially revert.
-
-### Story Red Team (Directness Level 5)
-
-After `stories add` or `stories improve`, run all 5 Challenge Protocol lenses against the story:
-
-1. **Assumption Audit**: What must be true for this story to land? What interviewer framework is it assuming?
-2. **Blind Spot Scan**: What's invisible to the candidate about their own story? What context do they take for granted?
-3. **Pre-Mortem**: How does this story fail in a real interview? Where does it lose attention or raise doubt?
-4. **Devil's Advocate**: Where does a skeptical interviewer attack? What follow-up questions expose weaknesses?
-5. **Strengthening Path**: One specific change that makes it airtight.
-
-At Levels 1-4: Skip. The standard improve diagnostic is sufficient.
-
-### Story Records
-
-See `references/storybank-guide.md` for the full storybank format, column definitions, and skill tags. Every story record must include an Earned Secret field — see `references/differentiation.md` for the extraction protocol.
-
-### Prioritized Gap Analysis
-
-When the candidate selects "Find gaps," don't just list missing competencies — rank them by how much they matter for this candidate's target roles:
-
-1. Cross-reference the candidate's target roles/companies (from `coaching_state.md`) with the storybank's skill coverage. **Check both Primary and Secondary Skills** — a competency may be covered as a secondary skill in an existing story, which changes the gap from "no story" to "Workable coverage" (see `references/story-mapping-engine.md` for fit scoring).
-2. For each gap, assess: **Critical** (this competency will definitely be tested and no story exists, even as a secondary skill), **Important** (likely to come up, only weak stories or secondary-skill-only coverage available), **Nice-to-have** (might come up, but won't make or break the interview).
-3. For critical gaps, check: can an existing story be reframed to cover this competency (using its secondary skill or an adjacent experience), or does the candidate need to surface a new experience entirely?
-4. Prescribe gap-handling patterns from the Gap-Handling Module in `references/cross-cutting.md` for any competencies where no real story exists. Use the Pattern Selection by Storybank Score table: strength 2 → Adjacent Bridge, strength 1 → Reframe to Strength or Growth Narrative, no story → Hypothetical with Self-Awareness.
-5. **Cross-reference with active prep briefs**: If the candidate has active prep briefs (from `prep`), check predicted questions against gaps. A gap that maps to a predicted question at a current target company is elevated to Critical regardless of general frequency.
-6. **Consume narrative identity output** (if `stories narrative identity` has been run): Use the candidate's core themes and sharpest edge to inform gap prioritization. Gaps in the candidate's dominant themes are more damaging than gaps in peripheral areas — a candidate whose theme is "building systems from scratch" must have a gap-free story set for process-building and ambiguity questions. Also check for orphan stories that could be reframed to fill a gap through their theme connection.
-
-A PM interviewing at Stripe with no "influence without authority" story has a critical gap. The same candidate missing a "technical depth" story has a nice-to-have gap. Rank accordingly.
-
-When adding or improving stories, force specificity on:
-
-- Candidate-specific contribution (not "we" — what did *you* do?)
-- Quantified impact (or explicit non-quant reason)
-- Tradeoff/constraint detail
-- Earned secret extraction and validation (see `references/differentiation.md`)
-- One-line deploy use-case
-
-### Rapid-Retrieval Drill (`stories drill`)
-
-See `references/storybank-guide.md` (Rapid-Retrieval Drill section) for the full protocol, scoring criteria, and progression rounds. In brief: 10 rapid-fire questions, 10 seconds each, candidate responds with story ID + opening line. Debrief focuses on retrieval gaps and hesitation patterns. Also available via `practice retrieval`.
-
-### Common Behavioral Story Categories
-
-Certain interview question categories appear so frequently that candidates should ensure storybank coverage for each. When running gap analysis, check coverage against these:
-
-**Giving/receiving feedback stories**: One of the most common behavioral categories. Kim Scott's Radical Candor framework (via Lenny's Podcast) gives candidates a structured lens: the best feedback stories demonstrate caring personally while challenging directly. The ideal answer structure: "Here's how I showed I cared about the person, here's how I challenged directly, and here's what happened." Coach candidates to avoid describing "ruinous empathy" (being too nice to give feedback) as a strength — experienced interviewers recognize it as a red flag. Scott's go-to question — "What could I do or stop doing that would make it easier to work with me?" — is itself strong interview material for demonstrating vulnerability and systematic thinking.
-
-**Difficult colleague/conflict stories**: Another top category. Product leader Anneka Gupta emphasizes (via Lenny's Podcast) that the strongest answers show the candidate understood the other person's perspective, not just their own frustration.
-
-### Narrative Identity — Theme Extraction
-
-Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative identity works best with 5+ stories to find patterns across. You have [N]. Want to add a few more with `stories add` first?"
-
-**Alternative extraction method**: For candidates who struggle with top-down theme analysis, executive coach Donna Lichaw (author of *The Leader's Journey*, via Lenny's Podcast) offers a bottom-up approach: (1) Recall a peak experience from childhood that totally lit you up, (2) Recall a peak experience from the last ~10 years of work, (3) Map your meandering path into your current role, (4) Lay these three stories on top of one another — your superpowers appear at the intersections. This surfaces themes candidates can't see by just looking at their storybank. Lichaw's key insight: "The most effective stories are the ones that we tell ourselves. Our brain doesn't know the difference. Once you understand that, you may as well leverage it to be that hero." Also useful for the "Kryptonite Framework" — things candidates think are weaknesses often serve them (e.g., "too quiet" = great listener with a poker face). Ask: "How is this serving you?" before trying to eliminate it.
-
-#### Analysis Protocol
-
-1. Read every story's full STAR text, earned secret, and deploy use-case from `coaching_state.md`.
-2. Cluster stories by **underlying theme** — not surface skill. Surface skills are things like "leadership" or "communication." Themes are specific patterns like "building systems where none existed," "translating between worlds that don't naturally talk to each other," or "making unpopular bets that paid off." If the theme could describe a generic candidate, go deeper. Matthew Dicks' principle applies at the portfolio level (via Lenny's Podcast): the best interview narratives have an overall arc of transformation, not just individual stories. When extracting themes, look for the meta-narrative — how has this candidate's understanding of their craft evolved? That evolution IS the narrative identity.
-3. Identify 2-3 dominant themes. Most candidates have 2. Three is rare and usually means one is weak.
-4. Name the **sharpest edge** — the theme that is most distinctive to this candidate, hardest to replicate, and most likely to make an interviewer remember them.
-5. Flag **orphan stories** — stories that don't connect to any theme. These dilute the narrative and may be retirement candidates.
-6. Flag **fragile themes** — themes with only 1 story supporting them. One story is an anecdote; two or more is a pattern.
-7. Connect to differentiation: themes ARE the candidate's earned perspective made visible across their career arc. A strong narrative identity is how a candidate scores 4-5 on Differentiation consistently — not by forcing earned secrets into individual answers, but by having every answer reinforce the same coherent thesis about who they are.
-
-#### Output Schema
-
-```markdown
-## Your Narrative Identity
-
-### Core Themes
-1. **[Theme]** — [one-line description of the pattern]. Stories: S###, S###, S###
-2. **[Theme]** — [one-line description]. Stories: S###, S###
-3. **[Theme]** — [one-line description]. Stories: S###
-
-### Your Sharpest Edge
-[Which theme is most distinctive to you — the one an interviewer would remember. How many of your stories currently leverage it vs. how many could. This is your highest-leverage positioning move.]
-
-### Theme Coverage
-- Stories reinforcing a theme: __ of __
-- Orphan stories (no clear theme connection): [list with S### IDs — consider retiring or reframing]
-- Fragile themes (only 1 story): [list — need reinforcement]
-
-### How To Use This
-- **In answers**: [Specific advice on connecting answers back to core themes without being heavy-handed]
-- **In questions you ask**: [How to ask questions that reinforce your themes]
-- **In positioning**: [How themes inform your "why this role / why this company" narrative]
-
-**Recommended next**: `stories improve S###` — strengthen your sharpest-edge stories. **Alternatives**: `stories add`, `practice`, `prep [company]`
+```
+Narrative Bank Health Check:
+✓ Total narratives: [count] (target: 6-10)
+✓ Strength distribution: [X at 4+, Y at 3, Z at 1-2] (target: 60%+ at 4+)
+✓ Intellectual Insights extracted: [X] / [count] (target: all)
+✓ Document coverage: [which document sections have Strong Fit narratives]
+✗ Missing: [document sections with no strong narrative]
+✗ Overuse risk: [narratives used in 3+ program documents already]
 ```
 
-### Output Schema (per action)
+Then ask: "What would you like to do — add a narrative, improve one, or check gaps?"
 
-**After `stories add`:**
+---
+
+## 2) add — Guided Narrative Development
+
+**This is not a Q&A form. This is a coaching conversation.** Ask one question at a time. Use follow-up probes based on what the applicant says — don't just check boxes.
+
+**Step 1: Experience selection**
+
+> "Tell me about a research experience, intellectual challenge, or defining moment in your academic path that you haven't fully developed yet. It doesn't have to be dramatic — the most revealing narratives are often about small moments with large implications."
+
+If the applicant is stuck: offer prompts:
+- "Tell me about a time a result didn't come out the way you expected. What happened?"
+- "What's the most interesting thing you've worked on — the thing you'd talk about at a dinner party?"
+- "Tell me about the moment you first got seriously interested in [their field]."
+- "Tell me about a mentor or advisor who changed how you think."
+- "Tell me about a project that failed. What did you learn?"
+
+**Step 2: Arc development** — one question at a time
+
+- **Context**: "Set the scene. Where were you, what were you working on, and what were the stakes?"
+- **Challenge**: "What made this hard? What was the obstacle — intellectual, practical, or personal?"
+- **Insight**: "What did you figure out? Not just what happened — what did you understand afterward that you didn't understand before?" (probe: "Would most people in your situation have reached the same conclusion? What was non-obvious about your takeaway?")
+- **Impact**: "What changed because of this? For the project, for your thinking, for your path?"
+- **Meaning**: "How does this experience connect to what you want to do in your PhD? What does it tell a committee about why you're pursuing this research?"
+
+**Step 3: Intellectual Insight extraction**
+
+This is the most important step. Push until the applicant can articulate the non-obvious thing they learned.
+
+> "Let's find the intellectual insight in this experience — the thing you now know that most people in your situation wouldn't know, and that would only occur to someone who went through exactly what you went through. What is that thing?"
+
+Common responses that are NOT insights (push further):
+- "I learned that research takes patience." (universal — not an insight)
+- "I learned that collaboration is important." (generic — not an insight)
+- "I learned that [field] is more complex than I thought." (vague — push for what specific complexity)
+
+An intellectual insight sounds like:
+- "I realized that the reason [standard approach X] doesn't work is because it assumes [condition Y] that's rarely true in real-world data. This led me to ask: what if we [your approach]?"
+- "I discovered that the bottleneck in [problem] isn't the technical challenge everyone focuses on — it's the question of how to [underappreciated problem]. Nobody is working on that yet."
+- "Working on [project] showed me that [field A] and [field B] are asking the same question in different languages. That's the bridge I want to build in my PhD."
+
+**Step 4: Document deployment planning**
+
+> "Where does this narrative fit in your applications? Which document sections is it strongest for?"
+
+Options:
+- SoP opening hook (if it's a turning point or curiosity moment)
+- SoP research experience section P2 (if it's a specific project)
+- SoP program-fit section (if it connects directly to target faculty)
+- Motivation Letter opening (if it's personal)
+- Fellowship personal statement (if it shows character or impact)
+
+Add to "Deploy in" field. Update Narrative Bank index.
+
+**Step 5: Score and save**
+
+Score the narrative on 2 dimensions:
+- Intellectual depth (equivalent of Message) — 1-5
+- Distinctiveness — 1-5
+
+Final narrative format:
 ```markdown
-## Story Added: [Title]
-- ID: S###
-- Primary Skill:
-- Earned Secret:
+#### N00X — [Title]
+- Type: [Research Experience / Challenge-Growth / Intellectual Turning Point / Mentorship / Failure-Learning / Field Connection]
+- Context: [1-2 sentences]
+- Challenge: [1-2 sentences]
+- Insight: [1-2 sentences]
+- Impact: [1 sentence]
+- Meaning: [1-2 sentences — how this connects to PhD goals]
+- Intellectual Insight: [the non-obvious takeaway — the most important field]
 - Strength: [1-5]
-- Deploy for: [one-line use case]
-
-## Story Red Team (Level 5 only)
-- Assumption: [what must be true for this to land]
-- Blind spot: [what you can't see about your own story]
-- Failure mode: [how this fails in a real interview]
-- Attack surface: [where a skeptic probes]
-- Fix: [one change that makes it airtight]
-
-**Recommended next**: `stories improve S###` — strengthen the story based on the red team findings. **Alternatives**: `stories find gaps`, `practice retrieval`, `concerns`
+- Deploy in: [document type + section]
+- Version history: [date — first developed]
 ```
 
-**After `stories improve`:**
-```markdown
-## Story Improved: [Title] (S###)
-- Previous strength: __ → New strength: __
-- What changed: [brief description]
-- Version history updated
+---
 
-## Story Red Team (Level 5 only)
-- Assumption: [what must be true for this to land]
-- Blind spot: [what you can't see about your own story]
-- Failure mode: [how this fails in a real interview]
-- Attack surface: [where a skeptic probes]
-- Fix: [one change that makes it airtight]
+## 3) improve — Diagnostic Upgrade
 
-**Recommended next**: `practice` — test the improved story under pressure. **Alternatives**: `stories view`, `stories improve S###`, `analyze`
+**Diagnose before prescribing**: identify which specific dimension is limiting the narrative before attempting to fix it.
+
+Step 1: Read the narrative from the Narrative Bank. Ask: "What's your instinct about what's weakest here? What part does it feel like is missing?"
+
+Step 2: Score the narrative on all 5 dimensions (briefly). Identify the gap type:
+
+| Gap Type | Diagnostic Signal | Fix |
+|----------|------------------|-----|
+| Missing intellectual insight | Narrative ends with outcome but no "what I learned" | Run insight extraction: "What do you know now that you didn't know then? What would surprise most people?" |
+| Too vague / credential-reciting | Context exists but Challenge and Insight are absent | "Tell me the hardest moment in this experience. Walk me through it." |
+| No specific contribution | "We" framing throughout; no individual ownership | "What specifically did YOU do that someone else couldn't have done — or wouldn't have done the same way?" |
+| Wrong deploy target | Narrative is strong but mapped to a section where it doesn't fit | Remap to better-fit section. Consider whether a second version with different framing is worth developing. |
+| Weak opening | The narrative buries the most interesting moment | Restructure: start with the most interesting moment, not the chronological beginning. |
+
+Step 3: Apply the fix. Rewrite the relevant arc element. Re-score. Confirm the improvement.
+
+---
+
+## 4) find gaps — Document Coverage Analysis
+
+Pull the Narrative Bank and the document requirements from active Application Loops. Map current narratives to required document sections:
+
+```
+Gap Analysis — Document Coverage
+
+SoP Structure (for [Program]):
+P1 Opening hook:          [narrative ID + fit level, or GAP]
+P2-3 Research experience: [narrative ID + fit level, or GAP]
+P4 Second experience:     [narrative ID + fit level, or GAP]
+P5 Intellectual agenda:   [narrative ID + fit level, or GAP]
+P6 Program fit:           [CUSTOM — requires `fit [program]`]
+P7 Goals:                 [CUSTOM — no narrative needed]
+
+Critical gaps (must be addressed before drafting):
+[list of sections with no Strong Fit narrative]
+
+Important gaps (addressable with existing narratives + adaptation):
+[list of sections with only Workable or Stretch narratives]
+
+Overuse risk:
+[any narrative already deployed in 3+ program SoPs — flag for differentiation review]
 ```
 
-**After `stories find gaps`:**
-```markdown
-## Storybank Gap Analysis
-### Critical Gaps (must fill for target roles)
-1. [competency] — No story exists. Recommended: [surface new story / reframe existing S###]
-   Gap-handling pattern if asked before a story exists: [Pattern 1-4 from Gap-Handling Module]
+Recommend next action: "Add" a new narrative for critical gaps, or "Improve" an existing Stretch narrative to make it Workable.
 
-### Important Gaps (likely to come up)
-1. [competency] — Only weak story (S###, strength __). Recommended: [improve / replace]
+---
 
-### Nice-to-Have (might come up)
-1. [competency]
+## 5) retire — Archive Weak Narratives
 
-**Recommended next**: `stories add` — fill the highest-priority gap. **Alternatives**: `practice gap`, `prep [company]`
-```
+Move narratives rated 1-2 with no realistic path to improvement to a "Retired Narratives" archive.
+
+Before retiring: confirm:
+- Has the applicant tried to improve it? (if not: try `improve` first)
+- Is the experience itself weak, or is the narration weak? (weak narration is fixable)
+- Is it the only narrative covering a critical document section? (if yes: don't retire until a replacement is developed)
+
+Retirement note format: "Retired [date] — [reason]: [why the narrative isn't deployable and what would need to be true to bring it back]"
+
+---
+
+## 6) drill — Rapid-Retrieval Practice
+
+Purpose: For documents with many sections and a large narrative bank, the applicant needs to find the right narrative quickly when drafting under time pressure.
+
+Protocol:
+1. State a document section: "SoP P2 — your most relevant research experience for a computational biology PhD"
+2. Applicant responds in 10 seconds: narrative ID + one-sentence opening
+3. Coach evaluates: right narrative? right opening?
+4. 8-10 rounds
+
+This is especially useful when applying to many programs and the narrative bank has 8+ entries — the applicant shouldn't have to search the bank when drafting.
+
+---
+
+## 7) identity — Narrative Identity Extraction
+
+Extract 2-3 core intellectual themes across all narratives in the bank:
+
+> "Looking across your narratives, I want to find the through-line — the recurring intellectual question or concern that connects your experiences. This becomes the spine of your Research Positioning statement."
+
+Method:
+1. Read all Intellectual Insights from the narrative bank
+2. Look for patterns: what question keeps appearing? What lens does this applicant apply to different problems?
+3. Extract 2-3 themes in order of prominence
+
+Example output:
+> "Across your narratives, three themes appear consistently:
+> 1. **The measurement problem**: In three different projects, you've been drawn to situations where the standard measurement approach is inadequate. This isn't coincidence — it's a perspective.
+> 2. **Bridging scales**: Your work repeatedly connects micro-level mechanisms to macro-level phenomena. That's a methodological signature.
+> 3. **Failure as signal**: Half your best narratives involve an unexpected result that turned into a better question. You're an intellectually curious scientist who treats failure as data.
+>
+> These themes should anchor your SoP opening and your Research Positioning statement. They're what makes you distinctive — not your credentials, but how you think."
+
+This output feeds directly into `positioning`.
+
+---
+
+## State Updates
+
+After any `narratives` session:
+- Update Narrative Bank index in `application_state.md`
+- Update "Used In" column when a narrative is mapped to a document section
+- Update Narrative Intelligence → Effective Patterns if a narrative scored 4-5
+- Note narrative identity themes in Coaching Notes if extracted

@@ -1,319 +1,179 @@
-# decode — JD Analysis + Batch Triage
+# decode — Program Requirements & Prompt Analysis
 
-### How JDs Actually Work (Reference Knowledge)
+**Purpose**: Decode program application prompts, fellowship criteria, and faculty research descriptions to extract what the program is actually evaluating — beyond what the surface language says.
 
-**JD Structure Patterns**: JDs follow predictable structures — company intro, role summary, responsibilities, requirements, nice-to-haves, benefits. But the signal isn't in the structure, it's in the language.
+---
 
-**Signal Density by Section**:
-- Requirements = screening criteria (ATS + recruiter first pass). What gets you through the door.
-- Responsibilities = what the role actually does. Often more honest than requirements.
-- Nice-to-haves = the ideal candidate profile. What "Strong Hire" looks like beyond baseline.
-- Company intro = culture signals and positioning. How the company wants to be perceived.
-- Benefits = comp philosophy signals. Equity-heavy = startup. Benefits-heavy = mature org.
+## How Application Prompts Actually Work
 
-**The 6 Decoding Lenses** (adapted from prep.md's JD Parsing Guide — decode makes these the main event):
-1. **Repetition frequency** — Count how often key themes appear. If "cross-functional collaboration" appears 3 times, it is a primary evaluation criterion. Most repeated = most important, regardless of where it appears.
-2. **Order and emphasis** — What's listed first in responsibilities/requirements? First = highest priority. The first 3 bullets typically reflect the top 3 evaluation criteria.
-3. **Required vs. nice-to-have** — Required = screening criteria that filter you in/out before a human looks. Nice-to-have = what differentiates "Hire" from "Strong Hire." Many candidates skip nice-to-haves — this is a mistake.
-4. **Verb choices** — "Own" vs. "support" vs. "contribute to" signal autonomy and scope. "Own end-to-end" is a fundamentally different job from "contribute to team efforts." "Drive" vs. "execute" signals strategy vs. implementation.
-5. **Between-the-lines signals** — Euphemisms decoded. "Fast-paced environment" = likely understaffed or rapid change. "Comfortable with ambiguity" = undefined role or early-stage. "Stakeholder management" = political environment. "Wear many hats" = no clear role boundaries. These are interpretations, not facts — confidence-label accordingly.
-6. **What's missing** — Absence is information. A PM JD that doesn't mention data/analytics signals team maturity (or lack of PM influence on data). An engineering JD that doesn't mention testing may indicate culture. A senior role with no mention of mentoring signals an IC-heavy org.
+Program application prompts and fellowship criteria follow predictable patterns. But the signal isn't in the surface structure — it's in the specific language choices, what's emphasized, what's repeated, and critically, what's missing.
 
-**What JDs Don't Tell You** (honest limitations):
-- Actual day-to-day work (JDs describe the ideal, not the reality)
-- Team dynamics, manager quality, internal politics
-- Whether the role is backfill (someone left) vs. new headcount (growth)
-- Whether the req is actually open vs. evergreen posting
-- Real comp range (unless required by jurisdiction or voluntarily disclosed)
-- Internal candidate preference
-- Hiring timeline urgency
+**Common types to decode**:
+- Statement of Purpose prompts (length and topic requirements)
+- Personal statement prompts (often more open-ended than SoP)
+- Research proposal requirements
+- Fellowship review criteria (NSF GRFP Broader Impacts + Intellectual Merit, Fulbright project statement, Rhodes character + leadership criteria)
+- Faculty "research interests" descriptions on lab websites — what does this professor *actually* want?
+- "Why this program?" prompts — what are they really asking?
 
-**Batch Triage Research**:
-- Average job search involves 100-200 applications. Hit rate is 2-8%.
-- Time per application: 30-90 minutes (resume tailoring, cover letter, research).
-- Improving triage accuracy by 20% saves 20-40 hours of application effort.
-- Signal: candidates who apply to Strong Fit roles have materially better outcomes than those who spray-and-apply.
-- The batch comparison reveals the candidate's "sweet spot" — competencies that recur across JDs they're drawn to — which is itself career intelligence.
+---
 
-### Confidence Labeling System
+## The 6 Decoding Lenses
 
-Every interpretation gets a confidence label. This is non-negotiable — it's what makes decode honest instead of performative.
+Apply all 6 lenses to every prompt or requirement you're analyzing. Not every lens produces signal on every prompt — but run them all and report what you find with confidence labels.
 
-| Label | Meaning | Example |
-|---|---|---|
-| **HIGH** | Directly stated in JD, standard industry meaning | "5+ years of Python required" → HIGH: Python is a hard screening criterion |
-| **MEDIUM** | Reasonable inference from language patterns or industry norms | "Cross-functional leadership" repeated 3x → MEDIUM: likely the primary evaluation lens |
-| **LOW** | Interpretation of ambiguous language, euphemism decoding | "Fast-paced environment" → LOW: may indicate understaffing or rapid change |
-| **UNKNOWN** | Cannot determine from JD alone | Team size, reporting structure, actual day-to-day → UNKNOWN |
+### Lens 1: Repetition and Emphasis
 
-**Rule**: Every LOW and UNKNOWN interpretation MUST be paired with a specific recruiter verification question. The candidate should never walk away believing a LOW-confidence interpretation is fact.
+What themes, words, or phrases appear more than once? What is emphasized through repetition?
 
-### Priority Check
+*Example*: A Fulbright prompt that uses "cultural exchange" three times and "research excellence" once is telling you which matters more to reviewers. A PhD program that mentions "interdisciplinary" in three separate places is signaling that cross-disciplinary candidates are genuinely valued, not just tolerated.
 
-- If no `kickoff`: Soft gate — "I can decode the JD's language and structure, but without your profile I can't assess fit. Run `kickoff` first for a fit assessment, or proceed with a general decode?"
-- If interview within 48 hours: Redirect to `hype`/`prep`.
-- If JD Analysis already exists for this company+role: Show the existing decode and ask if the JD has changed. Don't re-decode unchanged JDs.
+Confidence: HIGH when repetition is clear. LOW when the sample is too short to detect patterns.
 
-### Required Inputs
+### Lens 2: Order and Priority
 
-- At least one JD (pasted text or key details)
-- For batch triage: 2-5 JDs
+What is mentioned first? What comes last? In prompts with multiple components, order often (but not always) reflects priority.
 
-### Optional Inputs
+*Example*: A fellowship that asks for "your proposed project, your qualifications, and your long-term goals" in that order is telling you: project first, qualifications second, goals third. Don't lead your statement with your resume.
 
-- Depth level: Quick Scan / Standard / Deep Decode (default: Standard)
-- Specific questions about the JD
-- Target priority (is this a top target or early-stage exploration?)
+Confidence: MEDIUM (order doesn't always reflect priority — compare against Lens 1 to calibrate).
 
-### Depth Levels
+### Lens 3: Required vs. Preferred vs. Aspirational
 
-| Level | When to Use | What It Covers |
-|---|---|---|
-| **Quick Scan** | Fast filter, building a target list, evaluating whether to apply | Top 5 competencies extracted + fit verdict (if Profile exists) + 3 key signals + confidence labels + recruiter verification questions for LOW/UNKNOWN items |
-| **Standard** | Default. Full JD analysis. | All 6 lenses + full competency extraction + fit assessment + concern mapping + question-prediction seeds + recruiter verification questions + teaching layer |
-| **Deep Decode** | High-priority target, unusual JD, career transition, seniority mismatch | All of Standard + seniority calibration (what level this JD actually targets vs. what it says) + team maturity analysis + JD structural quality assessment + Challenge Protocol (Level 5) |
+Distinguish between hard requirements ("applicants must demonstrate...") and aspirational language ("we welcome candidates who..."). Hard requirements are gates; preferred criteria are where you differentiate.
 
-### Logic / Sequence (7 steps)
+*Example*: "A minimum of one year of research experience is required" vs. "We especially welcome candidates with publication experience." The first is a gate — check whether you clear it. The second is a differentiation signal — if you have it, lead with it.
 
-**Step 1: JD Intake**
-Accept JD in any format — full posting, bullet-point paste, screenshot description, even "here's roughly what the JD says." Parse into sections (responsibilities, requirements, nice-to-haves, etc.). If sections aren't clearly labeled, infer from content. Flag if the JD is unusually short (may be incomplete) or unusually long (may be a kitchen-sink posting).
-
-**Step 2: Context Assembly**
-Pull from coaching_state.md: Profile (target role, seniority band), Resume Analysis (skills, experience, positioning strengths), Storybank (skills coverage), Positioning Statement (key differentiator), active Interview Loops (is this company already in progress?), JD Analyses (previous decodes for pattern comparison).
-
-**Step 3: 6-Lens Decode**
-Apply all 6 decoding lenses. For each finding:
-- State the finding
-- Assign confidence label (HIGH/MEDIUM/LOW/UNKNOWN)
-- Provide evidence (what in the JD supports this)
-- For MEDIUM/LOW/UNKNOWN: provide the recruiter verification question
-
-Group findings by lens in Standard/Deep output. In Quick Scan, surface only the top 3 highest-signal findings.
-
-For Lens 5 (between-the-lines signals), use the "decode + verify" pattern:
-- State the euphemism or signal
-- Provide the most likely interpretation
-- Label confidence (almost always LOW or MEDIUM)
-- Provide the verification question: what to ask, why it matters, how to ask it naturally
-
-For Lens 6 (what's missing), explicitly state what the absence might mean AND what it might not mean. Absence is ambiguous — don't present a single interpretation as truth.
-
-**Step 4: Competency Extraction**
-Extract top 5-7 competencies in priority order. For each:
-- The competency (specific, not vague)
-- Source section(s) (where in the JD it appears)
-- Confidence level
-- Repetition count (how many times it appears across sections)
-- Type: Screening (required, filters in/out) or Differentiating (nice-to-have, separates Hire from Strong Hire)
-
-**Step 5: Fit Assessment (if Profile exists)**
-Map extracted competencies against candidate profile. For each competency:
-- **Match**: Direct evidence from resume/storybank (cite specific evidence)
-- **Partial**: Adjacent experience, frameable with narrative (explain the bridge)
-- **Gap**: No evidence, structural gap (name it honestly)
-- **Unknown**: Can't assess without more information from candidate
-
-Produce fit verdict using the Role-Fit Assessment from cross-cutting.md (5 dimensions: Requirement Coverage, Seniority Alignment, Domain Relevance, Competency Overlap, Trajectory Coherence). Classify gaps as Frameable (narrative can bridge) or Structural (real limitation).
-
-Verdict: Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit
-
-For Long-Shot Stretch and Weak Fit: be honest. "This JD targets [X], and your profile shows [Y]. You could apply, but you should know the gap is structural, not just a framing issue." Don't waste the candidate's time encouraging applications to roles they're not competitive for — unless they have a specific strategy (referral, internal transfer, etc.).
-
-**Step 6: Recruiter Verification Questions**
-Compile all MEDIUM, LOW, and UNKNOWN confidence interpretations into a prioritized list of questions to ask the recruiter. For each:
-- What you want to verify
-- Why it matters for your decision/preparation
-- How to ask it naturally (not "your JD said X, what does that mean?" but "Can you tell me more about [topic]?")
-
-Order by impact on the apply/don't-apply decision.
-
-**Step 7: Batch Triage (if multiple JDs provided)**
-For each JD: run Steps 1-6 individually (can be abbreviated for Quick Scan depth).
-
-Then produce comparative analysis:
-- **Rank by fit** (highest fit first, with evidence for each)
-- **Overlapping competencies** across JDs — this reveals the candidate's market-validated sweet spot
-- **Divergent requirements** — where JDs pull in different directions, signaling scope decisions the candidate needs to make
-- **Allocation recommendation**: which to pursue first, which to skip, which to research more. Honest about skips — "This one is a Long-Shot Stretch because [specific reason]. Unless you have an inside connection, your time is better spent on the others."
-- **Target profile synthesis** — what these JDs collectively reveal about what the market wants from someone like the candidate
-
-### Teaching Layer
-
-This is what differentiates decode from prep's JD parsing. Quick Scan includes a lighter version (a single "Decode Tip" — one teaching insight per scan, rotating through the 6 lenses). Standard and Deep include the full "Learn to Read This Yourself" section:
-- **Pattern spotted**: A specific decoding insight from THIS JD that the candidate can apply to future JDs (e.g., "Notice how 'drive strategy' appeared in responsibilities but 'execute campaigns' appeared in requirements — the responsibilities describe the aspirational version of the role, the requirements describe the actual bar")
-- **Trap to watch for**: A common misread THIS JD exemplifies (e.g., "This JD lists 12 'required' qualifications. No candidate has all 12. In practice, 6-8 match is strong. Don't self-screen out based on a wish list.")
-- **Self-decode prompt**: A question the candidate should ask themselves when reading the NEXT JD (rotate through a set: "What verb does the first responsibility use?", "Count how many times 'collaboration' or 'cross-functional' appears", "What's conspicuously absent?")
-
-### Output Schemas
-
-**Quick Scan**:
-```markdown
-## JD Quick Scan: [Company] — [Role]
-
-## Top 5 Competencies (priority order)
-| # | Competency | Confidence | Type | Source |
-|---|---|---|---|---|
-| 1 | ... | HIGH/MEDIUM | Screening/Differentiating | [section, repetition count] |
-
-## Key Signals
-- [Signal 1] — [Confidence] — [what it means]
-- [Signal 2] — [Confidence] — [what it means]
-- [Signal 3] — [Confidence] — [what it means]
-
-## Fit Verdict [if Profile exists]
-[Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit] — [1-line evidence]
-- Strongest match: [competency + evidence]
-- Biggest gap: [competency + gap type]
-
-## Verify With Recruiter
-1. [Question — for the highest-impact LOW/UNKNOWN item]
-2. [Question — second priority]
-
-## Decode Tip
-[One teaching insight from this JD — e.g., "This JD lists 14 'requirements' — that's a wish list, not a checklist. 8-10 matches is strong." Rotate through the 6 lenses across scans so the candidate builds decoding intuition over time.]
-
-**Recommended next**: `decode` (Standard) for full analysis. **Alternatives**: `prep [company]`, `research [company]`
-```
-
-**Standard**:
-```markdown
-## JD Decode: [Company] — [Role]
-
-## Decode Summary
-- Role type: [what this role actually is — in plain language]
-- Seniority signal: [what level this targets — with evidence and confidence]
-- Team signal: [what the JD reveals about the team — with confidence]
-- JD quality: [well-written / kitchen-sink / sparse / standard — what that implies]
-
-## Competency Map (priority order)
-| # | Competency | Confidence | Type | Repetition | Source |
-|---|---|---|---|---|---|
-| 1 | ... | HIGH | Screening | 3x | Requirements, Responsibilities |
-
-## 6-Lens Analysis
-
-### Lens 1: Repetition Frequency
-[Findings with counts. What's repeated most = what they care about most.]
-
-### Lens 2: Order & Emphasis
-[Findings. What's listed first = highest priority.]
-
-### Lens 3: Required vs. Nice-to-Have
-[Findings. What's actually screening vs. differentiating.]
+Confidence: HIGH when language is explicit ("required" / "must"). MEDIUM when implied.
 
 ### Lens 4: Verb Choices
-[Findings. Scope and autonomy signals.]
 
-### Lens 5: Between the Lines
-| Signal | Likely Meaning | Confidence | Verify |
-|---|---|---|---|
-| [euphemism] | [interpretation] | LOW/MEDIUM | [question to ask] |
+What verbs does the prompt use? "Demonstrate," "show," "describe," and "explain" each carry different instructions.
+
+- "Describe your research experience" → narrate what you did
+- "Explain your research methodology" → analyze how and why
+- "Demonstrate your leadership" → prove with evidence, not assertion
+- "Articulate your research goals" → be specific and defensible, not aspirational
+- "Reflect on" → introspection expected; more personal register acceptable
+
+Confidence: HIGH when verbs are specific. LOW when the prompt is written carelessly (many are).
+
+### Lens 5: Between-the-Lines Signals
+
+What does the language assume or imply about the ideal applicant?
+
+*Example*: A program that says "you will be expected to identify your own funding sources during the third year" is implying that self-sufficiency and grant-writing are expected skills — and that students who can't do this will struggle. This is a signal to address in the SoP.
+
+*Example*: A lab website that says "our lab values independence and self-direction" is telling you: students who need heavy mentorship will not thrive here. If you need mentorship, this may not be the right fit — or you need to frame your prior independent work explicitly.
+
+Confidence: MEDIUM (interpretation required — label clearly as inference).
 
 ### Lens 6: What's Missing
-[Findings. What absence tells you — with alternative explanations.]
 
-## Fit Assessment [if Profile exists]
-- **Verdict**: [Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit]
-| Competency | Match | Evidence |
-|---|---|---|
-| [competency 1] | Match/Partial/Gap | [specific evidence or gap description] |
-- **Frameable gaps** (narrative can bridge): [list with bridge strategy]
-- **Structural gaps** (real limitations): [list — honest]
+What would you expect a prompt to address that it doesn't mention?
 
-## Question Prediction Seeds
-Based on top competencies and identified gaps:
-- [Likely question 1 — from competency 1]
-- [Likely question 2 — from competency 2]
-- [Likely question 3 — from identified gap]
+*Example*: A PhD program application with no mention of teaching requirements is unusual — it may mean teaching is not emphasized, or it may mean it's assumed and not worth discussing. Worth verifying.
 
-## Verify With Recruiter (priority order)
-1. [Question — what you're verifying — how to ask naturally]
-2. [Question]
-3. [Question]
+*Example*: A fellowship with no explicit diversity or impact statement requirement — when similar fellowships have one — may be signaling that they value technical excellence above broader impact. Or it may be an oversight. Confidence: LOW, but worth noting.
 
-## Learn to Read This Yourself
-- **Pattern spotted**: [teaching point from this specific JD]
-- **Trap to watch for**: [common misread this JD exemplifies]
-- **Next time, try**: [self-decode prompt for future JDs]
+---
 
-**Recommended next**: `prep [company]` for full interview preparation. **Alternatives**: `research [company]`, `decode` (batch triage with more JDs)
+## Batch Triage Mode
+
+When the applicant is applying to 5-10 programs and needs to prioritize where to invest their prep time:
+
+1. Collect the main prompts or document requirements for each program
+2. Apply the 6 lenses briefly to each
+3. Identify:
+   - Which programs have the most unique/complex requirements (higher prep investment needed)
+   - Which programs' prompts suggest the strongest fit with the applicant's profile
+   - Which programs have similar enough requirements that documents can be adapted rather than rewritten from scratch
+4. Recommend a triage order: which programs deserve full prep, which can be handled with adapted documents, which may not be worth the time
+
+**Batch triage output format**:
+```
+### Batch Triage — [N] Programs
+
+**Priority 1 (full prep)**: [Program] — [reason: strong fit + unique requirements]
+**Priority 2 (adapt documents)**: [Program] — [reason: similar to Priority 1 but with specific differences]
+**Priority 3 (low investment)**: [Program] — [reason: weaker fit or highly similar to Priority 1]
+**Reconsider**: [Program] — [reason: requirements suggest poor fit]
 ```
 
-**Deep Decode**: All of Standard + expanded sections:
-```markdown
-## JD Deep Decode: [Company] — [Role]
+---
 
-[All Standard sections, expanded]
+## Fellowship-Specific Decoding
 
-## Seniority Calibration
-- JD states: [what level language the JD uses]
-- JD signals: [what level the scope, verbs, and requirements actually target — with evidence]
-- Assessment: [aligned / JD over-titles / JD under-titles] — [Confidence]
-- Implication for candidate: [what this means for their application/positioning]
+Some fellowships have well-known review criteria that should be decoded before writing any document. See `references/program-archetypes.md` for detailed rubrics. Key points:
 
-## Team Maturity Signals
-[What the JD reveals about the team's stage: process maturity, tech stack age, org structure, growth rate — all with confidence labels. Multiple interpretations where ambiguous.]
+**NSF GRFP**: Two explicit criteria — Intellectual Merit and Broader Impacts. Both must be addressed explicitly in the Research Proposal and the Personal Statement. "Broader Impacts" is not a throwaway paragraph — it is weighted equally with research quality.
 
-## JD Structural Analysis
-- Quality: [well-written / boilerplate / kitchen-sink / internally contradictory]
-- What quality reveals: [a well-written JD suggests a thoughtful hiring process; a kitchen-sink JD may indicate unclear role definition or committee-written requirements]
-- Red flags: [if any — internal contradictions, impossible combinations, unrealistic requirements]
+**Fulbright**: Country-specific; the U.S. review panel evaluates the project proposal, the personal statement, and letters of recommendation. Emphasis: cultural exchange + feasibility + applicant preparedness. The project must be genuinely doable in the host country.
 
-## Challenge (Level 5 only)
-- **Assumptions this decode rests on**: [2-3 assumptions with what would change if they're wrong]
-- **Blind spots**: [what we fundamentally can't see from a JD alone]
-- **Devil's advocate**: [strongest case that this decode is wrong — specific interpretations that could be off]
-- **Highest-leverage verification**: [the single question that would most change the analysis if answered]
+**Rhodes**: Four criteria: literary and scholastic attainments, fondness for and success in sports, truth, courage, devotion to duty, sympathy for and protection of the weak. These are not vague — decode them literally. Leadership and character matter as much as academic excellence.
 
-## Priority Moves (ordered)
-1. [highest-impact action — verify, apply, research more, skip]
-2. [second]
-3. [third]
+**Marshall**: Leadership potential + academic excellence + likely to make contributions to UK-US relations. The "Marshall personality" is specific: curious, service-oriented, collaborative.
 
-**Recommended next**: `prep [company]` for full interview preparation. **Alternatives**: `research [company]`, `practice` (targeted drills on gap competencies)
+**Gates Cambridge**: Academic excellence + reasons for choice of course + commitment to improving lives of others + leadership capacity. The project choice matters — it must be at Cambridge with a specific supervisor.
+
+---
+
+## Verification Questions
+
+After decoding, generate 2-3 questions the applicant should verify before writing — either by emailing the program or asking a current student:
+
+*Examples*:
+- "The SoP prompt says 'describe your research experience' but doesn't mention length. Verify: is there a word limit, and should I include only academic research or also industry research?"
+- "The program mentions 'we value interdisciplinary approaches' — verify whether this means they actively fund cross-department advisors or just tolerate it."
+- "The faculty page for Prof. X hasn't been updated in 18 months. Verify: is the professor still at this institution and still taking students?"
+
+---
+
+## Decode Output Format
+
+```
+## Decode — [Program / Fellowship / Prompt Name]
+
+**Document being decoded**: [SoP prompt / Personal statement / Fellowship criteria / Faculty description]
+
+**Lens Analysis**:
+
+1. Repetition/Emphasis: [findings + confidence label]
+2. Order/Priority: [findings + confidence label]
+3. Required vs. Preferred: [findings + confidence label]
+4. Verb Choices: [findings + confidence label]
+5. Between-the-Lines: [findings + confidence label]
+6. What's Missing: [findings + confidence label]
+
+**What This Program Is Actually Evaluating**:
+[2-3 sentences synthesizing the lenses — what does the committee really want to see?]
+
+**Top 5-7 Criteria** (in priority order, with confidence):
+1. [Criterion] — [evidence from lenses] — [HIGH/MEDIUM/LOW confidence]
+2. [Criterion] — ...
+...
+
+**Gap Analysis** (what does this applicant have vs. what the prompt rewards?):
+- Strong coverage: [what the applicant can address well]
+- Moderate coverage: [what the applicant can partially address]
+- Gap: [what the prompt rewards that the applicant lacks]
+
+**Verification Questions**:
+[2-3 questions to confirm before writing]
+
+**Document Implications**:
+[Specific guidance for how to write the document based on the decode — e.g., "Lead with research, not goals." "Address Broader Impacts in its own paragraph, not as a footnote." "Use 'demonstrate' verbs: evidence, not assertion."]
+
+---
+**Recommended next**: `prep [program]` if applying, `draft-sop [program]` if ready to write, `fit [program]` for deeper professor analysis.
 ```
 
-**Batch Triage** (additional output when 2+ JDs provided, appended after individual decodes):
-```markdown
-## Batch Triage: [N] Roles
+---
 
-## Ranking
-| Rank | Company | Role | Fit | Strongest Match | Biggest Gap | Recommendation |
-|---|---|---|---|---|---|---|
-| 1 | ... | ... | Strong | [competency] | [gap or none] | Pursue |
-| 2 | ... | ... | Investable Stretch | [competency] | [gap] | Pursue with positioning |
-| 3 | ... | ... | Long-Shot Stretch | [competency] | [gap] | Skip unless referral |
+## State Updates
 
-## Your Sweet Spot
-[Competencies that appear across multiple JDs — this is what the market values in you. Ordered by frequency across JDs.]
-
-## Divergence
-[Requirements that pull in different directions — reveals a scope decision the candidate needs to make. E.g., "JDs 1 and 3 want hands-on IC work; JD 2 wants people management. These are different career paths."]
-
-## Allocation Recommendation
-- **Pursue first**: [which roles, why — highest fit + highest priority]
-- **Pursue with targeted prep**: [which roles, what specific gap to address]
-- **Research more before deciding**: [which roles, what's missing]
-- **Skip or deprioritize**: [which roles, why — honest about structural gaps]
-
-## Your Market Profile
-[What these JDs collectively reveal about what the market wants from someone like the candidate. This is career intelligence, not just job-search tactics.]
-
-**Recommended next**: `research [top-ranked company]` or `prep [top-ranked company]`. **Alternatives**: `decode` with more JDs, `resume` (JD-targeted optimization for top target)
-```
-
-### Coaching State Integration
-
-Save to coaching_state.md (one entry per JD — multiple can exist):
-
-```markdown
-## JD Analysis: [Company] — [Role]
-- Date: [date]
-- Depth: [Quick Scan / Standard / Deep Decode]
-- Fit verdict: [Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit]
-- Top competencies: [top 3 in priority order]
-- Frameable gaps: [list]
-- Structural gaps: [list]
-- Unverified assumptions: [count of LOW/UNKNOWN confidence items]
-- Batch triage rank: [if part of batch — rank/total]
-```
+Save decode results to Application Loop for the program:
+- Top criteria identified (for reference when drafting)
+- Gap analysis (supplements the Academic Profile concerns)
+- Document implications (guides `draft-sop` and `review`)
+- Date decoded

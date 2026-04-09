@@ -1,59 +1,122 @@
-# questions — Questions To Ask Workflow
+# email-questions — Questions for Professor Emails & Scholarship Interviews
 
-Generate 5 questions with clear intent, interviewer fit, and follow-up preparation. **Questions are strategic tools, not afterthoughts.** Each question should serve at least one purpose:
-- **Information gathering**: Surface something the candidate needs to know to evaluate the role
-- **Concern mitigation**: Indirectly demonstrate a strength that addresses a known concern
-- **Differentiation**: Show depth of thinking that makes the candidate memorable
-- **Rapport building**: Connect with the interviewer's specific interests or background
+**Purpose**: Generate strategic questions for two contexts: (1) questions to include in professor outreach emails before applying, and (2) questions to ask during scholarship interviews. Both serve specific tactical purposes — they're not filler.
 
-### Stage Adaptation
+---
 
-Adapt questions to where the candidate is in the interview loop:
-- **Phone screen / recruiter call**: Focus on logistics, role clarity, and process. "What does success look like in the first 90 days?" Don't ask deep strategic questions — save those.
-- **Hiring manager round**: Focus on team dynamics, priorities, and how they evaluate. "What's the biggest challenge the team is facing right now?" A powerful technique: reverse the high-signal question themes that experienced interviewers use to evaluate candidates (compiled from 150+ hiring leaders via Lenny's Podcast — see `prep.md` High-Signal Question Patterns). Instead of being asked "Tell me about a time things didn't go as planned," ask the hiring manager: "What's the most recent thing that didn't go as planned on the team, and how did the team handle it?" This demonstrates depth, creates conversational symmetry, and surfaces genuine information about team culture.
-- **Final round / exec**: Focus on company direction, strategic bets, and culture. "What's the most important thing this team needs to get right in the next year?"
-- **Peer round**: Focus on collaboration, day-to-day, and honest experience. "What's something you wish you'd known before joining?"
+## Context Detection
 
-**Stage detection logic** (in priority order):
-1. If the user specified a stage in the command (e.g., `questions hiring manager`), use that.
-2. If `coaching_state.md` has an active Interview Loop for a company with a known next round, use that stage.
-3. If a `prep` brief was recently generated, infer from the format identified there.
-4. If none of the above, ask: "What stage is this for? Phone screen, hiring manager, final round, or peer interview? The questions I generate will be very different depending on who you're talking to."
+Ask the applicant which context they need:
 
-**Intelligence-informed question generation**: If Interview Intelligence → Effective Patterns exists with 3+ data points, use it to inform question style. If the candidate's best interviews correlated with asking "how" questions (probing team process), weight toward that style. If Company Patterns shows what this specific company values in candidate questions, calibrate accordingly.
+> "Are you generating questions for a **professor outreach email** (before applying), or for a **scholarship interview** (where you'll be asked 'do you have any questions for us')?
 
-### Questions To Avoid
+---
 
-Flag these common mistakes:
-- Questions easily answered by the company website or JD ("What does your company do?")
-- Questions about benefits, perks, or time off in early rounds (signals wrong priorities)
-- Questions that reveal insecurity ("Do you think I'm qualified for this role?")
-- Questions so generic they could apply to any company ("What's the team culture like?")
-- Questions that put the interviewer on the spot ("What's the worst thing about working here?")
+## Context 1: Professor Email Questions
 
-### Output Schema
+Questions embedded in professor outreach emails serve one purpose: establish that you've done the research homework and have a genuine intellectual question worth answering.
 
-```markdown
-## Questions To Ask Interviewers
-1. Question:
-   Strategic purpose: [information / concern mitigation / differentiation / rapport]
-   Best for: [specific round or interviewer type]
-   Why this is strong:
-   They might ask back: [likely follow-up or reversal]
-   Your prepared response: [1-2 sentence answer ready to go]
-2. ...
-3. ...
-4. ...
-5. ...
+**Rules for professor email questions**:
+1. **Must be specific** — answerable only by this professor, not by reading their website
+2. **Must be intellectual** — about the research, not about logistics ("are you taking students?")
+3. **Must be genuine** — you actually want to know the answer
+4. **One question only** — don't ask three things in a cold email
 
-## Questions To Avoid This Round
-- [1-2 specific questions the candidate might be tempted to ask, with brief explanation of why to skip them]
+**Good professor email questions**:
+- "In your 2024 paper on [topic], you found [specific finding]. I'm curious whether you've explored [logical extension]. Is that a direction your lab is working on?"
+- "Your work uses [method X] — I'm interested in whether that approach generalizes to [scenario Y], which is where my prior work has been. Is that something you're thinking about?"
+- "I noticed your recent work shifted toward [new area]. Is that a long-term direction for the lab, or more of a collaboration project?"
 
-**Recommended next**: `hype` — build your pre-interview confidence plan with these questions loaded. **Alternatives**: `prep [company]`, `mock [format]`
+**Bad professor email questions**:
+- "Are you accepting PhD students this year?" → sounds like you haven't researched; makes the ask explicit
+- "What is your advising style?" → too early; feels like an interview question for a first email
+- "Could we schedule a Zoom call?" → too much ask for a cold email; earn the call first
+
+**Generation protocol**:
+1. Pull professor's 2 most recent papers from Application Loop (or ask the applicant to share them)
+2. Identify 1 specific finding, method choice, or research direction that you can ask a genuine question about
+3. Draft the question so it requires knowledge of their work to answer
+4. Test: "Could this question be asked of any professor in the field, or only this specific person?"
+
+**Output**:
+```
+Email Question — Prof. [Name], [Program]
+
+**Question**: [the question]
+
+**Why this question works**:
+- Specific to their 2024 paper on [topic]
+- Shows you read past the abstract
+- Opens a research direction discussion, not a logistics discussion
+- Easy to answer in 2-3 sentences if they're interested
+
+**Context sentence** (to introduce the question in the email):
+"In reading your recent work on [topic], I was struck by [specific finding]. I've been working on [related thing], which raised a question for me: [the question]."
 ```
 
-### Coaching State Integration
+---
 
-After generating questions, save the top 3 to `coaching_state.md` so other commands can reference them:
-- **In Interview Loops** (if company-specific): Add `- Prepared questions: [top 3, one-line each]` under the relevant company entry.
-- **Why**: `hype` generates its own "3 Questions To Ask" section. If `questions` has already been run for this interview, `hype` should pull from those (already tailored) rather than generating fresh ones. This prevents contradictory advice between commands.
+## Context 2: Scholarship Interview Questions
+
+At the end of a scholarship or PhD program interview, when asked "do you have any questions for us?" — this is not a formality. Strategic questions demonstrate:
+- Genuine interest in the program
+- Intellectual seriousness
+- That you've thought about fit, not just admission
+
+**Rules for scholarship interview questions**:
+1. **Never ask what's on the website** — "What are the program requirements?" shows you haven't done the homework
+2. **Never ask about funding/salary first** — even if it matters, it's not the first question
+3. **Ask what you actually want to know** — authenticity reads better than strategic posturing
+4. **2-3 questions ready** — use 1-2, have a backup
+
+**Good interview question categories**:
+
+*Research direction*:
+- "How do you see [your subfield] evolving in the next 5 years, and how does the lab's work position it for that direction?"
+- "Are there research directions you're hoping your next cohort of students will explore?"
+
+*Lab/advising culture*:
+- "What does the collaboration structure typically look like in the lab — do students tend to work independently on distinct projects or closely together on shared goals?"
+- "For students who've been most successful in your lab, what qualities made the difference?"
+
+*Program environment*:
+- "What resources or communities within the department do PhD students find most valuable that might not be obvious from the outside?"
+- "Is there something about this program that surprised you when you first joined that you think prospective students should know?"
+
+*Fellowship-specific* (for Fulbright/Rhodes/Marshall etc.):
+- "What do you think distinguishes the fellows who have the most meaningful experiences from those who don't?"
+- "Are there aspects of the [project/work] that you'd recommend I think about more carefully before arriving?"
+
+**Bad interview questions**:
+- "What is the stipend amount?" → ask this after you've been admitted
+- "What is the average time to completion?" → easily found on the website; signals you didn't look
+- "What are the weaknesses of this program?" → puts interviewers on the defensive
+
+**Generation protocol**:
+1. Pull program archetype from `references/program-archetypes.md`
+2. Identify 1-2 things the applicant genuinely wants to know about this specific program
+3. Draft 3 questions — 2 primary, 1 backup
+4. Test: "Would knowing the answer to this actually influence my decision or preparation?"
+
+**Output**:
+```
+Interview Questions — [Program/Fellowship] [date]
+
+**Primary Question 1**: [question]
+Why it works: [brief rationale]
+
+**Primary Question 2**: [question]
+Why it works: [brief rationale]
+
+**Backup**: [question]
+Use if: [when to use the backup instead]
+
+**Avoid**: [any question the applicant raised that won't land well]
+```
+
+---
+
+## State Updates
+
+- No persistent state updates for email-questions — output is one-time use
+- After interview: capture in `postsubmit` which questions the applicant actually asked and how they landed

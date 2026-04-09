@@ -1,274 +1,145 @@
-# Storybank Guide
+# Narrative Bank Guide
 
-A searchable index of career experiences, organized for quick retrieval during interviews.
-
----
-
-## Storybank Format
-
-Create a table with these columns:
-
-| Column | Description |
-|--------|-------------|
-| **ID** | Unique identifier (S001, S002, etc.) |
-| **Title** | Memorable, specific name (not "led project") |
-| **Primary Skill** | Main competency demonstrated |
-| **Secondary Skill** | Additional competency (optional) |
-| **Impact** | Quantified outcome or explanation if not quantifiable |
-| **Domain** | Technical / Product / Business / People |
-| **Risk/Stakes** | What could have gone wrong? Why did it matter? |
-| **Earned Secret** | The counterintuitive insight only you learned from this experience (see `references/differentiation.md` for extraction protocol) |
-| **Strength** | How compelling/differentiated (1-5) |
-| **Use Count** | Total times used in real interviews (incremented via debrief). Tracks overuse risk. |
-| **Last Used** | Date of most recent use in interview |
-| **Notes** | Performance notes, feedback received |
-
-### Full Story Text
-
-The storybank table above is a quick-reference index. The **full STAR text** of each story lives in the Story Details section of `coaching_state.md` — including Situation, Task, Action, Result, Earned Secret detail, deploy use-case, and version history. When adding or improving stories, always write the full text to Story Details, not just the index row. This ensures the coach can reference, improve, and coach on the full story in future sessions without asking the candidate to retell it from scratch.
-
-### Skill Tags (standardized)
-
-Use consistent tags for searchability:
-- Leadership
-- Collaboration
-- Problem-solving
-- Data-driven decision making
-- Communication
-- Technical depth
-- Strategic thinking
-- Ambiguity navigation
-- Conflict resolution
-- Customer focus
-- Innovation
-- Execution/delivery
-- Mentorship
-- Influence without authority
+A searchable index of academic experiences organized for quick retrieval during document drafting.
 
 ---
 
-## Building Your Initial Storybank
+## Narrative Bank Format
 
-### Step 1: Guided Exploration
+Each narrative has two components: an index entry in the table and full arc text in the Narrative Details section.
 
-Rather than just listing accomplishments, use reflective prompts to surface stories that matter. Start with:
+### Index Table
 
-**Peak experiences:**
-- "Think about a time you were at your best at work. What were you doing? What made it different from a typical day?"
-- "When have you felt most energized by your work? What was happening?"
+```markdown
+| ID | Title | Type | Primary Theme | Secondary Theme | Intellectual Insight | Strength | Used In | Last Used |
+|----|-------|------|---------------|-----------------|----------------------|----------|---------|-----------|
+| N001 | [Short title] | Research Experience | [e.g., causal inference] | [e.g., cross-domain methods] | [1-phrase summary] | 4 | SoP P2 (MIT) | 2026-04-01 |
+```
 
-**Challenge and growth:**
-- "What's the hardest professional situation you've navigated? What made it hard specifically?"
-- "Tell me about a time you changed your mind about something important. What shifted?"
+**Column definitions**:
+- **ID**: N001, N002, etc. — sequential, never reuse
+- **Title**: 3-5 word descriptive title (for quick identification)
+- **Type**: Research Experience / Challenge-Growth / Intellectual Turning Point / Mentorship / Failure-Learning / Field Connection
+- **Primary Theme**: the main competency, skill, or intellectual domain this narrative demonstrates
+- **Secondary Theme**: a secondary dimension (can be blank)
+- **Intellectual Insight**: one phrase capturing the non-obvious takeaway
+- **Strength**: 1-5 composite score
+- **Used In**: document type + section + program, e.g., "SoP P2 (MIT), MotLetter (Fulbright)"
+- **Last Used**: date when narrative was last deployed in a document
 
-**Impact and influence:**
-- "When have you made something happen that wouldn't have happened without you?"
-- "Tell me about a time you convinced someone who disagreed with you. How did you approach it?"
+### Narrative Detail Entry
 
-**Failure and learning:**
-- "What's a decision you'd make differently with hindsight? What did you learn?"
-- "When have things not gone according to plan? What did you do?"
-
-The reflective prompts tend to surface richer, more authentic stories than a pure brainstorm list.
-
-### Step 2: STAR Format Each
-
-For each story, capture:
-- **Situation**: Context and constraints (2-3 sentences)
-- **Task**: Your specific responsibility (1-2 sentences)
-- **Action**: What YOU did (3-5 sentences, specific)
-- **Result**: Outcome with metrics if possible (2-3 sentences)
-
-### Step 3: Index and Tag
-
-Create the table entry for each story. Be honest about strength scores:
-- **5**: Unique, quantified, memorable—would impress any interviewer
-- **4**: Strong with good evidence, minor gaps
-- **3**: Solid but generic—others could tell similar stories
-- **2**: Thin evidence or weak outcome
-- **1**: Barely usable—retirement candidate
-
-### Step 4: Gap Analysis
-
-After indexing, identify:
-- **Competency gaps**: Which key skills lack strong (4+) stories?
-- **Domain gaps**: Missing technical? Business? People stories?
-- **Recency gaps**: Are all stories from one job? Too old?
-- **Risk gaps**: Do any stories show real stakes/failure?
+```markdown
+#### N001 — [Title]
+- **Type**: Research Experience
+- **Context**: [Where/when — setting, stakes, what was being worked on]
+- **Challenge**: [What made this hard — intellectual, practical, or personal obstacle]
+- **Insight**: [What was figured out — the resolution of the challenge]
+- **Impact**: [What changed — for the project, field, or applicant's path]
+- **Meaning**: [How this connects to PhD goals and research agenda]
+- **Intellectual Insight**: [The non-obvious takeaway — the "earned secret" of this experience]
+- **Strength**: [1-5]
+- **Deploy in**: [SoP section / MotLetter section / Research Proposal / other]
+- **Version history**: [date — what changed; e.g., "2026-03-15: Added intellectual insight; 2026-03-20: Sharpened impact sentence"]
+```
 
 ---
 
-## Maintaining Your Storybank
+## Building the Initial Narrative Bank
 
-### After Each Interview
+When starting with an empty bank, guide the applicant through an initial extraction session (typically 45-60 minutes, run during or after `kickoff`).
 
-Update the storybank:
-1. Mark which stories were used (Last Used date)
-2. Add performance notes (did it land? feedback?)
-3. Adjust strength scores based on actual performance
-4. Note any new stories that emerged in conversation
+**Rapid experience inventory** (for quick coverage):
 
-### Cross-Surface Consumption
+Ask these 6 questions one at a time. Each should surface at least one narrative:
 
-Your storybank feeds more than just interview prep. When optimizing any candidate-facing surface, note story gaps or repurposing opportunities that emerge:
-- `resume` mines stories for bullet rewrites — earned secrets become the differentiating clause in resume bullets
-- `linkedin` uses earned secrets for high-impact profile sections (headline, About, Experience)
-- `pitch` anchors the core positioning statement to your strongest stories and sharpest earned secrets
-- `outreach` pulls hooks from earned secrets to differentiate networking messages
-- `decode` cross-references storybank skills against JD competencies for fit assessment
-- `present` suggests supporting stories that can be woven into presentation narratives
+1. "What's the single most significant research project you've worked on? Walk me through what you actually did — not your role title, but what you did day-to-day."
 
----
+2. "Tell me about a time in your academic work when something went wrong or didn't work the way you expected. What happened, and what did you figure out?"
 
-## Story Selection Strategy
+3. "Tell me about the moment you first got seriously interested in [their field] — what happened, and what made you realize this was the direction you wanted to go?"
 
-For full portfolio-optimized story mapping, see `references/story-mapping-engine.md`. That engine handles fit scoring (4 levels), conflict resolution, freshness checks, overuse checks, and earned-secret-aware selection. The principles below still apply as the conceptual framework:
+4. "Is there a professor, advisor, or mentor who significantly shaped how you think about your research? Tell me about a specific conversation or moment with them."
 
-### 1. Competency Match
-Which stories demonstrate the competency being tested? Check both Primary and Secondary Skills.
+5. "What's the most interesting or counterintuitive thing you've learned in your research? Something that changed how you think about the field?"
 
-### 2. Company Fit
-Which stories align with this company's values and priorities?
+6. "Have you had any experiences that most people in your program or field wouldn't have had — from your background, industry experience, or unusual path? What did those bring?"
 
-### 3. Freshness
-Have you used this story recently with this company? Avoid repeats. Stories used in prior rounds at the same company are downgraded.
-
-### 4. Strength
-Choose 4+ stories when possible. Save 3s for backup.
-
-### 5. Variety
-Across an interview loop, show range: different projects, skills, outcomes. No story should appear more than once per interview prep unless no alternative exists.
+After each answer: probe for Intellectual Insight. The insight is usually buried. "So what did you actually take away from that? What do you know now that you didn't know before you went through that experience?"
 
 ---
 
-## Story Retirement Criteria
+## Narrative Health Check
 
-Retire a story when:
-- **Strength < 3** for more than 2 interviews
-- **Overused**: Used 5+ times, interviewers might have heard it
-- **Outdated**: More than 5-7 years old with nothing unique
-- **Redundant**: Another story covers the same competency better
-- **Didn't land**: Consistently gets weak follow-ups or confused looks
+Run during `narratives view` and `progress`. A healthy narrative bank:
 
-Don't delete retired stories—archive them. They might be useful for different roles or after refreshing with new details.
-
----
-
-## Story Enhancement
-
-### Making a 3 into a 4
-
-Invite the person to deepen the story themselves first:
-- "What's missing from this story that you remember but haven't included?"
-- "If a friend asked you 'why does this story matter to you?' — what would you say?"
-- "What was at stake if this had gone wrong?"
-
-Then suggest specific enhancements:
-- Can you add a specific metric?
-- Can you name the stakes more clearly?
-- Can you add a moment of conflict or difficult decision?
-- Can you include what you'd do differently?
-
-### Making a 4 into a 5
-
-Guide self-discovery of what makes the story unique:
-- "What do you know now because of this experience that you couldn't have known otherwise?"
-- "If someone else told a similar story, what would be different about yours?"
-- "What would surprise someone who wasn't there?"
-
-Then layer in:
-- What's the earned secret from this experience?
-- Can you add third-party validation (quote, award, recognition)?
-- Can you show alternatives considered and why you chose this path?
-- What makes this story uniquely yours—something competitors can't claim?
+| Metric | Target | Current Status |
+|--------|--------|---------------|
+| Total narratives | 6-10 | [count] |
+| Strength 4+ | ≥ 60% of total | [count] |
+| Intellectual Insights extracted | 100% | [count] / [total] |
+| Type coverage | All 6 types represented | [missing types] |
+| Document coverage | All SoP sections have Strong Fit narrative | [gaps] |
+| Overuse risk | No narrative used in 3+ programs unchanged | [flagged] |
+| Quantified outcomes | ≥ 2 narratives | [count] |
+| Failure-Learning narrative | ≥ 1 (for PhD applicants) | [present/absent] |
 
 ---
 
-## Example Storybank Entry
+## Narrative Strength Ladder
 
-| Field | Example |
-|-------|---------|
-| **ID** | S007 |
-| **Title** | "Killed the feature everyone wanted" |
-| **Primary Skill** | Data-driven decision making |
-| **Secondary Skill** | Influence without authority |
-| **Impact** | Saved 3 engineering sprints; redirected effort to feature that drove 25% activation increase |
-| **Domain** | Product |
-| **Risk/Stakes** | Entire sales team wanted this feature; CEO had promised it to key customer |
-| **Earned Secret** | The fastest way to kill a feature is to let it succeed at small scale — it becomes politically unkillable before you have real data |
-| **Strength** | 5 |
-| **Last Used** | 2024-01-15 (Stripe PM interview) |
-| **Notes** | Landed very well. Interviewer asked 3 follow-ups, all positive. Use for prioritization Qs. |
+### Moving Strength 2 → 3
+The narrative exists but is too vague. It has the arc but lacks specific detail.
 
----
+Fix: "Walk me through this project again but give me the specifics — what exact method were you using? What did the data look like? What specifically did you do that someone else on the team couldn't have done?"
 
-## Quick Reference: Storybank Health Check
+### Moving Strength 3 → 4
+The narrative has good specific content but the Intellectual Insight is missing or vague.
 
-**Healthy storybank:**
-- 8-12 indexed stories
-- At least 5 rated strength 4+
-- All key competencies covered (check both Primary and Secondary Skills)
-- Mix of domains (not all one type)
-- At least 2 stories with quantified outcomes
-- At least 1 failure/learning story
-- No story used more than 3x in current job search (check Use Count)
-- At least 80% of stories have extracted earned secrets
+Fix: "You've described what happened. Now tell me: what did you actually learn from it that changed how you think? What would you do differently or how did this change your approach to [field]?"
 
-**Warning signs:**
-- Fewer than 6 stories
-- Most stories rated 3 or below
-- Major competency gaps (even after checking Secondary Skills)
-- All stories from one job/era
-- No failure stories
-- Relying on 2-3 favorites repeatedly
-- No earned secrets extracted (stories are specific but not distinctive)
+### Moving Strength 4 → 5
+The narrative has strong content and a clear insight but isn't distinctive enough — another applicant with similar experience could tell a similar story.
 
-**Overuse and freshness tracking:**
-- **Overuse** (Use Count 3+): "S### has been used in [N] interviews. Consider rotating to a fresher story if alternatives exist." At 5+: "S### is heavily used. Interviewers in your network may have heard it. Prioritize alternatives."
-- **Freshness risk**: Stories used in prior rounds at a current company loop should not be reused unless the interviewer explicitly asks for elaboration. Check Interview Loops for stories used per round.
-- **Earned secret coverage**: Stories without earned secrets are incomplete — they may score well on Substance and Structure but will plateau on Differentiation. Track coverage as a percentage.
+Fix: Apply the Spiky POV from `references/differentiation.md`. "What's the version of this insight that's non-obvious? Most researchers in your field would assume X — what did you find that challenges that assumption?"
 
 ---
 
-## Rapid-Retrieval Drill
+## Narrative Retirement Criteria
 
-A well-organized storybank is useless if the candidate can't access it under pressure. The moment of truth is mid-interview: you hear a question you didn't expect and need to find the right story in 3 seconds. This drill trains that reflex.
+Retire (archive) a narrative when:
+- Strength 1-2 with no realistic path to improvement (the experience itself is thin)
+- The narrative has been superseded by a stronger narrative covering the same competency
+- The narrative is no longer relevant to the applicant's current research direction
+- The narrative was overused (appears unchanged in 3+ submitted applications) and has since been replaced
 
-### Setup
+Retirement process: move from active table to a "Retired Narratives" section at the bottom of the Narrative Bank. Include retirement date and reason.
 
-Requires: A storybank with 8+ indexed stories.
+---
 
-### Protocol
+## Rapid-Retrieval Drill Protocol
 
-1. Coach throws 10 interview questions in rapid succession (one at a time).
-2. For each question, candidate has **10 seconds** to respond with:
-   - Story ID (e.g., "S007")
-   - Opening line (the first sentence they'd say in the interview)
-3. No full answers — this is about retrieval speed, not delivery quality.
-4. Mix question types: behavioral, situational, curveball, gap-testing.
-5. Include 1-2 questions where no story is a great fit (tests gap-handling instinct).
+For applicants with 6+ narratives: build retrieval speed so the right narrative surfaces instantly when drafting.
 
-### Scoring Per Round
+Drill format:
+- State a document section and program: "SoP P2 for a computational biology PhD"
+- Applicant responds in 10 seconds: narrative ID + one opening sentence
+- Coach evaluates: right narrative for this context? Right opening?
+- 8-10 rounds across different sections and programs
 
-| Metric | Strong | Adequate | Needs Work |
-|---|---|---|---|
-| **Retrieval speed** | Instant (<3s) | Hesitant (3-7s) | Stuck (>7s or blank) |
-| **Match quality** | Strong fit for the question | Partial fit — could work with framing | Wrong story — doesn't address the question |
-| **Opening line** | Hooks attention, front-loads the headline | Functional but generic start | Fumbled, no clear entry point |
+The drill reveals whether the applicant has internalized the bank or still needs to search it. If searching: run a narrative identity extraction (`narratives identity`) to find the through-line.
 
-### Debrief
+---
 
-After 10 rounds:
-- Which questions caused the most hesitation? (signals retrieval gaps)
-- Did the candidate reach for the wrong story anywhere? (signals indexing issues)
-- Were there questions where no story fit? (signals storybank gaps — add to gap analysis)
-- What opening lines were strongest? (build on these patterns)
+## Cross-Document Coherence
 
-### Progression
+When the same narrative appears in multiple programs' SoPs: each deployment must be adapted, not copied.
 
-- **Round 1**: Standard behavioral questions (warmup)
-- **Round 2**: Role-specific questions (harder matching)
-- **Round 3**: Curveball and gap-testing questions (stress test)
-- **Round 4**: Time-pressured — 5 seconds instead of 10
+**Minimum differentiation per program**:
+- The program-fit framing must change (connects to different professors)
+- The "Meaning" section must connect to this program's specific research direction
+- The "Impact" framing may stay the same if the outcome is genuinely the same
 
-Run this drill weekly until retrieval feels automatic. The storybank isn't real until you can use it under pressure.
+**Red flag**: Identical paragraph for P2 across 3 programs. Even if the research experience is the same, the framing should shift based on what each program values.
+
+Track in "Used In" column: if a narrative is used in more than 2 programs, flag for adaptation check.

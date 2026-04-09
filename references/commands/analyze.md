@@ -1,190 +1,216 @@
-# analyze — Transcript Analysis Workflow
+# review — Application Document Review
 
-Use `references/transcript-processing.md` as execution guide.
+**Purpose**: Score and diagnose an application document (SoP, Motivation Letter, Research Proposal, Personal Statement) on 5 dimensions. Identify the primary bottleneck, deliver the Admission Committee's inner monologue, and automatically rewrite the weakest section.
 
-### Cold Start (No Coaching State)
+This command can also review professor outreach emails and LoR requests when called with the appropriate document type.
 
-If a candidate drops a transcript without having run `kickoff` first, don't refuse or force kickoff — but collect the minimum needed for a useful analysis:
+---
 
-1. **Infer what you can from the transcript.** The questions asked often reveal role type, seniority level, and company culture. Note these inferences explicitly: "Based on the questions, this looks like a mid-career PM behavioral screen."
-2. **Ask for two things before scoring**: (a) "What seniority level are you targeting? This affects how I calibrate scores." (b) "What role/company is this for? Even brief context helps me assess Relevance."
-3. **Proceed with analysis.** Use inferred or stated seniority band for calibration. Skip story-mapping sections (no storybank exists). Skip cross-referencing with prep data.
-4. **After the analysis, suggest kickoff**: "I've scored this transcript, but I'm working without your full context — no storybank, no coaching history, no target company profile. If you want to get the most from this system, run `kickoff` to set up your coaching profile. Your analysis scores will carry forward."
+## Input Collection
 
-### Step Sequence
+Ask for the document if not already pasted or readable from file:
 
-1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
-2. Ask self-assessment questions first: "Before I dig in — which answer do you feel best about, and which one do you think was weakest? And overall, how do you think it went?" (Wait for response before proceeding.) If a debrief already captured this, reference it: "You told me right after the interview that Q3 felt rough. Let's see what the transcript shows."
-3. **Set the self-assessment aside.** Do NOT let the candidate's answer influence your scoring. Analyze the transcript independently — score first, form your own conclusions, then compare to what they said.
-3.5. **Format detection and normalization.** Before cleaning, run the format detection protocol from `references/transcript-formats.md`. Identify the transcript source tool (Otter, Grain, Zoom VTT, etc.) and normalize to the standard internal representation. If Interview Loops has round format info for this company, use it to confirm or override the transcript format detection.
-4. Clean the normalized transcript (content-level cleaning — timestamps should already be stripped by normalization).
-5. **Transcript quality gate**: After cleaning, assess how much is usable. Incorporate format-derived quality signals (speaker label coverage, normalization confidence, multi-speaker detection). If significant gaps exist (garbled sections, missing speaker labels, <60% recoverable), say so upfront: "This transcript has significant quality issues. I can score what's here, but my confidence is reduced. Here's what I can and can't assess: [specifics]." Be transparent throughout the analysis about where you're working from solid data vs. filling in gaps.
-6. **Format-aware parsing.** Dispatch to the appropriate parsing path from `references/transcript-processing.md` Step 2 based on the detected interview format: Path A (Behavioral — default), Path B (Panel), Path C (System Design/Case Study), Path D (Technical+Behavioral Mix), or Path E (Case Study, candidate-driven).
-7. Score each unit on 5 core dimensions (including Differentiation). For non-behavioral formats, also score the format-specific additional dimensions (see Step 3 scoring extensions in `references/transcript-processing.md`).
-8. **Compare your scores to their self-assessment.** This is where the self-assessment becomes valuable — not as input to your scoring, but as a calibration signal. If you agree with their picks, explain why with evidence. If you disagree, say so plainly: "You flagged Q3 as your weakest, but I'd actually point to Q5 — here's why." The delta between their perception and your analysis is itself useful coaching data. If debrief data exists, compare all three: debrief impression → current self-assessment → coach scores. Shifts between the fresh debrief read and the later self-assessment reveal how the candidate processes interview experiences over time.
-9. **Signal-reading analysis.** Scan the transcript for interviewer behavior patterns using the Signal-Reading Module in `references/cross-cutting.md`. Include observations in the per-answer analysis and in the overall debrief.
-10. **Question decode for low-Relevance answers.** For any answer scoring < 3 on Relevance, don't just say "you missed the point." Explain what the question was actually probing for: "This question about 'a time you failed' isn't testing whether you've failed — it's testing self-awareness, learning orientation, and honesty. A targeted answer would have focused on what you learned and how it changed your approach, not on the failure itself."
-11. **Proactive rewrite of the weakest answer.** Don't just offer a rewrite — do one automatically for the lowest-scoring answer. Show the original excerpt and the improved version side by side with annotations. Say: "Here's what your weakest answer could look like at a 4-5. I'll show the delta so the improvement is concrete — not to give you a script, but to make it tangible." Still offer rewrites of other answers on request.
-11.5. **Interviewer's Inner Monologue.** Replay the interview from the interviewer's real-time perspective. Same principles as mock's Inner Monologue (`mock.md` lines 181-196): ground in actual transcript quotes, show pivot points where the interviewer's impression shifted, include both positive and negative reactions. This is especially powerful for real transcripts — it shows the candidate what actually happened on the other side of the table. Include at all directness levels.
+> "Paste your [document type] draft, or tell me which program's [document] to load from the applications folder."
 
-11.6. **Transcript Challenge (Level 5 only).** Run Challenge Protocol Lenses 1-4 against the overall interview performance. Lens 5 (Strengthening Path) feeds into Priority Move. See `references/challenge-protocol.md` for lens details. At Levels 1-4: skip.
+If loading from file: read `applications/[program-slug]/[document].md`.
 
-12. **Triage — identify primary bottleneck and branch** using the Post-Scoring Decision Tree below.
+**Cold Start** (no application_state.md): Execute the review without a coaching state. Skip self-assessment comparison. Score on all 5 dimensions. Note at the end: "Run `kickoff` to set up your full coaching profile — I'll be able to give you more targeted feedback once I know your background."
 
-#### Post-Scoring Decision Tree (Step 12 detail)
+**Document type detection**: Identify which document type this is. If unclear, ask:
+- Statement of Purpose (SoP): research-focused narrative, typically 500-1000 words
+- Motivation Letter / Personal Statement: more personal register, shorter, often for fellowships
+- Research Proposal: structured with problem/methods/timeline, typically 500-1500 words
+- LoR Request email: different review criteria — see LoR email rubric at end of this file
+- Professor outreach email: see professor-contact for full coaching; quick review available here
 
-After scoring, identify bottleneck dimensions and branch. Most candidates have multiple weak dimensions — use the priority stack below to determine which to address first.
+---
 
-**Priority stack** (address the highest-priority bottleneck first — you can't fix downstream issues if upstream ones aren't resolved):
+## Step 1: Self-Assessment (Level 1-4 only)
 
-1. **Relevance** (highest priority) → If < 3 on majority: the candidate is answering the wrong question. Nothing else matters until this is fixed. Focus on question-decoding drills and story-matching practice.
-2. **Substance** → If < 3 on majority: the candidate doesn't have enough raw material. Skip Calibration lens — premature to polish content that doesn't exist yet. Focus entirely on evidence-building and story-strengthening.
-3. **Structure** → If primary bottleneck: the candidate knows their content but can't organize it. Run constraint ladder drill immediately as part of debrief. Focus on narrative architecture.
-4. **Credibility** → If bottleneck: check for root cause — over-claiming (status anxiety), reflexive "we" framing (obscuring contribution), or missing proof points. Prescribe targeted fix based on which root cause.
-5. **Differentiation** (lowest priority — only address after other dimensions are ≥ 3) → Candidate sounds generic. Invoke differentiation protocol from `references/differentiation.md`.
+Before scoring, ask:
 
-**When multiple dimensions are < 3**: Address the highest-priority one from the stack above. Name the others explicitly: "I see gaps in Substance and Structure, but we're going to focus on Substance first — you need stronger raw material before we work on organizing it."
+> "Before I give you feedback, take a quick pass yourself. Which section or paragraph do you feel best about? Where do you think it's still weak? Give me your gut reaction — there's no wrong answer here."
 
-**The "all 3s" candidate** (all dimensions at 3, none clearly weak): This candidate is stuck in the middle. The intervention is different — they don't have a skill deficit, they have a ceiling problem. The path forward is almost always Differentiation + depth. Push them to go from "competent" to "memorable." Ask: "Your answers are solid but not standing out. What would make your version of this story impossible for another candidate to tell?"
+Record their self-assessment. Score the document independently before comparing. After scoring: name the delta between their self-assessment and your scores. Systematic deltas (always underestimates → impostor syndrome; always overestimates → calibration gap) go into Coaching Notes.
 
-**Psychological detection**: If practice scores are significantly better than real interview performance (reported by candidate or visible in outcome data), or if self-assessment is consistently much lower than coach scores, the primary bottleneck may be emotional rather than cognitive. Route to the Psychological Readiness Module before additional cognitive drills. Say: "Your skills are ahead of your performance. Let's work on the mental game before adding more content."
+**Level 5 exception**: Lead with coach assessment. Then ask: "How does that compare to what you thought?"
 
-**If scores are balanced (all 3+, with clear dimension leaders)** → Run full multi-lens analysis as designed.
+---
 
-**Format-aware triage rules** (apply on top of the standard priority stack):
-- System design/case study: If Process Visibility < 3, prioritize it over standard dimensions — the candidate's thinking process isn't visible, which undermines everything else.
-- Panel: If Interviewer Adaptation < 3 or Energy Consistency < 3, these become primary coaching targets alongside the weakest core dimension.
-- Technical+behavioral mix: If Mode-Switching Fluidity < 3, address it before optimizing either mode individually.
-- Case study: If the candidate made zero information requests or zero hypothesis statements, flag scoping/hypothesis behavior as the primary bottleneck.
+## Step 2: Document Completeness Check
 
-12a. **Cross-Dimension Root Cause Check.** After scoring all units, scan for root causes that appear across 2+ answers (e.g., "conflict avoidance" affecting both Substance and Differentiation). Cross-reference with `coaching_state.md` → Calibration State → Cross-Dimension Root Causes (active). If a detected root cause already exists as an active entry, update its status and note whether affected dimensions are improving. If a new root cause is detected (same pattern in 2+ answers), create a new entry in the Calibration State table with a unified treatment recommendation. This ensures recurring root causes are tracked as systemic issues, not re-diagnosed per session.
-13. Run multi-lens analysis (scoped by triage decision):
-    - Hiring Manager
-    - Skeptical Specialist
-    - Values Alignment
-    - Calibration (skip if Substance < 3 — premature optimization)
-14. Synthesize into delta plan with triage-informed priorities.
-15. **Update Active Coaching Strategy in `coaching_state.md`.** Write the chosen coaching path, rationale, and pivot conditions. If an Active Coaching Strategy already exists, check whether this analysis confirms or contradicts it. If the data suggests a different bottleneck than the current strategy targets, **move the old approach to Previous approaches** (with brief reason for the change) before writing the new one: "Your previous coaching focus was Structure, but this transcript shows Structure at 4 while Differentiation is at 2. I'm updating the strategy to focus on Differentiation." Always preserve the history of what was tried and why it was abandoned — this prevents the coach from cycling back to strategies that already failed.
-16. **Update Interview Intelligence.** Extract each scored question to the Question Bank (date, company, role, round type, question, competency, score as 5-dim average, outcome). **Before scoring each question**, check the Question Bank for similar questions from past interviews — same competency, similar phrasing, or same company. If a match exists, note the previous score alongside the new one during per-unit analysis: "You've seen this type of question before — at [Company] in Round [N], you scored [X]. This time: [Y]." This makes score trajectory visible at the question level, not just the dimension level. Then cross-reference with existing Question Bank data — but only surface cross-references when they're meaningful:
-    - Score trajectory on a repeated competency (3+ instances) — e.g., "Your Differentiation on leadership questions has gone 2.2 → 2.8 → 3.4 across three interviews."
-    - Same question type appearing at the same company across rounds
-    - A pattern that changes the coaching recommendation
-    Update Effective/Ineffective Patterns only when 3+ data points support the pattern. Update Company Patterns with question types observed and what seems to matter based on this interview.
+Before scoring, assess whether this is a fragment or a complete draft:
 
-### Per-Unit Format (for each analyzed unit)
+- **Full draft**: Score all sections
+- **Fragment** (< 60% of stated word limit, or clearly missing major sections): "I'm reviewing a partial draft — my structural feedback is limited. I'll score what's here and flag what's missing."
+- **Final-stage document** (applicant says this is their near-final version): Apply the Challenge Protocol if Level 5 is active. Otherwise, apply fit-check drill to every section.
 
-Use the appropriate unit ID based on interview format: Q# for behavioral, E# for panel exchanges, P# for system design phases, CS# for case study stages. Mixed-format interviews use the relevant ID per segment.
+---
 
-```markdown
-### [Q#/E#/P#/CS#]
-- Scores: Substance __ / Structure __ / Relevance __ / Credibility __ / Differentiation __
-- Format-specific scores (if applicable): [e.g., Process Visibility __ / Scoping Quality __]
-- What worked:
-- Biggest gap:
-- Root cause pattern (if detected):
-- Intelligence cross-reference (only when past data changes the coaching):
-- Tight rewrite direction:
-- Evidence:
+## Step 3: Section-by-Section Scoring
+
+Parse the document into sections (P# for paragraphs, or named sections for research proposals):
+
+For each section, score the most relevant dimensions based on section type:
+- Opening paragraph: Authenticity + Distinctiveness (hook quality)
+- Research experience paragraphs: Message + Authenticity (substantive and believable?)
+- Program-fit paragraph: Fit (specific to this program and professor?)
+- Goals paragraph: Message + Structure (specific and arc-closing?)
+- Entire document: Structure (does the overall arc work?)
+
+**Do not score every section on all 5 dimensions** — focus on the dimension(s) that matter most for each section type.
+
+---
+
+## Step 4: Document-Level Scoring
+
+After section-by-section:
+
+1. Compute weighted document-level scores (not a simple average):
+   - Research experience sections: highest weight
+   - Opening and program-fit: high weight
+   - Goals: medium weight
+
+2. Determine the Admit Signal:
+   - **Strong Admit**: Fit ≥ 4, Message ≥ 4, all others ≥ 3
+   - **Admit**: Mostly 3-4, no 1s, no more than one 2
+   - **Borderline**: One dimension at 1-2 or significant inconsistency
+   - **Reject**: Fit = 1 (functionally generic) OR two+ dimensions at 1-2
+
+3. Identify the triage priority bottleneck:
+   - If Fit ≤ 2: Fit is the bottleneck — every other dimension is secondary
+   - If Message ≤ 2: Message is the bottleneck
+   - Otherwise: follow triage order (Fit → Message → Structure → Authenticity → Distinctiveness)
+
+---
+
+## Step 5: Admission Committee's Inner Monologue
+
+This is the most distinctive output of the review command. Replay the document from the perspective of an admissions committee member reading it for the first time.
+
+Format:
+> "A committee member opening your [document] is thinking:
+>
+> [First impression from P1 — what does the opener signal? positive or negative?]
+>
+> By P2, they're [forming a specific impression — what does the research experience section tell them about this applicant's potential?]
+>
+> The moment that stands out: [the single most memorable thing in the document — and whether it's memorable for good or bad reasons]
+>
+> The moment they hesitate: [where the committee member pauses, raises an eyebrow, or loses confidence — even briefly]
+>
+> After reading the program-fit section, they're thinking: [specific reaction to the fit section — is it convincing? generic? impressive?]
+>
+> Their verdict: [overall read from the committee member's perspective, not a score — what kind of admit are they imagining?]"
+
+This should feel like a real person reading, not a scoring rubric recitation. Use specific language from the document. Identify the moment where the committee's read shifted — for better or worse.
+
+---
+
+## Step 6: Automatic Rewrite of Weakest Section
+
+Identify the weakest section (lowest score on its primary dimension). Offer to rewrite it:
+
+> "The [section] is the primary bottleneck. Here's a rewrite that addresses the [primary dimension] gap:"
+
+**Before** (the original):
+[Paste the original section]
+
+**After** (the rewrite):
+[Write the improved version]
+
+**What changed**:
+- [Specific annotation: what was removed and why]
+- [What was added and why]
+- [What principle the change illustrates — for the applicant to apply to other sections]
+
+The rewrite should be in the applicant's voice, not the coach's. Use language and specifics from the rest of the document. Do not invent details the applicant hasn't provided.
+
+---
+
+## Step 7: Triage Output
+
+Deliver the full review in this format:
+
+```
+## Document Review — [Document Type]: [Program Name]
+
+**Date**: [date]
+**Document status**: [draft / revision / final-stage]
+**Word count**: [X words] / [limit: Y words if known]
+
+### Scores
+| Section | Msg | Str | Fit | Auth | Dist | Primary Note |
+|---------|-----|-----|-----|------|------|-------------|
+| P1 (Opening) | — | — | — | [X] | [X] | [brief note] |
+| P2-3 (Research) | [X] | — | — | [X] | — | [brief note] |
+| P[fit] (Program Fit) | — | — | [X] | — | — | [brief note] |
+| P[goals] (Goals) | [X] | [X] | — | — | — | [brief note] |
+| **Document** | **[X]** | **[X]** | **[X]** | **[X]** | **[X]** | |
+
+**Admit Signal**: [Strong Admit / Admit / Borderline / Reject]
+**Self-assessment delta**: [over / under / accurate — and by how much]
+
+### Primary Bottleneck
+[Triage decision: which dimension to fix first, with evidence]
+
+### Admission Committee's Inner Monologue
+[Full inner monologue from Step 5]
+
+### Automatic Rewrite — [weakest section]
+**Before**: [original]
+**After**: [rewrite]
+**What changed**: [annotations]
+
+### Revision Priorities
+1. [Highest priority fix with specific guidance]
+2. [Second priority]
+3. [Third priority — optional; only if above ≥ 3 on both primary dimensions]
+
+---
+**Recommended next**: `draft [section]` to address the primary bottleneck. **Alternatives**: `fit [program]` if Fit is the bottleneck, `narratives improve [N00X]` if Message is the bottleneck.
 ```
 
-### Answer Rewrite Option
+---
 
-After scoring each answer (or at the end of the full analysis), offer: "Want to see a rewrite of any answer at 4-5 quality? I'll show you the delta — not to give you a script, but to make the improvement concrete."
+## Level 5: Challenge Protocol Integration
 
-When rewriting:
-- Show the original excerpt and the rewrite side by side.
-- Annotate each change: why this word/phrase/structure is different and what it achieves.
-- Preserve the candidate's voice — improve the content and structure, don't replace their personality.
-- Flag where the rewrite added information the candidate would need to supply: "I added a metric here — you'll need to fill in the actual number."
+For Level 5 applicants, after delivering the standard review, apply 2-3 of the 5 challenge lenses from `references/challenge-protocol.md` to the document:
 
+1. **Assumption Audit**: What is this document taking for granted that it shouldn't? "This document assumes the committee already knows why [X] is an interesting research problem. It doesn't — and 200 other applicants are competing for that assumption."
 
-### Delta Output Schema
+2. **Blind Spot Scan**: "The document doesn't address [major concern from Academic Profile]. A committee member who notices this absence will wonder [what they'll think]."
 
-```markdown
-## Interview Delta
+3. **Substitution Test**: "Replace your name with another qualified PhD applicant in this field. Would this document still work? If yes, the Distinctiveness is 1-2, not 3-4."
 
-## Interview Format
-- Detected format: [behavioral / panel / system design / technical+behavioral mix / case study]
-- Format source: [coaching state / candidate / transcript inference / default]
-- Scoring weight adjustments: [which dimensions are weighted highest for this format]
-- Format-specific dimensions scored: [list any additional dimensions, or "N/A — standard behavioral"]
-- Coaching scope: [for non-behavioral formats, note coaching boundaries per SKILL.md Rule 11]
+4. **Devil's Advocate**: "The weakest argument in this document is [specific claim]. A skeptical reviewer would push back: [what the pushback would be]. You need a response to that embedded in the document itself."
 
-## Scorecard
-- Substance:
-- Structure:
-- Relevance:
-- Credibility:
-- Differentiation:
-- Format-specific scores: [if applicable — e.g., Process Visibility, Scoping Quality, etc.]
-- Calibration band used:
-- Hire Signal: Strong Hire / Hire / Mixed / No Hire
+5. **Strengthening Path**: "The single change that would move this from Admit to Strong Admit is [specific change]. Here's exactly what that looks like: [draft]."
 
-## Triage Decision
-- Primary bottleneck dimension:
-- Coaching path chosen: [specific path based on bottleneck analysis]
+For Level 5, name the hard truth directly: "The program-fit paragraph is a 1. It mentions Prof. X by name but says nothing specific about their work. A committee member who works in this lab will notice immediately. This is fixable — but it must be fixed before submission."
 
-## What Is Working
-1.
-2.
-3.
+---
 
-## Top 3 Gaps To Close (ordered by triage priority)
-1. Gap:
-   Why it matters:
-   Root cause pattern:
-   Drill:
-2. Gap:
-   Why it matters:
-   Root cause pattern:
-   Drill:
-3. Gap:
-   Why it matters:
-   Root cause pattern:
-   Drill:
+## State Updates
 
-## Storybank Changes
-- Rework:
-- Retire:
-- Add:
+After every `review` session:
+- Add entry to Score History: date, document type, program, all 5 scores, Admit Signal, self-delta
+- Update document status in Application Loop (Drafting → Revised, or Draft complete → Revised)
+- Update Active Coaching Strategy if a new bottleneck is identified
+- Note any Narrative Bank narratives that performed well or poorly (update Effective/Ineffective Patterns in Narrative Intelligence)
+- If Fit = 1 throughout: flag in Coaching Notes "program-fit paragraph not yet written for [program]"
 
-## Carry Forward
-- [One strong behavior from this interview to maintain]
+---
 
-## Priority Move (Next 72 Hours)
-- One highest-leverage action:
+## LoR Request Email Review (Quick Rubric)
 
-## Reflection Prompts
-- How does this feedback compare to your gut feeling about the interview?
-- Of the growth areas above, which feels most within your control?
+When reviewing an email the applicant is sending to request a recommendation letter:
 
-## Interviewer's Inner Monologue
-[Replay key moments from the interviewer's perspective — what they were thinking as the candidate spoke. Quote the transcript. Show where the impression shifted. Include both positive and negative reactions.]
+Score on:
+- **Timing**: Is this being sent 6-8 weeks before the deadline? (Less = urgency problem)
+- **Specificity**: Does the email remind the recommender of specific shared experiences they can reference?
+- **Opt-out language**: Does it give the recommender an easy out if they can't write a strong letter? (Non-negotiable — "I understand if you're too busy" is insufficient; use "If you feel you can write a strong letter, I'd be grateful; otherwise, no worries at all.")
+- **Package**: Does it offer to provide a recommender brief with materials?
+- **Tone**: Professional but personal — not formal-stiff, not casual
 
-## Challenge (Level 5 only)
-- Assumptions this interview rested on: [2-3 hidden assumptions]
-- Blind spots: [what the candidate can't see about their own performance]
-- Pre-mortem: [if this doesn't result in advancement, why?]
-- Devil's advocate: [strongest case for passing on this candidate]
-
-## Intelligence Updates
-- Questions added to Question Bank: [count]
-- Patterns observed: [new effective/ineffective patterns, or "not enough data yet"]
-- Company learning: [new observations about this company's interview patterns, or "first interview at this company"]
-
-## Confidence
-- Score confidence:
-- Data quality notes:
-
-## Recommended Next Step
-**Recommended next**: `[command]` — [one-line reason based on the triage decision above]. **Alternatives**: `practice`, `stories`, `progress`, `concerns`
-```
-
-#### Recommended Next Step Logic
-
-Prescribe ONE specific command based on the triage decision — not a generic menu:
-- Relevance bottleneck → recommend `practice pivot` to drill question-decoding
-- Substance bottleneck → recommend `stories improve S###` on weakest story, or `stories add` to surface new ones
-- Differentiation bottleneck → recommend `stories` to extract earned secrets from existing stories
-- Storybank changes needed → recommend `stories` to handle reworks and gaps
-- Strong performance → recommend `progress` for trend comparison, or `mock [format]` for full simulation
+Deliver: Quick score (1-3 sentences per dimension) + rewrite of the opt-out language if it's missing or weak.

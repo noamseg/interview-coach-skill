@@ -1,129 +1,162 @@
-# hype — Pre-Interview Boost Workflow
+# premit — Pre-Submission (or Pre-Interview) Boost
 
-### Data-Driven Hype
+**Purpose**: Build confidence before submitting an application or before attending a scholarship interview. Evidence-based, not generic encouragement. Draws on real coaching data to remind the applicant what they've built and what's genuinely strong.
 
-The hype reel should be built from real coaching data, not generic encouragement:
-- **Pull from practice high points**: Reference the candidate's best practice moments — "In your last practice session, you nailed the prioritization question with a 4 on Structure. That's the level you're bringing today."
-- **Reference strongest stories**: Name the 2-3 stories that scored highest in the storybank and are mapped to this interview.
-- **Use real score trajectory**: If scores have been improving, name it — "Your Structure scores went from 2s to consistent 4s over the last three sessions. That's not luck."
-- If no coaching data exists yet (first session), build from resume strengths and kickoff profile. Be explicit about this: "I don't have practice scores or storybank data to draw from yet — this hype reel is built from your resume and what you've told me. It'll be more powerful once we've done some practice rounds together."
+---
 
-### Anxiety-Profile Personalization
+## When to Run
 
-Candidates experience pre-interview anxiety differently. During `kickoff` (or the first time `hype` is run), identify the candidate's anxiety profile from their stated concern and interview history:
+Run `premit` when:
+- Application deadline is within 48 hours (pre-submission variant)
+- Scholarship interview is within 48 hours (pre-interview variant)
+- Applicant is anxious and needs grounding
 
-| Profile | Signals | Hype Adjustment |
-|---|---|---|
-| **Confident but underprepared** | "I'm fine with interviews, just haven't prepped" | Skip emotional boost — focus on tactical 3x3 and cheat sheet. Be direct about gaps. |
-| **Anxious about specific failure** | "I always freeze on behavioral questions" or "I can't think of stories" | Address the specific fear head-on with evidence. "You have 8 stories in your storybank, 5 rated 4+. You've practiced retrieving them under pressure. You're not going to freeze." |
-| **Generalized anxiety** | "I'm just really nervous" or "I always feel like I'll mess up" | Lead with the physiological warmup (breathing, physical reset). Stanford communication expert Matt Abrahams recommends reframing anxiety as excitement (via Lenny's Podcast): "The physical sensations of anxiety and excitement are nearly identical — racing heart, heightened alertness. Instead of trying to calm down, relabel: 'I'm excited about this conversation.'" Provide the reframe early: "This is a conversation, not a test." Abrahams' core principle: "Strive for connection over perfection by daring to be dull. Just answer the question." When candidates stop optimizing for brilliance and optimize for genuine engagement, the anxiety drops and performance improves. Keep the hype short and grounded — too much intensity can amplify anxiety rather than reduce it. |
-| **Post-rejection anxiety** | Recent rejection in Outcome Log, or candidate mentions a bad experience | Acknowledge it directly: "Your last interview at [Company] didn't go the way you wanted. That's done. This is a different company, different interviewers, fresh start." Reference what changed since then (new practice scores, improved stories). Executive coach Joe Hudson (via Lenny's Podcast) warns: "Whatever emotion that you're trying to avoid, you are inviting into your life in exactly the way that you're trying to avoid it." Trying not to be nervous about repeating a failure makes the anxiety worse. Instead, frame each interview as an experiment — the experimental mindset means "you can never really fail, you're just learning about yourself." |
-| **Impostor syndrome** | "I don't think I'm qualified" or fit verdict was Investable Stretch | Ground in evidence: specific resume achievements, practice scores, storybank strengths. "The data says you belong in this interview. Let's look at why you were invited." Executive coach Katherine Hosie reframes it (via Lenny's Newsletter): "Impostor syndrome is normal and is generally a sign that you're enjoying some degree of success in your life. If you were pumping gas, you wouldn't be experiencing impostor syndrome." Then run a responsibility audit — when negative self-talk spikes, ask: "Where am I actually not taking responsibility right now?" Often impostor syndrome lifts when the candidate addresses the specific thing they're avoiding (doing prep work, practicing, asking for help). Also check sleep — as Hosie notes, sleep deprivation creates emotional fragility that candidates misattribute to genuine inadequacy. |
+The command auto-detects which variant to use based on Application Calendar and Interview programs in the Profile.
 
-Save the identified profile to coaching_state.md Profile as `Anxiety profile: [type]` so subsequent `hype` sessions don't re-diagnose — they adapt immediately.
+---
 
-### No-Data Fallback
+## Pre-Submission Variant
 
-When `coaching_state.md` is empty or has no scores, don't output a hollow version of the data-driven hype. Instead, shift to a different mode:
-- Lead with resume-grounded strengths (from kickoff resume analysis)
-- Focus the warmup routine on calming techniques rather than score references
-- Use the candidate's stated biggest concern (from kickoff) as the basis for the 3x3
-- Be honest: "Once you've done some practice rounds, this hype reel will reference your specific high points and score trajectory. For now, here's what's genuinely strong about your profile."
+### Step 1: Data-Driven Confidence Brief
 
-### Interview-Specific Tailoring
+Build the confidence brief from real coaching data — not generic pep talk.
 
-If a `prep` brief exists for the upcoming interview, the hype should reference it directly:
-- "You're about to talk to [Interviewer Name], who based on their background will likely focus on [area]. Your [Story Title] is perfect for this."
-- "This is a [format] interview. Remember: [format-specific key advice from prep]."
-- "Their top concern about you is probably [from concerns]. Your counter: [one sentence]."
+Pull from `application_state.md`:
+- Best-scored document for this program (highest composite score)
+- Most distinctive narrative deployed
+- Strongest Intellectual Insight extracted
+- Program-fit paragraph specificity (does it pass the substitution test?)
 
-If no prep exists, say so and suggest running `prep` first if time allows.
+Deliver:
 
-### Output Schema
+> "Before you submit, let me remind you what you've built:
+>
+> **Strongest asset**: [specific strength from coaching data — e.g., "Your Research Experience section scored a 4.5 on Message — the pipeline work you described is genuinely specific and impressive."]
+>
+> **Most distinctive element**: [the intellectual insight or distinctive angle that makes this application stand out]
+>
+> **Program fit**: [specific connection to the professor — e.g., "Your fit paragraph names Prof. X's 2024 paper and explains exactly what you'd contribute to that work. It passes the substitution test."]
+>
+> Your [Program] application is [honest assessment based on scores — 'strong', 'competitive', 'carrying some risk on [dimension] but solid overall']."
 
-```markdown
-## 60-Second Hype Reel
-- Line 1: [grounded in real coaching data or resume strengths]
-- Line 2: [specific evidence of capability]
-- Line 3: [reference to best story or practice moment]
-- Line 4: [what makes you different from other candidates]
+### Step 2: Final Checklist
 
-## Pre-Mortem (Level 5 only)
-The honest counterweight. Based on your patterns, the 2-3 most likely ways this interview doesn't go well:
-1. [failure mode] — Prevention: [one-line cue]
-2. [failure mode] — Prevention: [one-line cue]
-3. [failure mode] — Prevention: [one-line cue]
+Run through the pre-submission checklist:
 
-You know these risks. Now set them aside and go execute.
+```
+Pre-Submission Checklist — [Program]
 
-## Pre-Call 3x3
-### 3 Likely Concerns + Counters
-1.
-2.
-3.
+Documents
+☐ SoP: word count within limit — [X words / limit Y words]
+☐ Motivation Letter: word count within limit (if required)
+☐ CV: uploaded as PDF, not Word
 
-### 3 Questions To Ask
-1.
-2.
-3.
+Fit
+☐ SoP program-fit paragraph mentions Prof. [Name] by name with specific research connection
+☐ Program-fit paragraph fails the substitution test (i.e., it's specific to this program)
 
-## Focus Cue
-- One thing to remember in the room:
+Logistics
+☐ LoRs: [count] submitted in portal (confirm — don't assume)
+☐ Transcripts uploaded (official/unofficial per program requirements)
+☐ GRE scores sent (if required)
+☐ Application portal: all fields complete, no empty required sections
 
-## 10-Minute Warmup Routine
-[Check Interview Loops for saved format data from `prep` or Format Discovery. If the format is a presentation round and `present` was run, pull the key structural decisions and timing calibration from Presentation Prep for the warmup. Tailor the warmup to the format: a presentation round warmup focuses on opening delivery. A system design warmup focuses on scoping out loud. A behavioral screen warmup focuses on story retrieval speed.]
-1. Read this hype reel out loud once.
-2. [Format-specific drill]: Behavioral → pick your weakest story and deliver the 60-second version out loud. Presentation → deliver your opening 30 seconds out loud. System design → practice scoping a simple problem out loud for 60 seconds. Panel → mentally rehearse switching between interviewer styles.
-3. Review the 3x3 above — don't memorize, just refresh.
-4. Physical reset: walk, stretch, breathe. Quick option: physiological sigh — two quick inhales through the nose, long exhale (5 seconds). Standard: 4-4-8 breathing — inhale 4, hold 4, exhale 8 (Jonny Miller, Nervous System Mastery, via Lenny's Podcast). Hold something cold (ice water, cold can) to redirect anxiety circuits (Matt Abrahams, Stanford, via Lenny's Podcast). See Breathing & State Management Reference below for the full toolkit.
-5. Reframe: "This is a conversation to see if there's mutual fit. I'm also interviewing them." Executive presence coach Tristan de Montebello (Ultraspeaking, via Lenny's Podcast) frames this as "staying in character" — decide who you are in this interview before you walk in. Not performing confidence, but accessing a specific mode: the expert version of yourself for this conversation. As de Montebello puts it: "Speaking is not a specialized skill, it's a meta skill" — the confidence transfers to every interaction.
-
-### Breathing & State Management Reference
-
-These techniques come from multiple experts on Lenny's Podcast. The coach should select the appropriate technique based on the candidate's anxiety profile and the time available:
-
-- **Physiological sigh (5 seconds)**: Two quick inhales through the nose followed by a long exhale. Emergency mid-interview reset — can be done invisibly during a pause (Jonny Miller, Nervous System Mastery).
-- **4-4-8 breathing (1-2 minutes)**: Inhale 4 counts, hold 4, exhale 8. The key: exhale must be 2x inhale to activate the parasympathetic nervous system. Miller: "I did 15 minutes of this before a TEDx talk and walked on stage almost cool as a cucumber." Adjust ratio to lung capacity (3-3-6 or 2-2-4 work too).
-- **Humming breath**: Full inhale, hum through the nose until the end of the exhale. Releases nitric oxide, stimulates the vagus nerve. Good for calming before clicking into a video call.
-- **Cold stimulus**: Hold something cold (ice water, cold can) — sensory input redirects anxiety circuits (Matt Abrahams, Stanford).
-- **Visual awareness (invisible, use during live interview)**: Instead of tunnel-vision focus, soften your gaze and become aware of peripheral space — behind you, to the sides, below. Triggers a calming response without anyone noticing (Miller).
-- **Pre-interview practice**: Miller emphasizes that these work best when practiced daily for 7-10 days before the interview period begins. "When someone is in that flustered state, remembering to do the practice is the last thing that comes to mind." Daily practice makes it automatic.
-- **The "low heart rate" principle**: Sam Lessin (former VP of Product at Facebook, via Lenny's Podcast) frames the meta-goal as "showing up with a low heart rate." When your heart rate is low, you project competence, ease, and trustworthiness. When it's high, you project desperation — regardless of qualifications. Be early, settle your nervous system, enter the room from calm. His reframe: "This isn't your one shot. You'll have other opportunities. Show up with the self-confidence and the calm of abundance."
-
-## If You Bomb an Answer Mid-Interview
-[Inlined recovery guidance — acknowledge, pivot, and re-engage]
-
-## If You Get a Question You Have No Story For
-[Inlined gap-handling guidance — adjacent bridge technique]
-
-## If You Have Back-to-Back Interviews
-- Between interviews: 5-minute reset. Don't review notes — your brain needs a break, not more input.
-- Physical reset: stand up, walk, get water, stretch. Change your physical state.
-- Mental reset: "That interview is done. I can't change it. This next one starts fresh."
-- Don't carry energy from the previous interview — good or bad. Each interviewer is meeting you for the first time.
-- If you bombed the last one: "That conversation is over. This interviewer doesn't know about it and doesn't care."
-- Quick re-read: glance at the Day-Of Cheat Sheet for the next interviewer (if different from the last).
-
-**Recommended next**: `practice ladder` — one final drill to lock in your best answer. **Alternatives**: `questions`, `mock [format]`, `debrief`
+Final read
+☐ Read the SoP aloud once — caught any awkward sentences?
+☐ Name of program and professor(s) spelled correctly throughout
+☐ Application deadline: confirmed for correct timezone
 ```
 
-#### Questions Sourcing
+### Step 3: 3 Risks + Mitigations
 
-If `questions` was previously run for this company (check Interview Loops for saved prepared questions), pull from those for the 3x3. Don't regenerate — consistency matters.
+Identify the 3 things that are weakest about this application. Not to catastrophize — to ensure they've been addressed:
 
-#### Recovery Section Sourcing
+> "Here are the 3 places where this application carries risk — and what we've done to address each:
+>
+> 1. **[Risk]**: [Counter-strategy built into the documents]
+> 2. **[Risk]**: [What the LoRs should address]
+> 3. **[Risk]**: [What's been done to mitigate]"
 
-For "If You Bomb an Answer Mid-Interview," inline key guidance from the Psychological Readiness Module (Mid-Interview Recovery) in `references/cross-cutting.md`. For "If You Get a Question You Have No Story For," inline key guidance from the Gap-Handling Module (Pattern 1: Adjacent Bridge) in `references/cross-cutting.md`.
+This should leave the applicant feeling prepared, not panicked.
 
-#### Pre-Mortem Construction (Level 5 only)
+### Step 4: Submit Protocol
 
-Source failure modes from real coaching data — don't generate generic risks:
-- **Active Coaching Strategy bottleneck**: If the primary bottleneck is Differentiation, "Your answers sound competent but don't stand out" is a concrete failure mode.
-- **Storybank gaps for this company**: If predicted questions map to gaps, those are failure modes.
-- **Self-assessment calibration tendency**: An over-rater may not self-correct in the moment.
-- **Avoidance patterns from Coaching Notes**: Whatever the candidate has been avoiding is likely what will trip them up.
-- **Previous rejection feedback**: Feedback from similar companies predicts what this company may also flag.
+> "Here's your 10-minute pre-submission routine:
+>
+> 1. Read the SoP one final time — not to edit, just to feel it as a whole piece of writing
+> 2. Check the checklist above
+> 3. Submit
+> 4. Close the application portal
+>
+> After you submit: you're done with this one. The outcome is now out of your hands. Shift your focus to [next program]."
 
-End with the release cue: "You know these risks. Now set them aside and go execute." The pre-mortem's purpose is to move failure anxiety from the subconscious (where it causes freeze) to the conscious (where it becomes actionable). Once acknowledged, let it go.
+---
 
-At Levels 1-4: Skip the Pre-Mortem entirely. Hype stays pure boost.
+## Pre-Interview Variant
+
+For applicants at a program that has an interview stage (flagged in Profile → Interview programs).
+
+### Step 1: Interview Context Brief
+
+> "Your [Program/Fellowship] interview is [date/time]. Here's what to remember:
+>
+> **Format**: [panel / informal faculty meeting / research presentation / fellowship interview]
+>
+> **Who you're talking to**: [interviewers if known — pull from Application Loop]
+>
+> **What they're evaluating**: [pull from program archetype — e.g., 'Fulbright evaluates project feasibility, cultural exchange potential, and your preparedness.']"
+
+### Step 2: 60-Second Research Reel
+
+Build from coaching data:
+
+> "Your strongest research moments to have ready:
+>
+> 1. [N001 narrative opening line — your best research story opening]
+> 2. [Most distinctive intellectual insight]
+> 3. [Your research question for the PhD — the specific problem you want to pursue]
+>
+> If you get 'Tell me about your research' — start with [narrative], then pivot to [research question]. Don't recite your CV."
+
+### Step 3: 3×3 Sheet
+
+Build a quick reference:
+```
+3 Concerns They Might Raise → 3 Responses Ready
+1. [Concern] → [Counter-evidence]
+2. [Concern] → [Counter-evidence]
+3. [Concern] → [Counter-evidence]
+
+3 Questions You'll Ask
+1. [Research-specific question for the professor]
+2. [Program culture question]
+3. [Backup question]
+```
+
+### Step 4: Pre-Interview Routine
+
+> "15-minute routine before the call:
+>
+> 1. Read your 3×3 sheet once
+> 2. Say your 'tell me about your research' answer aloud — just to hear yourself
+> 3. Take 3 slow breaths before joining the call
+> 4. Connection over perfection — they already liked you enough to interview you"
+
+---
+
+## Anxiety Profile Awareness
+
+Pull from Profile → Anxiety profile and calibrate tone:
+
+- **Impostor syndrome**: Emphasize concrete data. "Your scores show X. Your advisor said Y. This is not imposter syndrome speaking — this is evidence of capability."
+- **Reapplicant trauma**: Acknowledge the previous rejection explicitly. "Last time you applied, [X] was weaker. This time, [specific improvements]. The situation is different."
+- **Deadline anxiety**: Focus on process, not outcome. "The work is done. The document is as strong as it can be today. The only task left is to submit."
+- **None**: Standard delivery.
+
+---
+
+## State Updates
+
+- Update Coaching Notes if a new anxiety pattern appears
+- Update Session Log with premit session
+- After submission: applicant should run `postsubmit` to capture the immediate post-submission state

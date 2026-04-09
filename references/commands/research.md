@@ -1,143 +1,197 @@
-# research — Company Research Workflow
+# research — Program & Faculty Research Workflow
 
-A lightweight alternative to `prep` for when the candidate wants to understand a company before committing to a full prep cycle. Use when they're evaluating whether to apply, building a target list, or doing early-stage reconnaissance.
+A focused alternative to `prep` for when the applicant wants to understand a program before committing to a full application prep cycle. Use when evaluating whether to apply, building a target list, or doing early-stage reconnaissance on a program.
 
-### When to Use Research vs. Prep
+---
 
-| Situation | Use |
-|---|---|
-| Evaluating whether to apply | `research` |
-| Building a target company list | `research` (run multiple) |
-| Have an interview scheduled | `prep` |
-| Want to understand company culture before networking | `research` |
-| Need predicted questions and story mapping | `prep` |
+## When to Use research vs. prep
 
-### Sequence
+- **research**: Evaluating fit, deciding whether to apply, understanding a program's culture and faculty landscape. Output: Fit Assessment + key research notes.
+- **prep**: Committed to applying and need a full application brief. Reads research output + goes deeper into document requirements, professor intelligence, and narrative mapping. Run `prep` after `research` for programs you're applying to.
 
-1. Ask for company name and the candidate's target role type (if not already in coaching state).
-2. Research publicly available information. Follow the same Company Knowledge Sourcing tiers from `prep` — Tier 1 (verified), Tier 2 (general knowledge), Tier 3 (unknown/say so).
-3. Assess fit against the candidate's profile (from `coaching_state.md` if available, or from what they've told you).
-4. Output the research brief.
+---
 
-### Research Depth Levels
+## Depth Levels
 
-| Level | When to Use | What to Do | Time Investment |
-|---|---|---|---|
-| **Quick Scan** | Building a target list, evaluating 5+ companies at once | Company website + careers page + recent news. Enough for a basic fit assessment. | 5-10 min |
-| **Standard** | Evaluating whether to apply. Default for `research`. | Full protocol: website, careers, news, Glassdoor, LinkedIn, blog. Produces a complete research brief. | 15-20 min |
-| **Deep Dive** | High-priority target, interview scheduled, want maximum intelligence | Standard + employee posts/talks, product reviews, competitor analysis, leadership team profiles. | 30+ min |
+Ask the applicant which depth they want:
 
-Default to **Standard**. Suggest **Deep Dive** when:
-- The candidate has an interview scheduled at this company
-- The candidate explicitly asks for comprehensive intelligence
-- The company is in the candidate's top 3 targets
+> "How deep do you want to go on [Program]?
+>
+> **A) Snapshot** (10 minutes) — Fit verdict, 2-3 key faculty matches, key concerns. Good for evaluating whether to pursue.
+>
+> **B) Standard** (30 minutes) — Faculty profiles, program culture, PhD placement record, requirements analysis, fit assessment. Good for actively applying.
+>
+> **C) Deep** (1 hour+) — Everything in Standard plus: recent publications from 2-3 target faculty, funding landscape, student testimonials, program reputation in the field. Best for top-priority programs."
 
-### Structured Search Protocol
+---
 
-Search for information in this order. Each step builds on the previous ones:
+## Research Protocol
 
-1. `[Company] careers` → careers page, open roles, stated values/principles, engineering/product blog links
-2. `[Company] about` or `[Company] mission` → stage, funding, size, founding story
-3. `[Company] news [current year]` → recent events (funding, layoffs, product launches, leadership changes). **Note**: Recent events change interview culture — a company that just laid off 20% is hiring differently than one that just raised Series C.
-4. `[Company] interview process [role type]` → Glassdoor/Blind interview reviews (label as crowd-sourced, not verified)
-5. `[Company] engineering blog` or `[Company] product blog` → culture signals, technical maturity, how they think about problems
-6. `[Company] culture` → employee reviews, culture deck, values page, recent employee posts
-7. (Deep Dive only) `[Company] [leader name]` → leadership profiles, talks, posts, published perspectives
+### What to Research (and What Not to Claim)
 
-### Claim Verification Protocol
+**Evidence tiers — always label your sources**:
+- **HIGH confidence**: Official program website, official faculty pages, published papers (Google Scholar, lab website)
+- **MEDIUM confidence**: Grad Cafe forums (recent, multiple sources agree), Reddit (r/gradadmissions, field-specific subs), PhD student personal pages
+- **LOW confidence**: Rumors, outdated posts (>2 years), single-source claims
+- **UNKNOWN**: When you genuinely don't know — say so. Do not invent program culture or admission statistics.
 
-Every company-specific claim in the research output must map to a source tier:
+**Faculty research** — the most important section:
+1. Lab website: what projects are currently active? What's the lab philosophy?
+2. Google Scholar: what did this professor publish in the last 3 years? What methods do they use? What questions are they asking?
+3. PhD student page: how many current students? How long are typical PhD timelines? Where did recent graduates go (academia vs. industry)?
+4. Funding: NSF, NIH, DARPA, corporate grants visible on lab page signal active funding and research direction
+5. Collaborators: Who does this professor co-publish with? Are any of them at this program?
 
-- **Tier 1 — Verified**: Information directly retrieved from the company's own website, careers page, blog, or from the job description/candidate-provided context. Cite the source.
-- **Tier 2 — General knowledge**: Widely documented public information about well-known companies (e.g., Amazon's Leadership Principles, Google's Googleyness). Label clearly.
-- **Tier 3 — Unknown**: Information that couldn't be verified. State this explicitly — don't guess.
+**Do NOT claim**:
+- "Professor X is definitely taking students this year" — funding and availability changes. Note: "Lab website is active and shows current students; availability unknown — email to confirm."
+- "Typical admit GPA is X.X" — unless from official program stats. Use "Grad Cafe data suggests..." with LOW confidence label.
+- "The program is collaborative/competitive" — unless directly from official program materials or multiple credible student sources.
 
-**Rules:**
-- When web search returns conflicting information, present both sides and note the conflict: "Source A says [X], but Source B says [Y]. Worth verifying directly."
-- When information is dated (>12 months), flag it: "This is from [date] — verify it's still current. Companies change."
-- Never synthesize multiple uncertain sources into a confident claim. If 3 Glassdoor reviews each say something slightly different, present the range, not a false consensus.
+---
 
-### What to Research
+## Program Research Checklist
 
-Pull from publicly available sources only:
-- **Company careers page**: Open roles, values, culture signals, engineering/product/design blog
-- **Company "About" page**: Mission, stage, funding, size
-- **Recent news**: Funding rounds, product launches, leadership changes, layoffs
-- **Glassdoor/Blind signals**: Interview process info, culture reviews (label as crowd-sourced, not verified)
-- **LinkedIn company page**: Growth trajectory, team composition
+**Program Structure:**
+- [ ] Degree conferred (PhD, MS, MFA, etc.)
+- [ ] Funding structure: fully funded / partially funded / unfunded (for PhD this is critical)
+- [ ] Coursework requirements: how many courses, any required seminars?
+- [ ] Qualifying exams: written / oral / portfolio / none?
+- [ ] Typical time-to-degree for recent graduates
+- [ ] Thesis/dissertation requirements
 
-### Fit Assessment
+**Admission Signals** (HIGH confidence only):
+- [ ] Application deadline
+- [ ] Required documents: SoP, MotLetter, CV, LoRs (how many?), GRE, writing sample, research proposal?
+- [ ] Any officially stated preferences in the application (some programs publish what they value)
 
-Use the Role-Fit Assessment Module from `references/cross-cutting.md`. Without a JD, you can assess 3 of 5 dimensions:
+**Program Culture** (label confidence):
+- [ ] Individual vs. collaborative research culture
+- [ ] Advisor relationship style: mentor vs. hands-off
+- [ ] Department vs. interdisciplinary focus
+- [ ] Funding model: TA-funded / RA-funded / fellowship-funded
 
-1. **Seniority Alignment** — Does the candidate's experience level match what this company typically hires for this type of role? Use public signals (job postings, team composition on LinkedIn, company stage).
-2. **Domain Relevance** — How transferable is the candidate's industry/domain experience? A fintech PM applying to a healthtech startup has a domain gap. Name it, assess how bridgeable it is.
-3. **Trajectory Coherence** — Does this role make sense as the next step in their career? A lateral move to a smaller company for more scope is coherent. A step down in title with no clear rationale raises questions.
+**PhD Placement Record:**
+- [ ] Where do recent graduates go? (Academic positions vs. industry vs. government)
+- [ ] Any notable alumni in the applicant's target career path?
 
-**Cannot assess without JD**: Requirement Coverage, Competency Overlap. Flag this: "For a full fit assessment, I'd need the job description."
+---
 
-**Verdict**: Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit — with the specific dimension scores driving the verdict.
+## Faculty Profile Template
 
-**If Weak Fit or Long-Shot Stretch**: Follow the Alternative Suggestions Protocol — name the gaps, suggest what a better-fit version looks like, and respect the candidate's decision if they want to proceed.
+For each faculty member the applicant is considering, complete:
 
-**Candidate Market Fit**: Beyond the 5-dimension assessment, consider what Phyl Terry calls "candidate market fit" (via Lenny's Podcast) — does the candidate's positioning resonate with this company's specific needs? A candidate can be a "Strong Fit" on role dimensions but have weak candidate market fit if their positioning doesn't address the company's current pain points. Terry's principle: "You need a spear and not a net." If the candidate is applying broadly without a clear positioning thesis, the fit assessment should flag this as a strategic issue — not a role mismatch, but a targeting mismatch. See `outreach.md` for the full candidate market fit framework.
+```
+### Prof. [Name] — [Department], [Institution]
 
-### Output Schema
+**Research focus** (from their own words on lab/personal website):
+[Quote or close paraphrase — HIGH confidence]
 
-```markdown
-## Company Research: [Company]
+**Recent publications** (last 3 years, from Google Scholar):
+- [Paper title, venue, year] — [1-sentence summary of what it contributes]
+- [Paper title, venue, year] — [1-sentence summary]
 
-## Company Snapshot
-- Stage: [startup / growth / public / enterprise]
-- Size: [approximate employee count if available]
-- Industry: [primary domain]
-- Recent signals: [funding, launches, layoffs, leadership changes — anything relevant]
-- Sources: [list what you actually looked at]
+**Lab profile**:
+- Current PhD students: [number if visible]
+- Recent graduates: [names/positions if visible on lab page]
+- Funding: [grants listed on lab page — names only, not amounts]
 
-## Culture Signals
-- Public values/principles: [with source]
-- What they seem to optimize for: [with source]
-- Red flags or concerns: [if any]
-- What I couldn't find: [explicitly list gaps]
+**Fit with applicant's background** (your assessment):
+- Connection to applicant's prior work: [specific overlap]
+- Gap: [what the applicant would need to bridge]
+- Fit level: Strong / Workable / Stretch / Weak
 - Confidence: High / Medium / Low
 
-## Fit Assessment (vs. your profile)
-- Verdict: [Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit]
-- Seniority Alignment: [Strong / Moderate / Weak] — [brief evidence]
-- Domain Relevance: [Strong / Moderate / Weak] — [brief evidence]
-- Trajectory Coherence: [Strong / Moderate / Weak] — [brief evidence]
-- Cannot assess without JD: Requirement Coverage, Competency Overlap
-- Key gaps (if stretch/weak): [specific gaps, not vague]
-- Better-fit alternatives (if weak/long-shot): [what roles would be stronger matches and why]
-
-## If You Decide to Apply
-- Recommended next steps:
-- Key things to research further before interviewing:
-- Networking angle: [who to talk to, what to ask]
-
-**Recommended next**: `prep [company]` — build a full prep brief now that you have the research foundation. **Alternatives**: `research [another company]`, `stories`
+**Contact priority**: [should the applicant email this professor? yes/no/conditional]
 ```
 
-### Staleness Detection
+---
 
-When `research` is run for a company that already has a research entry in coaching_state.md, check the date:
-- **< 2 weeks old**: "I researched [Company] on [date]. Want me to refresh, or is that still current?"
-- **2-8 weeks old**: "My research on [Company] is [N] weeks old. Companies change — want a refresh? I'll focus on what's new since [date]."
-- **> 8 weeks old**: Auto-refresh. "My research on [Company] is [N] weeks old — that's stale. Let me update it." Run the full research protocol again, noting what changed vs. the previous entry.
+## Program Fit Assessment (5 Dimensions)
 
-When refreshing, preserve the previous fit verdict and explicitly compare: "Last time I assessed this as an Investable Stretch. Based on [new information], that's now [verdict] because [reason]."
+After completing the research, assess fit on 5 dimensions:
 
-### Coaching State Integration
+1. **Research Fit** — Does the applicant's research interests genuinely align with active faculty projects? (Not "I'm interested in what they do" — specifically, is there overlap in methods, questions, or prior work?)
+   - Strong: The applicant could walk into this lab and contribute to a current project
+   - Workable: Adjacent enough to be fundable; would require some bridging
+   - Stretch: Interesting to the faculty but not their current focus; risky
+   - Weak: The applicant's interests don't match any active faculty
 
-After research, save a lightweight entry to `coaching_state.md` Interview Loops:
+2. **Academic Alignment** — Does the applicant's credentials match the typical profile of admitted students?
+   - Check: GPA range, publication expectations, research experience volume
+   - Note any hard thresholds (minimum GPA, language requirements)
+
+3. **Domain Relevance** — Is the field/subfield itself a match for the applicant's background?
+   - A theoretical physicist applying to an applied ML program may be a poor domain match even if the research questions overlap
+
+4. **Professor Match** — Are there 2-3 specific faculty the applicant could work with?
+   - Single-professor match = risky (if that professor doesn't take students, the application is likely rejected)
+   - 2-3 faculty matches = healthy; mention 1-2 in the SoP
+
+5. **Trajectory Coherence** — Does the applicant's academic trajectory make sense for this program?
+   - Does the applicant's path (undergrad → research → proposed PhD) tell a coherent story?
+   - Would a committee reading the application understand why this program is the right next step?
+
+**Fit Verdict**:
+- **Strong**: The applicant is well-positioned across all 5 dimensions. Invest in a strong application.
+- **Investable Stretch**: 3-4 dimensions are strong; 1-2 are gaps that can be addressed in documents. Worth applying with targeted effort.
+- **Long-Shot Stretch**: Significant gaps in 2+ dimensions. The application would need to be exceptional to overcome them. Apply only if this is a top-priority program.
+- **Weak**: Fundamental misalignment (wrong field, credentials far below threshold, no faculty match). Don't apply — it would be wasted effort.
+
+---
+
+## Staleness Detection
+
+Flag research that may be outdated:
+- Professor's lab page last updated > 1 year ago: "Lab page may be stale — verify faculty availability directly."
+- Professor listed but no recent publications (2+ years of silence): "May be on sabbatical, retired, or changed focus."
+- Program page has no indication of the current admission cycle: "Confirm this cycle is open — some programs pause admissions."
+
+---
+
+## Research Output
+
+After completing research, deliver the **Program Intelligence Brief**:
+
 ```
-### [Company Name]
-- Status: Researched (not yet applied)
-- Fit verdict: [Strong / Investable Stretch / Long-Shot Stretch / Weak]
-- Fit confidence: [Limited — no JD]
-- Fit signals: [1-2 lines on what drove the verdict]
-- Structural gaps: [gaps that can't be bridged with narrative, if any]
-- Date researched: [date]
+## Program Intelligence Brief — [Program Name]
+
+**Fit Verdict**: [Strong / Investable Stretch / Long-Shot Stretch / Weak]
+**Confidence**: [High / Medium / Low — based on research depth]
+
+**Program Overview** (HIGH confidence items only):
+- Funding: [fully funded / partially / unfunded]
+- Deadline: [date]
+- Required documents: [list]
+- Typical time-to-degree: [if known]
+
+**Faculty Profile(s)**:
+[One block per faculty member using the template above]
+
+**Fit Assessment** (5 dimensions):
+1. Research Fit: [Strong / Workable / Stretch / Weak] — [evidence]
+2. Academic Alignment: [assessment] — [concerns if any]
+3. Domain Relevance: [assessment]
+4. Professor Match: [number of viable faculty + names]
+5. Trajectory Coherence: [assessment]
+
+**Key Concerns**:
+[What would worry a committee about this application? Specific to this program.]
+
+**Verification Questions** (things to confirm before applying):
+[Questions to ask in a cold email to the program or a professor — avoid "are you taking students?" and instead ask substantive research questions]
+
+---
+**Recommended next**: `prep [program]` to build the full application brief. **Alternatives**: `fit [program]` for deeper professor analysis, `decode [requirements]` to analyze the application prompts.
 ```
 
-This way, if the candidate later runs `prep` for this company, the coach already has context.
+---
+
+## State Updates
+
+Save to Application Loop for this program:
+- Status: Researching → Researched
+- Fit assessment + confidence + fit signals
+- Target professors (name, department, fit level)
+- Date researched
+- Academic profile gaps specific to this program
+- Any flagged concerns

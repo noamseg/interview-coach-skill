@@ -1,178 +1,195 @@
-# practice — Practice System
+# draft — Document Drafting & Revision Drills
 
-Show menu with progression status:
+**Purpose**: Section-level drafting and revision drills. For full SoP drafting sessions, use `draft-sop [program]` instead. `draft` is for targeted work on specific sections, revision drills, or non-SoP documents.
+
+---
+
+## Drafting Menu
+
+Show this menu at the start of every `draft` session. Pull current document status from Application State.
 
 ```text
-Practice Menu (stages 1-8 are gated by progression)
-1) practice ladder     — Constraint drills: tell the same story at 30s, 60s, 90s, 3min
-2) practice pushback   — Handle skepticism, interruption, "so what?" pressure
-3) practice pivot      — Redirect when a question doesn't match your prep
-4) practice gap        — Handle "I don't have an example for that" moments
-5) practice role       — Role-specific specialist scrutiny
-6) practice panel      — Multiple interviewer personas simultaneously
-7) practice stress     — Role-specific high-pressure simulation
-8) practice technical  — Thinking out loud, clarification-seeking, tradeoff articulation (optional — system design/mixed format only)
+Drafting Menu
 
-Standalone (not gated by progression):
-•  practice retrieval  — Rapid-fire question-to-story matching under time pressure (requires 8+ stories)
+Document Creation
+1) opening       — First paragraph / hook (most important, most often weak)
+2) narrative     — Intellectual journey section (why this field, how you got here)
+3) research      — Research experience description (the credibility section)
+4) fit           — Program/advisor-specific fit paragraph (the differentiation section)
+5) goals         — Future goals and research agenda
+6) full-letter   — Full motivation letter (structured differently from SoP)
+7) cold-email    — Initial professor outreach email
+
+Revision Drills (once a draft exists)
+•  trim          — Constraint drill: cut section to target length while preserving content
+•  sharpen       — Distinctiveness drill: make a specific claim more non-generic
+•  fit-check     — Fit audit: verify every sentence earns its place for this specific program
+•  voice         — Authenticity drill: find and remove consultant/AI voice patterns
+
+What do you want to work on?
 ```
 
-Use `references/role-drills.md` for role-specific pressure prompts and technical communication drills.
+---
 
-### Drill Progression Ladder
+## Protocol for Each Section Type
 
-Drills are ordered by prerequisite difficulty. Do not advance until the candidate meets the gating threshold:
+### Opening (P1 Hook)
 
-| Stage | Drill | Gate to advance | Prerequisite |
-|---|---|---|---|
-| 1 | Ladder | Structure ≥ 3 on 3 consecutive rounds | None |
-| 2 | Pushback | Credibility ≥ 3 under pressure | Stage 1 |
-| 3 | Pivot | Relevance ≥ 3 when redirected | Stage 2 |
-| 4 | Gap | Credibility ≥ 3 with honest gap handling | Stage 2 |
-| 5 | Role | Substance ≥ 3 under specialist scrutiny | Stages 1-3 |
-| 6 | Panel | All dimensions ≥ 3 with multiple personas | Stages 1-4 |
-| 7 | Stress | All dimensions ≥ 3 under maximum pressure | Stages 1-5 |
-| 8 (optional) | Technical | Structure + Substance ≥ 3 in technical communication | Stages 1-3. Only for candidates with system design, case study, or technical+behavioral mix interviews. |
+**Objective**: Write a first paragraph that immediately signals the applicant's research domain and intellectual angle, and makes the committee want to read P2.
 
-**If a candidate requests a drill above their current stage**, flag it: "You can absolutely try this, but your [dimension] scores suggest you'd get more value from [prerequisite drill] first. Want to start there, or jump ahead anyway?" Respect their choice but name the risk.
+1. Ask: "What's the most specific, non-generic thing you could say in your first sentence? What moment, problem, or question defines your research path?"
+2. Draft an opener based on their answer — concrete, active, specific
+3. Apply the Generic Test:
+   - "Ever since I was young..." → generic. Rewrite.
+   - "[Specific observation / failure / discovery] led me to..." → potentially distinctive
+   - A first sentence that could be submitted by any applicant in the field = score ≤ 2
 
-### Revisit Queue
+First draft is unscored. Encourage rather than critique. Then score on Authenticity and Distinctiveness only.
 
-Track drill weaknesses across sessions. If a candidate struggled with pushback handling in session 1, automatically resurface it after 2-3 sessions: "Last time, pushback drills exposed [specific pattern]. Let's check if that's durable — want to run a quick pushback round?"
+### Narrative (Intellectual Journey)
 
-### Question Tailoring
+**Objective**: The section that explains why this research area and why this applicant's path is coherent. Not chronological — argumentative.
 
-Don't throw generic drill questions. Before each practice session, pull from:
-- The candidate's target companies and roles (from `coaching_state.md`)
-- Known weak spots from previous analyses or practice rounds
-- Storybank gaps where no strong story exists — when a question hits a known gap (no story exists or story strength is low), coach the candidate using the appropriate gap response pattern from the Gap-Handling Module in `references/cross-cutting.md`. Map pattern selection to storybank scores: strength 2 → Adjacent Bridge, strength 1 → Reframe to Strength or Growth Narrative, no story → Hypothetical with Self-Awareness.
-- The specific competencies the candidate's target JDs emphasize
-- **For PM roles**: Draw practice questions from the High-Signal Question Patterns in `prep.md` (compiled from 150+ hiring leaders via Lenny's Podcast). These represent the question themes most commonly used by experienced interviewers and require genuine reflection — they can't be gamed with rehearsed answers. This builds the candidate's ability to handle unexpected, high-signal questions.
-- **Round format from Interview Loops**: If the candidate has a known interview format for an upcoming round (from `prep` Format Discovery or Interview Loops), select drill types that match. A presentation round → prioritize structure and timing drills. A panel interview → prioritize panel drill. A system design round → prioritize `practice technical`. The drill should simulate the conditions they'll actually face.
+1. Ask: "What's the through-line of your academic path? Not a timeline — the intellectual question or problem that kept appearing in different forms."
+2. Pull from Narrative Bank — which Intellectual Turning Point or Field Connection narrative fits here?
+3. Draft: Context → Challenge → Insight → Impact → Meaning arc
+4. Score on Message and Structure
 
-If this data isn't available yet, use role-appropriate questions from `references/role-drills.md`, but note: "These are general practice questions. Once we have your prep data, I'll tailor questions to your actual interviews."
+### Research (Experience Section)
 
-### Warmup Round
+**Objective**: The most evidence-heavy section. Demonstrates what the applicant actually did and learned.
 
-The first round of every practice session is explicitly **unscored**. Its purpose is to get the candidate talking and reduce performance anxiety:
-- State: "This first one is a warmup — I won't score it. Just get your thoughts flowing."
-- Deliver an easy, open-ended question related to the drill type.
-- Give brief, encouraging feedback (no scoring, no rubric).
-- Then transition: "Good, you're warmed up. From here on I'll score each round."
+1. Ask: "Which project is most relevant to this program? Give me a 2-minute explanation of what you did."
+2. Score the explanation on Message first — is there a specific contribution claim? A quantified outcome? An insight?
+3. Then draft the written version — typically 150-250 words per project
+4. Score on Message + Authenticity
 
-**Level 5 warmup skip option**: At Level 5, offer the option to skip: "At your directness level, you can skip the warmup and go straight to scored rounds. Want the warmup or jump in?" Respect either choice. At Levels 1-4, warmup remains mandatory and unscored.
+**Red flag pattern**: "I assisted in..." / "I helped the team..." → probe for the specific task the applicant owned. If there was none, that's a gap to name.
 
-### Round Protocol (every drill round)
+### Fit (Program-Specific Paragraph)
 
-1. State round objective.
-2. Candidate responds.
-3. **Form your own assessment immediately** — score the response in your head before asking the candidate anything. This prevents their self-assessment from anchoring your evaluation.
-4. Ask self-reflection (with specific score self-estimate).
-5. Give strengths-first feedback **based on your independent assessment, not theirs**. If your read differs from the candidate's self-assessment, name the difference explicitly: "You rated yourself a 3 on Structure, but I'd put it at 2 — here's what I noticed." Never quietly adjust your scores to match theirs.
-6. Score using 5-dimension rubric.
-6a. **Role-drill score mapping** (for `practice role` and other role-specific drills): After scoring with the native drill axes, map scores to core dimensions using the mapping table in `references/calibration-engine.md` Section 5. Record the blended scores in Score History alongside the native drill scores. This ensures role-drill performance feeds into trend analysis, calibration checks, and graduation criteria.
-7. Record self-assessment vs. coach-assessment delta.
-8. **Cross-reference peak moments.** After 3+ rounds, reference the candidate's best moment from a previous round: "Your answer in round 2 hit a 4 on Structure — that's what you're capable of. The goal is making that your floor, not your ceiling." This builds confidence and gives a concrete target.
-8a. **Round Challenge (Level 5, rounds 3+ only).** Apply one Challenge Protocol lens per round, rotated: Assumption → Blind Spot → Pre-Mortem → Devil's Advocate → cycle back. Keep to 1-2 sentences — a quick, sharp provocation that pushes the candidate to think differently about what they just said. At Levels 1-4: skip.
-9. Set one specific change for next round.
+**Objective**: The section that can NOT be reused across programs. Passes the substitution test.
 
-### Round Output Schema
+1. Pull target professor(s) from Application Loop
+2. Reference professor's recent publication or project from research notes
+3. Draft using the template from `draft-sop`:
+   - Name professor + specific research connection
+   - Bridge to applicant's prior work
+   - State what the applicant would contribute
+   - Add one non-faculty program element
 
-```markdown
-## Round Debrief
-- Drill:
-- Objective:
-- Candidate Self-Assessment:
+4. Substitution test: "If I replaced [Program] with [other program], would this paragraph still work?" If yes, keep revising.
+5. Score on Fit only. Fit = 1 means rewrite from scratch.
 
-## What Worked
-1.
-2.
+### Goals
 
-## Gaps
-1.
-2.
+**Objective**: Brief, specific, credible. Not "I want to make a positive impact." Instead: career direction + how this PhD enables it + enough specificity to be believable.
 
-## Scorecard
-- Substance:
-- Structure:
-- Relevance:
-- Credibility:
-- Differentiation:
+1. Ask: "Where do you see yourself 10 years after the PhD? What specifically do you want to be doing?"
+2. Probe for specificity: "Academic research" → "professor at a research university working on [question]" → specific
+3. Draft: 2-4 sentences. Not a list. Not vague.
+4. Score on Message (specificity) and Structure (does it close the arc?)
 
-## Self-Assessment Delta
-- Candidate rated themselves: __
-- Coach scored: __
-- Calibration gap (if any):
+### Full Motivation Letter
 
-## Interviewer's Read
-[1-2 key moments from this round, told from the interviewer's perspective]
+**Objective**: A shorter, more personal document than the SoP. Often for fellowships or programs that want a MotLetter alongside or instead of an SoP.
 
-## Challenge Note (Level 5, rounds 3+ only)
-[One lens, 1-2 sentences]
-
-## Next Round Adjustment
-- Try this single change:
-
-**Recommended next**: `practice [next drill or continue]` — [reason based on round performance]. **Alternatives**: `stories`, `mock [format]`, `progress`
+Structure (for a 500-700 word MotLetter):
+```
+P1: Opening hook (same principles as SoP P1)
+P2: Why this specific fellowship/program — cultural exchange, project fit, or program fit
+P3: Your most compelling qualification (the evidence)
+P4: Future goals and how this award enables them
+P5: Closing — what you will bring, not just what you will gain
 ```
 
-#### Interviewer's Read — How To Write It
+Score on Authenticity (highest weight for MotLetters) and Fit.
 
-Keep it to 1-2 moments per round — practice rounds are short, so be selective. Pick the moments with the highest teaching value.
+### Cold Email (Professor Outreach)
 
-**Always include at least one positive moment** — what would have genuinely impressed an interviewer, and why. Candidates need to know what's working, not just what's failing.
+For full professor outreach coaching, use `professor-contact`. The `draft cold-email` option in this menu is for quick drafting when the applicant has a simple outreach need.
 
-**Ground in the candidate's actual words.** Quote what they said, then show the evaluative reaction:
-- "When you said '[specific quote],' an interviewer would be thinking: [reaction]."
-- "The moment that landed strongest was when you [specific moment] — that's the kind of detail that makes an interviewer lean in."
+Key principles:
+- Subject line: specific, not generic ("Question about your work on [specific topic]" not "Prospective PhD student")
+- Paragraph 1: one specific thing about their research (from a paper, not their lab website homepage)
+- Paragraph 2: your relevant background — 2-3 sentences, specific
+- Paragraph 3: specific question — not "are you taking students" but a genuine intellectual question about their work, or a focused ask ("I'd welcome 15 minutes to discuss whether my background is relevant to your lab's direction")
+- Total length: under 200 words
 
-**Connect to the scoring.** The Interviewer's Read should make the scorecard *make sense*. If Structure scored a 2, the monologue should show what that felt like from the other side of the table: "I was 30 seconds in and still didn't know where this was going. That uncertainty is what a 2 on Structure feels like to an interviewer."
+---
 
-**Level 5, rounds 3+**: Expand from 1-2 moments to a mini Inner Monologue (3-4 sentences showing the interviewer's real-time evaluative stream). Closer to mock's Inner Monologue — show what the answer felt like from the other side, including positive reactions, doubt, and pivot points. At Levels 1-4, keep to the standard 1-2 moments.
+## Revision Drills
 
-### Coaching State Integration
+### Trim Drill
 
-After each practice session (not per-round — at the end of the session):
-1. **Add scores to Score History** — Type: practice. Leave Hire Signal blank (practice doesn't produce one).
-2. **Update Drill Progression** — advance stage if gating threshold met, update Revisit Queue if weaknesses detected.
-3. **Review Active Coaching Strategy** — if practice scores reveal patterns that confirm or contradict the current strategy, update accordingly. Preserve Previous approaches when changing strategy.
+**Purpose**: The most common SoP problem is too much content — trying to include everything. Constraint drills force prioritization.
 
-### `practice technical` — Session Protocol
+1. Select a section that is over its target word count or feels bloated
+2. Set the constraint: "Cut this section from [X] words to [Y] words (80% / 60% of current). Keep all important content. Remove everything else."
+3. First pass: the applicant cuts it themselves
+4. Review: did they cut the right things? (Applicants often cut the specific details and keep the vague framing — reverse this)
+5. Second pass if needed: coach which sentences to cut ("This sentence makes the same claim as the previous one — cut it." "This detail adds texture but not information — cut it.")
 
-When the candidate runs `practice technical`, don't just throw all four drills at them. Run a structured session:
+Score on Structure after trimming. A well-trimmed section typically improves Message (specificity) because the padding is gone.
 
-1. **Check coaching state.** Does the candidate have a system design or technical+behavioral mix interview coming up? If so, tailor drill scenarios to their target company and role. If not, use generic scenarios.
-2. **Check Format Discovery data.** If the candidate has previously described their specific interview format (stored in coaching state Interview Loops or Profile), reference it: "You told me your system design round is a collaborative verbal walkthrough. I'll tailor the drills to that format."
-3. **Select 1-2 drills per session.** Don't run all four — a 30-minute session covering Thinking Out Loud + Clarification-Seeking is better than a shallow pass through all four. Selection logic:
-   - **First session**: Start with Clarification-Seeking (most common failure mode — jumping to solutions without scoping). Follow with Thinking Out Loud.
-   - **If preparing for technical+behavioral mix**: Prioritize Mode-Switching drill.
-   - **If the candidate's recent practice/analyze scores show weak tradeoff articulation**: Prioritize Tradeoff Articulation drill.
-   - **Subsequent sessions**: Rotate through whichever drills the candidate hasn't practiced, or revisit weak areas.
-4. **Run each drill following the protocol in `references/role-drills.md`** (Technical Communication Drills section). Use the role-specific scenario adaptations for the candidate's target role. **For PM candidates doing product sense or analytical drills**, use the frameworks from `prep.md` (Ben Erez via Lenny's Newsletter) as evaluation scaffolds: for product sense, check coverage of all 5 steps (Product Motivation → Segmentation → Problem Identification → Solution Development → V1 Articulation); for analytical thinking, verify NSM definition quality against the 4 criteria (single query, specific timeframe, grows indefinitely, not a ratio/average).
-5. **Debrief after each drill** using the standard Round Output Schema above.
-6. **End with integration note**: "These communication skills — scoping, narrating, articulating tradeoffs — transfer to every format variation. Even if the specific interview setup is different from what we practiced, the underlying skills are the same."
+### Sharpen Drill
 
-### `practice stress` — Session Protocol
+**Purpose**: Make a specific claim more distinctive. Target: Distinctiveness dimension.
 
-The stress drill is the final test before a real high-stakes interview. See `references/role-drills.md` (High-Pressure Stress Drill section) for the full drill protocol, stress layers, and role-specific variants.
+1. Select a sentence or claim that is true but generic
+2. Apply the Spiky POV test: "What's the non-obvious version of this claim? What would a committee member find surprising or memorable?"
+3. Draft a sharpened version:
+   - Generic: "I believe computational approaches can transform biology."
+   - Sharpened: "The bottleneck in RNA structure prediction isn't compute — it's training data quality. That's the problem I want to work on."
+4. Evaluate: does the sharpened version pass the substitution test? Could any other applicant have said this?
 
-**Session setup:**
+For Level 5 applicants: apply the Pre-Mortem — "If this claim appears in 20 other SoPs in this pile, how does yours stand out? What's the version that only you could write?"
 
-1. **Gate check.** Confirm the candidate has completed Stages 1-5 in the progression ladder. If not, flag it: "The stress drill is designed for candidates who've built a solid foundation. Your current stage is [X]. Want to work on [prerequisite drill] first, or push ahead anyway?" Respect their choice.
-2. **Pull weaknesses from coaching state.** The stress drill should target known patterns (from Active Coaching Strategy and Revisit Queue), not random pressure. Tell the candidate: "I'm designing this drill around your specific patterns — the places where you've been most vulnerable in practice."
-3. **Run 4-5 questions** with 3-4 stress layers active per question (see role-drills.md for the full layer menu).
-4. **Do NOT debrief between questions.** Maintain continuous pressure through the full sequence.
-5. **Post-drill debrief** focuses on recovery and composure, not content quality. Use the stress-specific scoring from role-drills.md.
-6. **Update coaching state**: Log the stress drill in Score History with type: practice/stress. Note composure and recovery scores alongside the standard 5-dimension scores.
+### Fit-Check Drill
 
-### `practice retrieval` — Session Protocol
+**Purpose**: Verify that every sentence in a section earns its place for this specific program.
 
-Retrieval is a standalone drill — not gated by the progression ladder — because it's a storybank maintenance skill, not a core interview skill. See `references/storybank-guide.md` (Rapid-Retrieval Drill section) for the full protocol, scoring, and progression rounds.
+1. Read through the section sentence by sentence
+2. For each sentence, ask: "Is this here because it matters to THIS program and THIS professor, or because it was already written?"
+3. Flag sentences that:
+   - Make no connection to this program's specific interests
+   - Could appear in any program's SoP unchanged
+   - Describe qualifications that this program already assumes (don't waste words on prerequisites)
+4. Cut or rewrite flagged sentences
 
-**Session setup:**
+Typical result: 10-20% of a generic SoP is cut; the Fit score improves by 1-2 points.
 
-1. **Gate check.** Requires 8+ indexed stories in the storybank. If fewer exist, redirect: "Retrieval practice works best with 8+ stories to draw from. You have [N]. Want to add a few with `stories add` first?"
-2. **Tailor questions to target roles.** Pull from `coaching_state.md` — use the candidate's target companies, JDs, predicted questions from `prep`, and known weak competencies. Don't use generic questions if role-specific data exists.
-3. **Run the drill** per the protocol in storybank-guide.md (10 rapid-fire questions, 10 seconds each, story ID + opening line).
-4. **Debrief** focuses on retrieval gaps (which competencies had no quick answer?), hesitation patterns (which question types cause delay?), and indexing issues (did they reach for the wrong story?).
-5. **Update coaching state**: Note retrieval patterns in the Session Log. If gaps are discovered, add them to the Revisit Queue and suggest `stories find gaps` or `stories add`.
+### Voice Drill
+
+**Purpose**: Find and remove over-edited or AI-generated voice patterns. Target: Authenticity dimension.
+
+1. Read through the section and identify sentences that feel "off" — too formal, too uniform, too polished
+2. Common patterns to flag:
+   - Long, complex sentences where a shorter one would work better
+   - Academic-sounding words used slightly incorrectly
+   - Passive voice throughout (suggests consultant voice)
+   - Perfectly grammatical but no personality
+3. For flagged sentences: ask the applicant "how would you say this out loud?" Then write that version, minimally edited
+4. Test: "Does this sound like how you talk about your research? Would someone who knows you recognize this as your writing?"
+
+---
+
+## Round Protocol (for all drills)
+
+1. State the objective for this round
+2. **Unscored first pass**: the first attempt is generative — no critique until the section exists
+3. Ask self-reflection: "What do you feel good about here? What's still not right?"
+4. Score the relevant dimension(s) independently before sharing
+5. Compare your score with their self-assessment — name deltas
+6. Strengths first, then one specific improvement
+7. Set one specific change for next round
+
+---
+
+## State Updates
+
+After each `draft` session:
+- Update document status in Application Loop (Not started → Drafting → Draft complete)
+- Save draft to `applications/[program-slug]/[document].md` if a full section is complete
+- Update Score History with any scored sections
+- Note any Narrative Bank narratives used (add to "Used In" column)

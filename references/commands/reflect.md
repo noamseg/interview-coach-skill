@@ -1,103 +1,127 @@
-# reflect — Post-Search Retrospective Workflow
+# reflect — Post-Application Cycle Retrospective
 
-Closes the loop on a coaching engagement. Run when the candidate has accepted an offer, decided to pause their search, or wants to take stock after a sustained effort.
+**Purpose**: Close the loop on an application cycle. Run when the applicant has made a decision (admitted somewhere, decided to reapply next cycle, or taking a different path), or wants to take stock after sustained effort.
 
-### When to Trigger
+---
 
-Suggest `reflect` when:
-- The candidate reports accepting an offer
-- The candidate says they're pausing or stopping their search
-- 8+ sessions have been completed with no recent activity
-- The candidate asks "what did I learn?" or "how did I do overall?"
+## When to Trigger
 
-### Sequence
+- Applicant has accepted an admission offer
+- Applicant has decided to pause and reapply next cycle
+- Applicant completed all submissions and is waiting on decisions and wants to reflect on the process
+- Applicant received all decisions and wants a structured retrospective before closing the file
 
-1. **Acknowledge the milestone.** Whether it's an offer, a pause, or a pivot, name it: "You've been at this for [duration]. Let's look at the full arc." Don't skip this — the candidate deserves recognition for the work they put in.
-2. **Pull the full data.** Review all of `coaching_state.md`: score history, outcome log, storybank evolution, drill progression, Active Coaching Strategy.
-3. **Narrate the journey.** This is not a progress report — it's a story about growth:
-   - Where did they start? (kickoff baseline)
-   - What were the biggest breakthroughs? (inflection points from score history)
-   - What was hardest to improve? (persistent patterns)
-   - What's genuinely different about how they interview now vs. when they started?
-   - **Initial vs. final self-assessment comparison**: Pull the candidate's initial concerns and self-assessment from kickoff (biggest concern, interview readiness assessment) and compare to their most recent `progress` calibration data. Show the delta: "You started thinking your biggest weakness was [X]. Turns out it was [Y]. Your initial self-assessment was [over/under/accurate] — and your calibration improved to [current accuracy]." This bookend comparison makes growth tangible.
-4. **Extract transferable lessons.** What did they learn that applies beyond this job search?
-   - Communication skills that transfer to the job itself — the interview coaching skills map directly to Ethan Evans' Magic Loop framework, step 2: "Tell the right people about your work" (via Lenny's Newsletter). The candidate has practiced structured communication, positioning, and storytelling under pressure — these are the exact skills that drive visibility and career growth in the new role.
-   - Self-awareness insights (self-assessment calibration patterns)
-   - Storytelling ability that helps in presentations, stakeholder management, etc.
-   - Wes Kao's concept of "minimum viable opinions" (MOPs, via Lenny's Podcast) applies to the transition into a new role: form and articulate provisional opinions early, even before having full context. The structured thinking skills developed through interview coaching — framing, evidence-based reasoning, acknowledging uncertainty — are exactly what MOPs require.
-5. **If they got an offer**: What made the difference? Which dimensions were strongest in the interviews that advanced? Which stories landed? What changed between early rejections and later advances?
-6. **If they didn't get an offer (or are pausing)**: Honest diagnosis without blame. What are the remaining gaps? Are they coachable with more practice, or do they suggest a targeting adjustment? What should they focus on if/when they resume?
-7. **Archive and close.**
+---
 
-### The Honest Conversation
+## Step 1: Arc Narration
 
-This is the workflow where the coach's anti-sycophancy commitment matters most. Don't wrap a mediocre outcome in false encouragement:
+Ask:
 
-- **If the candidate improved significantly but didn't land an offer**: "Your scores improved meaningfully — from [X] to [Y] across [dimensions]. The gap between your practice performance and real outcomes suggests [specific factor]. If you resume, here's what I'd focus on."
-- **If the candidate plateaued**: "We hit a ceiling on [dimension] that more practice wasn't moving. That usually means either the targeting needs adjustment or there's an underlying factor we didn't address. Here's what I think it was: [honest assessment]."
-- **If the candidate crushed it**: "Your trajectory was strong — [specific evidence]. The things that made the difference were [X, Y, Z]. These skills transfer directly to [how they'll help in the new role]."
+> "Before we look at data, just tell me the story of this application cycle. How did it start, how did it evolve, and where are you now?"
 
-### Output Schema
+Listen without interrupting. Then reflect back the arc you heard: "What I'm hearing is [2-3 sentence summary of the journey]. Is that accurate?"
 
-```markdown
-## Retrospective: [Name]'s Interview Journey
+This is not therapy — it's closing the loop on a real, effortful experience. The retrospective only works if the applicant feels the arc is acknowledged.
 
-## The Arc
-- Duration: [first session to now]
-- Sessions completed: [count]
-- Real interviews: [count]
-- Outcomes: [__ offers / __ advances / __ rejections]
-- Final result: [accepted offer at X / pausing search / continuing]
+---
 
-## Where You Started
-- Initial scores: [from first practice/analyze]
-- Initial storybank: [count, strength distribution]
-- Initial assessment: [from kickoff]
-- Biggest concern at start:
+## Step 2: Outcome Review
 
-## Where You Are Now
-- Current scores: [most recent]
-- Storybank health: [count, strength distribution, earned secrets]
-- Overall change: [narrated, not just numbers]
+Pull from Outcome Log:
 
-## Breakthroughs
-[The 2-3 moments where something clicked. Name what changed and when.]
-1.
-2.
-3.
+```
+Outcome Summary — [Application Cycle]
 
-## Persistent Challenges
-[What remained hard throughout. Honest assessment of what didn't fully resolve.]
-1.
-2.
-
-## What Made the Difference (if offer received)
-- The dimensions that predicted your advances:
-- The stories that landed:
-- The change between early rounds and later rounds:
-
-## What's Still Open (if no offer / pausing)
-- Remaining gaps:
-- Honest diagnosis:
-- If you resume, start here:
-
-## Transferable Skills
-[What they built that goes beyond interviewing]
-- Storytelling and communication:
-- Self-awareness and calibration:
-- Thinking under pressure:
-- [other relevant skills]
-
-## Storybank Snapshot (archived)
-[Final state of storybank for future reference]
-
-## Coaching State Archived
-[Note that coaching_state.md is being preserved, not deleted — it's available if they resume]
-
-**Recommended next**: `kickoff` — start a fresh coaching cycle if you're beginning a new search. **Alternatives**: `help`
+| Program | Degree | Applied | Decision | Date |
+|---------|--------|---------|----------|------|
+| [name] | PhD | [date] | Admitted | [date] |
+| [name] | PhD | [date] | Rejected | [date] |
+| [name] | Fellowship | [date] | Waitlisted | [date] |
 ```
 
-### Coaching State Handling
+If admitted to multiple programs: help the applicant think through the decision if they haven't made it yet. "What matters most to you in the next 5-6 years? Research freedom, funding, location, advisor relationship?"
 
-- Do NOT delete `coaching_state.md`. Mark it as archived with a date: add `Status: Archived [date] — [reason: accepted offer / paused search / etc.]` at the top.
-- If the candidate later runs `kickoff` again, the coach can reference the archived state: "I see you went through coaching before. Want to build on that foundation or start fresh?"
+If no admission offers: acknowledge directly. "This is a real disappointment. Let's figure out what happened and what a reapplication would look like."
+
+---
+
+## Step 3: What Worked
+
+Look at Score History and Narrative Intelligence → Effective Patterns:
+
+> "Looking at your strongest documents and what the data shows — here's what genuinely worked in this cycle:
+>
+> [Specific evidence from score data, narrative performance, positive feedback received]
+>
+> These are things to carry forward, not start over."
+
+---
+
+## Step 4: What to Do Differently
+
+For reapplicants or for anyone wanting to improve:
+
+> "If you were to apply again, here's what I'd recommend changing:
+>
+> 1. [Primary change — based on patterns from rejected applications]
+> 2. [Secondary change]
+> 3. [If relevant: what additional credential or experience would make the strongest case]"
+
+Frame as forward-looking, not as failure analysis. "Here's what the next version of this application looks like" is more useful than "here's what went wrong."
+
+---
+
+## Step 5: Transferable Lessons
+
+What does the applicant know now that they didn't know when they started?
+
+> "You've been through a full application cycle. What would you tell someone starting this process tomorrow?"
+
+Record 2-3 key lessons in Coaching Notes — these are genuinely useful for future cycles or for the applicant to share with others.
+
+---
+
+## Step 6: Archive the Coaching State
+
+If the applicant is done with this cycle:
+
+> "Should we archive your coaching state? I'll save a summary of this cycle and keep the key data — narratives, scores, outcomes — so you have a record. If you apply again in a future cycle, we can start fresh or build on this foundation."
+
+**Archive actions**:
+- Compress all Application Loops to 2-3 lines per program (keep: program, outcome, date, key lesson)
+- Compress Score History to Historical Summary (keep: trend direction per dimension, key inflection points)
+- Compress Session Log to narrative summary
+- Keep Narrative Bank intact — these carry forward to future cycles
+- Keep Academic Profile intact — this carries forward
+
+Note in Coaching Notes: "[date]: Application cycle [cycle name] completed. Archived. [Brief summary: X programs applied, Y admitted, Z rejected.]"
+
+---
+
+## Reflect Output Format
+
+```
+## Application Cycle Retrospective — [Name]
+
+**Cycle**: [cycle name — e.g., "PhD Fall 2027"]
+**Programs applied**: [count]
+**Outcomes**: [count admitted / waitlisted / rejected]
+**Decision**: [what the applicant decided — admitted to / reapplying next cycle / other path]
+
+### What Worked
+[Specific evidence — scores, feedback, accepted programs]
+
+### What to Do Differently
+[Forward-looking changes for future cycles or for the admitted program]
+
+### Key Lessons
+[2-3 things the applicant now knows that they didn't at the start]
+
+### Coaching State
+[Archived / preserved for next cycle]
+
+---
+[If admitted]: Congratulations. The work you put into these applications — [specific evidence of effort] — was real. Enjoy the moment.
+
+[If reapplying]: This cycle built your foundation. The next one starts stronger.
+```

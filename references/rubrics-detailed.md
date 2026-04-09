@@ -1,186 +1,213 @@
 # Detailed Scoring Rubrics
 
-Use these expanded rubrics when doing deep analysis. The compact version in SKILL.md is for quick scoring.
-
-## Substance (Evidence Quality)
-
-| Score | Description | Example |
-|-------|-------------|---------|
-| 1 | Generic platitude, no evidence | "I'm a great collaborator" |
-| 2 | Vague claim with weak support | "I improved the process and people liked it" |
-| 3 | Specific claim, missing quantification | "I redesigned the onboarding flow and reduced drop-off" |
-| 4 | Quantified with context, missing alternatives considered | "I redesigned onboarding, reducing drop-off from 40% to 25%" |
-| 5 | Quantified + alternatives weighed + decision rationale + outcome | "I redesigned onboarding after testing 3 approaches. We chose progressive disclosure over a wizard because our data showed users abandoned at step 3. Drop-off fell from 40% to 25%, validated over 10K users." |
-
-**Coaching notes:**
-- Push for numbers even when "hard to measure" — approximations with caveats are better than none
-- Ask: "What would a skeptic say is missing from this evidence?"
-- Flag when impact is claimed without explaining the candidate's specific contribution
-
-**Root causes when stuck at 1-2:**
-- Candidate hasn't done the reflection work — they know what happened but haven't extracted what mattered
-- Conflict avoidance: stripping stories of tension, stakes, and difficulty makes evidence disappear
-- Impostor syndrome: downplaying real impact because they feel they don't deserve the credit
-
-**Root causes when stuck at 3:**
-- "Good enough" syndrome — candidate has specifics but stops before quantifying because it feels like bragging
-- Hasn't thought about alternatives considered — they know what they did, not why they chose it over other options
-- Missing the "so what" — evidence exists but isn't connected to business impact
-
-## Structure (Narrative Clarity)
-
-| Score | Description | Example |
-|-------|-------------|---------|
-| 1 | Stream of consciousness, no clear point | Jumps between topics, listener lost |
-| 2 | Central idea unclear until the end | Buries the lead, meanders to point |
-| 3 | Clear structure but missing transitions | Good STAR but choppy between sections |
-| 4 | Well-structured with smooth flow, minor tangents | Clean arc with one or two detours |
-| 5 | Crisp structure: setup → conflict → resolution → impact | Every sentence advances the story, lands with clear takeaway |
-
-**Coaching notes:**
-- Best answers front-load the headline: "The key learning was X. Here's how we got there..."
-- Tangents often signal the candidate is unsure what matters — help them identify the core
-- Practice the "30-second version" to force clarity on what's essential
-
-**Root causes when stuck at 1-2:**
-- Narrative hoarding: trying to cram everything into one answer because they're afraid of leaving out something important
-- No mental model for story structure — they've never been taught to think in setup → conflict → resolution → impact
-- Anxiety-driven stream of consciousness: stress breaks whatever structure they had in their head
-
-**Root causes when stuck at 3:**
-- Knows the STAR framework but applies it mechanically — transitions feel forced, not natural
-- Hasn't practiced at multiple time constraints — can deliver a 3-minute version but can't compress or expand
-
-## Relevance (Question Fit)
-
-| Score | Description | Example |
-|-------|-------------|---------|
-| 1 | Doesn't address the question asked | Asked about conflict, answers about a successful launch |
-| 2 | Tangentially related, misses core of question | Asked about failure, talks about a challenge they overcame easily |
-| 3 | Addresses question but includes irrelevant details | Right story but 40% of answer is background noise |
-| 4 | Directly addresses question with minor drift | Solid answer with one unnecessary tangent |
-| 5 | Laser-focused, every sentence serves the answer | Could not remove a single sentence without losing value |
-
-**Coaching notes:**
-- Restate the question before answering to ensure alignment
-- Common failure: using a "favorite" story that doesn't quite fit
-- Ask: "If the interviewer only remembers one thing, what should it be?"
-
-**Root causes when stuck at 1-2:**
-- Inability to identify the core of a question: the candidate hears a topic ("conflict") and defaults to their conflict story regardless of what specific aspect the question targets
-- Poor question decoding: doesn't distinguish between "tell me about a conflict" vs. "tell me about a conflict where you were wrong" vs. "how do you handle conflict with senior stakeholders"
-- Story-first thinking: starts from "which story do I want to tell?" instead of "what is this question actually asking?"
-
-**Root causes when stuck at 3:**
-- Right story, wrong framing: the experience is relevant but 30-40% of the answer is context that doesn't serve the question
-- Doesn't check mid-answer whether they're still on track — no internal "am I answering what they asked?" monitor
-
-## Credibility (Believability)
-
-| Score | Description | Example |
-|-------|-------------|---------|
-| 1 | Claims with no support or obvious exaggeration | "I single-handedly transformed the company culture" |
-| 2 | Support is vague or generic | "I increased efficiency" (how? by how much?) |
-| 3 | Specific details but missing numbers or outcomes | "I built a dashboard the team used daily" (impact?) |
-| 4 | Quantified with context, could use stronger proof points | "Dashboard reduced reporting time by 50%" (validated how?) |
-| 5 | Numbers + artifacts + validation from others + realistic constraints | "Dashboard cut reporting from 4 hours to 2 (verified by team survey). CEO mentioned it in all-hands. Took 3 weeks to build with one engineer." |
-
-**Coaching notes:**
-- Credibility increases when candidate acknowledges constraints and trade-offs
-- Third-party validation (quotes, awards, metrics from others) strengthens claims
-- Watch for "we" vs "I" confusion — interviewers want to know the candidate's specific role
-- Realistic timelines and resource constraints make stories more believable
-
-**Root causes when stuck at 1-2:**
-- Over-claiming / status anxiety: candidate feels a perceived gap in their background and compensates by inflating contributions. This actually *reduces* credibility — interviewers sense it immediately
-- Reflexive "we" framing: candidate obscures their individual contribution, often because they're uncertain about how much credit they can claim
-- Fabrication: making up or heavily embellishing details (this is a red flag, not a coaching gap — address directly)
-
-**Root causes when stuck at 3:**
-- Has the details but doesn't package them as proof — specific facts exist but aren't connected to a credibility chain (claim → action → evidence → validation)
-- Missing third-party signals: never quotes what others said about the work, never mentions recognition or adoption metrics
-
-## Differentiation (Uniqueness)
-
-| Score | Description | Example |
-|-------|-------------|---------|
-| 1 | Generic answer any prepared candidate could give | "I used data to make better decisions" — could be anyone |
-| 2 | Some specificity but relies on common frameworks | "I applied the RICE framework to prioritize" — correct but undifferentiated |
-| 3 | Real details present but no earned insight or defensible POV | "I built a dashboard that saved 10 hours/week" — specific but not distinctive |
-| 4 | Includes earned secrets or a spiky POV; sounds like a specific person | "I learned that the fastest way to kill a feature is to let it succeed at small scale — it becomes politically unkillable before you have real data" |
-| 5 | Unmistakably this candidate — earned secrets + defensible stance + unique framing | "After launching 12 features in 2 years, I developed a 'kill threshold' system. If a feature doesn't hit 40% adoption in 6 weeks, I kill it regardless of stakeholder enthusiasm. Three of those kills freed resources for our actual breakout product. Most PMs can't do this because they optimize for shipping, not for pruning." |
-
-**Coaching notes:**
-- Differentiation is what separates a Hire from a Strong Hire in competitive processes
-- The biggest enemy of differentiation is AI-polished prep — answers that sound "correct" but could be anyone's
-- Push candidates to find their earned secrets: "What do you know from this experience that most people in your role wouldn't know?"
-- Spiky POVs must be defensible, authentic, and backed by experience — not manufactured controversy
-
-**Root causes when stuck at 1-2:**
-- Over-reliance on frameworks and best practices — answering like a textbook instead of a practitioner
-- Fear of being wrong: candidates choose "safe" answers over distinctive ones because distinctive answers are debatable
-- Haven't done the reflection work to extract what's unique about their experience
-
-**Root causes when stuck at 3:**
-- Has real experience but presents it as straightforward execution, not as insight
-- Doesn't realize what makes their perspective unusual — it feels "obvious" to them because they lived it
-- Missing the spiky POV: has the facts but not the opinionated interpretation of what they mean
+Use these expanded rubrics when doing deep analysis in `review`, `draft`, and `progress`. The compact version in SKILL.md is for quick reference.
 
 ---
 
-## Root Cause Taxonomy (Cross-Dimensional)
+## Dimension 1: Message (Intellectual Depth)
 
-Most interview failures trace back to a small number of root causes that manifest across multiple dimensions. When diagnosing, look for these patterns:
+**What it measures**: The intellectual and academic substance of the document. Does the applicant demonstrate real depth in their field? Are claims specific, evidence-backed, and non-trivial? Is there genuine intellectual substance, or is this a recitation of credentials?
 
-| Root Cause | How It Manifests | Affected Dimensions | Targeted Fix |
-|---|---|---|---|
-| **Inability to identify question core** | Answers miss the point, wrong story selected | Relevance, Structure | Question-decoding drills: restate what the question is really asking before answering |
-| **Reflexive "we" framing** | Individual contribution unclear, credibility suffers | Credibility, Substance | "I/we" audit: go through every answer and replace "we" with specific individual actions |
-| **Conflict avoidance** | Stories lack tension, stakes, and difficulty | Substance, Differentiation | Tension-mining: for every story, identify the hardest moment and make it the centerpiece |
-| **Status anxiety / over-claiming** | Inflated claims that interviewers don't believe | Credibility, Differentiation | Constraint practice: add realistic limitations, timelines, and trade-offs to every claim |
-| **Narrative hoarding** | Answers run long, structure collapses under weight of detail | Structure, Relevance | Constraint ladder drill: force 30s, 60s, 90s versions to find what's essential |
-| **Fear of being wrong** | Generic, safe answers that sound like everyone else | Differentiation, Substance | Spiky POV practice: take a stance, defend it, practice being comfortable with disagreement |
-| **Anxiety/performance stress** | Structure breaks, retrieval fails, spiral after mistakes | Structure, all dimensions | Psychological readiness module: warmup routines, mid-interview recovery scripts |
-| **Cultural communication style** | Indirect framing, modesty in self-description, different narrative structures | Credibility, Structure, Substance | Adaptation coaching: help map natural style to interview expectations without erasing voice. "This is a style difference, not a skill deficit." |
-| **Linguistic formality** | Overly formal tone, avoidance of colloquial language, occasional idiom misuse | Differentiation, Credibility | Gentle calibration on register. Slight formality is fine — better than forced casualness. Focus on clarity, not idiom. |
+| Score | Description | Indicators |
+|-------|-------------|------------|
+| 1 | Generic claims with no academic substance | "I'm passionate about machine learning." "I've always been interested in climate change." No specific projects, outcomes, or insights. |
+| 2 | Vague references to experience without specifics | "I conducted research in Dr. X's lab." "I worked on a project about protein folding." Role unclear, contribution unclear, learning absent. |
+| 3 | Specific experience described but missing depth, stakes, or learning | "I analyzed RNA sequences and contributed to the team's dataset." Contribution is named but the intellectual significance is absent. What did they learn? What was hard? |
+| 4 | Specific contribution with demonstrated understanding and outcome | "I developed a preprocessing pipeline that improved classification accuracy by 23% on our benchmark — significant because the previous method failed on imbalanced datasets." Specific, consequential, demonstrably understood. |
+| 5 | Specific + intellectual insight + implications + non-obvious judgment | Score 4 content PLUS: what this taught them that they didn't already know, how it changed how they think about the field, and what question it opened. The committee can see them thinking. |
 
-When scoring reveals a pattern, name the root cause explicitly: "This looks like [pattern X] — here's what typically drives it and here's the targeted drill." For cultural/linguistic patterns specifically, always frame as adaptation, not correction.
+**Root causes for low scores**:
+- Hasn't done the reflection work (fix: guided narrative extraction — what was the hardest part? what would you do differently?)
+- Imposter syndrome causing systematic downplaying ("I just helped with..." "It was a small contribution...")
+- Confusing credentials for substance (listing where they worked ≠ explaining what they did and learned)
+- Writing from CV instead of from experience (the document reads like an annotated CV, not an intellectual narrative)
 
-### Root Cause Persistence Tracking
+**Coaching notes**:
+- Score 1→2: Ask for one specific project and force a specific contribution claim
+- Score 2→3: Probe for "what did you actually do, step by step, and what happened because of it?"
+- Score 3→4: Ask "what was the hardest part?" and "what did you learn that surprised you?"
+- Score 4→5: Ask "what does this experience tell you about how to approach [their research question]?" — this surfaces the intellectual insight
 
-When the same root cause appears across 2+ consecutive sessions (or across 2+ answers in the same session), it should be escalated from a per-answer observation to an active entry in `coaching_state.md` → Calibration State → Cross-Dimension Root Causes. See `references/calibration-engine.md` Section 3 for the full lifecycle: Detection → Unified Treatment → Progress Tracking → Resolution. The key principle: prescribe ONE intervention targeting the root cause itself, not separate drills for each affected dimension. A root cause affecting Substance and Differentiation (e.g., conflict avoidance) gets tension-mining drills — not separate Substance drills and Differentiation drills.
-
----
-
-## Seniority Calibration
-
-Scoring is not absolute — calibrate expectations to career stage. When scoring, always state which calibration band you're using.
-
-- **Early career (0-3 years)**: A "4 on Substance" means specific examples with at least one metric. Differentiation can come from learning velocity and intellectual curiosity. Expect less systems-level thinking; look for self-awareness about what they don't yet know.
-- **Mid-career (4-8 years)**: A "4 on Substance" means quantified impact with alternatives considered. Differentiation requires genuine earned secrets from hands-on work. Should demonstrate ownership of outcomes, not just tasks.
-- **Senior/Lead (8-15 years)**: A "4 on Substance" means systems-level thinking — second-order effects, organizational impact. Differentiation requires insights that reshape how the interviewer thinks about the problem. Should show judgment across ambiguous tradeoffs.
-- **Executive (15+ years)**: A "4 on Substance" means business-level impact with P&L awareness. Differentiation requires a coherent leadership philosophy backed by pattern recognition across multiple contexts. Should demonstrate how they build and scale through others.
+**Academic Stage Calibration**:
+- **Undergraduate applicant**: A "4" means a clear, specific contribution to one research project with genuine demonstrated learning. Publications not required.
+- **Master's → PhD**: A "4" means demonstrated independent research capability with a concrete outcome. A publication or strong thesis chapter raises this to 4.5+.
+- **Experienced / reapplicant**: A "4" means a track record with clear evidence of intellectual independence — not just participation.
 
 ---
 
-## Aggregate Scoring
+## Dimension 2: Structure (Narrative Clarity)
 
-After scoring individual answers:
+**What it measures**: Does the document have a logical narrative arc? Can the admissions committee follow the argument? Is the writing organized such that each section sets up the next? Does the document flow, or is it fragmented?
 
-### Interview-Level Assessment
+| Score | Description | Indicators |
+|-------|-------------|------------|
+| 1 | Stream of consciousness; no discernible structure | Thoughts appear in random order. No paragraph discipline. Committee can't follow the thread. |
+| 2 | Rough sections exist but don't connect | There's an introduction and some body content, but transitions are absent or jarring. Reads like disconnected paragraphs. |
+| 3 | Recognizable structure but with notable weaknesses | Clear intro/body/conclusion, but one section is too long, one transition is missing, or the conclusion doesn't close the arc. |
+| 4 | Clean arc with logical progression | The document moves clearly from opening hook → intellectual journey → research evidence → program fit → goals. Each section sets up the next. Smooth transitions. |
+| 5 | Masterful narrative construction | Same as 4 but with sophisticated paragraph-level structure: each paragraph has a topic sentence, evidence, analysis, and a bridge to the next. The document feels inevitable — as if it couldn't have been organized any other way. |
 
-| Rating | Criteria |
-|--------|----------|
-| **Strong Hire** | Multiple 4-5 scores, no major gaps, demonstrated unique value |
-| **Hire** | Mostly 3-4 scores, minor gaps that could be coached |
-| **Mixed** | Inconsistent scores, some strengths but concerning gaps |
-| **No Hire** | Multiple low scores, significant evidence gaps, or red flags |
+**Root causes for low scores**:
+- No mental model for document structure (fix: provide the SoP architecture template from `document-guide.md` before drafting)
+- Narrative hoarding (trying to include everything → no section has the right weight)
+- Anxiety-driven stream of consciousness in writing
+- Wrote in order of chronology rather than order of argument
 
-### Trend Analysis (across multiple interviews)
+**Coaching notes**:
+- Structure problems are often visible in the opening: if paragraph 1 doesn't hook and signal what follows, structure will suffer throughout
+- Reverse outline is the fastest diagnostic: ask the applicant to give you one sentence per paragraph — does it tell a coherent story?
+- The weakest structural move: ending with "I believe [Program] will help me achieve my goals." This closes nothing. Strong endings restate the intellectual contribution the applicant will make.
 
-Track average scores per dimension over time:
-- Improving: +0.5 or more from baseline
-- Stagnant: Within ±0.3 of baseline
-- Declining: -0.5 or more from baseline
+---
 
-Stagnant scores after 3+ interviews signal need to change approach, not just practice more. When presenting this to the person, explore what's blocking progress: "These scores have been steady for a few rounds. What do you think is getting in the way?"
+## Dimension 3: Fit (Program Relevance)
+
+**What it measures**: Is every part of this document specifically relevant to this program and this professor? Or could it be submitted to any program unchanged? Fit is the most important dimension — a technically well-written document with no program-specific content is functionally generic.
+
+| Score | Description | Indicators |
+|-------|-------------|------------|
+| 1 | Generic — no program-specific content | Could be submitted to any program in the field without changing a word. No professor names. No program culture references. No specific research connection. |
+| 2 | Contains program name but no specific fit content | "I would love to study at MIT." "Stanford's program is renowned." Name-dropping without substance. |
+| 3 | References program's research focus but not specific faculty | "The program's strength in computational linguistics matches my background." Correct but not differentiated — the same sentence applies to 10 other programs. |
+| 4 | References specific faculty with genuine research connection | Mentions a specific professor and connects their recent work to the applicant's prior research or future questions. The connection is substantive, not superficial. |
+| 5 | Articulates a specific collaboration with a specific professor, grounded in both their prior work | "My work on [X] in Dr. Y's lab connects directly to Prof. Z's recent [paper] — specifically, I want to extend their finding that [A] by applying [my method]. I've already identified [preliminary question]." The committee can see exactly what this student would contribute. |
+
+**Root causes for low scores**:
+- Using the same SoP for every program without customization (fix: the program-fit paragraph must be written from scratch for each program after running `fit`)
+- Not researching faculty before writing the program-fit section
+- Generic goal statements ("I want to make a positive impact on society")
+- Fear of specificity (applicants worry that being too specific will limit them — the opposite is true)
+
+**Coaching notes**:
+- Fit = 1 is the most common failure in otherwise well-written SoPs. The document is well-crafted but could be submitted anywhere.
+- The program-fit section is typically paragraph 6-7 of the SoP. It must be customized per program. Run `fit [program]` before writing this section.
+- A useful test: "If I replaced [Program Name] with [Competing Program Name] in this document, would it still be true?" If yes, Fit = 1.
+- Fit also applies to document type: a MotLetter for a fellowship should reference the fellowship's stated mission. A research proposal should align with program emphases.
+
+**Triage priority**: Fit is the highest-priority dimension. A document with Fit = 1 should have its Fit section rewritten before any other improvements are made.
+
+---
+
+## Dimension 4: Authenticity (Genuine Voice)
+
+**What it measures**: Does this sound like a real person? Is the voice genuinely the applicant's? Is the story believable and specific? Or does it feel polished to the point of being empty, AI-generated, or consultant-written?
+
+| Score | Description | Indicators |
+|-------|-------------|------------|
+| 1 | Generic; could have been written by anyone | No specific details, no personal voice, no texture. Reads like a template filled in. |
+| 2 | Over-polished; feels consultant-written or AI-generated | Technically correct prose but no soul. Uses academic-sounding words in ways that feel hollow. Every sentence is defensively constructed. |
+| 3 | Specific details but voice feels rehearsed | Some genuine moments but interspersed with formal filler. The applicant's presence appears in flashes and disappears. |
+| 4 | Clear, specific, genuine voice with personal texture | The reader gets a sense of a specific person. Personal details appear naturally. The writing sounds like someone smart talking about something they care about. |
+| 5 | Unmistakably this specific person | The committee would recognize this person in a Zoom call from this document alone. The voice, the specific intellectual concerns, the way they frame problems — all consistent and distinctive. |
+
+**Root causes for low scores**:
+- Over-editing to the point of removing all personality
+- AI generation or heavy AI editing (the text becomes uniform in a way that has no texture)
+- Using a consultant who imposed their voice
+- Fear of being too specific or sounding too informal
+- Not being honest about struggles, uncertainties, or the genuine path that brought them here
+
+**Coaching notes**:
+- Authenticity is often fixed by going back to a specific moment: "Tell me about the day you first got interested in this problem. What happened exactly?" Then ask the applicant to write that story in their own words, minimally edited.
+- The opening paragraph is the highest-leverage location for authenticity. A generic "Ever since I was young..." opener signals low authenticity throughout.
+- For Level 5 applicants: apply the Authenticity Test — "Would anyone who knows you recognize this as your writing? Does this sound like how you talk about your research?"
+
+---
+
+## Dimension 5: Distinctiveness (Differentiation)
+
+**What it measures**: Does this applicant sound like anyone else applying to this program? What makes their perspective, approach, or intellectual angle distinctive? Distinctiveness is the hardest dimension — it requires genuine self-knowledge and an ability to articulate what's non-obvious about one's background or thinking.
+
+| Score | Description | Indicators |
+|-------|-------------|------------|
+| 1 | Generic; any qualified applicant could submit this | "I want to use machine learning to solve healthcare problems." "My passion for environmental science drives my work." No distinctive angle. |
+| 2 | Some specificity but still templated | Specific experiences mentioned but framed in the most conventional way possible. No distinctive intellectual claim. |
+| 3 | Specific experiences without a distinctive angle | The applicant's work is described accurately but the framing is conventional. A committee reading this wouldn't remember what made this applicant different. |
+| 4 | Distinctive intellectual angle or intellectual insight present | The applicant has an unusual perspective on their field, a non-obvious research question, or an intellectual insight from their experience that most applicants wouldn't have. |
+| 5 | Unmistakably distinctive — passes the substitution test | Remove the applicant's name and replace it with another qualified candidate's name. Would the document still work? If yes, Distinctiveness = 1. If no — if the document only works because of this specific person's unique combination of experiences, perspective, and insight — Distinctiveness = 5. |
+
+**The Substitution Test**: The simplest diagnostic for Distinctiveness. If any other qualified applicant could have submitted this document, it scores ≤ 2.
+
+**Intellectual Insight** (the "earned secret" of academic applications): The non-obvious thing the applicant knows from their experience that most applicants wouldn't know. Examples:
+- "I discovered that the standard approach to [X] fails when [Y condition] is true — this isn't in the literature yet."
+- "Working on [Project] taught me that the real bottleneck in [field] isn't [assumed problem] but [actual problem] — which changed what questions I want to pursue."
+- "My failure to replicate [finding] led me to realize [insight] — which is actually more interesting than the original result."
+
+**Root causes for low scores**:
+- Fear of being wrong (applicants hedge distinctive claims into blandness)
+- Not having done the intellectual insight extraction work (fix: guided extraction in `narratives`)
+- Generic research goals that don't reflect a specific intellectual question the applicant is burning to answer
+- Status anxiety — believing that distinctive = informal or that committees want conventional signals
+
+**Coaching notes**:
+- Distinctiveness is addressed last (only after other dimensions ≥ 3). But it's what separates borderline admits from strong admits.
+- The Level 5 challenge for Distinctiveness: "If I'm reading 300 SoPs this year, what will I remember about this one in a week?" If the answer is "nothing," Distinctiveness is the bottleneck.
+- Cross-domain backgrounds (field switchers, industry returnees, international applicants with unusual contexts) often have higher natural Distinctiveness — but only if they frame their background as an asset rather than a gap to explain.
+
+---
+
+## Aggregate Scoring Guidance
+
+When scoring a full document:
+
+1. Score each paragraph/section individually first (see `review` command for the section-by-section protocol)
+2. Weight sections by their typical importance:
+   - Opening hook: high weight (first impression determines reading frame)
+   - Research experience sections: highest weight (this is the core evidence)
+   - Program-fit section: highest weight for Fit dimension
+   - Goals section: medium weight (important but shorter)
+3. Compute document-level scores as a weighted average, not a simple average
+4. Identify the primary bottleneck using triage order: Fit → Message → Structure → Authenticity → Distinctiveness
+
+**Admit Signal determination**:
+- **Strong Admit**: Fit ≥ 4, Message ≥ 4, all others ≥ 3. The document makes a compelling, specific case.
+- **Admit**: Mostly 3-4 across dimensions, with no 1s and no more than one 2.
+- **Borderline**: One dimension at 1-2 or significant inconsistency across sections. Could advance in a weak pool.
+- **Reject**: Any Fit = 1 (too generic regardless of quality) OR two or more dimensions at 1-2 OR document fails to address a disqualifying concern.
+
+---
+
+## Root Cause Taxonomy
+
+When patterns emerge across scoring sessions, map them to unified root causes. Same root cause affecting multiple dimensions = one intervention, not multiple.
+
+| Root Cause | Dimensions Affected | Intervention |
+|-----------|--------------------|-----------| 
+| Hasn't done reflection work | Message, Distinctiveness | Guided narrative extraction — force specific moments, then extract insight |
+| Imposter syndrome / downplaying | Message, Authenticity | Reframe exercise: "What would your advisor say about this work?" |
+| Generic program targeting | Fit | Run `fit [program]` before writing program-fit section; must reference specific faculty |
+| Over-editing / consultant voice | Authenticity | Return to original language; ask applicant to talk through it, then transcribe |
+| Fear of specificity | Fit, Distinctiveness | Explain that specificity is what differentiates — "being too specific" is not a real risk |
+| No narrative arc | Structure | Provide SoP architecture template; reverse outline diagnostic |
+| AI generation (uniform prose) | Authenticity, Distinctiveness | Identify the sections that feel most "off" and rewrite from raw language |
+| Credential recitation (CV mode) | Message, Authenticity | "Stop listing where you were. Tell me what you did and what you learned." |
+| Transition without bridge narrative | Message, Fit | Run transition narrative development — build the bridge story explicitly |
+| Reapplicant trauma | Authenticity, Distinctiveness | Address the previous rejection directly; reframe what changed |
+
+---
+
+## Format-Specific Dimension Adjustments
+
+**Statement of Purpose**:
+- Standard 5-dimension scoring applies
+- Fit is weighted highest — a generic SoP is a reject regardless of quality
+- Structure: expect 5-8 paragraphs with clear arc (opening → journey → research → fit → goals)
+
+**Motivation Letter / Cover Letter**:
+- Shorter format; score at the section level, not paragraph level
+- Authenticity is weighted higher — this document should feel more personal than the SoP
+- Fit is still critical — the opening should reference the specific fellowship/program
+
+**Research Proposal**:
+- Additional dimension: **Methodological Rigor** — is the proposed method sound? (Note: "I'm coaching narrative clarity, not evaluating research correctness." Flag obvious methodological issues but don't claim domain expertise.)
+- Message is weighted highest — the intellectual substance is the whole point
+- Structure: expect Problem → Significance → Methods → Timeline → Feasibility
+
+**Personal Statement (for fellowships like Fulbright)**:
+- Authenticity is weighted highest
+- Fit is reframed: how well does this document speak to the fellowship's stated mission/values?
+- Decode the fellowship rubric using `decode` before scoring a personal statement
+
+**Recommender Brief** (indirect coaching — what to provide to recommenders):
+- Not scored with standard rubrics
+- Evaluate on: specificity of experiences highlighted, whether it complements (not duplicates) the SoP, whether it gives the recommender enough material to write specifically

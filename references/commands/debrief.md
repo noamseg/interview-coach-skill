@@ -1,121 +1,125 @@
-# debrief — Post-Interview Rapid Capture Workflow
+# postsubmit — Post-Submission (or Post-Interview) Rapid Capture
 
-Captures what happened in a real interview while it's still fresh. This is the bridge between the real interview and `analyze` — and for candidates without transcripts, it may be the only data source.
+**Purpose**: Capture immediate impressions after submitting an application or completing a scholarship interview, while the experience is fresh. This data informs document revisions for subsequent programs and — for interview-stage scholarships — feeds `review` and future `simulate` sessions.
 
-### When to Use
+---
 
-- Immediately after a real interview (same day, ideally within 1-2 hours)
-- When the candidate doesn't have a transcript
-- When they do have a transcript but want to capture subjective impressions before analysis
-- When they need emotional processing before diving into scoring
+## When to Run
 
-### Sequence
+Run `postsubmit` when:
+- An application has just been submitted (within 24 hours)
+- A scholarship interview has just been completed (within 24 hours)
+- Applicant wants to capture impressions before they fade
 
-1. **Emotional check first.** Before anything tactical, ask: "How are you feeling about it? One word." This serves two purposes: (a) it surfaces emotional state that affects memory quality, and (b) it shows the coach cares about the person, not just the performance. Don't skip this.
-2. **Rapid question capture.** "What questions did they ask? Don't worry about exact wording — just get them down." Capture as many as they can remember. Prompt with format cues: "Was there a behavioral question? A 'tell me about a time' question? Anything unexpected?"
-3. **Per-question self-assessment.** For each question they remember: "How did you feel about your answer? Strong, okay, or rough?" Don't score yet — capture their in-the-moment read.
-4. **Signal reading.** "Did you notice any signals from the interviewer? Follow-up questions that showed interest? Moments where they seemed to lose interest or redirect? Any body language that stood out?" Capture these — they're high-value data even without a transcript.
+---
 
-   **Signal Interpretation Guide** — Help the candidate read the signals they noticed:
-   | Signal | Likely Meaning | Confidence |
-   |---|---|---|
-   | Extended follow-ups on one topic | Genuine interest or evaluating depth — positive either way | HIGH |
-   | Interviewer moved on quickly after your answer | Your answer either fully satisfied them or didn't land — look at their energy after moving on | MEDIUM |
-   | "That's interesting" + follow-up | Usually positive — they want more | HIGH |
-   | Interviewer checked the time or clock | Running behind schedule, not necessarily boredom — but if repeated, you may be going long | MEDIUM |
-   | "Let me push back on that" | Testing conviction, not disagreeing — this is often a positive signal | HIGH |
-   | Interviewer started selling the role/company to you | Strong buy signal — they want you interested | HIGH |
-   | Short, closed-ended follow-ups | They may have already formed their assessment — neutral to negative | MEDIUM |
-   | "We'll be in touch" with no specifics | Standard — don't read into it either way | LOW |
+## Post-Submission Variant
 
-   Caveat: "These are common patterns, not certainties. Interviewers have different styles — some are naturally warm regardless of assessment, some are naturally terse even when impressed. Use these as directional signals, not verdicts."
+### Step 1: Emotional Check
 
-   See also the Signal-Reading Module in `references/cross-cutting.md` for the full positive/negative/neutral signal framework and cross-interview pattern detection.
+Ask first, before any analysis:
 
-5. **Surprise capture.** "Was there anything you didn't expect? A question you weren't prepared for, a format difference, something about the interviewer or environment?" Unexpected moments are often the most informative for coaching.
-6. **Story usage log.** "Which stories did you use? Did any of them land differently than in practice?" Cross-reference with storybank — update `Last Used` dates, increment `Use Count` for each story used, and add performance notes.
-7. **Immediate tactical notes.** "Is there anything you want to do differently for the next round, based on this one?" Capture their own coaching instinct.
-8. **Positioning performance check.** "How did your introduction / 'tell me about yourself' land? Did the interviewer seem engaged, or did they jump to questions quickly?" Capture this signal — it feeds back to `pitch` for positioning iteration. Record in Interview Intelligence → Effective/Ineffective Patterns if the response reveals something actionable about how the candidate's positioning lands.
-9. **Recruiter/interviewer feedback capture.** "Did you get any feedback from the recruiter about this round? Even informal comments — 'they really liked your background' or 'the interviewer had some concerns about X' — are valuable signal." If feedback exists, record it for the Recruiter/Interviewer Feedback table in Interview Intelligence.
-10. **Past question similarity check.** Scan the Interview Intelligence Question Bank for questions similar to what the candidate recalled. If matches exist, note them briefly: "You've seen a prioritization question like Q2 before — at [Company] in Round [N]. Your score on that one was [X]." Only surface matches that are useful (same competency tested, score trajectory, or company pattern). Don't force connections.
-11. **Transcript availability check.** "Do you have a recording or transcript? If so, we can do a full `analyze` later. If not, I'll work from what you've captured here." If they do have a transcript, mention the tool it came from so they know they can paste raw output: "You can paste the raw transcript directly from Otter, Zoom, Grain, or whatever tool you used — I'll detect the format and clean it up automatically."
+> "You just submitted [Program]. One word: how do you feel?"
 
-### With vs. Without Transcript
+Accept whatever they say. Don't immediately pivot to data. One brief acknowledgment:
+- "That's a real accomplishment." (if positive or relieved)
+- "That's fair — it was a stressful process." (if exhausted or anxious)
+- Then: "Ready to capture a few things while it's fresh?"
 
-**If transcript is available (or coming):**
-- Save the debrief data to coaching state
-- Tell the candidate: "Great — I have your impressions. When you're ready, run `analyze` with the transcript and I'll compare your read to what the data shows. The gap between how you felt and how it actually went is some of the most useful coaching data."
-- The debrief becomes input to `analyze`, not a replacement for it
+### Step 2: What Felt Strong
 
-**If no transcript exists:**
-- This debrief IS the data. Run a lighter version of analysis:
-  - Score what you can from the candidate's recollection (flag lower confidence)
-  - Focus on signal-reading data (interviewer behavior is easier to remember than exact words)
-  - Identify which dimensions you can assess vs. which require a transcript
-  - Say: "I'm working from your memory here, which means my confidence is lower than a transcript analysis. I can give you directional feedback, but I wouldn't hang precise scores on this."
+> "Looking back at the documents you submitted — what do you feel was genuinely strong? Which section or argument do you think will land well with the committee?"
 
-### Emotional Triage
+Record in Application Loop — Document notes. This feeds Narrative Intelligence → Effective Patterns if confirmed by a positive outcome.
 
-Based on the emotional check in step 1, adapt:
+### Step 3: What You'd Do Differently
 
-- **Candidate feels good**: Proceed normally. Capture data. Offer `analyze` or `thankyou` as next steps.
-- **Candidate feels terrible**: Don't jump to tactical feedback. Acknowledge it: "That sounds rough. Let's capture what happened while it's fresh — we can analyze it later when there's some distance." Focus on capture, not coaching. Offer `hype` if another interview is coming soon. Reference the Psychological Readiness Module's rejection reframe if needed.
-- **Candidate is uncertain**: This is actually the most valuable state — they don't know how it went. Say: "Uncertainty is normal. Let's capture the data and see what it actually tells us."
+> "If you could go back and change one thing — one paragraph, one decision, one narrative choice — what would it be?"
 
-### Output Schema
+This is the highest-leverage capture. Record as a revision note for subsequent programs.
 
-```markdown
-## Interview Debrief: [Company] - [Round]
-- Date:
-- Interviewer(s):
-- Format:
-- Emotional read: [candidate's one-word + brief context]
+Flag if the same regret appears across multiple submissions — that's a systematic gap to address before the next deadline.
 
-## Questions Recalled
-1. [Question as remembered]
-   - Self-assessment: [strong / okay / rough]
-   - Story used: [S### or none]
-   - Notes:
-2. [...]
+### Step 4: Cross-Program Learning
 
-## Interviewer Signals Observed
-- Positive signals (interest, follow-ups, engagement):
-- Negative signals (redirects, loss of interest, clock-checking):
-- Neutral/ambiguous:
+> "Are there decisions you made for [Program] that you'd apply to your [other programs] drafts? Anything in the submission process that revealed something about the approach?"
 
-## Surprises
-- [anything unexpected — questions, format, environment, interviewer behavior]
+This is where post-submission learning crosses back into active work. If applicable, immediately schedule a revision session for the next program to incorporate the learning.
 
-## Stories Used
-| Story | Question | How It Landed (candidate read) |
-|-------|----------|-------------------------------|
+### Step 5: What's Next
 
-## Candidate's Own Takeaways
-- What to do differently:
-- What worked:
+Update Application Loop:
+- Status: Drafting → Submitted
+- Date submitted: [today]
+- Feeling at submission: [one word from Step 1]
 
-## Feedback Received
-- Date:
-- Company:
-- Source: [recruiter / interviewer / hiring manager / none]
-- Feedback: [verbatim or close to it]
-- Linked dimension: [if mappable]
+Redirect attention:
 
-## Intelligence Notes
-- Questions matched from past interviews: [any Question Bank matches, or "no prior data"]
-- Company pattern observations: [anything learned about this company's interview approach]
+> "Application submitted. Your next deadline is [Program] in [X days]. Want to work on that now, or take a break first?"
 
-## Transcript Status
-- [ ] Transcript available → run `analyze` when ready
-- [ ] No transcript → directional analysis above is what we have
+---
 
-**Recommended next**: `analyze` — run full transcript analysis while impressions are fresh (if transcript available). **Alternatives**: `thankyou`, `hype`, `progress`
-```
+## Post-Interview Variant
 
-### Coaching State Integration
+For applicants who completed a scholarship or PhD program interview.
 
-Update `coaching_state.md` per the State Update Triggers in SKILL.md:
-- Storybank updates: Last Used dates, increment Use Count for each story used, performance notes
-- Interview Loop updates: round completed, stories used, signals noted
-- Outcome Log: add entry with Result: pending
-- Interview Intelligence updates: recalled questions to Question Bank (marked "recall-only"), recruiter/interviewer feedback to Recruiter/Interviewer Feedback table, Company Patterns if new observations emerged
+### Step 1: Emotional Check
+
+Same as post-submission: one word, acknowledgment, then proceed.
+
+### Step 2: Questions Recalled
+
+While memory is fresh, capture every question asked. Exact wording isn't needed — capture the intent.
+
+> "Walk me through the questions they asked, in the order you remember them. Don't worry about exact wording."
+
+Record as table:
+| Question (approximate) | Your response | Self-rating (strong/okay/rough) |
+
+### Step 3: Signal Reading
+
+> "What signals did you pick up from the interviewers? Positive moments? Moments where the energy shifted?"
+
+Record as interview signals in Application Loop. Common signals:
+- Interviewer asked follow-up questions → engaged (positive)
+- Interviewer moved on quickly without follow-up → not engaged (neutral to negative)
+- Interviewer smiled / nodded specifically at [moment] → that moment landed
+- Interviewer asked a challenging question → they're taking you seriously (not negative)
+
+### Step 4: Surprises
+
+> "Was there anything unexpected — a question you didn't prepare for, a topic they went deep on, something that went differently than you imagined?"
+
+Record surprises in Coaching Notes. Surprises across multiple interviews at the same program reveal program-specific patterns.
+
+### Step 5: Stories Used
+
+> "Which of your research narratives or experiences came up? Which ones worked well?"
+
+Update Narrative Bank → Used In field. Increment implicit use count.
+
+### Step 6: Transcript or Notes?
+
+> "Do you have notes from the interview? Can you reconstruct it well enough for a `review` session?"
+
+If yes: schedule a `simulate` debrief — replay the interview structure and score key responses.
+If no: the post-interview rapid capture is sufficient data. Proceed with standard next steps.
+
+### Step 7: Immediate Tactical Note
+
+> "One thing to do before your next interview at another program: [specific adjustment based on what went rough]."
+
+---
+
+## State Updates
+
+**Post-submission**:
+- Update Application Loop: Status → Submitted, date submitted
+- Save "what felt strong" and "what I'd change" in Application Loop notes
+- Update Session Log
+
+**Post-interview**:
+- Update Application Loop: Interview completed, date, questions recalled table
+- Update Narrative Intelligence with which narratives were deployed and how they landed
+- Update Interview programs signal tracking
+- Schedule follow-up if thank-you note is appropriate (rare but possible — check program norms)
