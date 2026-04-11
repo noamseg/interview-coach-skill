@@ -21,9 +21,10 @@ Suggest `reflect` when:
    - What's genuinely different about how they interview now vs. when they started?
    - **Initial vs. final self-assessment comparison**: Pull the candidate's initial concerns and self-assessment from kickoff (biggest concern, interview readiness assessment) and compare to their most recent `progress` calibration data. Show the delta: "You started thinking your biggest weakness was [X]. Turns out it was [Y]. Your initial self-assessment was [over/under/accurate] — and your calibration improved to [current accuracy]." This bookend comparison makes growth tangible.
 4. **Extract transferable lessons.** What did they learn that applies beyond this job search?
-   - Communication skills that transfer to the job itself
+   - Communication skills that transfer to the job itself — the interview coaching skills map directly to Ethan Evans' Magic Loop framework, step 2: "Tell the right people about your work" (via Lenny's Newsletter). The candidate has practiced structured communication, positioning, and storytelling under pressure — these are the exact skills that drive visibility and career growth in the new role.
    - Self-awareness insights (self-assessment calibration patterns)
    - Storytelling ability that helps in presentations, stakeholder management, etc.
+   - Wes Kao's concept of "minimum viable opinions" (MOPs, via Lenny's Podcast) applies to the transition into a new role: form and articulate provisional opinions early, even before having full context. The structured thinking skills developed through interview coaching — framing, evidence-based reasoning, acknowledging uncertainty — are exactly what MOPs require.
 5. **If they got an offer**: What made the difference? Which dimensions were strongest in the interviews that advanced? Which stories landed? What changed between early rejections and later advances?
 6. **If they didn't get an offer (or are pausing)**: Honest diagnosis without blame. What are the remaining gaps? Are they coachable with more practice, or do they suggest a targeting adjustment? What should they focus on if/when they resume?
 7. **Archive and close.**

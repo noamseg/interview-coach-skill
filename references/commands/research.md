@@ -80,6 +80,8 @@ Use the Role-Fit Assessment Module from `references/cross-cutting.md`. Without a
 
 **If Weak Fit or Long-Shot Stretch**: Follow the Alternative Suggestions Protocol — name the gaps, suggest what a better-fit version looks like, and respect the candidate's decision if they want to proceed.
 
+**Candidate Market Fit**: Beyond the 5-dimension assessment, consider what Phyl Terry calls "candidate market fit" (via Lenny's Podcast) — does the candidate's positioning resonate with this company's specific needs? A candidate can be a "Strong Fit" on role dimensions but have weak candidate market fit if their positioning doesn't address the company's current pain points. Terry's principle: "You need a spear and not a net." If the candidate is applying broadly without a clear positioning thesis, the fit assessment should flag this as a strategic issue — not a role mismatch, but a targeting mismatch. See `outreach.md` for the full candidate market fit framework.
+
 ### Output Schema
 
 ```markdown

@@ -10,7 +10,7 @@ Generate 5 questions with clear intent, interviewer fit, and follow-up preparati
 
 Adapt questions to where the candidate is in the interview loop:
 - **Phone screen / recruiter call**: Focus on logistics, role clarity, and process. "What does success look like in the first 90 days?" Don't ask deep strategic questions — save those.
-- **Hiring manager round**: Focus on team dynamics, priorities, and how they evaluate. "What's the biggest challenge the team is facing right now?"
+- **Hiring manager round**: Focus on team dynamics, priorities, and how they evaluate. "What's the biggest challenge the team is facing right now?" A powerful technique: reverse the high-signal question themes that experienced interviewers use to evaluate candidates (compiled from 150+ hiring leaders via Lenny's Podcast — see `prep.md` High-Signal Question Patterns). Instead of being asked "Tell me about a time things didn't go as planned," ask the hiring manager: "What's the most recent thing that didn't go as planned on the team, and how did the team handle it?" This demonstrates depth, creates conversational symmetry, and surfaces genuine information about team culture.
 - **Final round / exec**: Focus on company direction, strategic bets, and culture. "What's the most important thing this team needs to get right in the next year?"
 - **Peer round**: Focus on collaboration, day-to-day, and honest experience. "What's something you wish you'd known before joining?"
 

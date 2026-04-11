@@ -10,6 +10,8 @@ Also read `references/differentiation.md` (for earned secret integration into po
 
 **The 10-20-30 Rule**: 10 seconds to earn 20 more. 30 seconds earns the conversation. Most candidates start with credentials — but credentials don't create curiosity.
 
+**The anxiety barrier is bigger than the content barrier**: Stanford communication expert Matt Abrahams (via Lenny's Podcast) emphasizes that most candidates over-prepare content and under-prepare their state. The pitch should feel like a conversation opener, not a performance. His principle: "Strive for connection over perfection." When candidates stop trying to be impressive and focus on genuine engagement, the pitch lands better. See `hype.md` for Abrahams' specific anxiety management techniques.
+
 **The Curiosity Gap (Loewenstein)**: People pay attention when a gap opens between what they know and what they want to know. "I help growth-stage companies stop losing their best engineers" creates a gap. "I'm a VP of Engineering with 15 years of experience" closes it.
 
 **Neural Coupling**: Stories synchronize brains. 63% remember stories; 5% remember statistics (Chip Heath). A pitch with a micro-story activates narrative processing. A pitch listing capabilities activates passive processing.
@@ -27,6 +29,12 @@ Also read `references/differentiation.md` (for earned secret integration into po
 **What Interviewers Listen For in TMAY**: Communication clarity, narrative coherence, role relevance, self-awareness, energy. NOT a chronological resume walkthrough.
 
 **Common Mistakes**: Too vague, too long, no differentiator, no CTA/hook, sounds rehearsed, me-centered, jargon-heavy, chronological trap.
+
+**The "Arrogant Doctor" Anti-Pattern** (Andy Raskin, strategic narrative consultant, via Lenny's Podcast): The default self-pitch structure most candidates use — "I have X years of experience, here's my skill set, here's why I'm better than other candidates" — is what Raskin calls the "arrogant doctor" (problem → my solution → why mine is better). It sets candidates up for bragging and feature-comparison against other candidates. The alternative: lead with the shift in your field. "The old game was [X], the new game is [Y], and my career has been about [Y]." This positions the candidate as part of a movement, not as a product on a shelf. As Raskin puts it: "This structure is about defining a movement, and that's very different from 'Hey, I'm going to solve your problem.'"
+
+**The Insight-Led Pitch** (April Dunford, author of *Obviously Awesome*, via Lenny's Newsletter): Don't start with credentials (that's a "feature walkthrough"). Start with your unique insight about the role, industry, or function — "From working with [type of company], I've learned that [unique insight about what drives success in this space]." Then map the alternative approaches and their tradeoffs to demonstrate strategic thinking. Then define what a "perfect world" looks like — and show how your background delivers it. Dunford's key reframe: "The candidate's real competition is not other candidates — it's 'no decision.' Hiring managers are scared of making a bad hire. Your job is not to prove you're the best; it's to help them confidently decide you're the right choice."
+
+**Superpower Identification** (Donna Lichaw, executive coach, author of *The Leader's Journey*, via Lenny's Podcast): For candidates who struggle to articulate what makes them different, use Lichaw's superpower exercise: (1) Recall a peak experience from childhood that totally lit you up, (2) Recall a peak experience from the last ~10 years of work, (3) Map your meandering path into your current role, (4) Lay these three stories on top of one another — your superpowers appear at the intersections. Don't accept generic labels like "I'm a strategist" — dig into the specific superpower ("she was great at connecting things together — themes, trends, people to ideas"). As Lichaw notes: "Pull your superpowers out of your stories from your past, your present, and then figure out how to transpose them to your future."
 
 ---
 
@@ -102,7 +110,7 @@ Three layers:
 - **Layer 2 — The Context** (adds 10-20s): Evidence the hook is real. Micro-story, metric, or earned secret.
 - **Layer 3 — The Bridge** (adds 10-20s): Connects to specific context (role, company, opportunity).
 
-Present to candidate. Ask: "Does this sound like you?" Iterate. Must sound like the candidate, not the coach.
+Present to candidate. Ask: "Does this sound like you?" Iterate. Must sound like the candidate, not the coach. Executive presence coach Tristan de Montebello (Ultraspeaking, via Lenny's Podcast) emphasizes: the candidate must inhabit the positioning, not recite it. If the statement sounds "said from memory," it fails. Test: can the candidate deliver the hook while maintaining eye contact and adjusting pace to the listener's reactions? The shift is from rehearsal to ownership.
 
 ### Step 5: Context Variants (5 variants)
 

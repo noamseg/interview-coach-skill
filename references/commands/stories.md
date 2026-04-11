@@ -27,6 +27,15 @@ When the candidate selects "Add," don't jump straight to STAR format. Most peopl
 
 Don't skip the reflective prompts and go straight to "tell me a story about leadership." That produces rehearsed, thin stories. The prompts produce real ones.
 
+#### Story Construction Principles
+
+Story coach Matthew Dicks (author of *Storyworthy*, via Lenny's Podcast) identifies what makes stories memorable and compelling — principles the coach should apply when helping candidates shape raw material into interview stories:
+
+- **Every story is about a moment of transformation**: "I used to think X, then Y happened, and now I know Z." The most memorable interview stories follow this pattern — they show the gap between who the candidate was before and after the experience. When extracting stories, look for the transformation: what changed in the candidate's understanding?
+- **Stories need stakes**: What was at risk? Stories without stakes are anecdotes. As Dicks puts it: "Everyone loves the word storytelling in business... but to be a storyteller means you have to separate yourself from the herd, and in their mind, that risks them getting picked off. But the alternative is you're in the herd, which means you're forgettable."
+- **Start as close to the end as possible**: The #1 revision Dicks gives is "you've started your story in the wrong place." For interview stories, this means: don't set the scene for 90 seconds before getting to the action.
+- **The "But & Therefore" test**: Replace "and then" connectors with "but" and "therefore" to create cause-and-effect chains. If you can't, the story lacks narrative tension.
+
 **Important**: When adding a story, write the full STAR text to the Story Details section in `coaching_state.md` — not just the index row in the Storybank table. The table is a quick-reference index. The Story Details section is where the actual story lives, including Situation, Task, Action, Result, Earned Secret, deploy use-case, and version history. Without the full text, the coach can't help improve the story in a future session without asking the candidate to retell it from scratch.
 
 ### Improving Stories — Structured Upgrade Protocol
@@ -37,7 +46,7 @@ When the candidate selects "Improve," don't just say "add more specifics." Walk 
 2. **Diagnose the gap type:**
    - **Score 1-2 → Missing raw material.** The story doesn't have enough to work with. Ask: "What's missing from this story that you remember but haven't included?" and "What was actually hard about this situation?" Often the candidate stripped the tension out.
    - **Score 3 → Good bones, missing proof.** The story is specific but not compelling. Target: quantified impact, alternatives considered, or earned secret. Ask: "What numbers could you attach to this? Even rough ones." and "What other approaches did you consider before this one?"
-   - **Score 4 → Strong, missing differentiation.** The story is credible and well-structured but sounds like anyone could tell it. Target: earned secret and spiky POV. Ask: "What do you know from this experience that most people in your role wouldn't know?" and "What would surprise someone who wasn't there?"
+   - **Score 4 → Strong, missing differentiation.** The story is credible and well-structured but sounds like anyone could tell it. Target: earned secret and spiky POV. Ask: "What do you know from this experience that most people in your role wouldn't know?" and "What would surprise someone who wasn't there?" Apply Matthew Dicks' memorability test (via Lenny's Podcast): does the story have a clear moment of change? Can you identify the exact point where the candidate's understanding shifted? If the story describes a situation and an outcome but no transformation, it will score well on Structure but poorly on Differentiation.
 3. **Apply the specific fix.** Don't do a full rewrite — make the minimum change that moves the score up. Show the before/after for the specific section that changed.
 4. **Re-score after the improvement.** Show the candidate what moved and why.
 5. **Update the storybank record** with new strength score and version note.
@@ -100,14 +109,24 @@ When adding or improving stories, force specificity on:
 
 See `references/storybank-guide.md` (Rapid-Retrieval Drill section) for the full protocol, scoring criteria, and progression rounds. In brief: 10 rapid-fire questions, 10 seconds each, candidate responds with story ID + opening line. Debrief focuses on retrieval gaps and hesitation patterns. Also available via `practice retrieval`.
 
+### Common Behavioral Story Categories
+
+Certain interview question categories appear so frequently that candidates should ensure storybank coverage for each. When running gap analysis, check coverage against these:
+
+**Giving/receiving feedback stories**: One of the most common behavioral categories. Kim Scott's Radical Candor framework (via Lenny's Podcast) gives candidates a structured lens: the best feedback stories demonstrate caring personally while challenging directly. The ideal answer structure: "Here's how I showed I cared about the person, here's how I challenged directly, and here's what happened." Coach candidates to avoid describing "ruinous empathy" (being too nice to give feedback) as a strength — experienced interviewers recognize it as a red flag. Scott's go-to question — "What could I do or stop doing that would make it easier to work with me?" — is itself strong interview material for demonstrating vulnerability and systematic thinking.
+
+**Difficult colleague/conflict stories**: Another top category. Product leader Anneka Gupta emphasizes (via Lenny's Podcast) that the strongest answers show the candidate understood the other person's perspective, not just their own frustration.
+
 ### Narrative Identity — Theme Extraction
 
 Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative identity works best with 5+ stories to find patterns across. You have [N]. Want to add a few more with `stories add` first?"
 
+**Alternative extraction method**: For candidates who struggle with top-down theme analysis, executive coach Donna Lichaw (author of *The Leader's Journey*, via Lenny's Podcast) offers a bottom-up approach: (1) Recall a peak experience from childhood that totally lit you up, (2) Recall a peak experience from the last ~10 years of work, (3) Map your meandering path into your current role, (4) Lay these three stories on top of one another — your superpowers appear at the intersections. This surfaces themes candidates can't see by just looking at their storybank. Lichaw's key insight: "The most effective stories are the ones that we tell ourselves. Our brain doesn't know the difference. Once you understand that, you may as well leverage it to be that hero." Also useful for the "Kryptonite Framework" — things candidates think are weaknesses often serve them (e.g., "too quiet" = great listener with a poker face). Ask: "How is this serving you?" before trying to eliminate it.
+
 #### Analysis Protocol
 
 1. Read every story's full STAR text, earned secret, and deploy use-case from `coaching_state.md`.
-2. Cluster stories by **underlying theme** — not surface skill. Surface skills are things like "leadership" or "communication." Themes are specific patterns like "building systems where none existed," "translating between worlds that don't naturally talk to each other," or "making unpopular bets that paid off." If the theme could describe a generic candidate, go deeper.
+2. Cluster stories by **underlying theme** — not surface skill. Surface skills are things like "leadership" or "communication." Themes are specific patterns like "building systems where none existed," "translating between worlds that don't naturally talk to each other," or "making unpopular bets that paid off." If the theme could describe a generic candidate, go deeper. Matthew Dicks' principle applies at the portfolio level (via Lenny's Podcast): the best interview narratives have an overall arc of transformation, not just individual stories. When extracting themes, look for the meta-narrative — how has this candidate's understanding of their craft evolved? That evolution IS the narrative identity.
 3. Identify 2-3 dominant themes. Most candidates have 2. Three is rare and usually means one is weak.
 4. Name the **sharpest edge** — the theme that is most distinctive to this candidate, hardest to replicate, and most likely to make an interviewer remember them.
 5. Flag **orphan stories** — stories that don't connect to any theme. These dilute the narrative and may be retirement candidates.

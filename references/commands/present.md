@@ -18,13 +18,21 @@
 4. **Time management** — Did they stay within bounds? Going over time is the #1 presentation-round failure mode.
 5. **Depth vs. breadth judgment** — Do they know when to go deep and when to stay high-level?
 6. **Q&A handling** — Can they think on their feet? Do they admit what they don't know? Do they redirect constructively?
-7. **Confidence and poise** — Not arrogance, but comfort with the material and the format.
+7. **Confidence and poise** — Not arrogance, but comfort with the material and the format. Matt Abrahams (Stanford, via Lenny's Podcast) distinguishes between "performance confidence" (acting confident) and "process confidence" (trusting your preparation). Candidates who try to perform confidence often appear rehearsed. Candidates who trust their process appear natural. The warmup routine should build process confidence — comfort with the structure, flow, and key transitions — not a polished performance.
 
 **Narrative Arc Frameworks**:
 - **Situation-Complication-Resolution** (SCR) — Most versatile. Present the context, introduce the tension, deliver the resolution. Works for most technical and business presentations.
 - **Problem-Approach-Results-Learnings** (PARL) — Best for technical/analytical presentations. Shows methodology and rigor. Common in data science and engineering deep dives.
 - **Context-Challenge-Options-Recommendation** (CCOR) — Best for business case and strategy presentations. Shows decision-making process. Common in PM and executive rounds.
 - **Hook-Build-Deliver-Land** (HBDL) — Best for executive audiences. Start with the punchline, build the evidence, close with the ask. Executives decide in the first 30 seconds whether to pay attention.
+- **What Is / What Could Be / New Bliss** (Duarte) — Nancy Duarte's framework (CEO of Duarte Inc., 250,000+ presentations crafted, via Lenny's Podcast): Alternate between current reality ("What Is") and future possibility ("What Could Be") to build tension and longing, then end on the transformed future state ("New Bliss"). Found in MLK's "I Have a Dream," Steve Jobs's iPhone launch, and hundreds of great talks. Works at any scale from a 2-minute pitch to a 60-minute keynote. The key principle: the audience is the hero, not you — as Duarte puts it: "Your audience gets to make a choice if they accept or reject your idea. So, the balance of power is with them and not you." Position yourself as the mentor who brings tools and resolve, not the hero proving how great you are.
+- **Strategic Narrative** (Raskin) — Andy Raskin's 5-part framework (strategic narrative consultant, "The Greatest Sales Deck I've Ever Seen" with 2M+ views, via Lenny's Podcast): (1) Name the shift — what's changed in the world (Old Game → New Game), (2) Name the stakes — who wins and who loses, (3) Name the object of the new game — the rallying cry, (4) Show the obstacles — what makes this hard, (5) Show how you overcome obstacles — your "magic gifts." This replaces the "arrogant doctor" anti-pattern (problem → my solution → why mine is better). For presentation rounds: don't do a feature walkthrough of your case study. Structure it as: here's the shift, here's who's winning, here's the goal, here's what's hard, here's how I/we overcame it. As Raskin puts it: "We didn't change the product — it was basically the same business, just how we talked about it."
+
+**Slide Design Principles** (from Duarte, via Lenny's Podcast):
+- **One slide, one point**: Each slide should make exactly one point in support of the big idea.
+- **Title = takeaway**: Don't label slides ("The Team") — make the title the conclusion ("Our team is veterans of [industry]").
+- **Star moments**: Create one piece of dramatic data, an evocative story, or a striking image that the audience will always remember. "You've never asked to see a PowerPoint presentation a second time."
+- **"Can they see what I'm saying?"**: When you don't have slides, sketch it — go to the whiteboard. Visual + verbal is always stronger than verbal alone.
 
 **Time Estimation**: ~130-150 words per minute for a well-paced spoken presentation. A 15-minute presentation = ~2000-2250 words of talk track. A 10-minute presentation = ~1300-1500 words. Most candidates over-prepare content and under-prepare delivery. The #1 timing failure is spending too long on context/setup and rushing through insights/results.
 
@@ -35,6 +43,7 @@
 - Common Q&A patterns: "Tell me more about X" (positive — genuine interest), "What about Y?" (they think you missed something important), "How did you decide Z?" (testing your process, not your conclusion), "What would you do differently?" (testing self-awareness and growth mindset), "What if [constraint changed]?" (testing adaptability of thinking).
 - Best Q&A answers: concise (30-60 seconds), acknowledge the question, answer directly, then bridge to evidence. Long Q&A answers signal lack of clarity.
 - "I don't know, but here's how I'd find out" is always better than a fabricated answer.
+- **Q&A is where presence holds or collapses**: Executive presence coach Tristan de Montebello (Ultraspeaking, via Lenny's Podcast) identifies the shift from prepared content to spontaneous response as the critical moment. The candidate who was composed and articulate during their slides but becomes scattered during Q&A reveals that the confidence was performance, not process. Practice: answer 3 unexpected questions while maintaining the same energy, pace, and eye contact as the prepared remarks. This builds the "staying in character" muscle that separates strong presenters from good slide-makers.
 
 **Time Allocation Guidelines**:
 - Context/setup: 10-15% of presentation time

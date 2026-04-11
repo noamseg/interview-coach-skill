@@ -47,6 +47,7 @@ Don't throw generic drill questions. Before each practice session, pull from:
 - Known weak spots from previous analyses or practice rounds
 - Storybank gaps where no strong story exists — when a question hits a known gap (no story exists or story strength is low), coach the candidate using the appropriate gap response pattern from the Gap-Handling Module in `references/cross-cutting.md`. Map pattern selection to storybank scores: strength 2 → Adjacent Bridge, strength 1 → Reframe to Strength or Growth Narrative, no story → Hypothetical with Self-Awareness.
 - The specific competencies the candidate's target JDs emphasize
+- **For PM roles**: Draw practice questions from the High-Signal Question Patterns in `prep.md` (compiled from 150+ hiring leaders via Lenny's Podcast). These represent the question themes most commonly used by experienced interviewers and require genuine reflection — they can't be gamed with rehearsed answers. This builds the candidate's ability to handle unexpected, high-signal questions.
 - **Round format from Interview Loops**: If the candidate has a known interview format for an upcoming round (from `prep` Format Discovery or Interview Loops), select drill types that match. A presentation round → prioritize structure and timing drills. A panel interview → prioritize panel drill. A system design round → prioritize `practice technical`. The drill should simulate the conditions they'll actually face.
 
 If this data isn't available yet, use role-appropriate questions from `references/role-drills.md`, but note: "These are general practice questions. Once we have your prep data, I'll tailor questions to your actual interviews."
@@ -147,7 +148,7 @@ When the candidate runs `practice technical`, don't just throw all four drills a
    - **If preparing for technical+behavioral mix**: Prioritize Mode-Switching drill.
    - **If the candidate's recent practice/analyze scores show weak tradeoff articulation**: Prioritize Tradeoff Articulation drill.
    - **Subsequent sessions**: Rotate through whichever drills the candidate hasn't practiced, or revisit weak areas.
-4. **Run each drill following the protocol in `references/role-drills.md`** (Technical Communication Drills section). Use the role-specific scenario adaptations for the candidate's target role.
+4. **Run each drill following the protocol in `references/role-drills.md`** (Technical Communication Drills section). Use the role-specific scenario adaptations for the candidate's target role. **For PM candidates doing product sense or analytical drills**, use the frameworks from `prep.md` (Ben Erez via Lenny's Newsletter) as evaluation scaffolds: for product sense, check coverage of all 5 steps (Product Motivation → Segmentation → Problem Identification → Solution Development → V1 Articulation); for analytical thinking, verify NSM definition quality against the 4 criteria (single query, specific timeframe, grows indefinitely, not a ratio/average).
 5. **Debrief after each drill** using the standard Round Output Schema above.
 6. **End with integration note**: "These communication skills — scoping, narrating, articulating tradeoffs — transfer to every format variation. Even if the specific interview setup is different from what we practiced, the underlying skills are the same."
 

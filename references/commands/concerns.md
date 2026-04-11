@@ -21,6 +21,19 @@
    - **The subtle probe**: How to handle "Tell me about a time things didn't work out" when they're really asking about the short tenure
    - **The follow-up challenge**: How to handle "But wouldn't that be a risk in this role too?" after your initial counter
 
+#### Scripting Difficult Moments
+
+Executive coach Alisa Cohn (top 50 coaches in the world per Thinkers50, via Lenny's Podcast) emphasizes that the key to handling difficult interview moments is preparation — not just knowing the strategy but wrapping your mouth around the actual words beforehand. Her framework for difficult conversations:
+1. **Identify what's uncomfortable** — what meaning are you adding on top of the facts?
+2. **Get your mindset right** — you're addressing this to help them understand, not to apologize or defend
+3. **Prepare a script** — practice the exact words, not just the concept
+4. **Prepare for the reaction** — know how you'll respond if the interviewer pushes back or looks skeptical
+
+For the most common difficult interview moments:
+- **Explaining a gap or firing**: Lead with what you learned, not the circumstances. Use Cohn's structure: observable fact + forward momentum. "I left [Company] because [brief honest reason]. What I took from that experience was [specific lesson], which directly shaped how I approach [relevant skill] now."
+- **Addressing a short tenure**: Don't over-explain or get defensive. If the interviewer probes, use Cohn's pause technique — recognize the temperature change, acknowledge it, and redirect: "I understand that looks unusual on paper. Here's what actually happened, and here's what I learned."
+- **When you freeze or get flustered**: As Cohn notes, "the importance is not even what you say, but that you have prepared and are prepared for if someone has that kind of reaction and that you don't have to, yourself, react to it." Preparation neutralizes the freeze response.
+
 ### Output Schema
 
 ```markdown

@@ -18,6 +18,14 @@ Also read `references/differentiation.md` (for earned secret integration into me
 
 **Informational Interviews**: 25-33% acceptance. 15-20 minute bounded asks. Never ask for a job during an informational. Same-day follow-up.
 
+### Job Search Councils
+
+Phyl Terry's "Never Search Alone" methodology (via Lenny's Podcast) introduces a powerful concept the coach should recommend for candidates in active search: **Job Search Councils** — small peer groups of 3-5 active job seekers who meet weekly to provide accountability, mock interview practice, emotional support, and network sharing. As Terry notes: "Everyone, no matter who they are, feels insecure and anxious in the job search. And if you do it alone, it magnifies that." The psychological hack: putting anxious people together and asking them to be open "flips the anxiety and the fear into hope, into motivation, into accountability and confidence." Recommend this for any candidate who appears isolated in their search.
+
+### Candidate Market Fit
+
+Before optimizing outreach tactics, the candidate should validate what Terry calls "candidate market fit" (via Lenny's Podcast) — the degree to which their positioning resonates with the specific segment of the market they are targeting. Her principle: "You need a spear and not a net. We've learned with product market fit that being for everyone doesn't work. We need a narrow, clear focus." If outreach response rates are below 10%, the issue may be positioning (wrong CMF), not messaging. The coach should help the candidate narrow their targeting before refining message templates. Also see `research.md` for how candidate market fit informs company targeting.
+
 **Recruiter Interactions**: Get comp range first. Frame total comp. Respond within 24h.
 
 **Follow-Up Cadence**: Most conversions after 1st-2nd follow-up. 3-4 max for networking. 2-3 days between early touches, 4-7 later. Multi-channel increases visibility.
@@ -235,6 +243,8 @@ Two parts — the message to your connector, and the forwardable blurb:
 ```
 
 **Key principles**: Respond within 24h. Get the comp range before investing time. Frame total comp (base + equity + bonus), not just salary. Don't undersell or oversell — let the positioning do the work.
+
+**What makes recruiter replies stand out**: Executive recruiter Lauren Ipsen, who has placed 80+ senior product leaders (via Lenny's Podcast), shares what differentiates strong candidate responses from forgettable ones: specificity about why this role (not just the company), evidence of research beyond the job posting, and a clear articulation of what makes them different from other candidates at their level. Generic enthusiasm is invisible — recruiters see hundreds of enthusiastic replies. The differentiator is showing you've done homework and can articulate a specific reason this role matches your trajectory.
 
 ### 7. Follow-Up
 

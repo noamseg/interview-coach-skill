@@ -29,8 +29,54 @@
    - **Overuse risk**: Flag stories with Use Count 3+ in the current job search.
    - **Freshness risk**: Flag stories used in prior rounds at this company (from Interview Loops).
    Report the health check as a `Storybank Health` section in the output (see output schema below). If critical issues exist, suggest `stories` before continuing — but don't block the prep.
-8. **Generate likely questions and story mapping.** Use `references/story-mapping-engine.md` for the full portfolio optimization protocol. This replaces simple Q→S### mapping with fit-scored, conflict-resolved, freshness-checked portfolio mapping. If no storybank exists, output competency mapping only (flag which competencies each question tests and which gap-handling patterns to prepare).
+8. **Generate likely questions and story mapping.** Use `references/story-mapping-engine.md` for the full portfolio optimization protocol. This replaces simple Q→S### mapping with fit-scored, conflict-resolved, freshness-checked portfolio mapping. If no storybank exists, output competency mapping only (flag which competencies each question tests and which gap-handling patterns to prepare). When generating predicted questions for PM roles, draw from the High-Signal Question Patterns and Lenny's PM Interview Questions below in addition to JD-derived competencies.
 9. Generate non-generic interviewer questions.
+
+### High-Signal Question Patterns (for Question Generation)
+
+When generating predicted questions (Step 8), draw from these themes identified across 150+ hiring leaders by Lenny Rachitsky (via Lenny's Podcast). These represent the question categories most commonly used by experienced interviewers — they are high-signal because they require genuine reflection and can't be gamed with rehearsed answers:
+
+**Theme 1 — How do they handle hard stuff?**
+- "Talk me through your biggest product flop. What happened and what did you do about it?" (Annie Pearl, Microsoft — "I look for people being brutally honest about how bad it was")
+- "What's the hardest thing you've ever done?" (Geoff Charles, Ramp)
+- "Tell me about a time you were in a challenging or highly ambiguous situation" (Jiaona Zhang, Linktree — "I look for people who look for structure and a way forward through the ambiguity")
+- "Describe a time when you were part of a controversial product decision" (Yuhki Yamashita, Figma — looks for ability to represent both sides fairly)
+- "Tell me about a time when you needed to disagree with your manager" (Ethan Evans, Amazon — tests backbone + disagree-and-commit)
+
+**Theme 2 — How do they think?**
+- "What's something that everyone takes for granted that you think is hogwash?" (Nikhyl Singhal, Meta — "There's no way to answer that question without being genuinely opinionated")
+- "What's an unfair secret you've learned to improve a product team's velocity?" (Noah Weiss, Slack — "I mean not something that you read on Medium")
+- "Tell me about something you did that worked out but not for the reason that you thought it would" (Ayo Omojola, Carbon Health — tests introspection)
+
+**Theme 3 — How do they build, ship, and drive impact?**
+- "Tell me about your most significant professional accomplishment" (Bill Carr, ex-Amazon VP)
+- "Ask them about a product they shipped that is NOT cherry-picked" (Laura Schaffer, Amplitude — "This helps you learn more about their frameworks, not just their outcomes")
+- "What's something that would not exist without your initiative?" (Upasna Gautam, CNN)
+
+**Theme 4 — Who are they as people?**
+- "When I ask people you've worked with about you, what will I hear?" (Andrew Bosworth, Meta CTO)
+- "Fast-forward three years. What's different about you then?" (Ben Williams — tests humility and self-awareness)
+- "Imagine you had a really great day at work. What are you telling your partner about it?" (Tom Conrad, CEO of Zero — reveals intrinsic motivation)
+- "What question should I have asked you?" (Christina Wodtke, Stanford — "The person is an expert in themselves")
+
+Use these patterns to enrich and diversify predicted questions beyond standard behavioral categories. Candidates who prepare for these themes will handle unexpected questions better.
+
+### Lenny's PM Interview Questions (for PM Role Prep)
+
+For PM-specific prep, Lenny Rachitsky maps 10 core PM interview questions to the 10 core PM jobs (via Lenny's Newsletter). When generating predicted questions for PM roles, draw from these:
+
+1. **Impact**: "What's the most important or impactful product you shipped? What made it so important or impactful?"
+2. **Collaboration**: "Tell me about a time you disagreed with an engineer on your team, and how you resolved it."
+3. **Ownership**: "Share a time you shipped a product that failed. Why did it fail and what did you learn?"
+4. **Leadership**: "Tell me about a time when your team didn't gel. What was the issue, and how did you deal with it?"
+5. **Execution**: "Pick a project you're proud of that took 3-9 months. Walk me through it from beginning to end." (Give ~7-10 min)
+6. **Strategy**: "Pick a product you worked on in the past year — talk me through your product strategy for it."
+7. **Customer Insights**: "Tell me about a time you did user research that had a big impact on the product."
+8. **Vision**: "Tell me the vision for one of your recent projects or teams."
+9. **Planning**: "How do you get your team to commit to a deadline?"
+10. **Communication**: Assessed through all other answers — look for clarity, conciseness, convincingness.
+
+**Bonus — Decision Making** (especially for senior PM roles): "What's the biggest one-way-door product decision you've ever had to make?" This reveals decision-making process, how they balance business and user needs, and whether they de-risked the decision.
 
 ### JD Parsing Guide
 
@@ -61,6 +107,58 @@ Different formats require fundamentally different prep, pacing, and scoring weig
 | **Technical + behavioral mix** | Context switching between modes. Must signal both depth and breadth. **Format varies widely** — run Format Discovery Protocol below before coaching. Coach focuses on mode-switching, behavioral integration, and thinking-out-loud skills. | Substance + Structure weighted highest. Scored on communication across modes, not technical output quality. |
 
 If the candidate doesn't know the format, prep for behavioral screen (most common) and flag: "If you can find out the format, I can sharpen this significantly."
+
+### PM Interview Evaluation Framework
+
+For PM roles specifically, hiring manager research compiled by Lenny Rachitsky (via Lenny's Newsletter) identifies 6 core skills assessed in PM interviews: **Communication, Collaboration, Execution, Strategy, Impact, and Product Sense**. When prepping PM candidates, ensure story coverage across all 6 dimensions — gaps in any one can be disqualifying.
+
+Key context for PM candidates: the average PM hiring process evaluates 23 candidates per hire through a 6-stage funnel (recruiter screen → hiring manager screen → full-day interview → panel discussion → references → offer). The project/case component is consistently rated the most informative part of the evaluation by hiring managers. This means differentiation matters enormously — the candidate is competing against roughly 22 others at each stage.
+
+### PM Product Sense Interview Framework
+
+For PM candidates facing product sense interviews (adopted by Meta, Google, Stripe, OpenAI, Block, and many others), interview coach Ben Erez outlines a 5-step framework (via Lenny's Newsletter). The coach should use this to guide prep and evaluate readiness when the identified format includes a product sense component:
+
+1. **Product Motivation** (3-5 min): Describe the product, the deeper human needs it addresses, competitive context, and a concise mission statement that guides all subsequent decisions.
+2. **Segmentation**: Identify all stakeholders (ecosystem analysis), break into segments by behaviors/motivations/context (not demographics), prioritize using reach vs. underserved degree, and develop a specific persona.
+3. **Problem Identification**: Map the user journey ("day in the life," not generic pre/during/post), discover pain points at each stage, distinguish needs (desires) from problems (obstacles), prioritize by severity × frequency.
+4. **Solution Development**: Brainstorm multiple distinct approaches, evaluate using impact vs. effort, define a concrete V1 with go-to-market, assess risks and mitigations.
+5. **V1 Articulation**: Outline a concrete first version, connect back to mission for a complete narrative arc.
+
+**Baseline skill across all steps**: Clear communication — waypointing (take thinking pauses, walk interviewer through response, check in before proceeding), assumption setting (2-4 assumptions to narrow scope), and game plan articulation.
+
+**The "Leverage Check" tactic**: Before diving into solution details, pause to verify the solution addresses the actual user problem. As Erez notes: "Interviewers aren't expecting perfection — they're looking for a thoughtful approach, solid reasoning, and clear communication."
+
+**Top pitfalls to coach against**: thinking out loud without structure, asking the interviewer for direction, shallow segmentation (relying on demographics), confusing needs with problems, and jumping to solutions before fully exploring the problem space.
+
+### PM Analytical Thinking Interview Framework
+
+For PM candidates facing analytical/metrics interviews, Ben Erez outlines a parallel 5-step framework (via Lenny's Newsletter):
+
+1. **Assumptions and Game Plan** (~1 min): Make 3-4 assumptions to narrow scope (geographic focus, platform, product maturity). Share your game plan for the 35 working minutes.
+2. **Product Rationale** (~2 min thinking + ~2 min presenting): Product description, maturity level, business model, competitive landscape, and a mission statement connecting product purpose to company mission.
+3. **Metric Framework** (largest time allocation, ~15 min): Map ecosystem players and their value propositions ("What's in it for me?"). Define 3-5 primary metrics per player. Define a **North Star Metric (NSM)** with guardrail metrics.
+4. **Goal-Setting** (~5 min): Shift from 50,000-foot view to ground level. Pick one ecosystem player with highest leverage, map user journey backward from NSM event, score goals on Impact on NSM + Ability to Influence, and make a clear decision (no hedging).
+5. **Tradeoff Evaluation** (~10 min): Identify common benefit of both options, outline pros/cons, pinpoint decision crux, state decision clearly, connect to strategy/mission/maturity, and specify what would change your mind.
+
+**NSM definition criteria** (coach should verify candidate's metric selection against these): A valid North Star Metric must be implementable as a single data query, include a specific timeframe (daily/weekly/monthly), grow indefinitely as the product succeeds, and NOT be a ratio or average (these create false positives — "if your NSM increases while your ecosystem actually shrinks, you're getting a false positive"). Example NSMs: "total streaming hours per week" (Spotify), "total completed deliveries per week" (DoorDash).
+
+**Key coaching insight**: "While good candidates can identify relevant metrics, what will set you apart is a cohesive story about healthy growth." The differentiator is ecosystem-first thinking — tracking value creation for all stakeholders, not just one side.
+
+### First-Round Interview Tactics
+
+Interview coach Erika Gemzer (93% placement rate across 200+ job seekers at Google, Meta, Uber, Airbnb, Stripe, via Lenny's Newsletter) provides a first-round-specific framework — the **Minimum Viable Interview Prep (MVIP)** — that the coach should apply when prepping candidates for phone screens and first rounds:
+
+1. **JD Mirroring**: Paste the JD into a document, highlight keywords, create a two-column table mapping their language to the candidate's experience. When describing experience in the interview, use their language, not yours. This simple technique dramatically increases perceived fit.
+
+2. **Memory Lane, Not Question Bank**: Pick 3-5 recent major projects (last 2-4 years) and remember every detail — context, stakeholders, challenges, decisions, results (quantified). Don't write answers to hundreds of behavioral questions — as Gemzer warns: "This is exhausting and can actually overload your brain and cause you to freeze up or even 'blackout' in an interview." Deep knowledge of 3-5 projects beats shallow prep for 100 questions.
+
+3. **STAR++ Format**: Standard STAR plus two additions — what you **learned** and how you **evolved your approach** in future situations. The "++" is what separates a good answer from a great one.
+
+4. **Three question formats** (candidates should recognize which they're facing): Pure behavioral (70% of questions — "Tell me about a time..."), Theoretical (20% — "How would you approach..."), Situational (10% — "Imagine you're in this scenario..."). Each requires a different response structure.
+
+5. **Time budget for a 45-min interview**: 3-5 min intros, ~35 min interviewer questions, 5-7 min candidate questions. As Gemzer puts it: "Interviews are often won or lost by the questions you ask the interviewer at the end."
+
+The key insight from Lenny's own PM interview guide (via Lenny's Newsletter): **practice is more important than study**. Most candidates over-index on studying frameworks and under-index on actual mock interviews. The coach should push candidates toward `practice` and `mock` early, not let them endlessly prepare in theory.
 
 ### Format Discovery Protocol (System Design / Case Study and Technical + Behavioral Mix)
 

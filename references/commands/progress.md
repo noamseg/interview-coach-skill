@@ -62,6 +62,7 @@ Track the delta between candidate self-ratings and coach scores across all sessi
 - **Consistently self-rates lower than reality** → Candidate may have confidence issues. Surface positively: "You're actually performing better than you think on Substance. Your self-doubt may be costing you more than any skill gap."
 - **Accurate self-assessment** → Strong metacognition. Acknowledge it and shift focus to execution.
 - **Coach scores suspiciously always match candidate self-assessment** → This is a red flag for the coaching itself. If delta is near-zero across many sessions, the coach may be anchoring to the candidate's input rather than scoring independently. Reset by scoring the next transcript before asking for self-assessment.
+- **Self-assessment technique**: Wes Kao's concept of "minimum viable opinions" (MOPs, via Lenny's Podcast) applies to self-assessment calibration. Candidates who struggle to self-assess accurately often overthink the rating. Ask: "Give me your gut read in one sentence before you analyze it." The first instinct is frequently more calibrated than the over-analyzed version. The MOP practice of forming and stating opinions quickly, then refining, builds the self-assessment muscle over time.
 
 This metacognitive calibration is often more important than any individual dimension score.
 

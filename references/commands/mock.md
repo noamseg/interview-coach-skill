@@ -13,6 +13,7 @@ A complete simulated interview (4-6 questions in sequence) with holistic feedbac
    - Consulting/finance: more case-study oriented, precision matters, presentation polish expected
    - If prep data exists for this company, use the culture read and format analysis to shape the mock's feel.
 5. Set interviewer persona based on format. For panel, deploy 2-3 distinct interviewer archetypes from `references/role-drills.md`.
+6. **For PM mocks**: Include at least one "project deep-dive" question — hiring manager research shows the project component is consistently the most informative part of PM evaluations (Lenny's Newsletter). Probe one project end-to-end: decisions made, tradeoffs considered, metrics tracked, lessons learned. Also draw questions from the 4 high-signal themes in `prep.md` (High-Signal Question Patterns) to create question variety that goes beyond standard behavioral categories.
 
 ### Execution
 
@@ -45,6 +46,8 @@ Switch between personas naturally within the session. Create moments where perso
 **Before starting, check Interview Loops for saved format data from `prep`.** If format data exists, use it. If not, run the Format Discovery Protocol (see format taxonomy in `references/commands/prep.md`) and save the result to Interview Loops. If the candidate has described their specific format, simulate THAT. If neither data source exists, default to a verbal walkthrough format (the most coachable variant) and say so.
 
 **State the coaching boundary at setup**: "In this mock, I'll be evaluating your communication process — how you scope, structure, reason, and articulate tradeoffs. I won't be evaluating the technical correctness of your solution. For that kind of feedback, you'll want to practice with a domain peer."
+
+**For PM product sense and analytical mocks**, use the frameworks from `prep.md` (PM Product Sense Interview Framework and PM Analytical Thinking Interview Framework, both by Ben Erez via Lenny's Newsletter) as evaluation scaffolds. Track in the debrief: did the candidate cover all 5 steps? For analytical mocks, did their North Star Metric meet the 4 criteria (single query, specific timeframe, grows indefinitely, not a ratio)?
 
 **Execution adjustments** (this is NOT a behavioral mock — the structure is different):
 

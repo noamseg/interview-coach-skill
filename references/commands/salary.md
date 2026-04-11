@@ -17,8 +17,9 @@
 - Deflecting ("I'd like to learn more about the role first") works best early but becomes less tenable as the process progresses.
 - Over-deflecting can signal difficulty, evasiveness, or game-playing.
 - Disclosing a researched RANGE (not a point number) is often the pragmatic middle ground.
-- Key principle: let the company share their range first when possible. The party that names a number first is at a disadvantage.
+- Key principle: let the company share their range first when possible. The party that names a number first is at a disadvantage. See Dragova's specific deflection scripts in Step 4 below.
 - Caveat: in jurisdictions with salary transparency laws, the company must disclose the range — leverage this.
+- **Mine for intel during interviews**: Dragova advises treating every conversation with the company as an intelligence-gathering opportunity. Strategic questions like "What's the biggest priority for the team right now?", "Why is this role open?", and "What's the biggest challenge for someone stepping into this role?" provide negotiation ammunition later — and make the candidate appear engaged rather than evasive. What recruiters say when pushing for a number: "If you give me your number, I will make it happen for you." What they mean: "I'll get you something lower, but kinda close to what you asked for." Stand firm.
 
 **Salary History Bans**: As of 2024, 21+ US states and 20+ cities prohibit employers from asking salary history. In banned jurisdictions, they may still ask salary expectations. In non-banned jurisdictions, they can ask both. The candidate needs to know their jurisdiction's rules. The coach does NOT provide legal advice — points to lookup resources and coaches the response strategy.
 
@@ -56,6 +57,8 @@
 7. Getting flustered and saying "whatever's fair" or "I'm flexible" (signals low confidence)
 8. Revealing competing offers too early (before leverage is built)
 9. Using a range based on their current location when the role is in a different market
+10. Not understanding that FAANG comp is formulaic — at companies with 5,000+ employees, a compensation committee sets the number, not the recruiter. Misapplying aggressive negotiation tactics to band-locked components wastes leverage (Niya Dragova, via Lenny's Newsletter)
+11. Quoting online salary databases as justification — as Dragova warns: "Nothing boils a recruiter's blood more than 'It says X on Glassdoor.' Compensation is an exact science." Use data for internal calibration, not as a negotiation argument
 
 ### Comp Research Guidance Principles
 
@@ -65,6 +68,34 @@ The coach does NOT look up salary data. The coach guides the candidate through r
 3. Help construct a defensible range: bottom = minimum acceptable, target = market rate at their level, stretch = what they'd get with strong positioning or competing offers
 4. Cross-reference multiple sources (no single source is reliable — triangulation)
 5. Honestly assess confidence in the range: "This range is based on [sources]. If the recruiter's range is significantly different, it means [interpretation]."
+
+### PM Comp Reference Data
+
+For PM candidates specifically, the following benchmarks from 2025 Pave/Levels.fyi data (compiled by Lenny Rachitsky via Lenny's Newsletter, based on actual HRIS data from 7,500+ companies and 23,000+ PMs) provide useful calibration when helping candidates construct ranges. These are reference points — the coach should still direct candidates to verify against current data for their specific target:
+
+**U.S. Total Compensation by Level:**
+- Entry PM (P1-P2): $139K median
+- Senior IC (P4-P6): ~$1M at 90th percentile; $350K base at 90th percentile
+- New Manager (M3): $265K median — note: new managers make less than senior ICs ($265K vs. $425K median)
+- VP of Product (E8): $707K median; $2M+ at 90th percentile
+- CPO (E9): $1.425M median; ~$5M at 90th percentile
+
+**Public vs. Private Splits:**
+- PM base salaries are 15-20% lower at private companies vs. public
+- Over 25% lower for product execs (E7-E9)
+- However, 90th-percentile ICs at private companies earn ~$600K/year in equity (vs. $250K at public) — the upside bet
+
+**Magnificent 7 Starting Base Salaries (non-APM PM):**
+Netflix: $343K | Google: $199K | Meta: $167K | Apple: $158K | Nvidia: $158K | Microsoft: $156K | Tesla: $136K
+
+**Geographic Differentials:**
+- Tier 1 U.S. cities: 10% premium over U.S. average; 40% more equity than Tier 2/3
+- Moving Tier 3 → Tier 1: ~20% salary increase
+- U.K. PMs: ~65% of U.S. average | Canada: ~60% | Average European PM: <50%
+
+**Key coaching insight**: "The biggest salary jump happens going from L4 to L5 and M3 to M4. And then from VP to CPO." For candidates weighing the IC vs. management track: the management premium only kicks in at Director+. Below that, senior ICs frequently out-earn managers.
+
+**Cash vs. Equity Priority**: In a survey of 5,000+ tech professionals (via Lenny's Newsletter), 75% selected salary over equity as their top priority. Only 13% prioritized equity. As one respondent put it: "Equity doesn't pay rent." Men are 2.3x as likely to prefer equity vs. women. Each seniority increase doubles the likelihood of preferring equity. The coach should surface this when helping candidates evaluate offers: most people should optimize for cash first, treat equity as upside.
 
 ### Priority Check
 
@@ -127,9 +158,10 @@ Provide scripts for the candidate's current stage AND the next likely stage. Eve
 - If form requires a single number: use the target (middle of range).
 
 **Recruiter screen ("What are your salary expectations?")**:
-- Deflection option: "I'd love to learn more about the role and total compensation structure first. Could you share the range for this position?"
+- Deflection option: "I'd love to learn more about the role and total compensation structure first. Could you share the range for this position?" Niya Dragova's variant (via Lenny's Newsletter): "Can you tell me the salary band for this level? Happy to let you know if it's within my range, and we can discuss specific numbers later when I've met the team."
 - Range option (when deflection fails or feels forced): "Based on my research and experience, I'm targeting [range] for total compensation. I'm open to discussing the full package."
 - When they insist on current comp: see next stage.
+- **What not to do**: Don't fold under pressure. As Dragova warns, what recruiters say — "If you give me your number, I will make it happen for you" — is not the partnership it sounds like. They'll anchor close to (but below) whatever number the candidate provides.
 
 **"What's your current compensation?"**:
 - In salary history ban jurisdiction: "I'm in [jurisdiction/state] where salary history isn't part of the process, but I'm happy to share my target range for this role: [range]."
@@ -159,7 +191,7 @@ When the candidate is evaluating a startup offer with equity, walk them through 
 
 2. **The "expected value" reality check**: Ask the candidate to estimate, honestly, the probability they believe this company will have a liquidity event in the next 5-7 years. Most startups fail — the base rate for venture-backed startups reaching IPO or meaningful acquisition is ~10-20%. Multiply the equity grant's paper value by that probability. If the expected value is less than the cash comp difference vs. a public company offer, the equity is not compensating for the risk — it's a bet they're making because they believe in the company.
 
-3. **The cash-floor test**: "Can you live on the base salary alone, as if the equity is worth $0? If not, you're depending on the equity for financial stability — that's a high-risk position." The base should cover the candidate's needs. Equity is upside, not income.
+3. **The cash-floor test**: "Can you live on the base salary alone, as if the equity is worth $0? If not, you're depending on the equity for financial stability — that's a high-risk position." The base should cover the candidate's needs. Equity is upside, not income. This aligns with what Lenny Rachitsky calls the "cash is king" principle (via Lenny's Newsletter): in a survey of 5,000+ tech professionals, the overwhelming sentiment is that startup equity should never be treated as guaranteed compensation. As one veteran senior director of product put it: "Never had equity turn into anything in the past but hopes and dreams."
 
 4. **Dilution modeling**: Each funding round dilutes existing shareholders. Ask: "If the company raises 2 more rounds before an event, your shares could be diluted by 30-50%. Does the potential growth outweigh the dilution?" Don't calculate specific numbers — guide the candidate to ask the company about expected dilution.
 
