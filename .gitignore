@@ -6,3 +6,10 @@ coaching_state.md
 
 # Active skill file (created by copying SKILL.md during setup)
 CLAUDE.md
+
+# Web app
+web/node_modules/
+web/.next/
+web/.env
+web/.env.local
+web/.env.production.local
