@@ -406,7 +406,8 @@ Execute commands immediately when detected. Before executing, **read the referen
 When executing a command, read the required reference files first:
 
 - **All commands**: Read `references/commands/[command].md` for that command's workflow, and `references/cross-cutting.md` for shared modules (differentiation, gap-handling, signal-reading, psychological readiness, cultural awareness, cross-command dependencies).
-- **`analyze`**: Also read `references/transcript-processing.md`, `references/transcript-formats.md`, `references/rubrics-detailed.md`, `references/examples.md`, `references/calibration-engine.md`, and `references/differentiation.md` (when Differentiation is the bottleneck).
+- **`analyze`**: Also read `references/transcript-processing.md`, `references/transcript-formats.md`, `references/rubrics-detailed.md`, `references/examples.md`, `references/calibration-engine.md`, and `references/differentiation.md` (when Differentiation is the bottleneck). Also read `references/negotiation-protocol.md` Section "Comp Call Transcript Analysis" when the transcript contains 3+ comp discussion markers (see detection logic in `references/commands/analyze.md`).
+- **`negotiate`**: Also read `references/negotiation-protocol.md` for the cross-cutting Warwick framework (per-phase GAINS detail, core principles beyond GAINS, Zombie Number, multi-round coaching, non-standard terms catalog, comp call scoring dimensions, and competence guardrails). If the candidate brings a comp call transcript, also read `references/commands/analyze.md` for the Comp Call Detection step.
 - **`practice`**, **`mock`**: Also read `references/role-drills.md`. For `practice role` and other role-specific drills, also read `references/calibration-engine.md` Section 5 (role-drill score mapping). For `mock`, also read `references/calibration-engine.md` (mock produces scores and benefits from calibration guidance).
 - **`prep`**: Also read `references/story-mapping-engine.md` when storybank exists.
 - **`linkedin`**: Also read `references/differentiation.md` (for earned secret integration into profile), `references/storybank-guide.md` (for storybank data to feed into About/Experience rewrites).
@@ -415,7 +416,7 @@ When executing a command, read the required reference files first:
 - **`outreach`**: Also read `references/differentiation.md` (for earned secret integration into message hooks), `references/storybank-guide.md` (for story selection to build credibility in messages).
 - **`decode`**: Also read `references/cross-cutting.md` Role-Fit Assessment Module (for fit assessment adaptation from JD-only input).
 - **`present`**: Also read `references/storybank-guide.md` (for supporting stories to incorporate into presentations), `references/commands/prep.md` Section "Interview Format Taxonomy" (for format context when presentation is a known interview round format).
-- **`salary`**: Also read `references/commands/negotiate.md` (for handoff awareness and consistency — salary covers pre-offer, negotiate covers post-offer).
+- **`salary`**: Also read `references/commands/negotiate.md` (for handoff awareness and consistency — salary covers pre-offer, negotiate covers post-offer). Also read `references/negotiation-protocol.md` Sections "Core Principles" and "The Zombie Number" when candidate reaches Stage 4 (pre-offer positioning) — the candidate needs negotiation mindset before the offer arrives.
 - **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
 - **`progress`**: Also read `references/calibration-engine.md`.
 - **All commands at Directness Level 5**: Also read `references/challenge-protocol.md`.
@@ -511,6 +512,7 @@ Use first match:
 16. Practice intent -> `practice`
 17. Progress/pattern intent -> `progress`
 18. "I got an offer" / offer details present -> `negotiate`
+18b. Comp call transcript present (3+ comp markers detected, see `references/commands/analyze.md` Comp Call Detection) -> `negotiate` + `analyze` (comp-call scoring mode against `references/negotiation-protocol.md`, not the standard interview rubric)
 19. "I'm done" / "accepted" / "wrapping up" -> `reflect`
 20. Otherwise -> ask whether to run `kickoff` or `help`
 
@@ -532,6 +534,7 @@ When a candidate's request implies a sequence of commands, state the plan and ex
 | "I want to optimize my application materials" | `pitch` (if no Positioning Statement) → `resume` → `linkedin` (if not already done) |
 | "I want to start networking" / "How do I reach out to people?" | `pitch` (if no Positioning Statement) → `linkedin` (Quick Audit, if not already done) → `outreach` |
 | "I got rejected from [company]" | `feedback` Type B → `progress` targeting insights (if 3+ outcomes) |
+| "I negotiated but they pushed back" / "follow-up call scheduled" | `negotiate` (multi-round mode — loads `references/negotiation-protocol.md` Multi-Round Negotiation section) |
 
 **Behavior**: When you detect a multi-step intent, briefly state the plan ("I'll walk you through research, then prep, then concerns for [company]"), execute the first step, and at each transition point offer the next step naturally: "That covers the research. Ready to move into full prep?" If the candidate wants to skip or redirect, respect that. When a multi-step sequence is active and Rule 7's state-aware recommendation for the current command diverges from the planned next step, follow the multi-step plan but note the state-aware alternative: "Next in our sequence is `prep`. (Side note: your storybank is empty — we should address that after we finish this prep cycle.)"
 

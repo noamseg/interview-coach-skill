@@ -136,7 +136,7 @@ For both options, the coach will ask for your resume, target role, and timeline 
 
 | Command | Purpose | Typical Output |
 |---|---|---|
-| `salary` | Early/mid-process comp coaching (3 depth levels) | Comp research guidance, range construction, stage-specific scripts, total comp education, salary history handling |
+| `salary` | Early/mid-process comp coaching (3 depth levels) | Comp research guidance, range construction, stage-specific scripts, total comp education, salary history handling. Hands off to `negotiate` at Stage 5 (offer received) with Warwick negotiation principles pre-loaded. |
 | `hype` | Pre-interview confidence + psychological warmup. At Level 5: includes a pre-mortem with failure prevention | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
 
 ### Practice and Simulation
@@ -156,7 +156,7 @@ For both options, the coach will ask for your resume, target role, and timeline 
 | `progress` | Trends, self-calibration, outcome tracking, scoring calibration. At Level 5: includes a Hard Truth section | Self-assessment delta + outcome correlation + scoring drift detection + root cause tracking + coaching meta-check |
 | `feedback` | Capture recruiter feedback, outcomes, corrections, context, or coaching meta-feedback. At Level 5: rejections include structured leverage extraction | State updates + next step suggestion |
 | `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
-| `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
+| `negotiate` | Post-offer negotiation coaching | Offer analysis, equity evaluation, multi-round negotiation strategy, non-standard terms (4-day weeks, IP carve-outs, performance triggers), comp call transcript scoring, escalation playbook |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
 | `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
 
@@ -345,6 +345,20 @@ Then provide offer details, competing offers, and ideal outcome. Get:
 - Negotiation strategy with priority ordering
 - Exact scripts for the conversation
 - Fallback language for pushback
+
+### 12) Multi-round comp negotiation
+
+```text
+1. Offer received                       → negotiate (initial strategy + scripts)
+2. First call happens, counterpart
+   pushes back → paste transcript       → analyze (comp-call scoring mode,
+                                          not interview rubric)
+3. Scorecard reveals gaps               → negotiate (multi-round coaching
+                                          for follow-up call)
+4. Repeat until closed
+```
+
+The Warwick framework (see `references/negotiation-protocol.md`) scores comp calls on 5 negotiation-specific dimensions (Anchoring Discipline, Information Gathering, WE Framing, Silence & Pacing, Creative Solutions) rather than the standard interview rubric, and provides multi-round coaching for reframing after pushback, non-standard term pivots (Cap Conversion), and escalation ladders.
 
 ---
 

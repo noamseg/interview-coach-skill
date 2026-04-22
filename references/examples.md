@@ -904,3 +904,80 @@ You haven't researched yet, so do these tonight:
 ```
 
 **Why this example matters**: Demonstrates the Quick Script depth — what a candidate needs when the recruiter screen is tomorrow and they haven't prepared. Shows the deflection-first strategy with a fallback range, the critical "don't disclose current comp" coaching, and the research homework assignment. The coach doesn't fabricate salary data — it guides the candidate to research sources and helps construct a defensible range. Also handles the remote/location comp complexity that trips up many candidates.
+
+---
+
+## Example: Negotiation Performance Scorecard (Post-Offer Comp Call)
+
+**Context:** Senior product leader candidate received a Chief Product Officer offer at an early-stage SaaS company (post-Series A, approximately $4-6M ARR range). Offer: $245K base + $25K bonus + 0.05% equity. Candidate negotiated across two calls over 3 days.
+
+**Call 1 transcript scored:**
+
+### Negotiation Performance Scorecard — Call 1
+
+| Dimension | Score | Evidence |
+|---|---|---|
+| Anchoring Discipline | 5 | Never named a number. When asked "do you have something in mind?" responded: "I don't want to throw a number out. What does the right package look like?" Counterpart proposed $270K+$15K. |
+| Information Gathering | 3 | Asked about business exposure and customer access (good intel). Didn't probe equity constraints before accepting the bootstrap frame. Missed opportunity to ask "what's the range on equity?" |
+| WE Framing | 2 | Pitched professional development as "I need this for my wellbeing." Mentioned personal tools and learning projects outside work. Counterpart latched onto "outside commitments on company salary." |
+| Silence & Pacing | 3 | Used silence effectively after base ask (counterpart proposed higher). Filled silence with justification during non-standard term ask (7+ examples given, each creating pushback surface). |
+| Creative Solutions | 2 | Focused entirely on contract clause for schedule structure. Didn't explore: performance triggers, sign-on bonus, additional leave, title review at checkpoints, advisory role. |
+
+**Overall: 3.0 / 5**
+
+**Strongest dimension:** Anchoring Discipline — textbook execution. Never named first, counterpart moved $20-40K above target.
+
+**Priority improvement:** WE Framing — every ask was ME-framed ("I need," "for my development," "for my wellbeing"). Reframe: "Here's what this looks like for [company] — a leader who stays ahead of the curve every week, bringing back frameworks the team uses daily."
+
+### Negotiation Performance Scorecard — Call 2 (follow-up after counterpart consulted decision-maker)
+
+| Dimension | Score | Evidence |
+|---|---|---|
+| Anchoring Discipline | 4 | Maintained position on equity without naming a new number first. Used "what's the chance we could look at this?" (soft ask). Lost half-point: didn't deploy prepared ROI framing when counterpart pushed back. |
+| Information Gathering | 4 | Asked counterpart to describe the professional development arrangement: "Can you walk me through what that looks like practically from your side?" Got detailed description of expectations. Asked twice for specifics on the counterpart's hard-no scope. |
+| WE Framing | 4 | Reframed from "outside commitments" to "professional development." Used "I'm aligned with what you suggested." Referenced counterpart's own words from previous call. Mirrored back their description before asking for documentation. |
+| Silence & Pacing | 3 | Bought 5 days between calls (strong). On the call, listened well during counterpart's multi-minute position statement. But filled pause after equity deferral instead of holding silence. |
+| Creative Solutions | 3 | Pivoted from contract clause to offer letter reference (lighter mechanism). Introduced professional development budget as a separate formalized commitment. But didn't explore performance-based equity triggers when equity was deferred. |
+
+**Overall: 3.6 / 5 (+0.6 from Call 1)**
+
+**Strongest dimension:** Information Gathering — "walk me through what that looks like" play worked perfectly. Counterpart described the arrangement in their own words, candidate mirrored back, asked for documentation.
+
+**Priority improvement:** Creative Solutions — when equity was deferred to the executive team, the candidate accepted the deferral without exploring alternatives (performance triggers, milestone-based top-ups, equity review at scope expansion checkpoints). These were available but not deployed.
+
+### Cross-Call Pattern Analysis
+
+| Dimension | Call 1 | Call 2 | Trend | Coaching note |
+|---|---|---|---|---|
+| Anchoring | 5 | 4 | Stable-high | Core strength. Now reflex across multiple conversations. |
+| Info Gathering | 3 | 4 | Improving | "Walk me through" play is the breakthrough. Standardize. |
+| WE Framing | 2 | 4 | Strong improvement | The reframe from personal-benefit language to "professional development" + referencing counterpart's own words was the key fix. |
+| Silence & Pacing | 3 | 3 | Flat | Silence after asks remains the growth edge. Candidate fills pauses with justification under pressure. Needs deliberate practice. |
+| Creative Solutions | 2 | 3 | Improving | Pivoted from contract to offer letter (lighter mechanism). But still defaulting to the single-lever approach when multiple creative options exist. |
+
+**Primary coaching adjustment:** Build a "creative comp menu" the candidate can scan during calls. When one lever is blocked, immediately surface the next: equity blocked → performance triggers → sign-on → additional leave → title review. The menu prevents the common failure of accepting a single "no" as final when three other doors are open.
+
+### State Writes
+
+After scoring, write to `coaching_state.md`:
+
+**Comp Strategy section update:**
+```markdown
+## Comp Strategy
+- Date: [date]
+- Depth: Deep Strategy (multi-round)
+- Target range: $285-300K base, 0.18-0.20% equity
+- Range basis: Previous role comp and published benchmarks for role tier
+- Research completeness: thorough
+- Stage coached: Post-offer (multi-round, 2 calls)
+- Scripts provided: opener, equity ask, professional development formalization, trust handler
+- Key principle: When the primary ask is declined, explore parallel levers (equity tier, development budget, leave). Let the counterpart describe their constraints, then reframe the request as addressing their stated concern.
+- Negotiation Performance: Call 1 = 3.0/5, Call 2 = 3.6/5 (improvement driven by WE framing fix + info gathering via "walk me through")
+```
+
+**Coaching Notes addition:**
+```markdown
+- [date]: Comp negotiation across 2 calls. Anchoring discipline is now reflex (stable 4-5). WE framing improved dramatically between calls (2→4) after coaching on "professional development" reframe. Silence under pressure remains the primary growth edge. Creative solutions menu needed for future negotiations.
+```
+
+**Why this example matters**: Demonstrates how `analyze` in comp-call mode scores two successive negotiation conversations and extracts a cross-call pattern. Shows the WE-framing fix in action (the candidate's Call 1 ME-framed asks became Call 2 WE-framed asks after coaching). Shows how dimension-level scoring surfaces the exact growth edge (Silence & Pacing remained flat while three other dimensions improved). Demonstrates the state-write pattern that feeds future sessions.

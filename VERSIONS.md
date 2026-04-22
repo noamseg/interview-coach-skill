@@ -123,6 +123,32 @@ Three new commands for the artifacts candidates build before they ever interview
 
 ---
 
+## v[N] — Negotiation Protocol (Warwick Framework) — Proposed
+
+**Status:** Proposed (PR pending)
+
+*PR author's note: please slot this entry where it fits your roadmap — proposed as v3.1 or as a v4 prerequisite. It extends (rather than replaces) the condensed GAINS summary added to `negotiate.md` in the Lenny integrations pass.*
+
+### What's New
+
+- **`references/negotiation-protocol.md`** (NEW) — Cross-cutting negotiation framework based on Jacob Warwick's executive negotiation methodology (Lenny's Podcast + Execs and the City Substack). Loaded by `negotiate`, `salary` (Stage 4+), and `analyze` (comp call transcripts). Includes: per-phase GAINS detail (extends the existing summary in `negotiate.md`), 10 core principles with scripts (beyond GAINS), Zombie Number detection, multi-round negotiation guidance, non-standard terms catalog with Golden Cage test and Cap Conversion table, comp call transcript scoring (5 negotiation-specific dimensions), and competence guardrails.
+
+- **`negotiate` extensions** — Five new sections: Multi-Round Negotiation (follow-up call coaching after pushback), Non-Standard Terms (4-day weeks, IP carve-outs, performance triggers, sign-on bonuses, additional leave, title checkpoints), Escalation Playbook (delay card through walk-away), Post-Close Legal Review (register shift for paperwork phase), Comp Call Transcript Analysis (integration with `analyze` for scoring).
+
+- **`analyze` comp call detection** — Auto-detects comp call transcripts (3+ comp markers) and routes to negotiation-specific scoring dimensions instead of the standard interview rubric.
+
+- **`salary` handoff enhancement** — Pre-loads Warwick negotiation principles at Stage 4 so candidates enter the offer stage with the right mindset.
+
+- **Worked example** — Multi-round comp negotiation transcript scored across 2 calls with cross-call pattern analysis.
+
+### Why
+
+The skill had comprehensive interview prep and analysis but limited depth on the most consequential stage: compensation negotiation. The GAINS summary added in the Lenny integrations pass covered the headline moves; this version adds the tactical depth — per-phase GAINS detail, core principles beyond GAINS, multi-round coaching, non-standard term pivots, and comp call scoring dimensions. Cross-references to the existing GAINS summary ensure no duplication.
+
+**Key files**: `references/negotiation-protocol.md` (new), `references/commands/negotiate.md` (5 new sections appended), `references/commands/analyze.md` (Comp Call Detection gate), `references/examples.md` (negotiation scorecard example), `SKILL.md` (Mode Detection 18b, File Routing, Multi-Step Intent), `README.md` (command table + workflow 12)
+
+---
+
 ## v4: Interaction Model (planned)
 
 **Thesis**: Now that the coaching brain is strong and comprehensive, change *how* candidates interact with it.

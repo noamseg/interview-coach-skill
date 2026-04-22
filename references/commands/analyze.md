@@ -11,6 +11,40 @@ If a candidate drops a transcript without having run `kickoff` first, don't refu
 3. **Proceed with analysis.** Use inferred or stated seniority band for calibration. Skip story-mapping sections (no storybank exists). Skip cross-referencing with prep data.
 4. **After the analysis, suggest kickoff**: "I've scored this transcript, but I'm working without your full context — no storybank, no coaching history, no target company profile. If you want to get the most from this system, run `kickoff` to set up your coaching profile. Your analysis scores will carry forward."
 
+### Comp Call Detection
+
+Before running the standard transcript analysis below, scan for compensation discussion markers. Comp calls are structurally different from interviews and should not be scored on the interview rubric.
+
+#### Detection Logic
+
+Count occurrences of these markers in the transcript (case-insensitive):
+
+`salary`, `base`, `equity`, `bonus`, `offer`, `package`, `counter`, `negotiate`, `compensation`, `vesting`, `sign-on`, `stock`, `RSU`, `pro-rate`, `band`, `range`, `budget`
+
+**If 3+ distinct markers found:** route to negotiation-specific analysis.
+- Load `references/negotiation-protocol.md`
+- Score against the 5 Negotiation Performance Dimensions (not the standard 5-dimension interview rubric)
+- Output the Negotiation Performance Scorecard
+- Write results to `Comp Strategy` section of `coaching_state.md` (not Score History)
+
+**If fewer than 3 markers:** proceed with the standard Step Sequence below.
+
+#### Why This Matters
+
+Comp calls are structurally different from interviews:
+- Success is measured by package outcome, not answer quality
+- The "interviewer" is a counterpart, not an evaluator
+- Silence, timing, and information control matter more than substance/structure
+- The standard rubric (Substance, Structure, Relevance, Credibility, Differentiation) doesn't map to negotiation performance
+
+Scoring a comp call on the interview rubric would give meaningless results. The negotiation dimensions (Anchoring Discipline, Information Gathering, WE Framing, Silence & Pacing, Creative Solutions) measure what actually matters.
+
+#### Edge Cases
+
+- **Mixed transcript (interview + comp discussion in same call):** If the transcript contains both interview questions AND comp markers, score the interview portion with the standard rubric and the comp portion with negotiation dimensions. Note both in the output.
+- **Recruiter screen with salary question:** If the transcript is a recruiter screen where salary came up briefly (1-2 markers, not 3+), score as a standard interview but add a note: "Salary handling: [assessment of how the candidate handled the comp question]."
+- **Post-offer call that's purely admin (start date, paperwork):** Low marker count, no negotiation. Standard analysis won't apply either. Flag as "administrative call — no analysis applicable."
+
 ### Step Sequence
 
 1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.
