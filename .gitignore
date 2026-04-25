@@ -6,3 +6,6 @@ coaching_state.md
 
 # Active skill file (created by copying SKILL.md during setup)
 CLAUDE.md
+
+# Per-user Claude Code permission allowlist (auto-generated as users approve tools)
+.claude/settings.local.json
