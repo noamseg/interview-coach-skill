@@ -1,8 +1,13 @@
-# Interview Coach
+# Interview & Opportunity Coach
 
-A Claude Code-based interview coach that covers the full job search lifecycle — from JD analysis and resume optimization through mock interviews to post-offer negotiation. 23 commands across application materials, interview prep, practice, analysis, and comp coaching. It scores your answers across five dimensions, diagnoses root causes behind weak spots, builds a storybank you can retrieve under pressure, and adapts its coaching to your specific patterns. Not a generic question bank. An adaptive system that gets sharper the more you use it.
+A Claude Code-based career coach that operates in two integrated tracks:
 
-Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
+- **Interview Track** — the full visible-job-search lifecycle, from JD analysis and resume optimization through mock interviews to post-offer negotiation. Scores your answers across five dimensions, diagnoses root causes, builds a storybank you can retrieve under pressure, and adapts to your patterns.
+- **Opportunity Track** *(v4)* — the upstream system: discover what you actually want, build a target ecosystem, map your real network, develop a personal brand, ship proof-of-work, run events deliberately, build relationships that compound, and convert inbound conversations into aligned opportunities. Built on the premise that the strongest careers are made by being *known for the right things by the right people* — not by sending resumes to strangers.
+
+35 commands across both tracks, with a multi-week `bootcamp` orchestrator that runs the full lifecycle end-to-end. Not a generic question bank. Not a generic networking course. An adaptive system that gets sharper the more you use it.
+
+Say `kickoff`, share your resume, and you're being coached in under 2 minutes. If you want the long game, say `bootcamp`.
 
 ---
 
@@ -51,6 +56,30 @@ Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 **Differentiation** — Earned secrets and spiky POVs are a first-class dimension, not an afterthought. The system pushes you past "competent" toward "memorable."
 
 **Self-awareness** — Tracks the gap between your self-assessment and actual coach scores. Knows if you're an over-rater or under-rater, and adjusts coaching accordingly.
+
+---
+
+## What the Opportunity Track Adds (v4)
+
+Most career coaching optimizes the application — better resume, better cover letter, better keyword match. The Opportunity Track is built on a different premise: the strongest careers are not built that way. They are built so that opportunity arrives because the right people know the right things about you.
+
+The aspirational user has never sent a resume to a stranger. Every meaningful opportunity in their career came through a deliberately built network and a deliberately cultivated brand. The Opportunity Track teaches that as a system — not as luck, not as charisma — across five stages.
+
+**Discover** — `compass` forces a definition of what you actually want, specific enough that you could recognize it in the wild and refuse misaligned opportunities. Anti-criteria forcing, past-data testing, the aligned-opportunity sentence test, confidence calibration. `targets` translates compass into a tiered ecosystem of companies, communities, and a single-sentence segment statement (Phyl Terry's spear, not a net).
+
+**Position** — `brand` builds the strategy: thesis, defensible POV, audience, channel ranking, cadence commitment, anti-brand. Distinct from `pitch` (the conversational artifact) — `brand` is the multi-month positioning architecture. `pitch`, `linkedin`, and `resume` derive from it for cross-surface consistency.
+
+**Distribute** — `content` builds a 90-day calendar from brand thesis and storybank earned secrets, with a strict quality rubric (no ghostwriting, no LLM-laundering, no reach-chasing — voice is the asset). `projects` ships proof-of-work artifacts with falsifiable hypotheses; completed projects seed the storybank. `events` turns conferences and meetups from networking-for-its-own-sake into a relationship-pipeline input via deliberate pre-/post-event work.
+
+**Activate** — `mapping` walks your actual network (not LinkedIn's), tiers it honestly (Tier 1 = would take your call today; Tier 2 = warm; Tier 3 = reachable through one hop), and surfaces coverage gaps against the target ecosystem. `relationships` runs a lightweight CRM with give-before-ask cadence, re-warming sequences, and reciprocity ledger audits. `intro` enforces the warm-intro choreography (private ask of introducer, double opt-in, forwardable email construction, post-intro reciprocity).
+
+**Convert** — `opportunities` logs every inbound, scores against compass, manages stage transitions, and surfaces patterns about what's pulling. When stage reaches "formal process," it creates an Interview Loop and hands off cleanly to the Interview Track. `convert` coaches the bridges that turn conversations into real opportunities — collaboration test, follow-up artifact, named ask, graceful pass.
+
+**`bootcamp`** is the capstone: an 8-12 week orchestrator with weekly cadence and five checkpoints (Compass Lock → Position Lock → Distribution Active → Network Live → Conversion Ready). Four tracks: Brand-First, Network-First, Project-First, Hybrid. Pick at start.
+
+**Anti-pattern enforcement** is strict throughout. The system pushes back on performance discovery, the 200-target list, the networking sprint, ghostwritten brand, the perpetual project, the hidden ask, audit-and-extract, and brand without anti-brand. The user's voice and authenticity are the assets; the coach edits structure and sharpens specificity, never replaces voice.
+
+**Cross-track integration**: opportunities arriving via the Opportunity Track feed the Interview Track. Storybank-seeding from shipped projects feeds `pitch`, `resume`, `linkedin`, and `stories`. Compass and brand thesis stability are checked against interview outcomes — repeated rejections from misaligned opportunities mean compass or targets need revision, not more interview practice.
 
 ---
 
@@ -159,6 +188,50 @@ For both options, the coach will ask for your resume, target role, and timeline 
 | `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
 | `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
+
+### Opportunity Track (v4)
+
+#### Discover
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `compass` | Define what you actually want — work shape, anti-criteria, the aligned-opportunity sentence | Compass section in coaching state with confidence-calibrated components |
+| `targets` | Build target ecosystem — tiered companies, communities, segment statement, anti-targets | Tiered company table, community map, segment statement, watch signals |
+
+#### Position
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `brand` | Personal brand strategy — thesis, defensible POV, audience, channels, cadence, anti-brand | Brand Strategy section with 90-day cadence commitment + success signals |
+
+#### Distribute
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `content` | Content calendar (`plan`), per-piece coaching (`coach`), inbound audit (`audit`) | 90-day backlog, per-piece annotations against 8-dim rubric, audit pattern report |
+| `projects` | Proof-of-work projects (`propose`/`scope`/`coach`/`ship`/`debrief`) with hypothesis + Storybank seeding | Hypothesis statement, scope cut, ship-day choreography, Storybank story |
+| `events` | Event strategy (`plan`/`prepare`/`at-event`/`debrief`) | Prioritized event list, pre-event prep, post-event Relationship Pipeline updates |
+
+#### Activate
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `mapping` | Map your real network — Tier 1/2/3 inventory + coverage gap analysis | Tiered tables, coverage gaps named, Tier 3 path-finding |
+| `relationships` | Lightweight CRM (`cadence`/`give`/`rewarm`/`touch`/`audit`) | Per-Tier-1 cadence, give plan, reciprocity audit |
+| `intro` | Warm intro choreography — private ask, double opt-in, forwardable email, reciprocity | Drafted private ask + forwardable email + Intro Tracker update |
+
+#### Convert
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `opportunities` | Inbound funnel hygiene (`log`/`score`/`move`/`audit`) — track and score every inbound | Funnel table + alignment verdicts + pattern analysis |
+| `convert` | Conversation-to-opportunity bridges (`before`/`during`/`after`/`revive`) | Conversion bridge selection + draft messages + next checkpoint |
+
+#### Orchestrator
+
+| Command | Purpose | Typical Output |
+|---|---|---|
+| `bootcamp` | Multi-week program (`start`/`plan`/`audit`/`checkpoint`/`pause`/`resume`/`end`) | Track selection, weekly commitments, checkpoint verdicts, end-of-program retrospective |
 
 ---
 
@@ -333,7 +406,44 @@ Then specify message type (cold LinkedIn, warm intro, recruiter reply, etc.) and
 - Follow-up sequence with timing
 - Earned secret hooks pulled from your storybank
 
-### 11) Post-offer negotiation
+### 11) Run the full Opportunity Track bootcamp
+
+```text
+bootcamp start
+```
+
+Pick a track (Brand-First, Network-First, Project-First, Hybrid), commit 5-10 hours/week, and the system runs an 8-12 week program with weekly cadence and five checkpoints between stages. Each week: `bootcamp plan` to set commitments, then commands within the stage (`compass`, `brand`, `content`, etc.), then `bootcamp audit` end-of-week.
+
+Expected output across the program:
+
+- Compass with a single aligned-opportunity sentence and confidence calibration
+- Brand thesis, defensible POV, channel strategy, anti-brand
+- Network map with Tier 1/2/3 and coverage gap analysis
+- 90-day content calendar with several pieces shipped
+- At least one proof-of-work project shipped and seeded into the storybank
+- Active relationship pipeline with give-before-ask cadence held
+- Inbound opportunities logged and scored against compass
+- A handoff to the Interview Track when formal processes begin
+
+### 12) One-off Opportunity Track commands
+
+Don't need the whole program? Run individual commands:
+
+```text
+compass            # Define what you actually want
+targets            # Build a tiered target ecosystem
+mapping            # Map your real network
+brand              # Build the brand strategy
+content plan       # 90-day content calendar
+projects propose   # Generate aligned project ideas
+events plan        # Prioritize events
+relationships cadence  # Set Tier 1 cadence
+intro plan         # Orchestrate a warm intro
+opportunities log  # Log an inbound
+convert after      # Coach the post-conversation conversion
+```
+
+### 13) Post-offer negotiation
 
 ```text
 negotiate
@@ -350,16 +460,16 @@ Then provide offer details, competing offers, and ideal outcome. Get:
 
 ## Tracks
 
-### Quick Prep
+### Interview Track — Quick Prep
 
-Best when interview timeline is short.
+Best when interview timeline is short (<2 weeks).
 
 - Company research
 - Prep brief
 - Focused transcript analysis
 - Immediate next actions
 
-### Full System
+### Interview Track — Full System
 
 Best when running a multi-week search.
 
@@ -376,7 +486,26 @@ Best when running a multi-week search.
 - Post-offer negotiation coaching
 - Post-search retrospective and archiving
 
-Choose during `kickoff`. You can switch later.
+### Opportunity Track (v4)
+
+Best when you want a career that pulls aligned opportunities to you, not one that depends on cold applications.
+
+- Compass discovery (what you actually want, with confidence calibration)
+- Target ecosystem and segment definition
+- Real network mapping with coverage gap analysis
+- Personal brand strategy with defensible POV and anti-brand
+- 90-day content calendar with per-piece coaching
+- Proof-of-work projects with hypothesis testing and Storybank seeding
+- Event strategy with deliberate pre-/post-event work
+- Lightweight relationship CRM with give-before-ask cadence
+- Warm intro choreography
+- Inbound opportunity funnel with compass-based scoring
+- Conversation-to-opportunity conversion bridges
+- Multi-week `bootcamp` orchestrator (8-12 weeks, four track variants, five checkpoints)
+
+Run individual commands à la carte, or run `bootcamp` for the full program. The Opportunity Track shares state with the Interview Track — opportunities surfaced upstream feed interview prep downstream.
+
+Choose Quick Prep / Full System during `kickoff`. The Opportunity Track is run via its own commands or `bootcamp` whenever you're ready.
 
 ---
 
@@ -413,7 +542,19 @@ interview-coach-skill/
     │   ├── negotiate.md
     │   ├── feedback.md
     │   ├── reflect.md
-    │   └── help.md
+    │   ├── help.md
+    │   ├── compass.md                  # v4 — Discover what you actually want
+    │   ├── targets.md                  # v4 — Build target ecosystem
+    │   ├── mapping.md                  # v4 — Network topology
+    │   ├── brand.md                    # v4 — Personal brand strategy
+    │   ├── content.md                  # v4 — Content calendar + per-piece coaching
+    │   ├── events.md                   # v4 — Event/community strategy
+    │   ├── relationships.md            # v4 — Lightweight relationship CRM
+    │   ├── projects.md                 # v4 — Proof-of-work projects
+    │   ├── opportunities.md            # v4 — Inbound funnel hygiene
+    │   ├── intro.md                    # v4 — Warm intro choreography
+    │   ├── convert.md                  # v4 — Conversation-to-opportunity bridges
+    │   └── bootcamp.md                 # v4 — Multi-week program orchestrator
     ├── cross-cutting.md                # Shared modules: gap-handling, signal-reading, differentiation, cultural awareness, psychological readiness, cross-command dependencies
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
     ├── role-drills.md                  # Role-specific drills + interviewer archetypes
@@ -424,7 +565,11 @@ interview-coach-skill/
     ├── story-mapping-engine.md         # Portfolio-optimized story mapping with fit scoring
     ├── calibration-engine.md           # Scoring drift detection, root cause tracking, success patterns
     ├── challenge-protocol.md           # Five-lens challenge framework (Level 5 only): assumption audit, blind spot scan, pre-mortem, devil's advocate, strengthening path
-    └── examples.md                     # Worked examples: scored answers, triage, rewrites, system design analysis
+    ├── examples.md                     # Worked examples: scored answers, triage, rewrites, system design analysis
+    ├── opportunity-system.md           # v4 — Opportunity Track philosophy, anti-patterns, cross-command dependencies (loaded by all Opportunity Track commands)
+    ├── bootcamp.md                     # v4 — Multi-week program manual (sample tracks, checkpoints, success metrics)
+    └── integrations/
+        └── ai-native.md                # v4 — Integration notes for jazzmind/ai-native (adapter surfaces, options, next steps)
 ```
 
 ---
