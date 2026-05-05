@@ -123,9 +123,65 @@ Three new commands for the artifacts candidates build before they ever interview
 
 ---
 
-## v4: Interaction Model (planned)
+## v4: Opportunity Track (shipped)
 
-**Thesis**: Now that the coaching brain is strong and comprehensive, change *how* candidates interact with it.
+**Thesis**: The Interview Track (v1-v3) is comprehensive at the surface where most candidates spend their time today: applications and interviews. But the strongest careers are not built that way. They are built so opportunity arrives because the right people know the right things about you. v4 extends the system upstream of the application — into the brand, network, and proof-of-work that pull aligned opportunities — and makes the full path runnable end-to-end as a structured multi-week program.
+
+The premise: there's a candidate who has never sent a resume to a stranger, whose every meaningful opportunity has come through deliberate brand-building and network-building. The Opportunity Track teaches others to do this on purpose — as a rigorous system, not as luck.
+
+### Feature 1: Opportunity Track Commands
+
+Twelve new commands, organized in five stages — Discover, Position, Distribute, Activate, Convert.
+
+- **`compass`** — Discover what the candidate actually wants. Anti-criteria forcing, past-data testing, the aligned-opportunity sentence test, confidence calibration.
+- **`targets`** — Translate compass into a target ecosystem: tiered companies, communities/scenes, segment statement, watch signals, anti-targets.
+- **`mapping`** — Network topology mapping (real network, not LinkedIn list). Tier 1/2/3 inventory, coverage gap analysis vs. target ecosystem, intro path-finding.
+- **`brand`** — Personal brand strategy: thesis, defensible POV, audience, channel ranking, cadence commitment, anti-brand. Distinct from `pitch` (positioning artifact) — `brand` is positioning *strategy*.
+- **`content`** — 90-day content calendar built on brand thesis, per-piece coaching with quality rubric, audit mode for inbound signal review.
+- **`events`** — Event/community strategy: ruthless prioritization, pre-event prep, live triage, post-event debrief and follow-through.
+- **`relationships`** — Lightweight CRM with give-before-ask cadence, re-warming sequences for Tier 2, reciprocity ledger audit.
+- **`projects`** — Proof-of-work projects with falsifiable hypotheses, scoped ship dates, anti-perfection clauses, post-ship Storybank seeding.
+- **`opportunities`** — Inbound funnel hygiene: log every inbound, score against compass, manage stage transitions, surface patterns about what's pulling.
+- **`intro`** — Warm intro choreography: private ask of introducer, double opt-in, forwardable email construction, post-intro reciprocity.
+- **`convert`** — Conversation-to-opportunity conversion bridges: collaboration test, follow-up artifact, named ask, graceful pass.
+- **`bootcamp`** — Multi-week orchestrator that runs the full Opportunity → Interview lifecycle. Four tracks (Brand-First, Network-First, Project-First, Hybrid), 8-12 weeks, weekly cadence, five checkpoints.
+
+**Key files**: `references/opportunity-system.md` (philosophical foundation, anti-patterns, cross-command dependencies), `references/bootcamp.md` (the program manual), `references/commands/{compass,targets,mapping,brand,content,events,relationships,projects,opportunities,intro,convert,bootcamp}.md` (twelve new command references), `SKILL.md` (description, command registry, mode detection, multi-step intent table, state schema, file routing, schema migration).
+
+### Feature 2: Two-Track Operating Model
+
+The skill now runs in two integrated tracks:
+
+- **Interview Track** — original v1-v3 system, unchanged in behavior.
+- **Opportunity Track** — new in v4.
+
+The tracks share `coaching_state.md`, share rigor standards, and compose: a strong Opportunity Track produces aligned interview pipelines, which feed the Interview Track. Cross-track handoffs are explicit:
+
+- `opportunities` reaching "formal process" → creates Interview Loop, hands off to `decode`/`prep`.
+- `convert` producing a job conversation → creates or updates Interview Loop.
+- `projects` shipping → seeds Storybank with at least one earned-secret-bearing story.
+
+Mode detection adds 12 new triggers (one per Opportunity Track command). Multi-step intent table adds 6 new sequences (e.g., "I want to stop sending resumes and build a real career" → `compass` → `targets` → `mapping` → `brand` → `content` → `relationships`).
+
+### Feature 3: Schema Extensions and Migration
+
+New `coaching_state.md` sections: `Compass`, `Target Ecosystem`, `Network Map`, `Brand Strategy`, `Content Calendar`, `Events`, `Relationship Pipeline`, `Projects (Proof of Work)`, `Inbound Opportunity Funnel`, `Intro Tracker`, `Conversion Log`, `Bootcamp State`.
+
+A single migration rule covers all of them: missing Opportunity Track sections are added silently with empty fields, and a single-line note is added to Coaching Notes pointing the user to `compass`. Existing v1-v3 state files upgrade cleanly without losing data.
+
+### Feature 4: ai-native Integration Notes
+
+`references/integrations/ai-native.md` outlines three integration options for [jazzmind/ai-native](https://github.com/jazzmind/ai-native) — additive advisor, Chief-of-Staff-orchestrated external skill, or full bridge — with adapter surfaces (state sync, command routing, memory translation, mode mapping) and concrete next steps. Default recommendation: Option 2 (loose integration) before any state-coupling work.
+
+### Feature 5: Anti-Pattern Discipline
+
+The Opportunity Track explicitly names and resists eight anti-patterns: performance discovery, the 200-target list, the networking sprint, ghostwritten brand, the perpetual project, the hidden ask, audit-and-extract, and brand without anti-brand. Each command's failure-modes section ties back to these. The system pushes back on volume optimization, reach chasing, and LLM-laundered content — the user's voice and authenticity are the assets.
+
+---
+
+## v5: Interaction Model (planned)
+
+**Thesis**: Now that the coaching brain is strong, comprehensive, and covers both reactive (interview) and proactive (opportunity) tracks, change *how* candidates interact with it.
 
 ### Voice Mode for Practice/Mock
 Scoped tightly to `practice`, `mock`, and `hype` warmups. The candidate speaks, the system listens, scores delivery alongside content (filler words, pacing, confidence, hedging language). Doesn't replace text for `prep` or `progress` — those need structured output. But practice and mocks become dramatically more realistic with voice.
@@ -144,7 +200,7 @@ A friend or mentor can review your storybank and leave comments. Still file-base
 
 ---
 
-## v5: Platform (planned)
+## v6: Platform (planned)
 
 **Thesis**: The coaching engine is proven. Now make it accessible to people who'll never touch a CLI.
 
@@ -164,6 +220,8 @@ With enough users, the system can surface patterns across candidates: "Candidate
 
 ## Version Tension
 
-v3 was the natural next step after v2 — it extended the coaching engine to every surface that matters in a job search without requiring any architectural changes. The system is now comprehensive: 23 commands covering resume through retrospective, with cross-command integration wiring that makes the whole greater than the parts.
+v3 was the natural next step after v2 — it extended the coaching engine to every surface that matters in a job search without requiring any architectural changes. The system was comprehensive at the application/interview surface: 23 commands covering resume through retrospective, with cross-command integration wiring that made the whole greater than the parts.
 
-v4 is exciting but expensive (voice, UI, integrations). v5 is a different company. The risk now is premature platforming before v3 has proven that full-lifecycle coaching moves candidate outcomes better than interview-only coaching.
+v4 (Opportunity Track) is the structural counter-move. Where v1-v3 optimized the visible job search, v4 builds the upstream system that makes most of the visible job search unnecessary for the candidates who run it well. It introduces a second track and a multi-week orchestrator without requiring a new database, a new UI, or new infrastructure — same `coaching_state.md`, same Markdown skill files, same Claude Code surface. The risk is dilution: v4 nearly doubles the command surface, and the Opportunity Track's success criteria are slow (months/quarters) compared to the Interview Track's (days/weeks). The system has to remain coherent across both timescales without confusing users about which track they're in.
+
+v5 is exciting but expensive (voice, UI, integrations). v6 is a different company. The risk now is premature platforming before v4 has proven that brand-and-network-led careers can be coached as a system, not as case studies.
