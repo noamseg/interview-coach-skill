@@ -23,6 +23,22 @@ If matches are found:
 
 If no files are found in `~/meetings/`, proceed normally: wait for the candidate to paste a transcript.
 
+### Comp Call Detection
+
+Before running the standard transcript analysis below, scan for compensation-discussion markers. Comp calls are structurally different from interviews and should not be scored on the interview rubric.
+
+**Detection logic.** Count occurrences of these markers (case-insensitive): `salary`, `base`, `equity`, `bonus`, `offer`, `package`, `counter`, `negotiate`, `compensation`, `vesting`, `sign-on`, `stock`, `RSU`, `pro-rate`, `band`, `range`, `budget`.
+
+- **3+ distinct markers** → route to negotiation-specific analysis: score against the 5 Negotiation Performance Dimensions in `references/commands/negotiate.md` ("Comp Call Scoring"), not the standard interview rubric. Output the Negotiation Performance Scorecard. Write results to the `Comp Strategy` section of `coaching_state.md` (not Score History — comp calls aren't interviews).
+- **Fewer than 3 markers** → proceed with the standard Step Sequence below.
+
+**Why this matters.** In a comp call, success is the package outcome, not answer quality; the counterpart is a negotiator, not an evaluator; and silence, timing, and information control matter more than Substance/Structure. The interview rubric doesn't map to any of that — scoring a comp call on it produces meaningless results.
+
+**Edge cases.**
+- **Mixed transcript (interview + comp in one call):** score the interview portion on the standard rubric and the comp portion on negotiation dimensions; note both.
+- **Recruiter screen where salary came up briefly (1-2 markers):** score as a standard interview, but add a line: "Salary handling: [how the candidate handled the comp question]."
+- **Purely administrative post-offer call (start date, paperwork):** flag as "administrative call — no analysis applicable."
+
 ### Step Sequence
 
 1. **Check for existing debrief data.** If `coaching_state.md` has a `debrief` entry for this interview (same company/round), pull it in as context — the candidate's emotional read, interviewer signals they noticed, stories they used, and their same-day self-assessment. This is valuable because debrief captures impressions while fresh, before memory reconstruction smooths things over. Note any discrepancies between debrief impressions and what the transcript actually shows — these deltas are coaching gold.

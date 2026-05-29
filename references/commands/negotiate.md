@@ -122,6 +122,112 @@ When the candidate has more than one offer:
 - **Don't play offers against each other crudely**: "Telling Company A that Company B offered more is fine. Fabricating or inflating offers is not — it's a small world and it can backfire."
 - **Decision framework**: Help the candidate weight factors beyond comp — growth trajectory, learning potential, manager quality, work-life balance, company stability. The highest-paying offer isn't always the best offer.
 
+---
+
+*The sections below extend Jacob Warwick's executive negotiation framework (via Lenny's Podcast + Execs and the City Substack), building on the GAINS summary above.*
+
+### Comp Call Scoring
+
+When a comp call transcript is brought for review — directly, or routed here by `analyze`'s Comp Call Detection — score it against these 5 dimensions instead of the standard interview rubric. Comp calls are measured by package outcome and information control, not answer quality. Write results to the `Comp Strategy` section of `coaching_state.md`, not Score History.
+
+| Dimension | What it measures | 1 (Poor) | 3 (Adequate) | 5 (Exceptional) |
+|---|---|---|---|---|
+| **Anchoring Discipline** | Did the candidate avoid naming a number first? | Named a number unprompted | Deflected once, then shared | Never named a number; counterpart anchored first |
+| **Information Gathering** | Did the candidate collect intel before responding? | Pitched without listening | Asked some questions | Systematically gathered intel, probed objections, named patterns |
+| **WE Framing** | Was every ask framed as mutual benefit? | All asks ME-framed ("I need") | Mixed framing | Every ask led with company benefit; counterpart felt they were solving a shared problem |
+| **Silence & Pacing** | Did the candidate use silence and control timing? | Filled every silence, rushed | Some pauses, mostly reactive | Strategic silence after asks; controlled timing; took a few days on the offer |
+| **Creative Solutions** | Did the candidate explore beyond base salary? | Only discussed base | Mentioned equity/bonus | Proposed creative mechanisms (triggers, IP carve-outs, development budgets, schedule structures) |
+
+**Scorecard:**
+
+```markdown
+## Negotiation Performance Scorecard
+
+| Dimension | Score | Evidence |
+|---|---|---|
+| Anchoring Discipline | [1-5] | [specific moment from transcript] |
+| Information Gathering | [1-5] | [specific moment from transcript] |
+| WE Framing | [1-5] | [specific moment from transcript] |
+| Silence & Pacing | [1-5] | [specific moment from transcript] |
+| Creative Solutions | [1-5] | [specific moment from transcript] |
+
+**Overall:** [average] / 5
+**Strongest dimension:** [name] — [why]
+**Priority improvement:** [name] — [specific adjustment for next round]
+```
+
+The priority improvement feeds directly into coaching for the follow-up call: score the last call → coach the next → score that → iterate.
+
+### Multi-Round Negotiation
+
+When the initial ask doesn't close and a follow-up call is scheduled. This is structurally different from the first call: the counterpart has had time to think and consult others, their position may have hardened or softened, the candidate's first-call framing is already on record, and power has shifted based on who deferred to whom.
+
+**Coaching sequence:**
+
+1. **Debrief the first call.** What was asked? What was the response? What objections were raised, in what language? Score against the Comp Call Scoring dimensions above if a transcript is available.
+2. **Diagnose the counterpart's position:**
+   - **Deferral to authority** ("I need to check with my co-founder/board") — they may be on your side but can't approve alone. Make them your advocate: "Would you be willing to take this framing to [authority]?"
+   - **Principled objection** ("we value flexibility/trust over rigidity") — values language used to avoid commitment. Name the asymmetric risk; use "can you help me understand?"
+   - **Stacked objections** (3+ concerns all leading to the same conclusion) — the real concern is preserving unilateral discretion. Name the pattern: "Is there a single thing that would unlock this?"
+   - **Hard no** ("this is a fairly clear position for us") — a genuine boundary. Accept gracefully or walk, depending on the candidate's floor.
+3. **Reframe, don't repeat.** If the first framing didn't land, don't say "that was wrong" — say "Let me be clearer on this." Reframe without self-blame.
+4. **Structure the follow-up:** opener (signal the deal is happening) → acknowledge their position → make the adjusted ask → close. It should feel like a continuation, not a restart.
+5. **Listen first.** The candidate opens with a brief signal ("I've reflected, here's where I've landed"), then stops and lets the counterpart respond. Their opening words reveal which scenario you're in — match the response to it, don't deliver a pre-planned pitch.
+
+**Coaching the opener** (under 30 seconds, three jobs: signal the deal is happening, acknowledge their position, set expectations for small items not a re-negotiation): "Thanks for the patience. I've reflected on what we discussed — I heard you on [their position]. I've got a couple of things I think you'll be aligned with, and then we can finalize. How does that sound?"
+
+**Key points:**
+- **Know when to stop.** If the counterpart came back having advocated harder than expected (unsolicited improvements, above-ask concessions), accept with gratitude and close — pushing after they over-delivered signals you'll never be satisfied. Assess: did they *advocate* or merely *respond*? Advocate → close warm. Respond → probe further.
+- **Their words are ammunition.** If they offered something (a schedule structure, a development budget), reference it back: "You mentioned you'd support X — I'd love to build on that."
+- **"Walk me through what that looks like from your side"** is the strongest play for informal commitments — they describe the arrangement in their own words, then you mirror it back and ask for documentation.
+- **Every informal commitment needs a documentation mechanism**, strongest to weakest: contract clause > offer-letter reference > email confirmation > verbal alignment. Push for the highest you can get without reopening a closed debate.
+
+### Non-Standard Terms
+
+Senior hires often negotiate beyond base/equity/bonus. Surface these proactively when traditional levers are capped — the candidate says base or equity is at the ceiling, the company is bootstrapped/early-stage/PE-backed with rigid bands, or the counterpart has signaled flexibility.
+
+| Term | When to raise | How to frame | Common pushback | Counter |
+|---|---|---|---|---|
+| **Reduced schedule (4-day week, 9-day fortnight)** | After base/equity directionally aligned | "This is how I stay at the level that delivers the outcomes you hired me for" | "We've never done this" / "What about the team?" | "Not unusual for senior leadership — the output speaks for itself." Fallback: one protected focus day per week (lighter lift, less precedent). |
+| **Professional development budget** | When offered, or as package rebalancing | "Annual, discretionary, referenced in the offer letter" | "We don't have a formal program" | "Tooling, training, and conferences move fast enough to justify a recurring budget line." |
+| **IP / moonlighting carve-out** | Contract stage, not the negotiation call | "Standard for senior hires — protects both sides" | "Our standard contract covers this" | Check the IP-assignment clause; push for a pre-existing-work schedule if needed. |
+| **Performance-based equity triggers** | When initial equity is capped | "If I deliver X outcome, what does that unlock?" | "We don't have a mechanism yet" | "Can we build one? Even informal milestones tied to equity top-ups." |
+| **Sign-on bonus** | When base is capped and there's a gap to bridge | One-time payment; amortize over expected tenure | "We don't do sign-on bonuses" | "Even a small one bridges offer to market — it's one-time, not ongoing." |
+| **Additional leave** | When work-life balance matters, or when base is capped (leave is often easier to grant than base, especially at startups) | "Leaders who don't burn out stay longer" | "Everyone gets X weeks" | "This is a leadership-level term, not a company-wide policy change. If leave can't move, can we look at base or a sign-on instead?" |
+| **Title / scope review at checkpoints** | When starting below expected level | Lock the dates and criteria, not just the intent | "We'll revisit when it makes sense" | "Can we agree on month 4 and month 8 as explicit review points?" |
+
+**The Golden Cage Test.** When a counterpart offers a compromise that looks like the ask but strips the substance, coach the candidate to name it. Test: "If I accepted this, would I actually get what I need — or the label without the substance?" Then name the distinction without confrontation: "I appreciate the offer. Those are different things for me, and here's why…"
+
+### Escalation Playbook
+
+When standard negotiation reaches an impasse.
+
+| Step | When | How | Risk |
+|---|---|---|---|
+| **1. Delay card** | They expect an answer you're not ready to give | "I need to think about this. Can I come back tomorrow?" | Low — buys time, preserves leverage |
+| **2. Advocate creation** | Hiring manager can't approve but is sympathetic | "Would you be willing to take this framing to [decision-maker]?" | Low — makes them your champion |
+| **3. Direct to decision-maker** | Hiring manager is blocked; someone higher controls the P&L | Ask the hiring manager first: "Would it be okay if I had a brief chat with [name] on this one point?" | Medium — go through, not around, the hiring manager |
+| **4. Walk (temporary)** | Hard no on a line-in-the-sand item | "I appreciate you being direct. I need to think about what that means." | High — only credible if you can actually walk |
+| **5. Walk (permanent)** | The candidate's floor is genuinely below the offer | "This isn't the right fit on these terms. I respect your position — if circumstances change, I'm open." | High — burns the bridge for this cycle |
+
+**Coaching the walk:** never walk on the call (always take 24-48 hours — in-the-moment decisions are emotional, not strategic); walking is only credible with a real BATNA (competing offers, fractional options, runway); walking *is* negotiation — when it's genuine conviction not bluff, the company's sunk investment (rounds, references, an excited team) creates pull and they often come back; and if walking, leave warm to preserve the relationship for re-engagement.
+
+**When the counterpart hides behind an absent decision-maker** ("I need to check with my co-founder/board"): probe — "Which pieces is [authority] flexible on, and which are firm?" — to reveal what's real vs. a negotiating position. If everything is blocked by the absent authority, get the hiring manager to advocate or go 1-on-1 with the authority. Never accept a group call of multiple decision-makers against the candidate alone (a 2-v-1 disadvantage).
+
+### Post-Close Legal Review
+
+Coaching during the paperwork phase, after commercial terms (base, equity, PD budget, leave, title) are closed and the outstanding items are legal/logistical: IP assignment, non-compete, notice period, probation, annexures for informal commitments.
+
+**The register shift** is the core move: candidates who won the negotiation by being assertive and commercial often carry that register into paperwork and accidentally re-open tension. Signal to watch: the candidate's draft email to the counterpart uses words like "redline," "annexure," "pursuant to," numbered sections, or a formal opener — they've unconsciously adopted their lawyer's register. Prompt: "Read your draft aloud. Does it sound like YOU, or like your LAWYER? If it's the lawyer, rewrite it in the register of your last warm call with the counterpart."
+
+**Coaching sequence:** audit the draft for legal jargon/formality; flag anything that re-opens closed items (re-listing the package, re-thanking for wins, re-anchoring on numbers); confirm informal commitments are framed in the counterpart's own words; keep legal questions on the lawyer channel and logistics on the counterpart channel; rewrite warm, short, logistics-framed, with a specific timeline and no ceremony.
+
+**Separate channels rule:** lawyer-to-lawyer gets the legal register (full redline, numbered items, formal sign-off); counterpart-to-counterpart gets the warm register (category previews, timeline confirmation, logistics framing). If the candidate has no lawyer, they *are* the lawyer — but still separate the registers by thread.
+
+**The annexure ask** (capturing a verbally-agreed informal commitment in writing) is legitimate and expected: reference the counterpart's own description of it, offer format flexibility ("a side letter, an email exchange, whatever works"), frame as buttoning up not re-negotiating ("One thing I'd love to include…"), and keep it to one low-stakes paragraph.
+
+**Failure mode to flag:** if the counterpart goes cold or slow during paperwork, check the register of recent candidate-to-counterpart emails — legal-register messages are the most common cause of post-close chill. Fix: re-read the last 2-3 emails aloud ("does this sound like the person who was on the warm call last week?") and send a short human message to re-establish warmth.
+
 ### Output Schema
 
 ```markdown
