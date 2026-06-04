@@ -69,24 +69,25 @@ When the user provides a URL instead of pasted text, it must be a direct link to
 3. Quality check the result:
    - Clear role title + responsibilities + requirements (200+ words of JD content) → proceed with decode
    - Partial but usable (role and some requirements visible) → proceed, flag: "Content may be incomplete — flag anything that looks off."
-   - Garbled, login-walled, or clearly incomplete → proceed to Step B (curl fallback)
+   - Garbled, login-walled, or clearly incomplete → proceed to Step B (cURL fallback)
 
-**Step B — curl fallback**
-If WebFetch fails or returns insufficient content, attempt retrieval via the Bash tool using curl with a browser user-agent:
+**Step B — cURL fallback**
+1. If WebFetch fails or returns insufficient content, attempt retrieval via the Bash tool using cURL with a browser user-agent:
 
 ```
 curl -s -L \
   -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" \
   "[URL]"
 ```
-
+2. Redirects are followed automatically via the -L flag. No retry required.
 3. Quality check the curl result:
-   - Sufficient JD content retrieved → extract and proceed with decode
+   - Clear role title + responsibilities + requirements (200+ words of JD content) → proceed with decode
+   - Partial but usable (role and some requirements visible) → proceed, flag: "Content may be incomplete — flag anything that looks off."
    - Content is a JavaScript bundle (minimal readable text, heavy `<script>` blocks) → the page is client-side rendered. Before escalating to Step C, try two things: (1) retry curl with `-H "X-Requested-With: XMLHttpRequest"` and inspect the URL structure for an API path pattern. If a clean JSON response with JD content is returned, use it; (2) check the raw HTML for SEO structured data that ATS platforms commonly embed. If either yields sufficient JD content, proceed with decode. If not, proceed to Step C.
-   - Still insufficient (login-walled, fully blocked) → proceed to Step C
+   - Garbled, login-walled, or clearly incomplete → proceed to Step C
 
 **Step C — user paste**
-Only if both WebFetch and curl fail: tell the user: "The page is blocking automated retrieval — it likely requires a login or uses JavaScript rendering that curl can't reach. Can you paste the JD text directly?" Then wait before proceeding.
+Only if both WebFetch and cURL fail: tell the user: "The page is blocking automated retrieval — it likely requires a login or uses JavaScript rendering that curl can't reach. Can you paste the JD text directly?" Then wait before proceeding.
 
 **For batch triage with multiple URLs**: attempt Steps A–B for each URL sequentially. If any URL reaches Step C, request the paste for that JD only and continue with the others.
 
