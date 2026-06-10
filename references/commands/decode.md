@@ -72,6 +72,7 @@ When the user provides a URL instead of pasted text, it must be a direct link to
    - Garbled, login-walled, or clearly incomplete → proceed to Step B (cURL fallback)
 
 **Step B — cURL fallback**
+Note: the Bash tool requires user approval in standard permission mode. If approval is not granted, proceed directly to Step C.
 1. If WebFetch fails or returns insufficient content, attempt retrieval via the Bash tool using cURL with a browser user-agent:
 
 ```
