@@ -1,5 +1,39 @@
 # State Update Triggers
 
+## Global — update on every save
+
+Use the Scan → Tag → Update → Verify protocol. Verify is skipped on the default single-Write path; it applies only to the multi-Edit fallback. Do not rely on hardcoded section names — derive what needs updating from the live file and what ran this session.
+
+**Step 1 — Scan at session start**
+When reading `coaching_state.md`, extract all headings (all levels) into a working section index. This is the live map of what sections exist in this candidate's file. Do not assume sections from the schema exist — only act on what the scan finds. For files exceeding the Read tool limit, extract headings via Bash grep rather than a full file read:
+`grep -nE "^(#|Last updated:)" coaching_state.md`
+
+**Step 2 — Tag during session**
+As each command runs, evaluate every heading in the section index against the per-command rules below to identify which sections need updating. Maintain the tag list explicitly in working memory throughout the session. Two sections are always tagged regardless of what ran:
+- `Last updated:` — not a heading, located by line-prefix match (`^Last updated:`) anywhere in the file; action: set to today's date
+- `Session Log` — found via heading scan (Step 1), always tagged regardless of which commands ran; action: append a new row summarising what happened this session
+
+**Step 3 — Update at save (single atomic write)**
+Save in one Read + Write cycle, not one Edit per tagged section:
+1. Read the full file.
+2. Apply every tagged update in memory: always-tagged sections per Step 2 actions, all other tagged sections per the relevant per-command rule below.
+3. Write the modified file back in a single Write call.
+
+The Write tool returns success or failure directly — no follow-up verification is needed on this path.
+
+**Fallback for large files**: if `coaching_state.md` exceeds the Read tool's default 2000-line limit, fall back to per-section Edit calls (Step 4 verify applies). Targeted Edits are cheaper than reading and rewriting a multi-thousand-line file. Use the same size threshold as Step 1.
+
+**Step 4 — Verify (multi-Edit fallback only)**
+On the multi-Edit fallback path, partial-failure risk exists: an Edit may succeed for one section but fail for another, leaving the file half-saved. After all Edit calls complete, do a single Read covering the union of modified sections and confirm:
+- All new content is present as intended
+- Surrounding content is intact
+
+If verification fails, diagnose and re-apply before closing the save.
+
+On the single-Write path (Step 3 default), skip Step 4 — the Write tool's return value is the verification.
+
+## Per-Command Triggers
+
 Write to `coaching_state.md` whenever:
 
 - **kickoff** creates a new profile and populates Resume Analysis from resume analysis. Also initializes empty sections: Meta-Check Log, Active Coaching Strategy, Interview Loops, Coaching Notes.
