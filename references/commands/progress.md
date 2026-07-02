@@ -29,6 +29,7 @@ The value of `progress` scales with the data available. Before running the full 
 5b. **Cross-Dimension Root Cause Review**. Check Calibration State → Cross-Dimension Root Causes (active). For each active root cause: assess treatment effectiveness (are affected dimensions improving in tandem?), check if resolution criteria are met (1+ point improvement sustained over 3+ sessions), update status. If a root cause isn't responding to treatment, recommend a pivot: "We've been treating [root cause] with [treatment] for [N] sessions. Affected dimensions aren't improving together. Let's try a different approach."
 5c. **Success Pattern Analysis** (requires 1+ advancement or offer). Run the Learning from Successes protocol from `references/calibration-engine.md`: validate fit assessments, track positive dimension-outcome correlation, update storybank with success annotations, extract success patterns from 3+ successes. This ensures the system learns from what it got right, not just what it got wrong.
 5.5. **Outcome-Based Targeting Insights** (see Step 5.5 below). Skip if < 3 outcomes.
+5.5b. **Funnel Stats** (see Step 5.5b below). Skip if < 5 total tracked opportunities.
 5.6. **Cross-Loop Pattern Mining via Minutes** (see Step 5.6 below). Skip if minutes not installed.
 6. Check graduation criteria (see Graduation Criteria below). Skip if < 3 sessions.
 7. Identify top priorities based on triage, not just lowest scores.
@@ -170,6 +171,54 @@ When 3+ real interview outcomes exist, analyze rejection patterns for targeting 
 
 **When the pattern suggests retargeting**, don't prescribe — inform and offer: "The data suggests a pattern. Want to discuss whether adjusting your target companies would help, or do you want to keep pushing on the current targets?"
 
+### Step 5.5b: Funnel Stats
+
+Computes the candidate's own conversion rates from data already in Interview Loops and Outcome Log, no new tracking required. Borrowed from mukeshbasvekar/Job-Search-OS `jsos stats` pattern, adapted to compute from existing freeform coaching_state.md notes rather than a separate tracker.
+
+**Minimum data**: 5+ total tracked opportunities (Active loops + Recently closed combined). Below that, the rates are too noisy to be useful, skip and say so.
+
+**Stage detection** (parse from Interview Loops + Outcome Log + Score History entries):
+- **Applied**: any entry exists for the company, regardless of outcome
+- **Screen reached**: notes mention "recruiter screen," "screen passed," or a Score History entry tagged `recruiter_screen`
+- **HM round reached**: notes mention "HM," "hiring manager," or a Score History entry tagged `HM_conversational` / `HM_deep_dive`
+- **Final/offer reached**: notes mention "final," "R3"/"R4," "offer," or status is "OFFER SIGNED" / "offer received"
+- **Outcome**: rejected / withdrawn / declined / closed / advancing / offer (from the Outcome column or Stage column)
+
+**Channel detection** (parse from freeform notes, best-effort, not all entries will have this):
+- **Cold application**: notes mention "applied (cold)," "cold apply," "via Ashby"/"via Greenhouse" with no referral mention
+- **Warm intro / referral**: notes mention "referral," "intro," a named connector ("Pallavi Sreerama," "Trisha," "Bruno")
+- **Inbound**: notes mention "inbound," "reached out to," recruiter-initiated contact
+- **Unknown**: cannot be determined from notes, bucket separately rather than guessing
+
+**Calculation**:
+- **Stage-to-stage conversion**: (count reaching stage N) / (count reaching stage N-1), for Applied to Screen, Screen to HM, HM to Final/Offer
+- **Per-channel conversion**: (count reaching Screen+ via channel X) / (total attempts via channel X), only compute for channels with 3+ attempts, below that note "insufficient data for this channel"
+- **Overall reply/response rate**: (count reaching Screen+) / (total Applied)
+
+**Comparison against Channel Benchmark Module** (`references/cross-cutting.md`): once a channel has 3+ of the candidate's own data points, present their actual rate alongside the generic benchmark: "Your warm-intro conversion is 60% (3 of 5) vs. the general ~50% decision-maker-reach benchmark. Referrals are working unusually well for you, lean into them."
+
+**What NOT to do:**
+- Don't compute a rate from fewer than 3 data points for that specific channel or stage. Say "insufficient data" instead of a misleadingly precise percentage.
+- Don't blend stale rejected-for-non-performance reasons (H-1B budget, role closed) into conversion math the same way as skill-driven rejections. Flag closures explicitly: "[N] of your 'rejected' entries were non-performance closures (H-1B/budget/role-closed), excluded from conversion math."
+
+**Output** (only include in the progress review when 5+ total opportunities exist):
+```
+## Funnel Stats
+- Total tracked opportunities: __
+- Applied to Screen: __% (__/__)
+- Screen to HM round: __% (__/__)
+- HM round to Final/Offer: __% (__/__)
+- Non-performance closures excluded from above: __ (H-1B/budget/role-closed)
+
+Per-channel (3+ attempts only):
+- Cold application: __% (__/__) vs. industry-general ~1%
+- Warm intro/referral: __% (__/__) vs. industry-general ~50% decision-maker reach
+- Inbound: __% (__/__) (no generic benchmark, recruiter-initiated)
+- Unknown channel: __ entries (channel not determinable from notes, consider tagging going forward)
+
+Insight: [Which channel/stage is the candidate's strongest? Weakest? Does this match where they're spending outreach effort? Flag mismatch if effort and conversion are misaligned.]
+```
+
 ### Step 5.6: Cross-Loop Pattern Mining (Minutes, if available)
 
 Check `~/meetings/` for meeting files whose dates fall within the active window of any Interview Loop. For each closed loop with a recorded start date:
@@ -279,11 +328,20 @@ Draws from: Score History trends, storybank gaps, avoidance patterns (from Coach
 - Unmeasured factors to investigate:
 
 ## Targeting Insights (if 3+ outcomes exist)
-- Rejection pattern: [clustered by company type / seniority / domain / stage — or no pattern]
+- Rejection pattern: [clustered by company type, seniority, domain, or stage, or no pattern]
 - Stage analysis: [where in the funnel rejections cluster]
 - Feedback signals: [recurring themes from recruiter/interviewer feedback]
 - Fit assessment accuracy: [did fit verdicts predict outcomes?]
-- Recommendation: [continue current targeting / consider adjusting — with specifics]
+- Recommendation: [continue current targeting, or consider adjusting, with specifics]
+
+## Funnel Stats (if 5+ total tracked opportunities exist)
+- Total tracked opportunities: __
+- Applied to Screen: __% (__/__)
+- Screen to HM round: __% (__/__)
+- HM round to Final/Offer: __% (__/__)
+- Non-performance closures excluded: __ (H-1B/budget/role-closed)
+- Per-channel (3+ attempts only): [cold application, warm intro/referral, inbound, each vs. the Channel Benchmark Module general rate]
+- Insight: [strongest/weakest channel or stage, and whether outreach effort matches where conversion is actually happening]
 
 ## Graduation Check
 - Interview-ready criteria: __ of 6 met
