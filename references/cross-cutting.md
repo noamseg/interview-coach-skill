@@ -1141,6 +1141,13 @@ Key YAML frontmatter fields:
 "This transcript has processing warnings: [list from `processing_warnings`]. Analysis may be incomplete or unreliable. Do you want to proceed anyway?"
 Do not silently analyze a degraded transcript. Common causes: misrouted mic, silent recording, long idle tail. The `status: complete` check replaces the old pattern of inferring quality from transcript content alone.
 
+**Sensitivity consent gate (Minutes 0.19.0+):** Minutes enforces `sensitivity: restricted` on its own agent surfaces (MCP tools and knowledge graph drop restricted meetings by default). This skill reads `~/meetings/` directly via `ls`/`grep`, which BYPASSES that enforcement, so the gate must be honored here manually:
+- Before using any meeting file, check the frontmatter for a `sensitivity` field.
+- If `sensitivity: restricted`: exclude the file from auto-detection lists, keyword searches, cross-loop pattern mining, and any output. Do not quote, summarize, or index its contents.
+- The ONLY exception: the candidate explicitly names that specific file or meeting in the current session ("use the transcript from my restricted 1:1 yesterday"). Explicit naming is the logged override. Confirm once before proceeding: "That meeting is marked restricted in Minutes. Confirm you want me to read it for this analysis?"
+- When a keyword search would have matched a restricted file, do not reveal its title or contents. At most: "[N] restricted meeting(s) matched and were excluded."
+This mirrors Minutes' own consent contract: the human-readable markdown stays on disk, but agents do not read it without an explicit, per-use override.
+
 ### Querying by date
 
 ```bash
