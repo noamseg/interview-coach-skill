@@ -542,6 +542,27 @@ Context-Sensitive Scoring Module contributed upstream to noamseg/interview-coach
 
 ---
 
+## v4.7: Truth Discipline + Funnel Analytics (shipped 2026-06-26)
+
+**Thesis**: Two failure classes surfaced in live coaching: (1) the coach inferred a status ("started the new job") from a passed target date, producing materially wrong advice; (2) channel and funnel advice was instinct-based with no numbers behind it.
+
+### Feature 1: Status Verification Rule (COACH.md)
+A target or planned date is not evidence the event occurred. New mandatory rule plus session-start Check 6: for any passed target date (start date, notice date, petition ETA, decision deadline), search the file for an explicit post-date status update; if absent, ask the candidate once, write the answer, never re-ask. Born from a real miss.
+
+### Feature 2: Channel Benchmark Module (cross-cutting.md)
+Directional conversion priors per channel (cold ATS ~1%, direct-to-founder/HM ~5-8% interview conversion, warm intro ~50% decision-maker reach), tagged [estimated] per the No Number Without A Source rule. The candidate's own funnel data supersedes the priors once 3+ data points exist per channel. Consumed by outreach, strategy, and progress. Adapted from mukeshbasvekar/Job-Search-OS.
+
+### Feature 3: Funnel Stats (progress.md Step 5.5b)
+Computes the candidate's own stage-to-stage (Applied to Screen to HM to Final/Offer) and per-channel conversion rates directly from existing Interview Loops + Outcome Log data. No new tracking fields. Excludes non-performance closures (visa/budget/role-closed) from conversion math. Skips below 5 tracked opportunities or 3 per-channel data points rather than printing noisy percentages.
+
+## v4.8: Upstream Comp-Call Scoring + Minutes 0.19 Consent Gate (shipped 2026-06-26)
+
+### Feature 1: Comp Call Detection + Scoring (cherry-picked from upstream noamseg/interview-coach-skill 634a8dd)
+analyze now gates transcripts on comp markers: 3+ distinct markers routes to negotiation-specific scoring (5 Negotiation Performance Dimensions in negotiate.md) instead of the interview rubric, writing to Comp Strategy rather than Score History. negotiate gains Multi-Round Negotiation, a Non-Standard Terms catalog, an Escalation Playbook, and Post-Close Legal Review coaching. Rationale: in a comp call the counterpart is a negotiator, not an evaluator; the interview rubric does not map.
+
+### Feature 2: Minutes Sensitivity Consent Gate (cross-cutting.md, Minutes Integration Module)
+Minutes 0.19.0 enforces sensitivity: restricted on its own agent surfaces, but this skill reads ~/meetings/ directly via ls/grep, bypassing that enforcement. The module now honors the gate manually: restricted meetings are excluded from auto-detection, keyword search, and cross-loop mining; the only override is the candidate explicitly naming the file in-session, confirmed once; matched restricted files surface as a count only, never by title or content.
+
 ## v5: Interaction Model (planned)
 
 **Thesis**: Now that the coaching brain is strong and comprehensive, change *how* candidates interact with it.

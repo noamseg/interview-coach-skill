@@ -112,7 +112,7 @@ mkdir -p ~/.claude/skills/coach
 ```yaml
 ---
 name: coach
-description: Interview coaching system. Activates for any coaching command: kickoff, map, prep, mock, round, analyze, stories, practice, progress, apply, feedback, reflect, research, decode, salary, negotiate, hype, pitch, resume, linkedin, outreach, present, concerns, questions, thankyou, sync, strategy, help. (Note: debrief is now merged into round as Mode B, legacy alias preserved for backward compatibility.)
+description: Interview coaching system. Activates for any coaching command: kickoff, map, prep, mock, round, analyze, stories, practice, progress, pipeline, apply, feedback, reflect, research, decode, salary, negotiate, hype, pitch, resume, linkedin, outreach, present, concerns, questions, thankyou, sync, strategy, help. (Note: debrief is now merged into round as Mode B, legacy alias preserved for backward compatibility.)
 ---
 
 The interview coaching system is now active.
@@ -232,6 +232,7 @@ Re-export every 2-4 weeks to keep the data fresh. The coach will flag stale expo
 | `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
 | `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
 | `strategy` | Full search-level pipeline audit + 2-week action plan. At Level 5: 4-lens challenge protocol | Timeline risk, funnel health, narrative coherence, priority stack, yield projection, action plan |
+| `pipeline` | Live pipeline view generated fresh from coaching state | Active loops, stages, next actions, dates. Always current, never cached |
 | `sync` | Coaching state consistency check + session continuity | Data integrity verification, stale entry detection, cross-section consistency |
 | `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
 | `map` | Situational GPS -- "where am I and what should I do next?" | Priority-ranked next actions + filtered command reference for current search phase |
