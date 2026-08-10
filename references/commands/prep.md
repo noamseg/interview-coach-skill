@@ -476,3 +476,65 @@ When generating Likely Concerns, pull from the Role-Fit Assessment's gap classif
 
 **Recommended next**: `practice` — drill the competencies this prep identified as critical. If the format is a presentation round and `present` hasn't been run: `present` instead — structure your content before drilling delivery. **Alternatives**: `mock [format]`, `concerns`, `hype`, `present`
 ```
+
+### Per-Interviewer One-Pager (delivery-ready deliverable)
+
+The Output Schema above is the *analysis*. When the candidate is prepping for a **specific named interviewer** in a scheduled round (and a storybank exists), also produce a **Per-Interviewer One-Pager** — a scannable, delivery-ready artifact the candidate reviews right before the call. This is the default format for named-interviewer prep. **Save it to `materials/[company]/[interviewer-slug]-one-pager-[date].md`** and tell the candidate the path.
+
+**This is a distinct artifact from the full prep brief.** The brief is for reasoning; the one-pager is for the day. Prefer the one-pager whenever the round has a known interviewer and the goal is "get me ready for this specific conversation."
+
+#### Format (follow exactly)
+
+```markdown
+# [Interviewer] ([Role], [Company]) — One-Pager · [Date]
+
+## How they read
+- [2-4 bullets: interviewer intel + how they evaluate. Who they are, what they screen for, how to pitch to them.]
+
+## The bar that decides this round: [the single most important screen]
+[1-2 sentences on what actually decides the round — often traceable to a prior hire's failure or the recruiter's stated priority.]
+**Signal to land, unprompted:** [the one thing the candidate must convey without being asked.]
+**Anti-pattern:** [what reads as the wrong profile — name it so they avoid it.]
+
+## Lead with these (recruiter-endorsed)
+- [Recruiter-validated material to lead with. When a recruiter has endorsed a framing/question/story, it goes here and the candidate leads with it — do not construct alternatives.]
+
+## At a glance
+| Question | Use | The ONE thing to land |
+|---|---|---|
+| [likely question] | [Locked answer / S###] | [the earned-secret / one line to land — bold the phrase] |
+| ... | ... | ... |
+
+---
+
+# Answers to land
+*These are spines, not scripts. Deliver the point, land the bold line — that's the earned secret, and dropping it is the failure mode.*
+
+### [Likely question]
+> [The tight answer in the candidate's voice — told, not pitched. **Bold the earned-secret / one-thing-to-land line.**]
+
+*[Optional italic delivery note: a follow-up to have ready, a compression cue, or a keep-it-light reminder. Never put coaching asides in the header — they go here.]*
+
+[... one ### block per likely question: TMAY, the round's make-or-break question, one block per relevant story, culture/values fit, why-[company], "what are you looking for."]
+
+## What I'm looking for (must-have list)   ← include only when relevant
+*Doubles as the answer to "what are you looking for in your next role?" Three buckets — deliver as genuine self-knowledge, not a list of demands.*
+**How I work** / **What I work on** / **How the team moves** — [candidate's own must-haves, clustered into 3].
+
+## Your questions for [interviewer]
+- **[Lead]** [the single best question for this interviewer — research-signal or mental-model question first.]
+- [2-3 more, matched to this interviewer's lane.]
+```
+
+#### Build principles (these are the corrections that must not recur)
+
+1. **Clean headers.** No coaching asides in section headers (no "(the make-or-break — replaces X)"). Headers name the thing; delivery notes live as *italic sub-lines* under the answer.
+2. **An answer under every likely question — not just TMAY and the make-or-break.** Every row in the at-a-glance table has a full spine below it.
+3. **At-a-glance table stays at the top**, above the full answers, as the pre-call reminder layer.
+4. **Bold the earned-secret / one-thing-to-land line** in every answer so it's visible at a glance. Landing that line is the whole point (deploy-under-pressure is the recurring failure mode).
+5. **Told, not sold.** Positioning answers (TMAY, why-[company]) lead with genuine narrative, not a value-prop label ("I'm a [role] who's done X twice…") and don't hard-close with a pitch ("that's exactly why I want this"). Authenticity-reading interviewers (career recruiters, people leaders) screen *against* the polished register. **Apply the full Candidate Answer Voice rules in `references/coaching-voice.md`** — including: no self-diminishing framing (land intent through where they're strongest, never "I'm least effective at…"); no unearned superlatives or relative-size claims ("a key piece" ≠ "the biggest piece"); no truth-prefaces ("the honest answer is…") on top of the hedge-opener ban; and don't add clauses that name the fear you're neutralizing.
+6. **Tag room-specific variants.** When the same story/answer needs a different earned secret per interviewer (e.g., a people leader wants the low-ego beat; an SME wants the technical beat; an emotional-fit "why-[company]" for the culture round vs. a business-substance one for the SME/CEO), write both and label which room each is for.
+7. **Preserve scope language from intel.** When mapping recruiter/JD intel into positioning, keep the exact verb: "involved in / contributes to" does not become "owns." Inflating scope backfires — it can signal the wrong profile (e.g., the empire-builder a scrappy stage screens against).
+8. **Match questions-to-ask to the interviewer's lane.** Don't hand a people leader the board/roadmap questions; save those for the SME/CEO. Route each question to the room where that person has genuine authority.
+9. **Retrieve before you generate — this is the one that prevents the most rework.** Before drafting any answer *or* interviewer question, pull (a) the candidate's own earned secret / thesis on the topic from the storybank, and (b) the captured loop intel (company facts, live products, partners, org structure, prior-round intel). Build from that record, not from a generic model of the domain. Two hard checks: **(i)** when the candidate has an earned POV on the subject, the answer is built from *their* framing — generic domain framing is often not just weaker but wrong for their specific situation (e.g., "financing is a downstream leg" when their thesis is "financing lives at the point of sale as a sales lever"); **(ii)** no question or answer may contradict or ignore intel already in state — asking "is there appetite for X" when X is already a live product (in the loop notes) signals you skipped the homework, and it's most damaging in front of the domain-expert principal.
+10. **Don't overwrite the candidate's framing under drilling.** When drilling answers in the same session, once the candidate cuts a framing device, angle, or phrase, it's dead — don't reintroduce it in later reps or the written deliverable (see "Drilling failure modes" in `references/coaching-voice.md`). And don't correct the candidate on domain mechanics you're not certain of — surface it as a question (see "Don't out-expert the expert," same file).
