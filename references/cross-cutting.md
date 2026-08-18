@@ -744,7 +744,33 @@ Any command that processes text from outside the coaching session — transcript
 
 ## Role-Fit Assessment Module
 
-Targeting the right roles is as important as performing well in interviews. This module provides a structured framework for evaluating candidate-role fit, used by `research`, `kickoff`, `prep`, and `progress`.
+Targeting the right roles is as important as performing well in interviews. This module provides a structured framework for evaluating candidate-role fit, used by `research`, `kickoff`, `prep`, `decode`, `fit`, and `progress`.
+
+### Gate Layer (runs BEFORE the fit verdict)
+
+Borrowed from vaibhavarora14/job-application-agent (MIT) gate-before-score discipline. A strong fit score must never override a hard disqualifier. Before assigning the five-dimension verdict, run these gates and surface the gate result first:
+
+| Gate | Fires when | Result |
+|---|---|---|
+| **exclude** | Posting is closed/stale, an explicit hard requirement the candidate cannot meet (e.g., "must have active US clearance," "J.D. required," "must be US citizen"), no visa sponsorship where the candidate needs it, or a location/work-mode the candidate has ruled out | Do not proceed to fit scoring. State the disqualifier plainly. Offer to note the company for future roles. |
+| **ask** | A gating fact is unknown: posting status, work authorization/sponsorship, location/remote policy, comp floor, or seniority band | Ask the one blocking question before scoring. Do not assume. |
+| **skip** | Explicit non-target seniority (e.g., a plain Senior role when the candidate targets Staff+), comp clearly below the candidate's stated floor, or must-have coverage so thin the role is a long-shot | Score if asked, but lead with "this is below your bar because [X]." |
+| **review** | No gate fires | Proceed to the five-dimension verdict below. |
+
+Unknown compensation does NOT trigger exclude on its own (many strong roles omit it); it triggers `ask` only if the candidate has a hard floor. A high Domain/Competency score never upgrades a role past an `exclude` gate.
+
+### Per-Requirement Evidence Classification (sharpens Requirement Coverage)
+
+Instead of a single Strong/Moderate/Weak on Requirement Coverage, classify each must-have from the JD and attach evidence:
+
+| Tag | Meaning | Evidence rule |
+|---|---|---|
+| `met` | Candidate clearly satisfies it | Cite the specific resume/storybank/Proof Bank evidence. |
+| `partial` | Adjacent or transferable, not a direct match | Cite the adjacent evidence AND name what is not yet demonstrated. |
+| `missing` | No evidence | State it plainly. Do NOT invent evidence to fill it. |
+| `unclear` | JD requirement is ambiguous, or candidate data is insufficient to judge | Flag for clarification. |
+
+**Evidence integrity rule:** attach real, sourced evidence for every `met` and `partial`; never fabricate evidence to raise coverage. This is the fit-assessment instance of "No Number Without A Source." Requirement Coverage rolls up from the tags: mostly `met` = Strong, meaningful `partial` mix = Moderate, several `missing` on must-haves = Weak.
 
 ### Five Fit Dimensions
 
@@ -804,6 +830,7 @@ When fit is Weak or Long-Shot Stretch, don't just diagnose — help redirect:
 
 ### Integration
 
+- **`fit` / `decode`**: Run the Gate Layer FIRST (exclude/ask/skip/review), then the five-dimension verdict, using Per-Requirement Evidence Classification for Requirement Coverage. Lead the output with the gate result: an `exclude` gate ends the assessment (state the disqualifier, do not score dimensions as if the role were viable). This is what makes a `fit` call hard to fool: a role that scores well on domain but fails a hard gate (no sponsorship, J.D. required, wrong location) is not a fit, full stop.
 - `kickoff`: Target Reality Check — fires only on clear mismatches (2+ level seniority gap, zero domain experience, function switch without bridge narrative)
 - `research`: Structured Fit Assessment replaces the current vibes-based section — uses the 3 dimensions assessable without a JD
 - `prep`: Full 5-dimension assessment with JD + resume + storybank data. Distinguishes frameable gaps (can counter with narrative) from structural gaps (real limitations)

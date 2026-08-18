@@ -185,6 +185,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `kickoff` | Initialize coaching profile |
 | `decode [JD]` | Deep JD analysis — 6 decoding lenses, competency extraction, batch triage of 2–5 JDs with pathway-weighted ranking |
 | `outreach` | Networking and referral outreach coaching — message strategy, contact prioritization, follow-up tracking |
+| `fit [JD/URL/company]` | Fast role-fit verdict via the Role-Fit Assessment Module (Gate Layer first, then 5 dimensions + per-requirement evidence classification). Alias: reuses `decode`'s JD analysis when a JD or URL is given, or `research`'s company assessment when only a company is named. |
 | `research [company]` | Lightweight company research + fit assessment |
 | `apply [company]` | Draft written answers to job application screening questions, with story selection, gap check, Writing Quality Gate, and prior-answer reuse |
 | `prep [company]` | Company + role prep brief |
@@ -317,6 +318,7 @@ Use first match:
 2. "Just had an interview" / "just finished" / "I finished my interview" / post-interview context (with or without transcript) -> `round`
 3. Transcript present (standalone — no post-interview context, just a transcript drop) -> `analyze`
 4. Company + JD context -> `prep`
+4a. Explicit `fit` command, or "is this a fit / should I apply / assess this role" intent with a JD/URL/company -> `fit` (Role-Fit Assessment Module: Gate Layer first, then 5 dimensions + per-requirement evidence). Fetch the JD if a URL is given. This is distinct from `prep`: `fit` decides whether to pursue; `prep` gets you ready once you have.
 5. Company name only (no JD, no interview scheduled) -> `research`
 6. Story-building / storybank intent -> `stories`
 7. System design / case study / technical interview practice intent -> `practice technical` (sub-command of `practice`)

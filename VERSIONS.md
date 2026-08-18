@@ -563,6 +563,22 @@ analyze now gates transcripts on comp markers: 3+ distinct markers routes to neg
 ### Feature 2: Minutes Sensitivity Consent Gate (cross-cutting.md, Minutes Integration Module)
 Minutes 0.19.0 enforces sensitivity: restricted on its own agent surfaces, but this skill reads ~/meetings/ directly via ls/grep, bypassing that enforcement. The module now honors the gate manually: restricted meetings are excluded from auto-detection, keyword search, and cross-loop mining; the only override is the candidate explicitly naming the file in-session, confirmed once; matched restricted files surface as a count only, never by title or content.
 
+## v4.9: apply/fit hardening + fit command wired (shipped 2026-08-18)
+
+Ports three patterns from vaibhavarora14/job-application-agent (MIT), plus formalizes the long-used-but-unwired `fit` command.
+
+### Feature 1: Application answer structure (apply.md)
+Codifies the three-part spine for motivation/fit/"why us"/"additional info"/"anything else" answers: one company-specific hook, two evidence-backed proof points, one honest gap-bridge only if a material gap exists. ~100-200 words, adapt to the question, plus a hard evidence-integrity rule (every claim traces to resume/storybank/Proof Bank/candidate statement; never invent scale, ownership, tech, or company knowledge).
+
+### Feature 2: Fit Gate Layer + per-requirement evidence tags (cross-cutting.md, Role-Fit Assessment Module)
+Adds a Gate Layer that runs BEFORE the five-dimension verdict (exclude/ask/skip/review) so a strong domain score can never override a hard disqualifier (no sponsorship, J.D. required, wrong location, comp below floor, closed posting). Adds per-must-have classification (met/partial/missing/unclear) with a sourced-evidence-or-nothing rule that rolls up into Requirement Coverage.
+
+### Feature 3: Duplicate / re-application check (apply.md Step 0c)
+Before drafting, checks Interview Loops + job-search/ for prior applications to the same company. Hard-stop on identical requisition; soft-flag same-company-different-team (surfaces history so re-applying is deliberate, e.g. the 3-prior-Harvey-applications case) and never spotlights prior rejections in the answers themselves.
+
+### Feature 4: `fit` command formally wired
+`fit [JD/URL/company]` was used constantly but never defined. Now in the COACH.md registry + Mode Detection (4a), routing to the Role-Fit Assessment Module (Gate Layer first). Alias that reuses `decode`'s JD analysis for a JD/URL or `research`'s assessment for a company-only input. Distinct from `prep`: `fit` decides whether to pursue, `prep` gets you ready once you have.
+
 ## v5: Interaction Model (planned)
 
 **Thesis**: Now that the coaching brain is strong and comprehensive, change *how* candidates interact with it.
